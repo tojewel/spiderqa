@@ -12,6 +12,8 @@
         <allure.version>1.4.20-SNAPSHOT</allure.version>
         <akka.version>2.3.11</akka.version>
         <akka-http.version>1.0</akka-http.version>
+        <compiler.version>1.7</compiler.version>
+
     </properties>
 
     <dependencies>
@@ -34,7 +36,6 @@
             <classifier>runtime</classifier>
             <scope>runtime</scope>
         </dependency>
-
 
 
         <dependency>
@@ -90,4 +91,21 @@
         </dependency>
 
     </dependencies>
+
+
+    <build>
+
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.2</version>
+                <configuration>
+                    <source>${compiler.version}</source>
+                    <target>${compiler.version}</target>
+                </configuration>
+            </plugin>
+        </plugins>
+
+    </build>
 </project>

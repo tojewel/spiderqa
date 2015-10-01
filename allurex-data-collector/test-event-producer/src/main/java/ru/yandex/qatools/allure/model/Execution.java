@@ -1,6 +1,6 @@
 package ru.yandex.qatools.allure.model;
 
-import lombok.Delegate;
+
 import lombok.Getter;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -10,22 +10,15 @@ import java.util.UUID;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "test-case")
-public class TestCase {
+public class Execution {
 
-    @Getter
     private String _id = UUID.randomUUID().toString();
 
-    @Getter
-    private String executionId;
+    public Execution() {
 
-    @Delegate
-    private TestCaseResult result;
-
-    public TestCase(Execution execution, TestCaseResult result) {
-        this.executionId = execution.get_id();
-        this.result = result;
     }
 
-    public TestCase() {
+    public String get_id() {
+        return _id;
     }
 }
