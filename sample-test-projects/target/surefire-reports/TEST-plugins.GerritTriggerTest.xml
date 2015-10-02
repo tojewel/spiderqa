@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="plugins.GerritTriggerTest" time="0" tests="5" errors="0" skipped="5" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.60-b23"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/abduljewel/Documents/c/spiderqa/sample-test-projects/acceptance-test-harness"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/abduljewel/Documents/c/spiderqa/sample-test-projects/acceptance-test-harness"/>
+    <property name="java.runtime.version" value="1.8.0_60-b27"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/lk/l859yg616c9cbtgfnt9szgjc0000gn/T/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/usr/local/Cellar/maven/3.3.3/libexec/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/abduljewel/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.10.5"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/abduljewel"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="abduljewel"/>
+    <property name="java.class.path" value="/usr/local/Cellar/maven/3.3.3/libexec/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_60"/>
+    <property name="java.ext.dirs" value="/Users/abduljewel/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/local/Cellar/maven/3.3.3/libexec"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="gerrit_trigger_build_when_draft_published" classname="plugins.GerritTriggerTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@6cc8c13c[
+  name=publish_multiple_servers
+  title=<null>
+  description=<null>
+  failure=ru.yandex.qatools.allure.model.Failure@371cd2fc
+  start=1443743346624
+  stop=1443743346624
+  status=PENDING
+  severity=<null>
+  steps=[]
+  attachments=[]
+  labels=[ru.yandex.qatools.allure.model.Label@b32e983, ru.yandex.qatools.allure.model.Label@3c346c45]
+  parameters=<null>
+]
+testCaseResult={
+   "start" : 1443743346624,
+   "stop" : 1443743346624,
+   "status" : "pending",
+   "name" : "publish_multiple_servers",
+   "failure" : {
+      "message" : "Test ignored (without reason)!",
+      "stack-trace" : "There are no stack trace"
+   },
+   "steps" : {
+      "step" : [ ]
+   },
+   "attachments" : {
+      "attachment" : [ ]
+   },
+   "labels" : {
+      "label" : [ {
+         "name" : "host",
+         "value" : "Abduls-MBP.home"
+      }, {
+         "name" : "thread",
+         "value" : "35252@Abduls-MBP.home.main(1)"
+      } ]
+   }
+}
+testCase=ru.yandex.qatools.allure.model.TestCase@16df9bde[
+  _id=336c278b-b9d5-4ea1-9666-cb577664326b
+  executionId=7701d757-07c3-4ee5-9df4-52c16ef79685
+  result=ru.yandex.qatools.allure.model.TestCaseResult@6cc8c13c
+]
+testCase={
+   "_id" : "336c278b-b9d5-4ea1-9666-cb577664326b",
+   "executionId" : "7701d757-07c3-4ee5-9df4-52c16ef79685",
+   "result" : {
+      "start" : 1443743346624,
+      "stop" : 1443743346624,
+      "status" : "pending",
+      "name" : "publish_multiple_servers",
+      "failure" : {
+         "message" : "Test ignored (without reason)!",
+         "stack-trace" : "There are no stack trace"
+      },
+      "steps" : {
+         "step" : [ ]
+      },
+      "attachments" : {
+         "attachment" : [ ]
+      },
+      "labels" : {
+         "label" : [ {
+            "name" : "host",
+            "value" : "Abduls-MBP.home"
+         }, {
+            "name" : "thread",
+            "value" : "35252@Abduls-MBP.home.main(1)"
+         } ]
+      }
+   }
+}
+[WARN] [10/01/2015 19:49:06.628] [default-akka.actor.default-dispatcher-77] [ActorSystem(default)] Illegal response header: Illegal 'etag' header: Invalid input '5', expected 'W' or '"' (line 1, column 1): 560dc672fbeaf7a200c9bef1
+^
+>>>REQUEST: /testdb/TestCase
+<<<RESPONSE (201 Created): /testdb/TestCase
+[WARN] [10/01/2015 19:49:06.632] [default-akka.actor.default-dispatcher-86] [ActorSystem(default)] Illegal response header: Illegal 'etag' header: Invalid input '5', expected 'W' or '"' (line 1, column 1): 560dc672fbeaf7a200c9bef2
+^
+<<<RESPONSE (201 Created): /testdb/TestCase
+]]></system-out>
+  </testcase>
+  <testcase name="build_is_triggered_after_ref_is_updated" classname="plugins.GerritTriggerTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@7d4d65f5[
+  name=gerrit_trigger_build_when_draft_published
+  title=<null>
+  description=<null>
+  failure=ru.yandex.qatools.allure.model.Failure@38cf3ae1
+  start=1443743347005
+  stop=1443743347006
+  status=CANCELED
+  severity=<null>
+  steps=[]
+  attachments=[]
+  labels=[ru.yandex.qatools.allure.model.Label@123ca460, ru.yandex.qatools.allure.model.Label@11228bee]
+  parameters=<null>
+]
+testCaseResult={
+   "start" : 1443743347005,
+   "stop" : 1443743347006,
+   "status" : "canceled",
+   "name" : "gerrit_trigger_build_when_draft_published",
+   "failure" : {
+      "message" : "AssumptionViolatedException: got: <[null]>, expected: every item is not null",
+      "stack-trace" : "org.junit.internal.AssumptionViolatedException: got: <[null]>, expected: every item is not null\n\tat org.junit.Assume.assumeThat(Assume.java:95)\n\tat org.junit.Assume.assumeNotNull(Assume.java:73)\n\tat org.jenkinsci.test.acceptance.plugins.gerrit_trigger.GerritTriggerEnv.getEnv(GerritTriggerEnv.java:81)\n\tat org.jenkinsci.test.acceptance.plugins.gerrit_trigger.GerritTriggerEnv.<init>(GerritTriggerEnv.java:44)\n\tat plugins.GerritTriggerTest.<init>(GerritTriggerTest.java:74)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:422)\n\tat org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:195)\n\tat org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:244)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:241)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n"
+   },
+   "steps" : {
+      "step" : [ ]
+   },
+   "attachments" : {
+      "attachment" : [ ]
+   },
+   "labels" : {
+      "label" : [ {
+         "name" : "host",
+         "value" : "Abduls-MBP.home"
+      }, {
+         "name" : "thread",
+         "value" : "35252@Abduls-MBP.home.main(1)"
+      } ]
+   }
+}
+testCase=ru.yandex.qatools.allure.model.TestCase@7d626f2[
+  _id=809abd84-a784-41c2-868b-b23987a0187d
+  executionId=7701d757-07c3-4ee5-9df4-52c16ef79685
+  result=ru.yandex.qatools.allure.model.TestCaseResult@7d4d65f5
+]
+testCase={
+   "_id" : "809abd84-a784-41c2-868b-b23987a0187d",
+   "executionId" : "7701d757-07c3-4ee5-9df4-52c16ef79685",
+   "result" : {
+      "start" : 1443743347005,
+      "stop" : 1443743347006,
+      "status" : "canceled",
+      "name" : "gerrit_trigger_build_when_draft_published",
+      "failure" : {
+         "message" : "AssumptionViolatedException: got: <[null]>, expected: every item is not null",
+         "stack-trace" : "org.junit.internal.AssumptionViolatedException: got: <[null]>, expected: every item is not null\n\tat org.junit.Assume.assumeThat(Assume.java:95)\n\tat org.junit.Assume.assumeNotNull(Assume.java:73)\n\tat org.jenkinsci.test.acceptance.plugins.gerrit_trigger.GerritTriggerEnv.getEnv(GerritTriggerEnv.java:81)\n\tat org.jenkinsci.test.acceptance.plugins.gerrit_trigger.GerritTriggerEnv.<init>(GerritTriggerEnv.java:44)\n\tat plugins.GerritTriggerTest.<init>(GerritTriggerTest.java:74)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:422)\n\tat org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:195)\n\tat org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:244)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:241)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n"
+      },
+      "steps" : {
+         "step" : [ ]
+      },
+      "attachments" : {
+         "attachment" : [ ]
+      },
+      "labels" : {
+         "label" : [ {
+            "name" : "host",
+            "value" : "Abduls-MBP.home"
+         }, {
+            "name" : "thread",
+            "value" : "35252@Abduls-MBP.home.main(1)"
+         } ]
+      }
+   }
+}
+>>>REQUEST: /testdb/TestCase
+]]></system-out>
+  </testcase>
+  <testcase name="build_is_triggered_after_comment_is_added" classname="plugins.GerritTriggerTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@7a1ddbf1[
+  name=build_is_triggered_after_ref_is_updated
+  title=<null>
+  description=<null>
+  failure=ru.yandex.qatools.allure.model.Failure@1e606f64
+  start=1443743347011
+  stop=1443743347011
+  status=CANCELED
+  severity=<null>
+  steps=[]
+  attachments=[]
+  labels=[ru.yandex.qatools.allure.model.Label@581918f6, ru.yandex.qatools.allure.model.Label@1958c0d9]
+  parameters=<null>
+]
+testCaseResult={
+   "start" : 1443743347011,
+   "stop" : 1443743347011,
+   "status" : "canceled",
+   "name" : "build_is_triggered_after_ref_is_updated",
+   "failure" : {
+      "message" : "AssumptionViolatedException: got: <[null]>, expected: every item is not null",
+      "stack-trace" : "org.junit.internal.AssumptionViolatedException: got: <[null]>, expected: every item is not null\n\tat org.junit.Assume.assumeThat(Assume.java:95)\n\tat org.junit.Assume.assumeNotNull(Assume.java:73)\n\tat org.jenkinsci.test.acceptance.plugins.gerrit_trigger.GerritTriggerEnv.getEnv(GerritTriggerEnv.java:81)\n\tat org.jenkinsci.test.acceptance.plugins.gerrit_trigger.GerritTriggerEnv.<init>(GerritTriggerEnv.java:44)\n\tat plugins.GerritTriggerTest.<init>(GerritTriggerTest.java:74)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:422)\n\tat org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:195)\n\tat org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:244)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:241)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n"
+   },
+   "steps" : {
+      "step" : [ ]
+   },
+   "attachments" : {
+      "attachment" : [ ]
+   },
+   "labels" : {
+      "label" : [ {
+         "name" : "host",
+         "value" : "Abduls-MBP.home"
+      }, {
+         "name" : "thread",
+         "value" : "35252@Abduls-MBP.home.main(1)"
+      } ]
+   }
+}
+testCase=ru.yandex.qatools.allure.model.TestCase@d8e4250[
+  _id=ae87a1a0-395d-4d09-836c-6dc3c365ad79
+  executionId=7701d757-07c3-4ee5-9df4-52c16ef79685
+  result=ru.yandex.qatools.allure.model.TestCaseResult@7a1ddbf1
+]
+testCase={
+   "_id" : "ae87a1a0-395d-4d09-836c-6dc3c365ad79",
+   "executionId" : "7701d757-07c3-4ee5-9df4-52c16ef79685",
+   "result" : {
+      "start" : 1443743347011,
+      "stop" : 1443743347011,
+      "status" : "canceled",
+      "name" : "build_is_triggered_after_ref_is_updated",
+      "failure" : {
+         "message" : "AssumptionViolatedException: got: <[null]>, expected: every item is not null",
+         "stack-trace" : "org.junit.internal.AssumptionViolatedException: got: <[null]>, expected: every item is not null\n\tat org.junit.Assume.assumeThat(Assume.java:95)\n\tat org.junit.Assume.assumeNotNull(Assume.java:73)\n\tat org.jenkinsci.test.acceptance.plugins.gerrit_trigger.GerritTriggerEnv.getEnv(GerritTriggerEnv.java:81)\n\tat org.jenkinsci.test.acceptance.plugins.gerrit_trigger.GerritTriggerEnv.<init>(GerritTriggerEnv.java:44)\n\tat plugins.GerritTriggerTest.<init>(GerritTriggerTest.java:74)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:422)\n\tat org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:195)\n\tat org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:244)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:241)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n"
+      },
+      "steps" : {
+         "step" : [ ]
+      },
+      "attachments" : {
+         "attachment" : [ ]
+      },
+      "labels" : {
+         "label" : [ {
+            "name" : "host",
+            "value" : "Abduls-MBP.home"
+         }, {
+            "name" : "thread",
+            "value" : "35252@Abduls-MBP.home.main(1)"
+         } ]
+      }
+   }
+}
+>>>REQUEST: /testdb/TestCase
+]]></system-out>
+  </testcase>
+  <testcase name="gerrit_trigger_build_when_changes_merged" classname="plugins.GerritTriggerTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@46894dc5[
+  name=build_is_triggered_after_comment_is_added
+  title=<null>
+  description=<null>
+  failure=ru.yandex.qatools.allure.model.Failure@596afb2f
+  start=1443743347015
+  stop=1443743347016
+  status=CANCELED
+  severity=<null>
+  steps=[]
+  attachments=[]
+  labels=[ru.yandex.qatools.allure.model.Label@79ba0285, ru.yandex.qatools.allure.model.Label@6df2a206]
+  parameters=<null>
+]
+testCaseResult={
+   "start" : 1443743347015,
+   "stop" : 1443743347016,
+   "status" : "canceled",
+   "name" : "build_is_triggered_after_comment_is_added",
+   "failure" : {
+      "message" : "AssumptionViolatedException: got: <[null]>, expected: every item is not null",
+      "stack-trace" : "org.junit.internal.AssumptionViolatedException: got: <[null]>, expected: every item is not null\n\tat org.junit.Assume.assumeThat(Assume.java:95)\n\tat org.junit.Assume.assumeNotNull(Assume.java:73)\n\tat org.jenkinsci.test.acceptance.plugins.gerrit_trigger.GerritTriggerEnv.getEnv(GerritTriggerEnv.java:81)\n\tat org.jenkinsci.test.acceptance.plugins.gerrit_trigger.GerritTriggerEnv.<init>(GerritTriggerEnv.java:44)\n\tat plugins.GerritTriggerTest.<init>(GerritTriggerTest.java:74)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:422)\n\tat org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:195)\n\tat org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:244)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:241)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n"
+   },
+   "steps" : {
+      "step" : [ ]
+   },
+   "attachments" : {
+      "attachment" : [ ]
+   },
+   "labels" : {
+      "label" : [ {
+         "name" : "host",
+         "value" : "Abduls-MBP.home"
+      }, {
+         "name" : "thread",
+         "value" : "35252@Abduls-MBP.home.main(1)"
+      } ]
+   }
+}
+testCase=ru.yandex.qatools.allure.model.TestCase@61993d18[
+  _id=07765e0c-7b25-418c-a90d-18391b22abd0
+  executionId=7701d757-07c3-4ee5-9df4-52c16ef79685
+  result=ru.yandex.qatools.allure.model.TestCaseResult@46894dc5
+]
+testCase={
+   "_id" : "07765e0c-7b25-418c-a90d-18391b22abd0",
+   "executionId" : "7701d757-07c3-4ee5-9df4-52c16ef79685",
+   "result" : {
+      "start" : 1443743347015,
+      "stop" : 1443743347016,
+      "status" : "canceled",
+      "name" : "build_is_triggered_after_comment_is_added",
+      "failure" : {
+         "message" : "AssumptionViolatedException: got: <[null]>, expected: every item is not null",
+         "stack-trace" : "org.junit.internal.AssumptionViolatedException: got: <[null]>, expected: every item is not null\n\tat org.junit.Assume.assumeThat(Assume.java:95)\n\tat org.junit.Assume.assumeNotNull(Assume.java:73)\n\tat org.jenkinsci.test.acceptance.plugins.gerrit_trigger.GerritTriggerEnv.getEnv(GerritTriggerEnv.java:81)\n\tat org.jenkinsci.test.acceptance.plugins.gerrit_trigger.GerritTriggerEnv.<init>(GerritTriggerEnv.java:44)\n\tat plugins.GerritTriggerTest.<init>(GerritTriggerTest.java:74)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:422)\n\tat org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:195)\n\tat org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:244)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:241)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n"
+      },
+      "steps" : {
+         "step" : [ ]
+      },
+      "attachments" : {
+         "attachment" : [ ]
+      },
+      "labels" : {
+         "label" : [ {
+            "name" : "host",
+            "value" : "Abduls-MBP.home"
+         }, {
+            "name" : "thread",
+            "value" : "35252@Abduls-MBP.home.main(1)"
+         } ]
+      }
+   }
+}
+[WARN] [10/01/2015 19:49:07.017] [default-akka.actor.default-dispatcher-68] [ActorSystem(default)] Illegal response header: Illegal 'etag' header: Invalid input '5', expected 'W' or '"' (line 1, column 1): 560dc673fbeaf7a200c9bef3
+^
+[WARN] [10/01/2015 19:49:07.019] [default-akka.actor.default-dispatcher-84] [ActorSystem(default)] Illegal response header: Illegal 'etag' header: Invalid input '5', expected 'W' or '"' (line 1, column 1): 560dc673fbeaf7a200c9bef4
+^
+<<<RESPONSE (201 Created): /testdb/TestCase
+<<<RESPONSE (201 Created): /testdb/TestCase
+>>>REQUEST: /testdb/TestCase
+[WARN] [10/01/2015 19:49:07.023] [default-akka.actor.default-dispatcher-51] [ActorSystem(default)] Illegal response header: Illegal 'etag' header: Invalid input '5', expected 'W' or '"' (line 1, column 1): 560dc673fbeaf7a200c9bef5
+^
+]]></system-out>
+  </testcase>
+  <testcase name="gerrit_has_review_flags_checked_after_jenkins_set_them" classname="plugins.GerritTriggerTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[<<<RESPONSE (201 Created): /testdb/TestCase
+testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@57f2e67[
+  name=gerrit_trigger_build_when_changes_merged
+  title=<null>
+  description=<null>
+  failure=ru.yandex.qatools.allure.model.Failure@4571cebe
+  start=1443743347024
+  stop=1443743347025
+  status=CANCELED
+  severity=<null>
+  steps=[]
+  attachments=[]
+  labels=[ru.yandex.qatools.allure.model.Label@154864f8, ru.yandex.qatools.allure.model.Label@11cadb32]
+  parameters=<null>
+]
+testCaseResult={
+   "start" : 1443743347024,
+   "stop" : 1443743347025,
+   "status" : "canceled",
+   "name" : "gerrit_trigger_build_when_changes_merged",
+   "failure" : {
+      "message" : "AssumptionViolatedException: got: <[null]>, expected: every item is not null",
+      "stack-trace" : "org.junit.internal.AssumptionViolatedException: got: <[null]>, expected: every item is not null\n\tat org.junit.Assume.assumeThat(Assume.java:95)\n\tat org.junit.Assume.assumeNotNull(Assume.java:73)\n\tat org.jenkinsci.test.acceptance.plugins.gerrit_trigger.GerritTriggerEnv.getEnv(GerritTriggerEnv.java:81)\n\tat org.jenkinsci.test.acceptance.plugins.gerrit_trigger.GerritTriggerEnv.<init>(GerritTriggerEnv.java:44)\n\tat plugins.GerritTriggerTest.<init>(GerritTriggerTest.java:74)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:422)\n\tat org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:195)\n\tat org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:244)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:241)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n"
+   },
+   "steps" : {
+      "step" : [ ]
+   },
+   "attachments" : {
+      "attachment" : [ ]
+   },
+   "labels" : {
+      "label" : [ {
+         "name" : "host",
+         "value" : "Abduls-MBP.home"
+      }, {
+         "name" : "thread",
+         "value" : "35252@Abduls-MBP.home.main(1)"
+      } ]
+   }
+}
+testCase=ru.yandex.qatools.allure.model.TestCase@6d3ad37a[
+  _id=a4dfadfc-732b-41a4-9c6d-caddbf9eae82
+  executionId=7701d757-07c3-4ee5-9df4-52c16ef79685
+  result=ru.yandex.qatools.allure.model.TestCaseResult@57f2e67
+]
+testCase={
+   "_id" : "a4dfadfc-732b-41a4-9c6d-caddbf9eae82",
+   "executionId" : "7701d757-07c3-4ee5-9df4-52c16ef79685",
+   "result" : {
+      "start" : 1443743347024,
+      "stop" : 1443743347025,
+      "status" : "canceled",
+      "name" : "gerrit_trigger_build_when_changes_merged",
+      "failure" : {
+         "message" : "AssumptionViolatedException: got: <[null]>, expected: every item is not null",
+         "stack-trace" : "org.junit.internal.AssumptionViolatedException: got: <[null]>, expected: every item is not null\n\tat org.junit.Assume.assumeThat(Assume.java:95)\n\tat org.junit.Assume.assumeNotNull(Assume.java:73)\n\tat org.jenkinsci.test.acceptance.plugins.gerrit_trigger.GerritTriggerEnv.getEnv(GerritTriggerEnv.java:81)\n\tat org.jenkinsci.test.acceptance.plugins.gerrit_trigger.GerritTriggerEnv.<init>(GerritTriggerEnv.java:44)\n\tat plugins.GerritTriggerTest.<init>(GerritTriggerTest.java:74)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:422)\n\tat org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:195)\n\tat org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:244)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:241)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n"
+      },
+      "steps" : {
+         "step" : [ ]
+      },
+      "attachments" : {
+         "attachment" : [ ]
+      },
+      "labels" : {
+         "label" : [ {
+            "name" : "host",
+            "value" : "Abduls-MBP.home"
+         }, {
+            "name" : "thread",
+            "value" : "35252@Abduls-MBP.home.main(1)"
+         } ]
+      }
+   }
+}
+>>>REQUEST: /testdb/TestCase
+]]></system-out>
+  </testcase>
+</testsuite>

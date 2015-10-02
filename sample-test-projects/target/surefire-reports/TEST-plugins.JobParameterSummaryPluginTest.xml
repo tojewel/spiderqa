@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="plugins.JobParameterSummaryPluginTest" time="59.02" tests="1" errors="1" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.60-b23"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/abduljewel/Documents/c/spiderqa/sample-test-projects/acceptance-test-harness"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/abduljewel/Documents/c/spiderqa/sample-test-projects/acceptance-test-harness"/>
+    <property name="java.runtime.version" value="1.8.0_60-b27"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/lk/l859yg616c9cbtgfnt9szgjc0000gn/T/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/usr/local/Cellar/maven/3.3.3/libexec/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/abduljewel/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.10.5"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/abduljewel"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="abduljewel"/>
+    <property name="java.class.path" value="/usr/local/Cellar/maven/3.3.3/libexec/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_60"/>
+    <property name="java.ext.dirs" value="/Users/abduljewel/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/local/Cellar/maven/3.3.3/libexec"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="show_summary" classname="plugins.JobParameterSummaryPluginTest" time="59.02">
+    <error message="org.apache.http.entity.ContentType.create(Ljava/lang/String;[Lorg/apache/http/NameValuePair;)Lorg/apache/http/entity/ContentType;" type="java.lang.NoSuchMethodError">java.lang.NoSuchMethodError: org.apache.http.entity.ContentType.create(Ljava/lang/String;[Lorg/apache/http/NameValuePair;)Lorg/apache/http/entity/ContentType;
+	at org.apache.http.entity.mime.MultipartEntityBuilder.buildEntity(MultipartEntityBuilder.java:209)
+	at org.apache.http.entity.mime.MultipartEntityBuilder.build(MultipartEntityBuilder.java:230)
+	at org.jenkinsci.test.acceptance.update_center.PluginMetadata.uploadTo(PluginMetadata.java:65)
+	at org.jenkinsci.test.acceptance.po.PluginManager.installPlugins(PluginManager.java:173)
+	at org.jenkinsci.test.acceptance.junit.WithPlugins$RuleImpl$1.doInstall(WithPlugins.java:139)
+	at org.jenkinsci.test.acceptance.junit.WithPlugins$RuleImpl$1.installPlugins(WithPlugins.java:119)
+	at org.jenkinsci.test.acceptance.junit.WithPlugins$RuleImpl$1.evaluate(WithPlugins.java:92)
+	at org.jenkinsci.test.acceptance.junit.JenkinsAcceptanceTestRule$1$2$1.evaluate(JenkinsAcceptanceTestRule.java:129)
+	at org.jenkinsci.test.acceptance.junit.FilterRule$1.evaluate(FilterRule.java:62)
+	at org.jenkinsci.test.acceptance.junit.JenkinsAcceptanceTestRule$1.evaluate(JenkinsAcceptanceTestRule.java:55)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+</error>
+    <system-out><![CDATA[Jenkins is stopped
+testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@89caf47[
+  name=gerrit_uninstall_plugin
+  title=<null>
+  description=<null>
+  failure=ru.yandex.qatools.allure.model.Failure@370ef50b
+  start=1443742402657
+  stop=1443742458893
+  status=BROKEN
+  severity=<null>
+  steps=[]
+  attachments=[]
+  labels=[ru.yandex.qatools.allure.model.Label@2b877a54, ru.yandex.qatools.allure.model.Label@268c030f]
+  parameters=<null>
+]
+testCaseResult={
+   "start" : 1443742402657,
+   "stop" : 1443742458893,
+   "status" : "broken",
+   "name" : "gerrit_uninstall_plugin",
+   "failure" : {
+      "message" : "NoSuchMethodError: org.apache.http.entity.ContentType.create(Ljava/lang/String;[Lorg/apache/http/NameValuePair;)Lorg/apache/http/entity/ContentType;",
+      "stack-trace" : "java.lang.NoSuchMethodError: org.apache.http.entity.ContentType.create(Ljava/lang/String;[Lorg/apache/http/NameValuePair;)Lorg/apache/http/entity/ContentType;\n\tat org.apache.http.entity.mime.MultipartEntityBuilder.buildEntity(MultipartEntityBuilder.java:209)\n\tat org.apache.http.entity.mime.MultipartEntityBuilder.build(MultipartEntityBuilder.java:230)\n\tat org.jenkinsci.test.acceptance.update_center.PluginMetadata.uploadTo(PluginMetadata.java:65)\n\tat org.jenkinsci.test.acceptance.po.PluginManager.installPlugins(PluginManager.java:173)\n\tat org.jenkinsci.test.acceptance.junit.WithPlugins$RuleImpl$1.doInstall(WithPlugins.java:139)\n\tat org.jenkinsci.test.acceptance.junit.WithPlugins$RuleImpl$1.installPlugins(WithPlugins.java:119)\n\tat org.jenkinsci.test.acceptance.junit.WithPlugins$RuleImpl$1.evaluate(WithPlugins.java:92)\n\tat org.jenkinsci.test.acceptance.junit.JenkinsAcceptanceTestRule$1$2$1.evaluate(JenkinsAcceptanceTestRule.java:129)\n\tat org.jenkinsci.test.acceptance.junit.FilterRule$1.evaluate(FilterRule.java:62)\n\tat org.jenkinsci.test.acceptance.junit.JenkinsAcceptanceTestRule$1.evaluate(JenkinsAcceptanceTestRule.java:55)\n\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n"
+   },
+   "steps" : {
+      "step" : [ ]
+   },
+   "attachments" : {
+      "attachment" : [ ]
+   },
+   "labels" : {
+      "label" : [ {
+         "name" : "host",
+         "value" : "Abduls-MBP.home"
+      }, {
+         "name" : "thread",
+         "value" : "35253@Abduls-MBP.home.main(1)"
+      } ]
+   }
+}
+testCase=ru.yandex.qatools.allure.model.TestCase@6b751cb1[
+  _id=78622051-cbbe-4bcb-b592-1069bfbd3e68
+  executionId=1bbf0610-8745-4dcf-b9b8-2ceab706f093
+  result=ru.yandex.qatools.allure.model.TestCaseResult@89caf47
+]
+testCase={
+   "_id" : "78622051-cbbe-4bcb-b592-1069bfbd3e68",
+   "executionId" : "1bbf0610-8745-4dcf-b9b8-2ceab706f093",
+   "result" : {
+      "start" : 1443742402657,
+      "stop" : 1443742458893,
+      "status" : "broken",
+      "name" : "gerrit_uninstall_plugin",
+      "failure" : {
+         "message" : "NoSuchMethodError: org.apache.http.entity.ContentType.create(Ljava/lang/String;[Lorg/apache/http/NameValuePair;)Lorg/apache/http/entity/ContentType;",
+         "stack-trace" : "java.lang.NoSuchMethodError: org.apache.http.entity.ContentType.create(Ljava/lang/String;[Lorg/apache/http/NameValuePair;)Lorg/apache/http/entity/ContentType;\n\tat org.apache.http.entity.mime.MultipartEntityBuilder.buildEntity(MultipartEntityBuilder.java:209)\n\tat org.apache.http.entity.mime.MultipartEntityBuilder.build(MultipartEntityBuilder.java:230)\n\tat org.jenkinsci.test.acceptance.update_center.PluginMetadata.uploadTo(PluginMetadata.java:65)\n\tat org.jenkinsci.test.acceptance.po.PluginManager.installPlugins(PluginManager.java:173)\n\tat org.jenkinsci.test.acceptance.junit.WithPlugins$RuleImpl$1.doInstall(WithPlugins.java:139)\n\tat org.jenkinsci.test.acceptance.junit.WithPlugins$RuleImpl$1.installPlugins(WithPlugins.java:119)\n\tat org.jenkinsci.test.acceptance.junit.WithPlugins$RuleImpl$1.evaluate(WithPlugins.java:92)\n\tat org.jenkinsci.test.acceptance.junit.JenkinsAcceptanceTestRule$1$2$1.evaluate(JenkinsAcceptanceTestRule.java:129)\n\tat org.jenkinsci.test.acceptance.junit.FilterRule$1.evaluate(FilterRule.java:62)\n\tat org.jenkinsci.test.acceptance.junit.JenkinsAcceptanceTestRule$1.evaluate(JenkinsAcceptanceTestRule.java:55)\n\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n"
+      },
+      "steps" : {
+         "step" : [ ]
+      },
+      "attachments" : {
+         "attachment" : [ ]
+      },
+      "labels" : {
+         "label" : [ {
+            "name" : "host",
+            "value" : "Abduls-MBP.home"
+         }, {
+            "name" : "thread",
+            "value" : "35253@Abduls-MBP.home.main(1)"
+         } ]
+      }
+   }
+}
+>>>REQUEST: /testdb/TestCase
+eWebDriver.java:455)
+      	at sun.reflect.GeneratedMethodAccessor23.invoke(Unknown Source)
+      	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+      	at java.lang.reflect.Method.invoke(Method.java:497)
+      	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:102)
+      	at com.sun.proxy.$Proxy41.getPageSource(Unknown Source)
+      	at org.jenkinsci.test.acceptance.selenium.SanityChecker.isFastPath(SanityChecker.java:88)
+      	at org.jenkinsci.test.acceptance.selenium.SanityChecker.checkSanity(SanityChecker.java:59)
+      	at org.jenkinsci.test.acceptance.selenium.SanityChecker.afterNavigateTo(SanityChecker.java:45)
+      	at sun.reflect.GeneratedMethodAccessor28.invoke(Unknown Source)
+      	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+      	at java.lang.reflect.Method.invoke(Method.java:497)
+      	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:79)
+      	at com.sun.proxy.$Proxy40.afterNavigateTo(Unknown Source)
+      	at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:161)
+      	at org.jenkinsci.test.acceptance.po.CapybaraPortingLayerImpl.visit(CapybaraPortingLayerImpl.java:77)
+      	at org.jenkinsci.test.acceptance.steps.JobSteps.I_configure_the_job(JobSteps.java:43)
+      	at ✽.When I configure the job(freestyle_build.feature:151)
+
+    And I add a shell build step "touch empty.file"        # JobConfigurationSteps.I_add_a_shell_build_step(String)
+    And I set artifact "empty.file" to archive             # JobConfigurationSteps.I_set_artifact_to_archive(String)
+    And I save the job                                     # JobSteps.I_save_the_job()
+    And I build the job                                    # JobSteps.I_build_the_job()
+    Then the size of artifact "empty.file" should be "0 B" # JobSteps.the_size_of_artifact_should_be(String,String)
+
+  Scenario: Use custom workspace                                                    # freestyle_build.feature:158
+    Given a job                                                                     # JobSteps.a_job()
+    When I configure the job                                                        # JobSteps.I_configure_the_job()
+      org.openqa.selenium.UnhandledAlertException: Unexpected modal dialog (text: This page is asking you to confirm that you want to leave - data you have entered may not be saved.): This page is asking you to confirm that you want to leave - data you have entered may not be saved.
+      Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+      System info: host: 'Abduls-MBP.home', ip: '192.168.1.8', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.5', java.version: '1.8.0_60'
+      Driver info: org.openqa.selenium.firefox.FirefoxDriver
+      Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+      Session ID: 5d2d2c10-f89f-d642-81a6-cb92ab5e058c
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+      	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+      	at org.openqa.selenium.remote.ErrorHandler.createUnhandledAlertException(ErrorHandler.java:187)
+      	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:154)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+      	at org.openqa.selenium.remote.RemoteWebDriver.getPageSource(RemoteWebDriver.java:455)
+      	at sun.reflect.GeneratedMethodAccessor23.invoke(Unknown Source)
+      	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+      	at java.lang.reflect.Method.invoke(Method.java:497)
+      	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:102)
+      	at com.sun.proxy.$Proxy41.getPageSource(Unknown Source)
+      	at org.jenkinsci.test.acceptance.selenium.SanityChecker.isFastPath(SanityChecker.java:88)
+      	at org.jenkinsci.test.acceptance.selenium.SanityChecker.checkSanity(SanityChecker.java:59)
+      	at org.jenkinsci.test.acceptance.selenium.SanityChecker.afterNavigateTo(SanityChecker.java:45)
+      	at sun.reflect.GeneratedMethodAccessor28.invoke(Unknown Source)
+      	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+      	at java.lang.reflect.Method.invoke(Method.java:497)
+      	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:79)
+      	at com.sun.proxy.$Proxy40.afterNavigateTo(Unknown Source)
+      	at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:161)
+      	at org.jenkinsci.test.acceptance.po.CapybaraPortingLayerImpl.visit(CapybaraPortingLayerImpl.java:77)
+      	at org.jenkinsci.test.acceptance.steps.JobSteps.I_configure_the_job(JobSteps.java:43)
+      	at ✽.When I configure the job(freestyle_build.feature:160)
+
+    And I use "custom_workspace" as custom workspace                                # JobConfigurationSteps.I_use_as_custom_workspace(String)
+    And I save the job                                                              # JobSteps.I_save_the_job()
+    And I build the job                                                             # JobSteps.I_build_the_job()
+    Then console output should match "^Building in workspace (.*)custom_workspace$" # JobSteps.console_output_should_match(Should,String)
+
+16 Scenarios (5 failed, 11 passed)
+116 Steps (5 failed, 17 skipped, 94 passed)
+21m3.982s
+
+org.openqa.selenium.UnhandledAlertException: Unexpected modal dialog (text: This page is asking you to confirm that you want to leave - data you have entered may not be saved.): This page is asking you to confirm that you want to leave - data you have entered may not be saved.
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'Abduls-MBP.home', ip: '192.168.1.8', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.5', java.version: '1.8.0_60'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 0da8af3a-cd65-cc49-96eb-923c228fe65e
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.createUnhandledAlertException(ErrorHandler.java:187)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:154)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+	at org.openqa.selenium.remote.RemoteWebDriver.getPageSource(RemoteWebDriver.java:455)
+	at sun.reflect.GeneratedMethodAccessor23.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:102)
+	at com.sun.proxy.$Proxy41.getPageSource(Unknown Source)
+	at org.jenkinsci.test.acceptance.selenium.SanityChecker.isFastPath(SanityChecker.java:88)
+	at org.jenkinsci.test.acceptance.selenium.SanityChecker.checkSanity(SanityChecker.java:59)
+	at org.jenkinsci.test.acceptance.selenium.SanityChecker.afterNavigateTo(SanityChecker.java:45)
+	at sun.reflect.GeneratedMethodAccessor28.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:79)
+	at com.sun.proxy.$Proxy40.afterNavigateTo(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:161)
+	at org.jenkinsci.test.acceptance.po.CapybaraPortingLayerImpl.visit(CapybaraPortingLayerImpl.java:77)
+	at org.jenkinsci.test.acceptance.po.PageObject.visit(PageObject.java:68)
+	at org.jenkinsci.test.acceptance.steps.GeneralSteps.I_visit_the_home_page(GeneralSteps.java:17)
+	at ✽.And I visit the home page(freestyle_build.feature:12)
+
+org.openqa.selenium.UnhandledAlertException: Unexpected modal dialog (text: This page is asking you to confirm that you want to leave - data you have entered may not be saved.): This page is asking you to confirm that you want to leave - data you have entered may not be saved.
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'Abduls-MBP.home', ip: '192.168.1.8', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.5', java.version: '1.8.0_60'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ef092b5b-c992-f644-97fa-773e554b3791
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.createUnhandledAlertException(ErrorHandler.java:187)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:154)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+	at org.openqa.selenium.remote.RemoteWebDriver.getPageSource(RemoteWebDriver.java:455)
+	at sun.reflect.GeneratedMethodAccessor23.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:102)
+	at com.sun.proxy.$Proxy41.getPageSource(Unknown Source)
+	at org.jenkinsci.test.acceptance.selenium.SanityChecker.isFastPath(SanityChecker.java:88)
+	at org.jenkinsci.test.acceptance.selenium.SanityChecker.checkSanity(SanityChecker.java:59)
+	at org.jenkinsci.test.acceptance.selenium.SanityChecker.afterNavigateTo(SanityChecker.java:45)
+	at sun.reflect.GeneratedMethodAccessor28.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:79)
+	at com.sun.proxy.$Proxy40.afterNavigateTo(Unknown Source)
+<<<RESPONSE (201 Created): /testdb/TestCase
+	at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:161)
+	at org.jenkinsci.test.acceptance.po.CapybaraPortingLayerImpl.visit(CapybaraPortingLayerImpl.java:77)
+	at org.jenkinsci.test.acceptance.steps.JobSteps.I_configure_the_job(JobSteps.java:43)
+	at ✽.When I configure the job(freestyle_build.feature:33)
+
+[WARN] [10/01/2015 19:55:35.412] [default-akka.actor.default-dispatcher-129] [ActorSystem(default)] Illegal response header: Illegal 'etag' header: Invalid input '5', expected 'W' or '"' (line 1, column 1): 560dc7f7fbeaf7a200c9bf3c
+^
+org.openqa.selenium.UnhandledAlertException: Unexpected modal dialog (text: This page is asking you to confirm that you want to leave - data you have entered may not be saved.): This page is asking you to confirm that you want to leave - data you have entered may not be saved.
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'Abduls-MBP.home', ip: '192.168.1.8', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.5', java.version: '1.8.0_60'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 57581ba8-9008-ee42-acc6-827bdd51c993
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.createUnhandledAlertException(ErrorHandler.java:187)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:154)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+	at org.openqa.selenium.remote.RemoteWebDriver.getPageSource(RemoteWebDriver.java:455)
+	at sun.reflect.GeneratedMethodAccessor23.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:102)
+	at com.sun.proxy.$Proxy41.getPageSource(Unknown Source)
+	at org.jenkinsci.test.acceptance.selenium.SanityChecker.isFastPath(SanityChecker.java:88)
+	at org.jenkinsci.test.acceptance.selenium.SanityChecker.checkSanity(SanityChecker.java:59)
+	at org.jenkinsci.test.acceptance.selenium.SanityChecker.afterNavigateTo(SanityChecker.java:45)
+	at sun.reflect.GeneratedMethodAccessor28.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:79)
+	at com.sun.proxy.$Proxy40.afterNavigateTo(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:161)
+	at org.jenkinsci.test.acceptance.po.CapybaraPortingLayerImpl.visit(CapybaraPortingLayerImpl.java:77)
+	at org.jenkinsci.test.acceptance.po.PageObject.visit(PageObject.java:68)
+	at org.jenkinsci.test.acceptance.steps.GeneralSteps.I_visit_the_home_page(GeneralSteps.java:17)
+	at ✽.And I visit the home page(freestyle_build.feature:73)
+
+org.openqa.selenium.UnhandledAlertException: Unexpected modal dialog (text: This page is asking you to confirm that you want to leave - data you have entered may not be saved.): This page is asking you to confirm that you want to leave - data you have entered may not be saved.
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'Abduls-MBP.home', ip: '192.168.1.8', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.5', java.version: '1.8.0_60'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 226a5b94-ed11-4b48-846f-f37ba5b723de
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.createUnhandledAlertException(ErrorHandler.java:187)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:154)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+	at org.openqa.selenium.remote.RemoteWebDriver.getPageSource(RemoteWebDriver.java:455)
+	at sun.reflect.GeneratedMethodAccessor23.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:102)
+	at com.sun.proxy.$Proxy41.getPageSource(Unknown Source)
+	at org.jenkinsci.test.acceptance.selenium.SanityChecker.isFastPath(SanityChecker.java:88)
+	at org.jenkinsci.test.acceptance.selenium.SanityChecker.checkSanity(SanityChecker.java:59)
+	at org.jenkinsci.test.acceptance.selenium.SanityChecker.afterNavigateTo(SanityChecker.java:45)
+	at sun.reflect.GeneratedMethodAccessor28.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:79)
+	at com.sun.proxy.$Proxy40.afterNavigateTo(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:161)
+	at org.jenkinsci.test.acceptance.po.CapybaraPortingLayerImpl.visit(CapybaraPortingLayerImpl.java:77)
+	at org.jenkinsci.test.acceptance.steps.JobSteps.I_configure_the_job(JobSteps.java:43)
+	at ✽.When I configure the job(freestyle_build.feature:151)
+
+org.openqa.selenium.UnhandledAlertException: Unexpected modal dialog (text: This page is asking you to confirm that you want to leave - data you have entered may not be saved.): This page is asking you to confirm that you want to leave - data you have entered may not be saved.
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'Abduls-MBP.home', ip: '192.168.1.8', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.5', java.version: '1.8.0_60'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5d2d2c10-f89f-d642-81a6-cb92ab5e058c
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.createUnhandledAlertException(ErrorHandler.java:187)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:154)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+	at org.openqa.selenium.remote.RemoteWebDriver.getPageSource(RemoteWebDriver.java:455)
+	at sun.reflect.GeneratedMethodAccessor23.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:102)
+	at com.sun.proxy.$Proxy41.getPageSource(Unknown Source)
+	at org.jenkinsci.test.acceptance.selenium.SanityChecker.isFastPath(SanityChecker.java:88)
+	at org.jenkinsci.test.acceptance.selenium.SanityChecker.checkSanity(SanityChecker.java:59)
+	at org.jenkinsci.test.acceptance.selenium.SanityChecker.afterNavigateTo(SanityChecker.java:45)
+	at sun.reflect.GeneratedMethodAccessor28.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:79)
+	at com.sun.proxy.$Proxy40.afterNavigateTo(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:161)
+	at org.jenkinsci.test.acceptance.po.CapybaraPortingLayerImpl.visit(CapybaraPortingLayerImpl.java:77)
+	at org.jenkinsci.test.acceptance.steps.JobSteps.I_configure_the_job(JobSteps.java:43)
+	at ✽.When I configure the job(freestyle_build.feature:160)
+
+running with given plugins: []
+=== Starting show_summary(plugins.JobParameterSummaryPluginTest)
+Starting Jenkins: JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home JENKINS_HOME=/Users/abduljewel/Documents/c/spiderqa/sample-test-projects/acceptance-test-harness/target/jenkins696401535831315653home /Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/bin/java -Duser.language=en -jar ./jenkins.war --ajp13Port=-1 --httpPort=63336
+master63336|Running from: /Users/abduljewel/Documents/c/spiderqa/sample-test-projects/acceptance-test-harness/jenkins.war
+master63336|webroot: EnvVars.masterEnvVars.get("JENKINS_HOME")
+master63336|Oct 01, 2015 7:55:41 PM winstone.Logger logInternal
+master63336|INFO: Beginning extraction from war file
+master63336|Oct 01, 2015 7:55:44 PM org.eclipse.jetty.util.log.JavaUtilLog info
+master63336|INFO: jetty-winstone-2.8
+master63336|Oct 01, 2015 7:55:48 PM org.eclipse.jetty.util.log.JavaUtilLog info
+master63336|INFO: NO JSP Support for , did not find org.apache.jasper.servlet.JspServlet
+master63336|Jenkins home directory: /Users/abduljewel/Documents/c/spiderqa/sample-test-projects/acceptance-test-harness/target/jenkins696401535831315653home found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+master63336|Oct 01, 2015 7:55:51 PM org.eclipse.jetty.util.log.JavaUtilLog info
+master63336|INFO: Started SelectChannelConnector@0.0.0.0:63336
+master63336|Oct 01, 2015 7:55:51 PM winstone.Logger logInternal
+master63336|INFO: Winstone Servlet Engine v2.0 running: controlPort=disabled
+master63336|Oct 01, 2015 7:55:51 PM jenkins.InitReactorRunner$1 onAttained
+master63336|INFO: Started initialization
+master63336|Oct 01, 2015 7:56:22 PM jenkins.InitReactorRunner$1 onAttained
+master63336|INFO: Listed all plugins
+master63336|Oct 01, 2015 7:56:22 PM jenkins.InitReactorRunner$1 onAttained
+master63336|INFO: Prepared all plugins
+master63336|Oct 01, 2015 7:56:22 PM jenkins.InitReactorRunner$1 onAttained
+master63336|INFO: Started all plugins
+master63336|Oct 01, 2015 7:56:22 PM jenkins.InitReactorRunner$1 onAttained
+master63336|INFO: Augmented all extensions
+master63336|Oct 01, 2015 7:56:27 PM jenkins.InitReactorRunner$1 onAttained
+master63336|INFO: Loaded all jobs
+master63336|Oct 01, 2015 7:56:30 PM hudson.model.AsyncPeriodicWork$1 run
+master63336|INFO: Started Download metadata
+master63336|Oct 01, 2015 7:56:31 PM org.jenkinsci.main.modules.sshd.SSHD start
+master63336|INFO: Started SSHD at port 53918
+master63336|Oct 01, 2015 7:56:31 PM jenkins.InitReactorRunner$1 onAttained
+master63336|INFO: Completed initialization
+master63336|Oct 01, 2015 7:56:31 PM hudson.UDPBroadcastThread run
+master63336|WARNING: UDP handling problem
+master63336|java.net.SocketException: Can't assign requested address
+master63336|	at java.net.PlainDatagramSocketImpl.join(Native Method)
+master63336|	at java.net.AbstractPlainDatagramSocketImpl.join(AbstractPlainDatagramSocketImpl.java:179)
+master63336|	at java.net.MulticastSocket.joinGroup(MulticastSocket.java:323)
+master63336|	at hudson.UDPBroadcastThread.run(UDPBroadcastThread.java:77)
+master63336|
+master63336|Oct 01, 2015 7:56:31 PM hudson.WebAppMain$3 run
+master63336|INFO: Jenkins is fully up and running
+master63336|Oct 01, 2015 7:56:34 PM hudson.model.UpdateSite updateData
+master63336|INFO: Obtained the latest update center data file for UpdateSource default
+master63336|Oct 01, 2015 7:56:35 PM hudson.model.DownloadService$Downloadable load
+master63336|INFO: Obtained the updated data file for hudson.tasks.Maven.MavenInstaller
+master63336|Oct 01, 2015 7:56:36 PM hudson.model.DownloadService$Downloadable load
+master63336|INFO: Obtained the updated data file for hudson.tasks.Ant.AntInstaller
+Jenkins is stopped
+]]></system-out>
+    <system-err><![CDATA[Oct 01, 2015 7:55:40 PM org.jenkinsci.test.acceptance.controller.LocalController startNow
+INFO: Waiting for Jenkins to become running in http://127.0.0.1:63336/
+Oct 01, 2015 7:56:31 PM org.jenkinsci.test.acceptance.controller.LocalController startNow
+INFO: Jenkins is running in http://127.0.0.1:63336/
+Oct 01, 2015 7:56:37 PM org.jenkinsci.test.acceptance.po.PluginManager installationStatus
+INFO: job-parameter-summary is not installed
+Oct 01, 2015 7:56:37 PM org.jenkinsci.test.acceptance.po.PluginManager installationStatus
+INFO: job-parameter-summary is not installed
+Oct 01, 2015 7:56:37 PM org.jenkinsci.test.acceptance.po.PluginManager installationStatus
+INFO: job-parameter-summary@0.3 is not installed
+]]></system-err>
+  </testcase>
+</testsuite>

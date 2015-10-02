@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="plugins.AntPluginTest" time="89.24" tests="3" errors="0" skipped="2" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.60-b23"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/abduljewel/Documents/c/spiderqa/sample-test-projects/acceptance-test-harness"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/abduljewel/Documents/c/spiderqa/sample-test-projects/acceptance-test-harness"/>
+    <property name="java.runtime.version" value="1.8.0_60-b27"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/lk/l859yg616c9cbtgfnt9szgjc0000gn/T/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/usr/local/Cellar/maven/3.3.3/libexec/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/abduljewel/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.10.5"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/abduljewel"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="abduljewel"/>
+    <property name="java.class.path" value="/usr/local/Cellar/maven/3.3.3/libexec/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_60"/>
+    <property name="java.ext.dirs" value="/Users/abduljewel/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/local/Cellar/maven/3.3.3/libexec"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="use_default_ant_installation" classname="plugins.AntPluginTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@f2d890c[
+  name=findJobThroughRegexp
+  title=<null>
+  description=<null>
+  failure=<null>
+  start=1443742474560
+  stop=1443742534503
+  status=PASSED
+  severity=<null>
+  steps=[]
+  attachments=[]
+  labels=[ru.yandex.qatools.allure.model.Label@1a2e0d57, ru.yandex.qatools.allure.model.Label@5f025000]
+  parameters=<null>
+]
+testCaseResult={
+   "start" : 1443742474560,
+   "stop" : 1443742534503,
+   "status" : "passed",
+   "name" : "findJobThroughRegexp",
+   "steps" : {
+      "step" : [ ]
+   },
+   "attachments" : {
+      "attachment" : [ ]
+   },
+   "labels" : {
+      "label" : [ {
+         "name" : "host",
+         "value" : "Abduls-MBP.home"
+      }, {
+         "name" : "thread",
+         "value" : "35251@Abduls-MBP.home.main(1)"
+      } ]
+   }
+}
+testCase=ru.yandex.qatools.allure.model.TestCase@10980560[
+  _id=161169b6-d3e4-42c7-bbf3-29353a12844c
+  executionId=62229910-35f6-40ea-8439-ec3c3d9421df
+  result=ru.yandex.qatools.allure.model.TestCaseResult@f2d890c
+]
+testCase={
+   "_id" : "161169b6-d3e4-42c7-bbf3-29353a12844c",
+   "executionId" : "62229910-35f6-40ea-8439-ec3c3d9421df",
+   "result" : {
+      "start" : 1443742474560,
+      "stop" : 1443742534503,
+      "status" : "passed",
+      "name" : "findJobThroughRegexp",
+      "steps" : {
+         "step" : [ ]
+      },
+      "attachments" : {
+         "attachment" : [ ]
+      },
+      "labels" : {
+         "label" : [ {
+            "name" : "host",
+            "value" : "Abduls-MBP.home"
+         }, {
+            "name" : "thread",
+            "value" : "35251@Abduls-MBP.home.main(1)"
+         } ]
+      }
+   }
+}
+>>>REQUEST: /testdb/TestCase
+[WARN] [10/01/2015 19:35:34.522] [default-akka.actor.default-dispatcher-28] [ActorSystem(default)] Illegal response header: Illegal 'etag' header: Invalid input '5', expected 'W' or '"' (line 1, column 1): 560dc346fbeaf7a200c9be44
+^
+<<<RESPONSE (201 Created): /testdb/TestCase
+running with given plugins: []
+=== Starting use_default_ant_installation(plugins.AntPluginTest)
+Starting Jenkins: JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home JENKINS_HOME=/Users/abduljewel/Documents/c/spiderqa/sample-test-projects/acceptance-test-harness/target/jenkins7671695953013479426home /Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/bin/java -Duser.language=en -jar ./jenkins.war --ajp13Port=-1 --httpPort=54267
+master54267|Running from: /Users/abduljewel/Documents/c/spiderqa/sample-test-projects/acceptance-test-harness/jenkins.war
+master54267|webroot: EnvVars.masterEnvVars.get("JENKINS_HOME")
+master54267|Oct 01, 2015 7:35:35 PM winstone.Logger logInternal
+master54267|INFO: Beginning extraction from war file
+master54267|Oct 01, 2015 7:35:38 PM org.eclipse.jetty.util.log.JavaUtilLog info
+master54267|INFO: jetty-winstone-2.8
+master54267|Oct 01, 2015 7:35:41 PM org.eclipse.jetty.util.log.JavaUtilLog info
+master54267|INFO: NO JSP Support for , did not find org.apache.jasper.servlet.JspServlet
+master54267|Jenkins home directory: /Users/abduljewel/Documents/c/spiderqa/sample-test-projects/acceptance-test-harness/target/jenkins7671695953013479426home found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+master54267|Oct 01, 2015 7:35:43 PM org.eclipse.jetty.util.log.JavaUtilLog info
+master54267|INFO: Started SelectChannelConnector@0.0.0.0:54267
+master54267|Oct 01, 2015 7:35:43 PM winstone.Logger logInternal
+master54267|INFO: Winstone Servlet Engine v2.0 running: controlPort=disabled
+master54267|Oct 01, 2015 7:35:43 PM jenkins.InitReactorRunner$1 onAttained
+master54267|INFO: Started initialization
+master54267|Oct 01, 2015 7:36:10 PM jenkins.InitReactorRunner$1 onAttained
+master54267|INFO: Listed all plugins
+master54267|Oct 01, 2015 7:36:10 PM jenkins.InitReactorRunner$1 onAttained
+master54267|INFO: Prepared all plugins
+master54267|Oct 01, 2015 7:36:10 PM jenkins.InitReactorRunner$1 onAttained
+master54267|INFO: Started all plugins
+master54267|Oct 01, 2015 7:36:10 PM jenkins.InitReactorRunner$1 onAttained
+master54267|INFO: Augmented all extensions
+master54267|Oct 01, 2015 7:36:14 PM jenkins.InitReactorRunner$1 onAttained
+master54267|INFO: Loaded all jobs
+master54267|Oct 01, 2015 7:36:18 PM hudson.model.AsyncPeriodicWork$1 run
+master54267|INFO: Started Download metadata
+master54267|Oct 01, 2015 7:36:19 PM org.jenkinsci.main.modules.sshd.SSHD start
+master54267|INFO: Started SSHD at port 62230
+master54267|Oct 01, 2015 7:36:19 PM jenkins.InitReactorRunner$1 onAttained
+master54267|INFO: Completed initialization
+master54267|Oct 01, 2015 7:36:19 PM hudson.UDPBroadcastThread run
+master54267|WARNING: UDP handling problem
+master54267|java.net.SocketException: Can't assign requested address
+master54267|	at java.net.PlainDatagramSocketImpl.join(Native Method)
+master54267|	at java.net.AbstractPlainDatagramSocketImpl.join(AbstractPlainDatagramSocketImpl.java:179)
+master54267|	at java.net.MulticastSocket.joinGroup(MulticastSocket.java:323)
+master54267|	at hudson.UDPBroadcastThread.run(UDPBroadcastThread.java:77)
+master54267|
+master54267|Oct 01, 2015 7:36:19 PM hudson.WebAppMain$3 run
+master54267|INFO: Jenkins is fully up and running
+master54267|Oct 01, 2015 7:36:22 PM hudson.model.UpdateSite updateData
+master54267|INFO: Obtained the latest update center data file for UpdateSource default
+master54267|Oct 01, 2015 7:36:22 PM hudson.model.DownloadService$Downloadable load
+master54267|INFO: Obtained the updated data file for hudson.tasks.Maven.MavenInstaller
+master54267|Oct 01, 2015 7:36:22 PM hudson.model.DownloadService$Downloadable load
+master54267|INFO: Obtained the updated data file for hudson.tasks.Ant.AntInstaller
+master54267|Oct 01, 2015 7:36:23 PM hudson.model.DownloadService$Downloadable load
+master54267|INFO: Obtained the updated data file for hudson.tools.JDKInstaller
+master54267|Oct 01, 2015 7:36:23 PM hudson.model.AsyncPeriodicWork$1 run
+master54267|INFO: Finished Download metadata. 5,297 ms
+Skipping use_default_ant_installation(plugins.AntPluginTest): ant is needed for the test but doesn't exist in the system
+Jenkins is stopped
+]]></system-out>
+    <system-err><![CDATA[Oct 01, 2015 7:35:34 PM org.jenkinsci.test.acceptance.controller.LocalController startNow
+INFO: Waiting for Jenkins to become running in http://127.0.0.1:54267/
+Oct 01, 2015 7:36:19 PM org.jenkinsci.test.acceptance.controller.LocalController startNow
+INFO: Jenkins is running in http://127.0.0.1:54267/
+]]></system-err>
+  </testcase>
+  <testcase name="locallyInstalledAnt" classname="plugins.AntPluginTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@72028a45[
+  name=use_default_ant_installation
+  title=<null>
+  description=<null>
+  failure=ru.yandex.qatools.allure.model.Failure@74667e6a
+  start=1443742534526
+  stop=1443742585925
+  status=CANCELED
+  severity=<null>
+  steps=[]
+  attachments=[]
+  labels=[ru.yandex.qatools.allure.model.Label@7b222230, ru.yandex.qatools.allure.model.Label@364b1061]
+  parameters=<null>
+]
+testCaseResult={
+   "start" : 1443742534526,
+   "stop" : 1443742585925,
+   "status" : "canceled",
+   "name" : "use_default_ant_installation",
+   "failure" : {
+      "message" : "AssumptionViolatedException: ant is needed for the test but doesn't exist in the system",
+      "stack-trace" : "org.junit.internal.AssumptionViolatedException: ant is needed for the test but doesn't exist in the system\n\tat org.jenkinsci.test.acceptance.junit.Native$RuleImpl$1.verifyNativeCommandPresent(Native.java:50)\n\tat org.jenkinsci.test.acceptance.junit.Native$RuleImpl$1.evaluate(Native.java:40)\n\tat org.jenkinsci.test.acceptance.junit.JenkinsAcceptanceTestRule$1$2$1.evaluate(JenkinsAcceptanceTestRule.java:129)\n\tat org.jenkinsci.test.acceptance.junit.FilterRule$1.evaluate(FilterRule.java:62)\n\tat org.jenkinsci.test.acceptance.junit.JenkinsAcceptanceTestRule$1.evaluate(JenkinsAcceptanceTestRule.java:55)\n\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n"
+   },
+   "steps" : {
+      "step" : [ ]
+   },
+   "attachments" : {
+      "attachment" : [ ]
+   },
+   "labels" : {
+      "label" : [ {
+         "name" : "host",
+         "value" : "Abduls-MBP.home"
+      }, {
+         "name" : "thread",
+         "value" : "35251@Abduls-MBP.home.main(1)"
+      } ]
+   }
+}
+testCase=ru.yandex.qatools.allure.model.TestCase@50fdf44f[
+  _id=31aa95e8-6995-4bad-965c-aab27c0a3f11
+  executionId=62229910-35f6-40ea-8439-ec3c3d9421df
+  result=ru.yandex.qatools.allure.model.TestCaseResult@72028a45
+]
+testCase={
+   "_id" : "31aa95e8-6995-4bad-965c-aab27c0a3f11",
+   "executionId" : "62229910-35f6-40ea-8439-ec3c3d9421df",
+   "result" : {
+      "start" : 1443742534526,
+      "stop" : 1443742585925,
+      "status" : "canceled",
+      "name" : "use_default_ant_installation",
+      "failure" : {
+         "message" : "AssumptionViolatedException: ant is needed for the test but doesn't exist in the system",
+         "stack-trace" : "org.junit.internal.AssumptionViolatedException: ant is needed for the test but doesn't exist in the system\n\tat org.jenkinsci.test.acceptance.junit.Native$RuleImpl$1.verifyNativeCommandPresent(Native.java:50)\n\tat org.jenkinsci.test.acceptance.junit.Native$RuleImpl$1.evaluate(Native.java:40)\n\tat org.jenkinsci.test.acceptance.junit.JenkinsAcceptanceTestRule$1$2$1.evaluate(JenkinsAcceptanceTestRule.java:129)\n\tat org.jenkinsci.test.acceptance.junit.FilterRule$1.evaluate(FilterRule.java:62)\n\tat org.jenkinsci.test.acceptance.junit.JenkinsAcceptanceTestRule$1.evaluate(JenkinsAcceptanceTestRule.java:55)\n\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n"
+      },
+      "steps" : {
+         "step" : [ ]
+      },
+      "attachments" : {
+         "attachment" : [ ]
+      },
+      "labels" : {
+         "label" : [ {
+            "name" : "host",
+            "value" : "Abduls-MBP.home"
+         }, {
+            "name" : "thread",
+            "value" : "35251@Abduls-MBP.home.main(1)"
+         } ]
+      }
+   }
+}
+>>>REQUEST: /testdb/TestCase
+[WARN] [10/01/2015 19:36:25.987] [default-akka.actor.default-dispatcher-10] [ActorSystem(default)] Illegal response header: Illegal 'etag' header: Invalid input '5', expected 'W' or '"' (line 1, column 1): 560dc379fbeaf7a200c9be52
+^
+<<<RESPONSE (201 Created): /testdb/TestCase
+running with given plugins: []
+=== Starting locallyInstalledAnt(plugins.AntPluginTest)
+Starting Jenkins: JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home JENKINS_HOME=/Users/abduljewel/Documents/c/spiderqa/sample-test-projects/acceptance-test-harness/target/jenkins3904892006992308287home /Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/bin/java -Duser.language=en -jar ./jenkins.war --ajp13Port=-1 --httpPort=57183
+master57183|Running from: /Users/abduljewel/Documents/c/spiderqa/sample-test-projects/acceptance-test-harness/jenkins.war
+master57183|webroot: EnvVars.masterEnvVars.get("JENKINS_HOME")
+master57183|Oct 01, 2015 7:36:26 PM winstone.Logger logInternal
+master57183|INFO: Beginning extraction from war file
+master57183|Oct 01, 2015 7:36:29 PM org.eclipse.jetty.util.log.JavaUtilLog info
+master57183|INFO: jetty-winstone-2.8
+master57183|Oct 01, 2015 7:36:33 PM org.eclipse.jetty.util.log.JavaUtilLog info
+master57183|INFO: NO JSP Support for , did not find org.apache.jasper.servlet.JspServlet
+master57183|Jenkins home directory: /Users/abduljewel/Documents/c/spiderqa/sample-test-projects/acceptance-test-harness/target/jenkins3904892006992308287home found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+master57183|Oct 01, 2015 7:36:36 PM org.eclipse.jetty.util.log.JavaUtilLog info
+master57183|INFO: Started SelectChannelConnector@0.0.0.0:57183
+master57183|Oct 01, 2015 7:36:36 PM winstone.Logger logInternal
+master57183|INFO: Winstone Servlet Engine v2.0 running: controlPort=disabled
+master57183|Oct 01, 2015 7:36:36 PM jenkins.InitReactorRunner$1 onAttained
+master57183|INFO: Started initialization
+master57183|Oct 01, 2015 7:36:58 PM jenkins.InitReactorRunner$1 onAttained
+master57183|INFO: Listed all plugins
+master57183|Oct 01, 2015 7:36:58 PM jenkins.InitReactorRunner$1 onAttained
+master57183|INFO: Prepared all plugins
+master57183|Oct 01, 2015 7:36:58 PM jenkins.InitReactorRunner$1 onAttained
+master57183|INFO: Started all plugins
+master57183|Oct 01, 2015 7:36:58 PM jenkins.InitReactorRunner$1 onAttained
+master57183|INFO: Augmented all extensions
+master57183|Oct 01, 2015 7:37:03 PM jenkins.InitReactorRunner$1 onAttained
+master57183|INFO: Loaded all jobs
+master57183|Oct 01, 2015 7:37:06 PM hudson.model.AsyncPeriodicWork$1 run
+master57183|INFO: Started Download metadata
+master57183|Oct 01, 2015 7:37:07 PM org.jenkinsci.main.modules.sshd.SSHD start
+master57183|INFO: Started SSHD at port 62478
+master57183|Oct 01, 2015 7:37:07 PM jenkins.InitReactorRunner$1 onAttained
+master57183|INFO: Completed initialization
+master57183|Oct 01, 2015 7:37:07 PM hudson.UDPBroadcastThread run
+master57183|WARNING: UDP handling problem
+master57183|java.net.SocketException: Can't assign requested address
+master57183|	at java.net.PlainDatagramSocketImpl.join(Native Method)
+master57183|	at java.net.AbstractPlainDatagramSocketImpl.join(AbstractPlainDatagramSocketImpl.java:179)
+master57183|	at java.net.MulticastSocket.joinGroup(MulticastSocket.java:323)
+master57183|	at hudson.UDPBroadcastThread.run(UDPBroadcastThread.java:77)
+master57183|
+master57183|Oct 01, 2015 7:37:07 PM hudson.WebAppMain$3 run
+master57183|INFO: Jenkins is fully up and running
+master57183|Oct 01, 2015 7:37:11 PM hudson.model.UpdateSite updateData
+master57183|INFO: Obtained the latest update center data file for UpdateSource default
+master57183|Oct 01, 2015 7:37:12 PM hudson.model.DownloadService$Downloadable load
+master57183|INFO: Obtained the updated data file for hudson.tasks.Maven.MavenInstaller
+master57183|Oct 01, 2015 7:37:12 PM hudson.model.DownloadService$Downloadable load
+master57183|INFO: Obtained the updated data file for hudson.tasks.Ant.AntInstaller
+master57183|Oct 01, 2015 7:37:13 PM hudson.model.DownloadService$Downloadable load
+master57183|INFO: Obtained the updated data file for hudson.tools.JDKInstaller
+master57183|Oct 01, 2015 7:37:13 PM hudson.model.AsyncPeriodicWork$1 run
+master57183|INFO: Finished Download metadata. 6,634 ms
+Skipping locallyInstalledAnt(plugins.AntPluginTest): ant is needed for the test but doesn't exist in the system
+Jenkins is stopped
+]]></system-out>
+    <system-err><![CDATA[Oct 01, 2015 7:36:26 PM org.jenkinsci.test.acceptance.controller.LocalController startNow
+INFO: Waiting for Jenkins to become running in http://127.0.0.1:57183/
+Oct 01, 2015 7:37:07 PM org.jenkinsci.test.acceptance.controller.LocalController startNow
+INFO: Jenkins is running in http://127.0.0.1:57183/
+]]></system-err>
+  </testcase>
+  <testcase name="autoInstallAnt" classname="plugins.AntPluginTest" time="89.24"/>
+</testsuite>

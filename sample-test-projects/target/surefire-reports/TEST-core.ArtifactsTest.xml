@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="core.ArtifactsTest" time="166.904" tests="2" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.60-b23"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/abduljewel/Documents/c/spiderqa/sample-test-projects/acceptance-test-harness"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/abduljewel/Documents/c/spiderqa/sample-test-projects/acceptance-test-harness"/>
+    <property name="java.runtime.version" value="1.8.0_60-b27"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/lk/l859yg616c9cbtgfnt9szgjc0000gn/T/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/usr/local/Cellar/maven/3.3.3/libexec/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/abduljewel/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.10.5"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/abduljewel"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="abduljewel"/>
+    <property name="java.class.path" value="/usr/local/Cellar/maven/3.3.3/libexec/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_60"/>
+    <property name="java.ext.dirs" value="/Users/abduljewel/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/local/Cellar/maven/3.3.3/libexec"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="test_many_small_files" classname="core.ArtifactsTest" time="90.597"/>
+  <testcase name="test_large_file" classname="core.ArtifactsTest" time="76.307">
+    <failure message="&#10;Expected: is &lt;200&gt;&#10;     but: was &lt;404&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+Expected: is <200>
+     but: was <404>
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)
+	at org.jenkinsci.test.acceptance.po.Artifact.assertThatExists(Artifact.java:51)
+	at core.ArtifactsTest.test_large_file(ArtifactsTest.java:53)
+]]></failure>
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@7e4d2287[
+  name=test_many_small_files
+  title=<null>
+  description=<null>
+  failure=<null>
+  start=1443742204474
+  stop=1443742295043
+  status=PASSED
+  severity=<null>
+  steps=[]
+  attachments=[]
+  labels=[ru.yandex.qatools.allure.model.Label@3f4b840d, ru.yandex.qatools.allure.model.Label@31464a43]
+  parameters=<null>
+]
+testCaseResult={
+   "start" : 1443742204474,
+   "stop" : 1443742295043,
+   "status" : "passed",
+   "name" : "test_many_small_files",
+   "steps" : {
+      "step" : [ ]
+   },
+   "attachments" : {
+      "attachment" : [ ]
+   },
+   "labels" : {
+      "label" : [ {
+         "name" : "host",
+         "value" : "Abduls-MBP.home"
+      }, {
+         "name" : "thread",
+         "value" : "35249@Abduls-MBP.home.main(1)"
+      } ]
+   }
+}
+testCase=ru.yandex.qatools.allure.model.TestCase@7d070ef5[
+  _id=05cf6282-8d7b-48a5-8e09-7756197ff447
+  executionId=745bfd3b-0516-4592-8852-a31b4b74d11f
+  result=ru.yandex.qatools.allure.model.TestCaseResult@7e4d2287
+]
+testCase={
+   "_id" : "05cf6282-8d7b-48a5-8e09-7756197ff447",
+   "executionId" : "745bfd3b-0516-4592-8852-a31b4b74d11f",
+   "result" : {
+      "start" : 1443742204474,
+      "stop" : 1443742295043,
+      "status" : "passed",
+      "name" : "test_many_small_files",
+      "steps" : {
+         "step" : [ ]
+      },
+      "attachments" : {
+         "attachment" : [ ]
+      },
+      "labels" : {
+         "label" : [ {
+            "name" : "host",
+            "value" : "Abduls-MBP.home"
+         }, {
+            "name" : "thread",
+            "value" : "35249@Abduls-MBP.home.main(1)"
+         } ]
+      }
+   }
+}
+>>>REQUEST(1): /testdb
+>>>REQUEST(1): /testdb/TestCase
+>>>REQUEST(1): /testdb/TestSuiteResult
+>>>REQUEST(1): /testdb/Execution
+[WARN] [10/01/2015 19:31:37.532] [default-akka.actor.default-dispatcher-14] [ActorSystem(default)] Illegal response header: Illegal 'etag' header: Invalid input '5', expected 'W' or '"' (line 1, column 1): 5604cb5d77c805cb79ec7362
+^
+[WARN] [10/01/2015 19:31:37.532] [default-akka.actor.default-dispatcher-3] [ActorSystem(default)] Illegal response header: Illegal 'etag' header: Invalid input '5', expected 'W' or '"' (line 1, column 1): 55f23ecfd4c6a3f68296cd8c
+^
+[WARN] [10/01/2015 19:31:37.532] [default-akka.actor.default-dispatcher-21] [ActorSystem(default)] Illegal response header: Illegal 'etag' header: Invalid input '5', expected 'W' or '"' (line 1, column 1): 560cb1acfbeaf7a200c9be23
+^
+[WARN] [10/01/2015 19:31:37.532] [default-akka.actor.default-dispatcher-10] [ActorSystem(default)] Illegal response header: Illegal 'etag' header: Invalid input '5', expected 'W' or '"' (line 1, column 1): 5601cffe77c82eb98f9c6f93
+^
+<<<RESPONSE(1) (409 Conflict): /testdb
+<<<RESPONSE(1) (409 Conflict): /testdb/TestCase
+<<<RESPONSE(1) (409 Conflict): /testdb/TestSuiteResult
+<<<RESPONSE(1) (409 Conflict): /testdb/Execution
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+etag=55f23ecfd4c6a3f68296cd8c
+Access-Control-Allow-Credentials=true
+Access-Control-Expose-Headers=Location, ETag, Auth-Token, Auth-Token-Valid-Until, Auth-Token-Location
+Date=Thu, 01 Oct 2015 23:31:37 GMT
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+etag=5604cb5d77c805cb79ec7362
+Connection=keep-alive
+Access-Control-Allow-Credentials=true
+Access-Control-Allow-Origin=*
+etag=560cb1acfbeaf7a200c9be23
+Access-Control-Allow-Credentials=true
+Access-Control-Expose-Headers=Location, ETag, Auth-Token, Auth-Token-Valid-Until, Auth-Token-Location
+Date=Thu, 01 Oct 2015 23:31:37 GMT
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+etag=5601cffe77c82eb98f9c6f93
+Access-Control-Allow-Credentials=true
+Access-Control-Expose-Headers=Location, ETag, Auth-Token, Auth-Token-Valid-Until, Auth-Token-Location
+Date=Thu, 01 Oct 2015 23:31:37 GMT
+Access-Control-Expose-Headers=Location, ETag, Auth-Token, Auth-Token-Valid-Until, Auth-Token-Location
+Date=Thu, 01 Oct 2015 23:31:37 GMT
+>>>REQUEST: /testdb/TestCase
+[WARN] [10/01/2015 19:31:37.607] [default-akka.actor.default-dispatcher-25] [ActorSystem(default)] Illegal response header: Illegal 'etag' header: Invalid input '5', expected 'W' or '"' (line 1, column 1): 560dc259fbeaf7a200c9be2c
+^
+<<<RESPONSE (201 Created): /testdb/TestCase
+running with given plugins: []
+=== Starting test_large_file(core.ArtifactsTest)
+Starting Jenkins: JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home JENKINS_HOME=/Users/abduljewel/Documents/c/spiderqa/sample-test-projects/acceptance-test-harness/target/jenkins7334693978754619849home /Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/bin/java -Duser.language=en -jar ./jenkins.war --ajp13Port=-1 --httpPort=54970
+master54970|Running from: /Users/abduljewel/Documents/c/spiderqa/sample-test-projects/acceptance-test-harness/jenkins.war
+master54970|webroot: EnvVars.masterEnvVars.get("JENKINS_HOME")
+master54970|Oct 01, 2015 7:31:38 PM winstone.Logger logInternal
+master54970|INFO: Beginning extraction from war file
+master54970|Oct 01, 2015 7:31:40 PM org.eclipse.jetty.util.log.JavaUtilLog info
+master54970|INFO: jetty-winstone-2.8
+master54970|Oct 01, 2015 7:31:42 PM org.eclipse.jetty.util.log.JavaUtilLog info
+master54970|INFO: NO JSP Support for , did not find org.apache.jasper.servlet.JspServlet
+master54970|Jenkins home directory: /Users/abduljewel/Documents/c/spiderqa/sample-test-projects/acceptance-test-harness/target/jenkins7334693978754619849home found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+master54970|Oct 01, 2015 7:31:44 PM org.eclipse.jetty.util.log.JavaUtilLog info
+master54970|INFO: Started SelectChannelConnector@0.0.0.0:54970
+master54970|Oct 01, 2015 7:31:44 PM winstone.Logger logInternal
+master54970|INFO: Winstone Servlet Engine v2.0 running: controlPort=disabled
+master54970|Oct 01, 2015 7:31:45 PM jenkins.InitReactorRunner$1 onAttained
+master54970|INFO: Started initialization
+master54970|Oct 01, 2015 7:32:16 PM jenkins.InitReactorRunner$1 onAttained
+master54970|INFO: Listed all plugins
+master54970|Oct 01, 2015 7:32:16 PM jenkins.InitReactorRunner$1 onAttained
+master54970|INFO: Prepared all plugins
+master54970|Oct 01, 2015 7:32:16 PM jenkins.InitReactorRunner$1 onAttained
+master54970|INFO: Started all plugins
+master54970|Oct 01, 2015 7:32:16 PM jenkins.InitReactorRunner$1 onAttained
+master54970|INFO: Augmented all extensions
+master54970|Oct 01, 2015 7:32:20 PM jenkins.InitReactorRunner$1 onAttained
+master54970|INFO: Loaded all jobs
+master54970|Oct 01, 2015 7:32:23 PM hudson.model.AsyncPeriodicWork$1 run
+master54970|INFO: Started Download metadata
+master54970|Oct 01, 2015 7:32:24 PM org.jenkinsci.main.modules.sshd.SSHD start
+master54970|INFO: Started SSHD at port 59701
+master54970|Oct 01, 2015 7:32:24 PM jenkins.InitReactorRunner$1 onAttained
+master54970|INFO: Completed initialization
+master54970|Oct 01, 2015 7:32:24 PM hudson.UDPBroadcastThread run
+master54970|WARNING: UDP handling problem
+master54970|java.net.SocketException: Can't assign requested address
+master54970|	at java.net.PlainDatagramSocketImpl.join(Native Method)
+master54970|	at java.net.AbstractPlainDatagramSocketImpl.join(AbstractPlainDatagramSocketImpl.java:179)
+master54970|	at java.net.MulticastSocket.joinGroup(MulticastSocket.java:323)
+master54970|	at hudson.UDPBroadcastThread.run(UDPBroadcastThread.java:77)
+master54970|
+master54970|Oct 01, 2015 7:32:24 PM hudson.WebAppMain$3 run
+master54970|INFO: Jenkins is fully up and running
+master54970|Oct 01, 2015 7:32:26 PM hudson.model.UpdateSite updateData
+master54970|INFO: Obtained the latest update center data file for UpdateSource default
+master54970|Oct 01, 2015 7:32:27 PM hudson.model.DownloadService$Downloadable load
+master54970|INFO: Obtained the updated data file for hudson.tasks.Maven.MavenInstaller
+master54970|Oct 01, 2015 7:32:28 PM hudson.model.DownloadService$Downloadable load
+master54970|INFO: Obtained the updated data file for hudson.tasks.Ant.AntInstaller
+master54970|Oct 01, 2015 7:32:30 PM hudson.model.DownloadService$Downloadable load
+master54970|INFO: Obtained the updated data file for hudson.tools.JDKInstaller
+master54970|Oct 01, 2015 7:32:30 PM hudson.model.AsyncPeriodicWork$1 run
+master54970|INFO: Finished Download metadata. 7,131 ms
+master54970|Oct 01, 2015 7:32:36 PM hudson.slaves.SlaveComputer tryReconnect
+master54970|INFO: Attempting to reconnect full_advance
+master54970|Oct 01, 2015 7:32:38 PM hudson.slaves.CommandLauncher launch
+master54970|INFO: slave agent launched for full_advance
+master54970|Oct 01, 2015 7:32:51 PM hudson.model.Run execute
+master54970|INFO: crude_tactic #1 main build action completed: SUCCESS
+java.lang.AssertionError: 
+Expected: is <200>
+     but: was <404>
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)
+	at org.jenkinsci.test.acceptance.po.Artifact.assertThatExists(Artifact.java:51)
+	at core.ArtifactsTest.test_large_file(ArtifactsTest.java:53)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.jenkinsci.test.acceptance.junit.JenkinsAcceptanceTestRule$1$2$1.evaluate(JenkinsAcceptanceTestRule.java:129)
+	at org.jenkinsci.test.acceptance.junit.FilterRule$1.evaluate(FilterRule.java:62)
+	at org.jenkinsci.test.acceptance.junit.JenkinsAcceptanceTestRule$1.evaluate(JenkinsAcceptanceTestRule.java:55)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+It looks like the test failed/errored, so here's the console from Jenkins:
+--------------------------------------------------------------------------
+
+Jenkins is stopped
+]]></system-out>
+    <system-err><![CDATA[Oct 01, 2015 7:31:37 PM org.jenkinsci.test.acceptance.controller.LocalController startNow
+INFO: Waiting for Jenkins to become running in http://127.0.0.1:54970/
+Oct 01, 2015 7:32:24 PM org.jenkinsci.test.acceptance.controller.LocalController startNow
+INFO: Jenkins is running in http://127.0.0.1:54970/
+]]></system-err>
+  </testcase>
+</testsuite>

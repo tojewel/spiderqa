@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: core.ArtifactsTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 169.551 sec <<< FAILURE! - in core.ArtifactsTest
+test_large_file(core.ArtifactsTest)  Time elapsed: 76.307 sec  <<< FAILURE!
+java.lang.AssertionError: 
+Expected: is <200>
+     but: was <404>
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)
+	at org.jenkinsci.test.acceptance.po.Artifact.assertThatExists(Artifact.java:51)
+	at core.ArtifactsTest.test_large_file(ArtifactsTest.java:53)
+
