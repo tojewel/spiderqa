@@ -63,23 +63,23 @@
   </properties>
   <testcase name="gerrit_trigger_build_when_draft_published" classname="plugins.GerritTriggerTest" time="0">
     <skipped/>
-    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@6cc8c13c[
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@6a308b5c[
   name=publish_multiple_servers
   title=<null>
   description=<null>
-  failure=ru.yandex.qatools.allure.model.Failure@371cd2fc
-  start=1443743346624
-  stop=1443743346624
+  failure=ru.yandex.qatools.allure.model.Failure@5a0ada8a
+  start=1444528252476
+  stop=1444528252476
   status=PENDING
   severity=<null>
   steps=[]
   attachments=[]
-  labels=[ru.yandex.qatools.allure.model.Label@b32e983, ru.yandex.qatools.allure.model.Label@3c346c45]
+  labels=[ru.yandex.qatools.allure.model.Label@48a3ca1d, ru.yandex.qatools.allure.model.Label@2ec23ac6]
   parameters=<null>
 ]
 testCaseResult={
-   "start" : 1443743346624,
-   "stop" : 1443743346624,
+   "start" : 1444528252476,
+   "stop" : 1444528252476,
    "status" : "pending",
    "name" : "publish_multiple_servers",
    "failure" : {
@@ -95,24 +95,26 @@ testCaseResult={
    "labels" : {
       "label" : [ {
          "name" : "host",
-         "value" : "Abduls-MBP.home"
+         "value" : "MacBook-Pro-2.home"
       }, {
          "name" : "thread",
-         "value" : "35252@Abduls-MBP.home.main(1)"
+         "value" : "3426@MacBook-Pro-2.home.main(1)"
       } ]
    }
 }
-testCase=ru.yandex.qatools.allure.model.TestCase@16df9bde[
-  _id=336c278b-b9d5-4ea1-9666-cb577664326b
-  executionId=7701d757-07c3-4ee5-9df4-52c16ef79685
-  result=ru.yandex.qatools.allure.model.TestCaseResult@6cc8c13c
+testCase=ru.yandex.qatools.allure.model.TestCase@40463e29[
+  _id=fa2de20b-ae42-4533-a68c-3654d986219b
+  executionId=8e6dd7ca-e27b-4013-bda8-bc2788640ddd
+  threadName=dc7331de-b740-4ba3-9907-ee3762987799
+  result=ru.yandex.qatools.allure.model.TestCaseResult@6a308b5c
 ]
 testCase={
-   "_id" : "336c278b-b9d5-4ea1-9666-cb577664326b",
-   "executionId" : "7701d757-07c3-4ee5-9df4-52c16ef79685",
+   "_id" : "fa2de20b-ae42-4533-a68c-3654d986219b",
+   "executionId" : "8e6dd7ca-e27b-4013-bda8-bc2788640ddd",
+   "threadName" : "dc7331de-b740-4ba3-9907-ee3762987799",
    "result" : {
-      "start" : 1443743346624,
-      "stop" : 1443743346624,
+      "start" : 1444528252476,
+      "stop" : 1444528252476,
       "status" : "pending",
       "name" : "publish_multiple_servers",
       "failure" : {
@@ -128,42 +130,38 @@ testCase={
       "labels" : {
          "label" : [ {
             "name" : "host",
-            "value" : "Abduls-MBP.home"
+            "value" : "MacBook-Pro-2.home"
          }, {
             "name" : "thread",
-            "value" : "35252@Abduls-MBP.home.main(1)"
+            "value" : "3426@MacBook-Pro-2.home.main(1)"
          } ]
       }
    }
 }
-[WARN] [10/01/2015 19:49:06.628] [default-akka.actor.default-dispatcher-77] [ActorSystem(default)] Illegal response header: Illegal 'etag' header: Invalid input '5', expected 'W' or '"' (line 1, column 1): 560dc672fbeaf7a200c9bef1
-^
->>>REQUEST: /testdb/TestCase
-<<<RESPONSE (201 Created): /testdb/TestCase
-[WARN] [10/01/2015 19:49:06.632] [default-akka.actor.default-dispatcher-86] [ActorSystem(default)] Illegal response header: Illegal 'etag' header: Invalid input '5', expected 'W' or '"' (line 1, column 1): 560dc672fbeaf7a200c9bef2
-^
-<<<RESPONSE (201 Created): /testdb/TestCase
+>>>REQUEST: /testaspect/TestCase/fa2de20b-ae42-4533-a68c-3654d986219b
+<<<RESPONSE (201 Created): /testaspect/TestCase/cb3ef44b-95a8-4c42-888d-5ec70c1ebeae
+<<<RESPONSE (201 Created): /testaspect/TestCase/fa2de20b-ae42-4533-a68c-3654d986219b
 ]]></system-out>
   </testcase>
   <testcase name="build_is_triggered_after_ref_is_updated" classname="plugins.GerritTriggerTest" time="0">
     <skipped/>
-    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@7d4d65f5[
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@62c413d[
   name=gerrit_trigger_build_when_draft_published
   title=<null>
   description=<null>
-  failure=ru.yandex.qatools.allure.model.Failure@38cf3ae1
-  start=1443743347005
-  stop=1443743347006
+  failure=ru.yandex.qatools.allure.model.Failure@16b8c624
+  start=1444528252479
+  stop=1444528252480
   status=CANCELED
   severity=<null>
   steps=[]
   attachments=[]
-  labels=[ru.yandex.qatools.allure.model.Label@123ca460, ru.yandex.qatools.allure.model.Label@11228bee]
+  labels=[ru.yandex.qatools.allure.model.Label@669d32af, ru.yandex.qatools.allure.model.Label@1cbe0735]
   parameters=<null>
 ]
 testCaseResult={
-   "start" : 1443743347005,
-   "stop" : 1443743347006,
+   "start" : 1444528252479,
+   "stop" : 1444528252480,
    "status" : "canceled",
    "name" : "gerrit_trigger_build_when_draft_published",
    "failure" : {
@@ -179,24 +177,26 @@ testCaseResult={
    "labels" : {
       "label" : [ {
          "name" : "host",
-         "value" : "Abduls-MBP.home"
+         "value" : "MacBook-Pro-2.home"
       }, {
          "name" : "thread",
-         "value" : "35252@Abduls-MBP.home.main(1)"
+         "value" : "3426@MacBook-Pro-2.home.main(1)"
       } ]
    }
 }
-testCase=ru.yandex.qatools.allure.model.TestCase@7d626f2[
-  _id=809abd84-a784-41c2-868b-b23987a0187d
-  executionId=7701d757-07c3-4ee5-9df4-52c16ef79685
-  result=ru.yandex.qatools.allure.model.TestCaseResult@7d4d65f5
+testCase=ru.yandex.qatools.allure.model.TestCase@787f8836[
+  _id=45fff60d-b84d-48aa-9a84-75471615444f
+  executionId=8e6dd7ca-e27b-4013-bda8-bc2788640ddd
+  threadName=dc7331de-b740-4ba3-9907-ee3762987799
+  result=ru.yandex.qatools.allure.model.TestCaseResult@62c413d
 ]
 testCase={
-   "_id" : "809abd84-a784-41c2-868b-b23987a0187d",
-   "executionId" : "7701d757-07c3-4ee5-9df4-52c16ef79685",
+   "_id" : "45fff60d-b84d-48aa-9a84-75471615444f",
+   "executionId" : "8e6dd7ca-e27b-4013-bda8-bc2788640ddd",
+   "threadName" : "dc7331de-b740-4ba3-9907-ee3762987799",
    "result" : {
-      "start" : 1443743347005,
-      "stop" : 1443743347006,
+      "start" : 1444528252479,
+      "stop" : 1444528252480,
       "status" : "canceled",
       "name" : "gerrit_trigger_build_when_draft_published",
       "failure" : {
@@ -212,36 +212,36 @@ testCase={
       "labels" : {
          "label" : [ {
             "name" : "host",
-            "value" : "Abduls-MBP.home"
+            "value" : "MacBook-Pro-2.home"
          }, {
             "name" : "thread",
-            "value" : "35252@Abduls-MBP.home.main(1)"
+            "value" : "3426@MacBook-Pro-2.home.main(1)"
          } ]
       }
    }
 }
->>>REQUEST: /testdb/TestCase
+>>>REQUEST: /testaspect/TestCase/45fff60d-b84d-48aa-9a84-75471615444f
 ]]></system-out>
   </testcase>
   <testcase name="build_is_triggered_after_comment_is_added" classname="plugins.GerritTriggerTest" time="0">
     <skipped/>
-    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@7a1ddbf1[
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@861d374[
   name=build_is_triggered_after_ref_is_updated
   title=<null>
   description=<null>
-  failure=ru.yandex.qatools.allure.model.Failure@1e606f64
-  start=1443743347011
-  stop=1443743347011
+  failure=ru.yandex.qatools.allure.model.Failure@194b01c2
+  start=1444528252481
+  stop=1444528252481
   status=CANCELED
   severity=<null>
   steps=[]
   attachments=[]
-  labels=[ru.yandex.qatools.allure.model.Label@581918f6, ru.yandex.qatools.allure.model.Label@1958c0d9]
+  labels=[ru.yandex.qatools.allure.model.Label@64abda64, ru.yandex.qatools.allure.model.Label@e4290cf]
   parameters=<null>
 ]
 testCaseResult={
-   "start" : 1443743347011,
-   "stop" : 1443743347011,
+   "start" : 1444528252481,
+   "stop" : 1444528252481,
    "status" : "canceled",
    "name" : "build_is_triggered_after_ref_is_updated",
    "failure" : {
@@ -257,24 +257,26 @@ testCaseResult={
    "labels" : {
       "label" : [ {
          "name" : "host",
-         "value" : "Abduls-MBP.home"
+         "value" : "MacBook-Pro-2.home"
       }, {
          "name" : "thread",
-         "value" : "35252@Abduls-MBP.home.main(1)"
+         "value" : "3426@MacBook-Pro-2.home.main(1)"
       } ]
    }
 }
-testCase=ru.yandex.qatools.allure.model.TestCase@d8e4250[
-  _id=ae87a1a0-395d-4d09-836c-6dc3c365ad79
-  executionId=7701d757-07c3-4ee5-9df4-52c16ef79685
-  result=ru.yandex.qatools.allure.model.TestCaseResult@7a1ddbf1
+testCase=ru.yandex.qatools.allure.model.TestCase@83e0800[
+  _id=bfe84146-5adf-419a-9c3c-483a0a3c65aa
+  executionId=8e6dd7ca-e27b-4013-bda8-bc2788640ddd
+  threadName=dc7331de-b740-4ba3-9907-ee3762987799
+  result=ru.yandex.qatools.allure.model.TestCaseResult@861d374
 ]
 testCase={
-   "_id" : "ae87a1a0-395d-4d09-836c-6dc3c365ad79",
-   "executionId" : "7701d757-07c3-4ee5-9df4-52c16ef79685",
+   "_id" : "bfe84146-5adf-419a-9c3c-483a0a3c65aa",
+   "executionId" : "8e6dd7ca-e27b-4013-bda8-bc2788640ddd",
+   "threadName" : "dc7331de-b740-4ba3-9907-ee3762987799",
    "result" : {
-      "start" : 1443743347011,
-      "stop" : 1443743347011,
+      "start" : 1444528252481,
+      "stop" : 1444528252481,
       "status" : "canceled",
       "name" : "build_is_triggered_after_ref_is_updated",
       "failure" : {
@@ -290,36 +292,36 @@ testCase={
       "labels" : {
          "label" : [ {
             "name" : "host",
-            "value" : "Abduls-MBP.home"
+            "value" : "MacBook-Pro-2.home"
          }, {
             "name" : "thread",
-            "value" : "35252@Abduls-MBP.home.main(1)"
+            "value" : "3426@MacBook-Pro-2.home.main(1)"
          } ]
       }
    }
 }
->>>REQUEST: /testdb/TestCase
+>>>REQUEST: /testaspect/TestCase/bfe84146-5adf-419a-9c3c-483a0a3c65aa
 ]]></system-out>
   </testcase>
   <testcase name="gerrit_trigger_build_when_changes_merged" classname="plugins.GerritTriggerTest" time="0">
     <skipped/>
-    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@46894dc5[
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@33d5ae6[
   name=build_is_triggered_after_comment_is_added
   title=<null>
   description=<null>
-  failure=ru.yandex.qatools.allure.model.Failure@596afb2f
-  start=1443743347015
-  stop=1443743347016
+  failure=ru.yandex.qatools.allure.model.Failure@32994f1b
+  start=1444528252482
+  stop=1444528252483
   status=CANCELED
   severity=<null>
   steps=[]
   attachments=[]
-  labels=[ru.yandex.qatools.allure.model.Label@79ba0285, ru.yandex.qatools.allure.model.Label@6df2a206]
+  labels=[ru.yandex.qatools.allure.model.Label@1790f1dd, ru.yandex.qatools.allure.model.Label@4b3222f6]
   parameters=<null>
 ]
 testCaseResult={
-   "start" : 1443743347015,
-   "stop" : 1443743347016,
+   "start" : 1444528252482,
+   "stop" : 1444528252483,
    "status" : "canceled",
    "name" : "build_is_triggered_after_comment_is_added",
    "failure" : {
@@ -335,24 +337,26 @@ testCaseResult={
    "labels" : {
       "label" : [ {
          "name" : "host",
-         "value" : "Abduls-MBP.home"
+         "value" : "MacBook-Pro-2.home"
       }, {
          "name" : "thread",
-         "value" : "35252@Abduls-MBP.home.main(1)"
+         "value" : "3426@MacBook-Pro-2.home.main(1)"
       } ]
    }
 }
-testCase=ru.yandex.qatools.allure.model.TestCase@61993d18[
-  _id=07765e0c-7b25-418c-a90d-18391b22abd0
-  executionId=7701d757-07c3-4ee5-9df4-52c16ef79685
-  result=ru.yandex.qatools.allure.model.TestCaseResult@46894dc5
+testCase=ru.yandex.qatools.allure.model.TestCase@2231bb1c[
+  _id=15d5a5ce-fff2-419a-822c-b9442d1c6861
+  executionId=8e6dd7ca-e27b-4013-bda8-bc2788640ddd
+  threadName=dc7331de-b740-4ba3-9907-ee3762987799
+  result=ru.yandex.qatools.allure.model.TestCaseResult@33d5ae6
 ]
 testCase={
-   "_id" : "07765e0c-7b25-418c-a90d-18391b22abd0",
-   "executionId" : "7701d757-07c3-4ee5-9df4-52c16ef79685",
+   "_id" : "15d5a5ce-fff2-419a-822c-b9442d1c6861",
+   "executionId" : "8e6dd7ca-e27b-4013-bda8-bc2788640ddd",
+   "threadName" : "dc7331de-b740-4ba3-9907-ee3762987799",
    "result" : {
-      "start" : 1443743347015,
-      "stop" : 1443743347016,
+      "start" : 1444528252482,
+      "stop" : 1444528252483,
       "status" : "canceled",
       "name" : "build_is_triggered_after_comment_is_added",
       "failure" : {
@@ -368,45 +372,37 @@ testCase={
       "labels" : {
          "label" : [ {
             "name" : "host",
-            "value" : "Abduls-MBP.home"
+            "value" : "MacBook-Pro-2.home"
          }, {
             "name" : "thread",
-            "value" : "35252@Abduls-MBP.home.main(1)"
+            "value" : "3426@MacBook-Pro-2.home.main(1)"
          } ]
       }
    }
 }
-[WARN] [10/01/2015 19:49:07.017] [default-akka.actor.default-dispatcher-68] [ActorSystem(default)] Illegal response header: Illegal 'etag' header: Invalid input '5', expected 'W' or '"' (line 1, column 1): 560dc673fbeaf7a200c9bef3
-^
-[WARN] [10/01/2015 19:49:07.019] [default-akka.actor.default-dispatcher-84] [ActorSystem(default)] Illegal response header: Illegal 'etag' header: Invalid input '5', expected 'W' or '"' (line 1, column 1): 560dc673fbeaf7a200c9bef4
-^
-<<<RESPONSE (201 Created): /testdb/TestCase
-<<<RESPONSE (201 Created): /testdb/TestCase
->>>REQUEST: /testdb/TestCase
-[WARN] [10/01/2015 19:49:07.023] [default-akka.actor.default-dispatcher-51] [ActorSystem(default)] Illegal response header: Illegal 'etag' header: Invalid input '5', expected 'W' or '"' (line 1, column 1): 560dc673fbeaf7a200c9bef5
-^
+>>>REQUEST: /testaspect/TestCase/15d5a5ce-fff2-419a-822c-b9442d1c6861
 ]]></system-out>
   </testcase>
   <testcase name="gerrit_has_review_flags_checked_after_jenkins_set_them" classname="plugins.GerritTriggerTest" time="0">
     <skipped/>
-    <system-out><![CDATA[<<<RESPONSE (201 Created): /testdb/TestCase
-testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@57f2e67[
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@4cbc34f3[
   name=gerrit_trigger_build_when_changes_merged
   title=<null>
   description=<null>
-  failure=ru.yandex.qatools.allure.model.Failure@4571cebe
-  start=1443743347024
-  stop=1443743347025
+  failure=ru.yandex.qatools.allure.model.Failure@3eeeb36b
+  start=1444528252484
+  stop=1444528252484
   status=CANCELED
   severity=<null>
   steps=[]
   attachments=[]
-  labels=[ru.yandex.qatools.allure.model.Label@154864f8, ru.yandex.qatools.allure.model.Label@11cadb32]
+  labels=[ru.yandex.qatools.allure.model.Label@5d22cf95, ru.yandex.qatools.allure.model.Label@41bf4c6e]
   parameters=<null>
 ]
+<<<RESPONSE (201 Created): /testaspect/TestCase/45fff60d-b84d-48aa-9a84-75471615444f
 testCaseResult={
-   "start" : 1443743347024,
-   "stop" : 1443743347025,
+   "start" : 1444528252484,
+   "stop" : 1444528252484,
    "status" : "canceled",
    "name" : "gerrit_trigger_build_when_changes_merged",
    "failure" : {
@@ -422,24 +418,26 @@ testCaseResult={
    "labels" : {
       "label" : [ {
          "name" : "host",
-         "value" : "Abduls-MBP.home"
+         "value" : "MacBook-Pro-2.home"
       }, {
          "name" : "thread",
-         "value" : "35252@Abduls-MBP.home.main(1)"
+         "value" : "3426@MacBook-Pro-2.home.main(1)"
       } ]
    }
 }
-testCase=ru.yandex.qatools.allure.model.TestCase@6d3ad37a[
-  _id=a4dfadfc-732b-41a4-9c6d-caddbf9eae82
-  executionId=7701d757-07c3-4ee5-9df4-52c16ef79685
-  result=ru.yandex.qatools.allure.model.TestCaseResult@57f2e67
+testCase=ru.yandex.qatools.allure.model.TestCase@6c09e306[
+  _id=e572e346-c3aa-4a63-bf6b-342e149ca318
+  executionId=8e6dd7ca-e27b-4013-bda8-bc2788640ddd
+  threadName=dc7331de-b740-4ba3-9907-ee3762987799
+  result=ru.yandex.qatools.allure.model.TestCaseResult@4cbc34f3
 ]
 testCase={
-   "_id" : "a4dfadfc-732b-41a4-9c6d-caddbf9eae82",
-   "executionId" : "7701d757-07c3-4ee5-9df4-52c16ef79685",
+   "_id" : "e572e346-c3aa-4a63-bf6b-342e149ca318",
+   "executionId" : "8e6dd7ca-e27b-4013-bda8-bc2788640ddd",
+   "threadName" : "dc7331de-b740-4ba3-9907-ee3762987799",
    "result" : {
-      "start" : 1443743347024,
-      "stop" : 1443743347025,
+      "start" : 1444528252484,
+      "stop" : 1444528252484,
       "status" : "canceled",
       "name" : "gerrit_trigger_build_when_changes_merged",
       "failure" : {
@@ -455,15 +453,15 @@ testCase={
       "labels" : {
          "label" : [ {
             "name" : "host",
-            "value" : "Abduls-MBP.home"
+            "value" : "MacBook-Pro-2.home"
          }, {
             "name" : "thread",
-            "value" : "35252@Abduls-MBP.home.main(1)"
+            "value" : "3426@MacBook-Pro-2.home.main(1)"
          } ]
       }
    }
 }
->>>REQUEST: /testdb/TestCase
+>>>REQUEST: /testaspect/TestCase/e572e346-c3aa-4a63-bf6b-342e149ca318
 ]]></system-out>
   </testcase>
 </testsuite>

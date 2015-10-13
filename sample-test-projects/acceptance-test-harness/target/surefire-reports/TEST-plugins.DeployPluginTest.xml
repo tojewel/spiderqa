@@ -63,23 +63,23 @@
   </properties>
   <testcase name="deploy_sample_webapp_to_tomcat7" classname="plugins.DeployPluginTest" time="0">
     <skipped/>
-    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@51e8d066[
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@63e10c24[
   name=configure_dashboard
   title=<null>
   description=<null>
-  failure=ru.yandex.qatools.allure.model.Failure@5333f08f
-  start=1443743066331
-  stop=1443743136111
+  failure=ru.yandex.qatools.allure.model.Failure@15bb0a94
+  start=1444527821462
+  stop=1444527838791
   status=BROKEN
   severity=<null>
   steps=[]
   attachments=[]
-  labels=[ru.yandex.qatools.allure.model.Label@27898e13, ru.yandex.qatools.allure.model.Label@4f5f474c]
+  labels=[ru.yandex.qatools.allure.model.Label@18db436a, ru.yandex.qatools.allure.model.Label@c7f31c7]
   parameters=<null>
 ]
 testCaseResult={
-   "start" : 1443743066331,
-   "stop" : 1443743136111,
+   "start" : 1444527821462,
+   "stop" : 1444527838791,
    "status" : "broken",
    "name" : "configure_dashboard",
    "failure" : {
@@ -95,24 +95,26 @@ testCaseResult={
    "labels" : {
       "label" : [ {
          "name" : "host",
-         "value" : "Abduls-MBP.home"
+         "value" : "MacBook-Pro-2.home"
       }, {
          "name" : "thread",
-         "value" : "35249@Abduls-MBP.home.main(1)"
+         "value" : "3426@MacBook-Pro-2.home.main(1)"
       } ]
    }
 }
-testCase=ru.yandex.qatools.allure.model.TestCase@58a3d521[
-  _id=4f9458b0-6bf6-40e1-8360-699722807549
-  executionId=745bfd3b-0516-4592-8852-a31b4b74d11f
-  result=ru.yandex.qatools.allure.model.TestCaseResult@51e8d066
+testCase=ru.yandex.qatools.allure.model.TestCase@67148c40[
+  _id=163053bb-e43a-4ed5-ab62-41f0dfc50f79
+  executionId=8e6dd7ca-e27b-4013-bda8-bc2788640ddd
+  threadName=dc7331de-b740-4ba3-9907-ee3762987799
+  result=ru.yandex.qatools.allure.model.TestCaseResult@63e10c24
 ]
 testCase={
-   "_id" : "4f9458b0-6bf6-40e1-8360-699722807549",
-   "executionId" : "745bfd3b-0516-4592-8852-a31b4b74d11f",
+   "_id" : "163053bb-e43a-4ed5-ab62-41f0dfc50f79",
+   "executionId" : "8e6dd7ca-e27b-4013-bda8-bc2788640ddd",
+   "threadName" : "dc7331de-b740-4ba3-9907-ee3762987799",
    "result" : {
-      "start" : 1443743066331,
-      "stop" : 1443743136111,
+      "start" : 1444527821462,
+      "stop" : 1444527838791,
       "status" : "broken",
       "name" : "configure_dashboard",
       "failure" : {
@@ -128,18 +130,16 @@ testCase={
       "labels" : {
          "label" : [ {
             "name" : "host",
-            "value" : "Abduls-MBP.home"
+            "value" : "MacBook-Pro-2.home"
          }, {
             "name" : "thread",
-            "value" : "35249@Abduls-MBP.home.main(1)"
+            "value" : "3426@MacBook-Pro-2.home.main(1)"
          } ]
       }
    }
 }
->>>REQUEST: /testdb/TestCase
-[WARN] [10/01/2015 19:45:36.122] [default-akka.actor.default-dispatcher-52] [ActorSystem(default)] Illegal response header: Illegal 'etag' header: Invalid input '5', expected 'W' or '"' (line 1, column 1): 560dc5a0fbeaf7a200c9beb5
-^
-<<<RESPONSE (201 Created): /testdb/TestCase
+>>>REQUEST: /testaspect/TestCase/163053bb-e43a-4ed5-ab62-41f0dfc50f79
+<<<RESPONSE (201 Created): /testaspect/TestCase/163053bb-e43a-4ed5-ab62-41f0dfc50f79
 running with given plugins: []
 === Starting deploy_sample_webapp_to_tomcat7(plugins.DeployPluginTest)
 Skipping deploy_sample_webapp_to_tomcat7(plugins.DeployPluginTest): Docker is needed for the test

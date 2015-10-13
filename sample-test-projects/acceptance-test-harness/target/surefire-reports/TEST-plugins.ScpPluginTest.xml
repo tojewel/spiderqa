@@ -63,23 +63,23 @@
   </properties>
   <testcase name="configure_job_with_scp_password_publishing" classname="plugins.ScpPluginTest" time="0">
     <skipped/>
-    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@7ae0a26[
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@343d5571[
   name=ssh_password_publishing
   title=<null>
   description=<null>
-  failure=ru.yandex.qatools.allure.model.Failure@5ddf5118
-  start=1443744894742
-  stop=1443744894781
+  failure=ru.yandex.qatools.allure.model.Failure@cdedd3
+  start=1444530381126
+  stop=1444530381136
   status=CANCELED
   severity=<null>
   steps=[]
   attachments=[]
-  labels=[ru.yandex.qatools.allure.model.Label@7b9d1a4, ru.yandex.qatools.allure.model.Label@fcd3a6f]
+  labels=[ru.yandex.qatools.allure.model.Label@5b120d73, ru.yandex.qatools.allure.model.Label@6cb5e8a5]
   parameters=<null>
 ]
 testCaseResult={
-   "start" : 1443744894742,
-   "stop" : 1443744894781,
+   "start" : 1444530381126,
+   "stop" : 1444530381136,
    "status" : "canceled",
    "name" : "ssh_password_publishing",
    "failure" : {
@@ -95,24 +95,26 @@ testCaseResult={
    "labels" : {
       "label" : [ {
          "name" : "host",
-         "value" : "Abduls-MBP.home"
+         "value" : "MacBook-Pro-2.home"
       }, {
          "name" : "thread",
-         "value" : "35253@Abduls-MBP.home.main(1)"
+         "value" : "3426@MacBook-Pro-2.home.main(1)"
       } ]
    }
 }
-testCase=ru.yandex.qatools.allure.model.TestCase@7845ee8a[
-  _id=97c8d8bc-e232-483e-b83e-2e33a73f82de
-  executionId=1bbf0610-8745-4dcf-b9b8-2ceab706f093
-  result=ru.yandex.qatools.allure.model.TestCaseResult@7ae0a26
+testCase=ru.yandex.qatools.allure.model.TestCase@32fdae9f[
+  _id=ac9f1714-83dd-4288-aca2-9c2f820cbc2f
+  executionId=8e6dd7ca-e27b-4013-bda8-bc2788640ddd
+  threadName=dc7331de-b740-4ba3-9907-ee3762987799
+  result=ru.yandex.qatools.allure.model.TestCaseResult@343d5571
 ]
 testCase={
-   "_id" : "97c8d8bc-e232-483e-b83e-2e33a73f82de",
-   "executionId" : "1bbf0610-8745-4dcf-b9b8-2ceab706f093",
+   "_id" : "ac9f1714-83dd-4288-aca2-9c2f820cbc2f",
+   "executionId" : "8e6dd7ca-e27b-4013-bda8-bc2788640ddd",
+   "threadName" : "dc7331de-b740-4ba3-9907-ee3762987799",
    "result" : {
-      "start" : 1443744894742,
-      "stop" : 1443744894781,
+      "start" : 1444530381126,
+      "stop" : 1444530381136,
       "status" : "canceled",
       "name" : "ssh_password_publishing",
       "failure" : {
@@ -128,18 +130,16 @@ testCase={
       "labels" : {
          "label" : [ {
             "name" : "host",
-            "value" : "Abduls-MBP.home"
+            "value" : "MacBook-Pro-2.home"
          }, {
             "name" : "thread",
-            "value" : "35253@Abduls-MBP.home.main(1)"
+            "value" : "3426@MacBook-Pro-2.home.main(1)"
          } ]
       }
    }
 }
->>>REQUEST: /testdb/TestCase
-[WARN] [10/01/2015 20:14:54.790] [default-akka.actor.default-dispatcher-183] [ActorSystem(default)] Illegal response header: Illegal 'etag' header: Invalid input '5', expected 'W' or '"' (line 1, column 1): 560dcc7efbeaf7a200c9bfb2
-^
-<<<RESPONSE (201 Created): /testdb/TestCase
+>>>REQUEST: /testaspect/TestCase/ac9f1714-83dd-4288-aca2-9c2f820cbc2f
+<<<RESPONSE (201 Created): /testaspect/TestCase/ac9f1714-83dd-4288-aca2-9c2f820cbc2f
 running with given plugins: []
 === Starting configure_job_with_scp_password_publishing(plugins.ScpPluginTest)
 Skipping configure_job_with_scp_password_publishing(plugins.ScpPluginTest): Docker is needed for the test
@@ -147,23 +147,23 @@ Skipping configure_job_with_scp_password_publishing(plugins.ScpPluginTest): Dock
   </testcase>
   <testcase name="configure_job_with_scp_key_publishing" classname="plugins.ScpPluginTest" time="0">
     <skipped/>
-    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@538f45f1[
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@710b58c[
   name=configure_job_with_scp_password_publishing
   title=<null>
   description=<null>
-  failure=ru.yandex.qatools.allure.model.Failure@64fc6470
-  start=1443744897548
-  stop=1443744897585
+  failure=ru.yandex.qatools.allure.model.Failure@6c96a857
+  start=1444530381138
+  stop=1444530381150
   status=CANCELED
   severity=<null>
   steps=[]
   attachments=[]
-  labels=[ru.yandex.qatools.allure.model.Label@5cf3a7f9, ru.yandex.qatools.allure.model.Label@42db955e]
+  labels=[ru.yandex.qatools.allure.model.Label@1dcf4449, ru.yandex.qatools.allure.model.Label@4d1b530c]
   parameters=<null>
 ]
 testCaseResult={
-   "start" : 1443744897548,
-   "stop" : 1443744897585,
+   "start" : 1444530381138,
+   "stop" : 1444530381150,
    "status" : "canceled",
    "name" : "configure_job_with_scp_password_publishing",
    "failure" : {
@@ -179,24 +179,26 @@ testCaseResult={
    "labels" : {
       "label" : [ {
          "name" : "host",
-         "value" : "Abduls-MBP.home"
+         "value" : "MacBook-Pro-2.home"
       }, {
          "name" : "thread",
-         "value" : "35253@Abduls-MBP.home.main(1)"
+         "value" : "3426@MacBook-Pro-2.home.main(1)"
       } ]
    }
 }
-testCase=ru.yandex.qatools.allure.model.TestCase@6bd2f039[
-  _id=a897590a-90b5-4644-bd25-1ceef3fcde80
-  executionId=1bbf0610-8745-4dcf-b9b8-2ceab706f093
-  result=ru.yandex.qatools.allure.model.TestCaseResult@538f45f1
+testCase=ru.yandex.qatools.allure.model.TestCase@4fa523f6[
+  _id=df38c658-dbd3-4cb9-ab5a-c40551bfb6ba
+  executionId=8e6dd7ca-e27b-4013-bda8-bc2788640ddd
+  threadName=dc7331de-b740-4ba3-9907-ee3762987799
+  result=ru.yandex.qatools.allure.model.TestCaseResult@710b58c
 ]
 testCase={
-   "_id" : "a897590a-90b5-4644-bd25-1ceef3fcde80",
-   "executionId" : "1bbf0610-8745-4dcf-b9b8-2ceab706f093",
+   "_id" : "df38c658-dbd3-4cb9-ab5a-c40551bfb6ba",
+   "executionId" : "8e6dd7ca-e27b-4013-bda8-bc2788640ddd",
+   "threadName" : "dc7331de-b740-4ba3-9907-ee3762987799",
    "result" : {
-      "start" : 1443744897548,
-      "stop" : 1443744897585,
+      "start" : 1444530381138,
+      "stop" : 1444530381150,
       "status" : "canceled",
       "name" : "configure_job_with_scp_password_publishing",
       "failure" : {
@@ -212,19 +214,17 @@ testCase={
       "labels" : {
          "label" : [ {
             "name" : "host",
-            "value" : "Abduls-MBP.home"
+            "value" : "MacBook-Pro-2.home"
          }, {
             "name" : "thread",
-            "value" : "35253@Abduls-MBP.home.main(1)"
+            "value" : "3426@MacBook-Pro-2.home.main(1)"
          } ]
       }
    }
 }
->>>REQUEST: /testdb/TestCase
-[WARN] [10/01/2015 20:14:57.595] [default-akka.actor.default-dispatcher-185] [ActorSystem(default)] Illegal response header: Illegal 'etag' header: Invalid input '5', expected 'W' or '"' (line 1, column 1): 560dcc81fbeaf7a200c9bfb3
-^
-<<<RESPONSE (201 Created): /testdb/TestCase
+>>>REQUEST: /testaspect/TestCase/df38c658-dbd3-4cb9-ab5a-c40551bfb6ba
 running with given plugins: []
+<<<RESPONSE (201 Created): /testaspect/TestCase/df38c658-dbd3-4cb9-ab5a-c40551bfb6ba
 === Starting configure_job_with_scp_key_publishing(plugins.ScpPluginTest)
 Skipping configure_job_with_scp_key_publishing(plugins.ScpPluginTest): Docker is needed for the test
 ]]></system-out>

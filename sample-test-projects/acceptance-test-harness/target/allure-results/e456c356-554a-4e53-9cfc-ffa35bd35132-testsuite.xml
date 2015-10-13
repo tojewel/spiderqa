@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1444525864840" stop="1444531399585" version="1.4.20-SNAPSHOT">
+   <name>core.BuildHistoryTest</name>
+   <test-cases>
+      <test-case start="1444525864841" stop="1444526003555" status="broken">
+         <name>slave_build_history</name>
+         <failure>
+            <message>TimeoutException: Timed out after 120 seconds: Next build of restricted_maid is started
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'MacBook-Pro-2.home', ip: '192.168.1.6', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.5', java.version: '1.8.0_60'
+Driver info: driver.version: unknown</message>
+            <stack-trace>org.openqa.selenium.TimeoutException: Timed out after 120 seconds: Next build of restricted_maid is started
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'MacBook-Pro-2.home', ip: '192.168.1.6', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.5', java.version: '1.8.0_60'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:260)
+	at org.jenkinsci.test.acceptance.junit.Wait.timeoutException(Wait.java:127)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at org.jenkinsci.test.acceptance.junit.Wait.until(Wait.java:72)
+	at org.jenkinsci.test.acceptance.po.Build.waitUntilStarted(Build.java:73)
+	at org.jenkinsci.test.acceptance.po.Build.waitUntilStarted(Build.java:66)
+	at org.jenkinsci.test.acceptance.po.Job.startBuild(Job.java:245)
+	at core.BuildHistoryTest.slave_build_history(BuildHistoryTest.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.jenkinsci.test.acceptance.junit.JenkinsAcceptanceTestRule$1$2$1.evaluate(JenkinsAcceptanceTestRule.java:129)
+	at org.jenkinsci.test.acceptance.junit.FilterRule$1.evaluate(FilterRule.java:62)
+	at org.jenkinsci.test.acceptance.junit.JenkinsAcceptanceTestRule$1.evaluate(JenkinsAcceptanceTestRule.java:55)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+</stack-trace>
+         </failure>
+         <steps/>
+         <attachments/>
+         <labels>
+            <label name="host" value="MacBook-Pro-2.home"/>
+            <label name="thread" value="3426@MacBook-Pro-2.home.main(1)"/>
+         </labels>
+      </test-case>
+      <test-case start="1444526003562" stop="1444526023831" status="passed">
+         <name>global_build_history</name>
+         <steps/>
+         <attachments/>
+         <labels>
+            <label name="host" value="MacBook-Pro-2.home"/>
+            <label name="thread" value="3426@MacBook-Pro-2.home.main(1)"/>
+         </labels>
+      </test-case>
+      <test-case start="1444526023839" stop="1444526045436" status="passed">
+         <name>view_build_history</name>
+         <steps/>
+         <attachments/>
+         <labels>
+            <label name="host" value="MacBook-Pro-2.home"/>
+            <label name="thread" value="3426@MacBook-Pro-2.home.main(1)"/>
+         </labels>
+      </test-case>
+   </test-cases>
+   <labels>
+      <label name="framework" value="JUnit"/>
+      <label name="language" value="JAVA"/>
+   </labels>
+</ns0:test-suite>

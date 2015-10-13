@@ -10,8 +10,11 @@ import ru.yandex.qatools.allure.model.Execution;
 import ru.yandex.qatools.allure.model.TestCase;
 import ru.yandex.qatools.allure.model.TestCaseResult;
 
+import java.util.UUID;
+
 public class Spider extends Allure {
     private static Spider instance = new Spider();
+    private final String threadName = UUID.randomUUID().toString();
 
     private TestCaseResult testCaseResult;
 
@@ -28,15 +31,16 @@ public class Spider extends Allure {
         testCaseResult = getTestCaseStorage().get();
     }
 
-    Serializer serializer = new Serializer();
-    Execution execution = new Execution();
+    private Serializer serializer = new Serializer();
+    private static Execution execution = new Execution();
+
 
     public void fire(TestCaseFinishedEvent event) {
 
         super.fire(event);
         System.out.println("testCaseResult=" + ToStringBuilder.reflectionToString(testCaseResult, ToStringStyle.MULTI_LINE_STYLE));
         System.out.println("testCaseResult=" + serializer.toJson(testCaseResult));
-        TestCase testCase = new TestCase(execution, testCaseResult);
+        TestCase testCase = new TestCase(execution, threadName, testCaseResult);
 
         System.out.println("testCase=" + ToStringBuilder.reflectionToString(testCase, ToStringStyle.MULTI_LINE_STYLE));
         System.out.println("testCase=" + serializer.toJson(testCase));

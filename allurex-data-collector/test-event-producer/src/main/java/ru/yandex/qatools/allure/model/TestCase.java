@@ -10,22 +10,31 @@ import java.util.UUID;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "test-case")
-public class TestCase {
+public class TestCase implements Entity {
 
-    @Getter
     private String _id = UUID.randomUUID().toString();
+
+    @Override
+    public String get_id() {
+        return _id;
+    }
 
     @Getter
     private String executionId;
 
+    @Getter
+    private String threadName;
+
     @Delegate
     private TestCaseResult result;
 
-    public TestCase(Execution execution, TestCaseResult result) {
+    public TestCase(Execution execution, String threadName, TestCaseResult result) {
+        this.threadName = threadName;
         this.executionId = execution.get_id();
         this.result = result;
     }
 
     public TestCase() {
+
     }
 }

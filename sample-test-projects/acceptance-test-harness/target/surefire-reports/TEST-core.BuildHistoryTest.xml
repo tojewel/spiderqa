@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="core.BuildHistoryTest" time="195.932" tests="3" errors="1" skipped="0" failures="0">
+<testsuite name="core.BuildHistoryTest" time="180.554" tests="3" errors="1" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib"/>
@@ -61,134 +61,153 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="slave_build_history" classname="core.BuildHistoryTest" time="74.29">
-    <error message="Unexpected modal dialog (text: This page is asking you to confirm that you want to leave - data you have entered may not be saved.): This page is asking you to confirm that you want to leave - data you have entered may not be saved.&#10;Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;&#10;System info: host: &apos;Abduls-MBP.home&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.5&apos;, java.version: &apos;1.8.0_60&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]&#10;Session ID: fd6f65f1-2ef2-4541-840c-6eb902e9c821" type="org.openqa.selenium.UnhandledAlertException">org.openqa.selenium.UnhandledAlertException: Unexpected modal dialog (text: This page is asking you to confirm that you want to leave - data you have entered may not be saved.): This page is asking you to confirm that you want to leave - data you have entered may not be saved.
+  <testcase name="slave_build_history" classname="core.BuildHistoryTest" time="138.688">
+    <error message="Timed out after 120 seconds: Next build of restricted_maid is started&#10;Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;&#10;System info: host: &apos;MacBook-Pro-2.home&apos;, ip: &apos;192.168.1.6&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.5&apos;, java.version: &apos;1.8.0_60&apos;&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Timed out after 120 seconds: Next build of restricted_maid is started
 Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
-System info: host: 'Abduls-MBP.home', ip: '192.168.1.8', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.5', java.version: '1.8.0_60'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: fd6f65f1-2ef2-4541-840c-6eb902e9c821
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.createUnhandledAlertException(ErrorHandler.java:187)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:154)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
-	at org.openqa.selenium.remote.RemoteWebDriver.getPageSource(RemoteWebDriver.java:455)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:102)
-	at com.sun.proxy.$Proxy37.getPageSource(Unknown Source)
-	at org.jenkinsci.test.acceptance.selenium.SanityChecker.isFastPath(SanityChecker.java:88)
-	at org.jenkinsci.test.acceptance.selenium.SanityChecker.checkSanity(SanityChecker.java:59)
-	at org.jenkinsci.test.acceptance.selenium.SanityChecker.afterNavigateTo(SanityChecker.java:45)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:79)
-	at com.sun.proxy.$Proxy36.afterNavigateTo(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:161)
-	at org.jenkinsci.test.acceptance.po.CapybaraPortingLayerImpl.visit(CapybaraPortingLayerImpl.java:77)
-	at org.jenkinsci.test.acceptance.po.Job.scheduleBuild(Job.java:258)
-	at org.jenkinsci.test.acceptance.po.Job.scheduleBuild(Job.java:253)
+System info: host: 'MacBook-Pro-2.home', ip: '192.168.1.6', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.5', java.version: '1.8.0_60'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:260)
+	at org.jenkinsci.test.acceptance.junit.Wait.timeoutException(Wait.java:127)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at org.jenkinsci.test.acceptance.junit.Wait.until(Wait.java:72)
+	at org.jenkinsci.test.acceptance.po.Build.waitUntilStarted(Build.java:73)
+	at org.jenkinsci.test.acceptance.po.Build.waitUntilStarted(Build.java:66)
 	at org.jenkinsci.test.acceptance.po.Job.startBuild(Job.java:245)
 	at core.BuildHistoryTest.slave_build_history(BuildHistoryTest.java:29)
 </error>
-    <system-out><![CDATA[running with given plugins: []
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@3f0f886a[
+  name=test_large_file
+  title=<null>
+  description=<null>
+  failure=ru.yandex.qatools.allure.model.Failure@333f8ab7
+  start=1444525833445
+  stop=1444525864829
+  status=FAILED
+  severity=<null>
+  steps=[]
+  attachments=[]
+  labels=[ru.yandex.qatools.allure.model.Label@2ee39a02, ru.yandex.qatools.allure.model.Label@7a68765f]
+  parameters=<null>
+]
+testCaseResult={
+   "start" : 1444525833445,
+   "stop" : 1444525864829,
+   "status" : "failed",
+   "name" : "test_large_file",
+   "failure" : {
+      "message" : "AssertionError: \nExpected: is <200>\n     but: was <404>",
+      "stack-trace" : "java.lang.AssertionError: \nExpected: is <200>\n     but: was <404>\n\tat org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)\n\tat org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)\n\tat org.jenkinsci.test.acceptance.po.Artifact.assertThatExists(Artifact.java:51)\n\tat core.ArtifactsTest.test_large_file(ArtifactsTest.java:53)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:497)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)\n\tat org.jenkinsci.test.acceptance.junit.JenkinsAcceptanceTestRule$1$2$1.evaluate(JenkinsAcceptanceTestRule.java:129)\n\tat org.jenkinsci.test.acceptance.junit.FilterRule$1.evaluate(FilterRule.java:62)\n\tat org.jenkinsci.test.acceptance.junit.JenkinsAcceptanceTestRule$1.evaluate(JenkinsAcceptanceTestRule.java:55)\n\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n"
+   },
+   "steps" : {
+      "step" : [ ]
+   },
+   "attachments" : {
+      "attachment" : [ ]
+   },
+   "labels" : {
+      "label" : [ {
+         "name" : "host",
+         "value" : "MacBook-Pro-2.home"
+      }, {
+         "name" : "thread",
+         "value" : "3426@MacBook-Pro-2.home.main(1)"
+      } ]
+   }
+}
+testCase=ru.yandex.qatools.allure.model.TestCase@3967eda0[
+  _id=12dd4bca-71d8-43cc-8e36-15e9b744fbc7
+  executionId=8e6dd7ca-e27b-4013-bda8-bc2788640ddd
+  threadName=dc7331de-b740-4ba3-9907-ee3762987799
+  result=ru.yandex.qatools.allure.model.TestCaseResult@3f0f886a
+]
+testCase={
+   "_id" : "12dd4bca-71d8-43cc-8e36-15e9b744fbc7",
+   "executionId" : "8e6dd7ca-e27b-4013-bda8-bc2788640ddd",
+   "threadName" : "dc7331de-b740-4ba3-9907-ee3762987799",
+   "result" : {
+      "start" : 1444525833445,
+      "stop" : 1444525864829,
+      "status" : "failed",
+      "name" : "test_large_file",
+      "failure" : {
+         "message" : "AssertionError: \nExpected: is <200>\n     but: was <404>",
+         "stack-trace" : "java.lang.AssertionError: \nExpected: is <200>\n     but: was <404>\n\tat org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)\n\tat org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)\n\tat org.jenkinsci.test.acceptance.po.Artifact.assertThatExists(Artifact.java:51)\n\tat core.ArtifactsTest.test_large_file(ArtifactsTest.java:53)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:497)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)\n\tat org.jenkinsci.test.acceptance.junit.JenkinsAcceptanceTestRule$1$2$1.evaluate(JenkinsAcceptanceTestRule.java:129)\n\tat org.jenkinsci.test.acceptance.junit.FilterRule$1.evaluate(FilterRule.java:62)\n\tat org.jenkinsci.test.acceptance.junit.JenkinsAcceptanceTestRule$1.evaluate(JenkinsAcceptanceTestRule.java:55)\n\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n"
+      },
+      "steps" : {
+         "step" : [ ]
+      },
+      "attachments" : {
+         "attachment" : [ ]
+      },
+      "labels" : {
+         "label" : [ {
+            "name" : "host",
+            "value" : "MacBook-Pro-2.home"
+         }, {
+            "name" : "thread",
+            "value" : "3426@MacBook-Pro-2.home.main(1)"
+         } ]
+      }
+   }
+}
+>>>REQUEST: /testaspect/TestCase/12dd4bca-71d8-43cc-8e36-15e9b744fbc7
+<<<RESPONSE (201 Created): /testaspect/TestCase/12dd4bca-71d8-43cc-8e36-15e9b744fbc7
+running with given plugins: []
 === Starting slave_build_history(core.BuildHistoryTest)
-Starting Jenkins: JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home JENKINS_HOME=/Users/abduljewel/Documents/c/spiderqa/sample-test-projects/acceptance-test-harness/target/jenkins4747625734587665869home /Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/bin/java -Duser.language=en -jar ./jenkins.war --ajp13Port=-1 --httpPort=61202
-master61202|Running from: /Users/abduljewel/Documents/c/spiderqa/sample-test-projects/acceptance-test-harness/jenkins.war
-master61202|webroot: EnvVars.masterEnvVars.get("JENKINS_HOME")
-master61202|Oct 01, 2015 7:30:06 PM winstone.Logger logInternal
-master61202|INFO: Beginning extraction from war file
-master61202|Oct 01, 2015 7:30:08 PM org.eclipse.jetty.util.log.JavaUtilLog info
-master61202|INFO: jetty-winstone-2.8
-master61202|Oct 01, 2015 7:30:11 PM org.eclipse.jetty.util.log.JavaUtilLog info
-master61202|INFO: NO JSP Support for , did not find org.apache.jasper.servlet.JspServlet
-master61202|Jenkins home directory: /Users/abduljewel/Documents/c/spiderqa/sample-test-projects/acceptance-test-harness/target/jenkins4747625734587665869home found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
-master61202|Oct 01, 2015 7:30:13 PM org.eclipse.jetty.util.log.JavaUtilLog info
-master61202|INFO: Started SelectChannelConnector@0.0.0.0:61202
-master61202|Oct 01, 2015 7:30:13 PM winstone.Logger logInternal
-master61202|INFO: Winstone Servlet Engine v2.0 running: controlPort=disabled
-master61202|Oct 01, 2015 7:30:14 PM jenkins.InitReactorRunner$1 onAttained
-master61202|INFO: Started initialization
-master61202|Oct 01, 2015 7:30:31 PM jenkins.InitReactorRunner$1 onAttained
-master61202|INFO: Listed all plugins
-master61202|Oct 01, 2015 7:30:31 PM jenkins.InitReactorRunner$1 onAttained
-master61202|INFO: Prepared all plugins
-master61202|Oct 01, 2015 7:30:31 PM jenkins.InitReactorRunner$1 onAttained
-master61202|INFO: Started all plugins
-master61202|Oct 01, 2015 7:30:31 PM jenkins.InitReactorRunner$1 onAttained
-master61202|INFO: Augmented all extensions
-master61202|Oct 01, 2015 7:30:37 PM jenkins.InitReactorRunner$1 onAttained
-master61202|INFO: Loaded all jobs
-master61202|Oct 01, 2015 7:30:41 PM hudson.model.AsyncPeriodicWork$1 run
-master61202|INFO: Started Download metadata
-master61202|Oct 01, 2015 7:30:42 PM org.jenkinsci.main.modules.sshd.SSHD start
-master61202|INFO: Started SSHD at port 58307
-master61202|Oct 01, 2015 7:30:42 PM jenkins.InitReactorRunner$1 onAttained
-master61202|INFO: Completed initialization
-master61202|Oct 01, 2015 7:30:42 PM hudson.UDPBroadcastThread run
-master61202|WARNING: UDP handling problem
-master61202|java.net.SocketException: Can't assign requested address
-master61202|	at java.net.PlainDatagramSocketImpl.join(Native Method)
-master61202|	at java.net.AbstractPlainDatagramSocketImpl.join(AbstractPlainDatagramSocketImpl.java:179)
-master61202|	at java.net.MulticastSocket.joinGroup(MulticastSocket.java:323)
-master61202|	at hudson.UDPBroadcastThread.run(UDPBroadcastThread.java:77)
-master61202|
-master61202|Oct 01, 2015 7:30:42 PM hudson.WebAppMain$3 run
-master61202|INFO: Jenkins is fully up and running
-master61202|Oct 01, 2015 7:30:50 PM hudson.model.UpdateSite updateData
-master61202|INFO: Obtained the latest update center data file for UpdateSource default
-master61202|Oct 01, 2015 7:30:52 PM hudson.model.DownloadService$Downloadable load
-master61202|INFO: Obtained the updated data file for hudson.tasks.Maven.MavenInstaller
-master61202|Oct 01, 2015 7:30:52 PM hudson.model.DownloadService$Downloadable load
-master61202|INFO: Obtained the updated data file for hudson.tasks.Ant.AntInstaller
-master61202|Oct 01, 2015 7:30:53 PM hudson.model.DownloadService$Downloadable load
-master61202|INFO: Obtained the updated data file for hudson.tools.JDKInstaller
-master61202|Oct 01, 2015 7:30:53 PM hudson.model.AsyncPeriodicWork$1 run
-master61202|INFO: Finished Download metadata. 12,124 ms
-org.openqa.selenium.UnhandledAlertException: Unexpected modal dialog (text: This page is asking you to confirm that you want to leave - data you have entered may not be saved.): This page is asking you to confirm that you want to leave - data you have entered may not be saved.
+Starting Jenkins: JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home JENKINS_HOME=/Users/abduljewel/Documents/c/spiderqa/sample-test-projects/acceptance-test-harness/target/jenkins6087231657792581889home /Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/bin/java -Duser.language=en -jar ./jenkins.war --ajp13Port=-1 --httpPort=54856
+master54856|Running from: /Users/abduljewel/Documents/c/spiderqa/sample-test-projects/acceptance-test-harness/jenkins.war
+master54856|webroot: EnvVars.masterEnvVars.get("JENKINS_HOME")
+master54856|Oct 10, 2015 9:11:05 PM winstone.Logger logInternal
+master54856|INFO: Beginning extraction from war file
+master54856|Oct 10, 2015 9:11:06 PM org.eclipse.jetty.util.log.JavaUtilLog info
+master54856|INFO: jetty-winstone-2.8
+master54856|Oct 10, 2015 9:11:07 PM org.eclipse.jetty.util.log.JavaUtilLog info
+master54856|INFO: NO JSP Support for , did not find org.apache.jasper.servlet.JspServlet
+master54856|Jenkins home directory: /Users/abduljewel/Documents/c/spiderqa/sample-test-projects/acceptance-test-harness/target/jenkins6087231657792581889home found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+master54856|Oct 10, 2015 9:11:08 PM org.eclipse.jetty.util.log.JavaUtilLog info
+master54856|INFO: Started SelectChannelConnector@0.0.0.0:54856
+master54856|Oct 10, 2015 9:11:08 PM winstone.Logger logInternal
+master54856|INFO: Winstone Servlet Engine v2.0 running: controlPort=disabled
+master54856|Oct 10, 2015 9:11:08 PM jenkins.InitReactorRunner$1 onAttained
+master54856|INFO: Started initialization
+master54856|Oct 10, 2015 9:11:16 PM jenkins.InitReactorRunner$1 onAttained
+master54856|INFO: Listed all plugins
+master54856|Oct 10, 2015 9:11:16 PM jenkins.InitReactorRunner$1 onAttained
+master54856|INFO: Prepared all plugins
+master54856|Oct 10, 2015 9:11:16 PM jenkins.InitReactorRunner$1 onAttained
+master54856|INFO: Started all plugins
+master54856|Oct 10, 2015 9:11:16 PM jenkins.InitReactorRunner$1 onAttained
+master54856|INFO: Augmented all extensions
+master54856|Oct 10, 2015 9:11:18 PM jenkins.InitReactorRunner$1 onAttained
+master54856|INFO: Loaded all jobs
+master54856|Oct 10, 2015 9:11:19 PM hudson.model.AsyncPeriodicWork$1 run
+master54856|INFO: Started Download metadata
+master54856|Oct 10, 2015 9:11:19 PM org.jenkinsci.main.modules.sshd.SSHD start
+master54856|INFO: Started SSHD at port 60209
+master54856|Oct 10, 2015 9:11:19 PM jenkins.InitReactorRunner$1 onAttained
+master54856|INFO: Completed initialization
+master54856|Oct 10, 2015 9:11:19 PM hudson.WebAppMain$3 run
+master54856|INFO: Jenkins is fully up and running
+master54856|Oct 10, 2015 9:11:20 PM hudson.model.UpdateSite updateData
+master54856|INFO: Obtained the latest update center data file for UpdateSource default
+master54856|Oct 10, 2015 9:11:21 PM hudson.model.DownloadService$Downloadable load
+master54856|INFO: Obtained the updated data file for hudson.tasks.Maven.MavenInstaller
+master54856|Oct 10, 2015 9:11:21 PM hudson.model.DownloadService$Downloadable load
+master54856|INFO: Obtained the updated data file for hudson.tasks.Ant.AntInstaller
+master54856|Oct 10, 2015 9:11:22 PM hudson.model.DownloadService$Downloadable load
+master54856|INFO: Obtained the updated data file for hudson.tools.JDKInstaller
+master54856|Oct 10, 2015 9:11:22 PM hudson.model.AsyncPeriodicWork$1 run
+master54856|INFO: Finished Download metadata. 3,044 ms
+org.openqa.selenium.TimeoutException: Timed out after 120 seconds: Next build of restricted_maid is started
 Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
-System info: host: 'Abduls-MBP.home', ip: '192.168.1.8', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.5', java.version: '1.8.0_60'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: fd6f65f1-2ef2-4541-840c-6eb902e9c821
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.createUnhandledAlertException(ErrorHandler.java:187)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:154)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
-	at org.openqa.selenium.remote.RemoteWebDriver.getPageSource(RemoteWebDriver.java:455)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:102)
-	at com.sun.proxy.$Proxy37.getPageSource(Unknown Source)
-	at org.jenkinsci.test.acceptance.selenium.SanityChecker.isFastPath(SanityChecker.java:88)
-	at org.jenkinsci.test.acceptance.selenium.SanityChecker.checkSanity(SanityChecker.java:59)
-	at org.jenkinsci.test.acceptance.selenium.SanityChecker.afterNavigateTo(SanityChecker.java:45)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:79)
-	at com.sun.proxy.$Proxy36.afterNavigateTo(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:161)
-	at org.jenkinsci.test.acceptance.po.CapybaraPortingLayerImpl.visit(CapybaraPortingLayerImpl.java:77)
-	at org.jenkinsci.test.acceptance.po.Job.scheduleBuild(Job.java:258)
-	at org.jenkinsci.test.acceptance.po.Job.scheduleBuild(Job.java:253)
+System info: host: 'MacBook-Pro-2.home', ip: '192.168.1.6', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.5', java.version: '1.8.0_60'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:260)
+	at org.jenkinsci.test.acceptance.junit.Wait.timeoutException(Wait.java:127)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at org.jenkinsci.test.acceptance.junit.Wait.until(Wait.java:72)
+	at org.jenkinsci.test.acceptance.po.Build.waitUntilStarted(Build.java:73)
+	at org.jenkinsci.test.acceptance.po.Build.waitUntilStarted(Build.java:66)
 	at org.jenkinsci.test.acceptance.po.Job.startBuild(Job.java:245)
 	at core.BuildHistoryTest.slave_build_history(BuildHistoryTest.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -222,12 +241,26 @@ It looks like the test failed/errored, so here's the console from Jenkins:
 
 Jenkins is stopped
 ]]></system-out>
-    <system-err><![CDATA[Oct 01, 2015 7:30:05 PM org.jenkinsci.test.acceptance.controller.LocalController startNow
-INFO: Waiting for Jenkins to become running in http://127.0.0.1:61202/
-Oct 01, 2015 7:30:42 PM org.jenkinsci.test.acceptance.controller.LocalController startNow
-INFO: Jenkins is running in http://127.0.0.1:61202/
+    <system-err><![CDATA[Oct 10, 2015 9:11:04 PM org.jenkinsci.test.acceptance.controller.LocalController startNow
+INFO: Waiting for Jenkins to become running in http://127.0.0.1:54856/
+Oct 10, 2015 9:11:19 PM org.jenkinsci.test.acceptance.controller.LocalController startNow
+INFO: Jenkins is running in http://127.0.0.1:54856/
+Oct 10, 2015 9:11:19 PM org.openqa.selenium.phantomjs.PhantomJSDriverService <init>
+INFO: executable: /usr/local/bin/phantomjs
+Oct 10, 2015 9:11:19 PM org.openqa.selenium.phantomjs.PhantomJSDriverService <init>
+INFO: port: 11358
+Oct 10, 2015 9:11:19 PM org.openqa.selenium.phantomjs.PhantomJSDriverService <init>
+INFO: arguments: [--webdriver=11358, --webdriver-logfile=/Users/abduljewel/Documents/c/spiderqa/sample-test-projects/acceptance-test-harness/phantomjsdriver.log]
+Oct 10, 2015 9:11:19 PM org.openqa.selenium.phantomjs.PhantomJSDriverService <init>
+INFO: environment: {}
+[INFO  - 2015-10-11T01:11:19.603Z] GhostDriver - Main - running on port 11358
+[INFO  - 2015-10-11T01:11:19.858Z] Session [fae18bf0-6fb4-11e5-bbe7-81e6905cd639] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.0.0 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2015-10-11T01:11:19.858Z] Session [fae18bf0-6fb4-11e5-bbe7-81e6905cd639] - page.customHeaders:  - {"Accept-Language":"en"}
+[INFO  - 2015-10-11T01:11:19.858Z] Session [fae18bf0-6fb4-11e5-bbe7-81e6905cd639] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.0.0","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"mac-10.9 (Mavericks)-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"},"phantomjs.page.customHeaders.Accept-Language":"en"}
+[INFO  - 2015-10-11T01:11:19.859Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: fae18bf0-6fb4-11e5-bbe7-81e6905cd639
+[INFO  - 2015-10-11T01:13:22.859Z] ShutdownReqHand - _handle - About to shutdown
 ]]></system-err>
   </testcase>
-  <testcase name="global_build_history" classname="core.BuildHistoryTest" time="57.829"/>
-  <testcase name="view_build_history" classname="core.BuildHistoryTest" time="63.813"/>
+  <testcase name="global_build_history" classname="core.BuildHistoryTest" time="20.269"/>
+  <testcase name="view_build_history" classname="core.BuildHistoryTest" time="21.597"/>
 </testsuite>

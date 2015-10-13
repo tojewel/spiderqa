@@ -63,23 +63,23 @@
   </properties>
   <testcase name="custom_group_search_base" classname="plugins.LdapPluginTest" time="0">
     <skipped/>
-    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@2b6fcca1[
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@1f415bb8[
   name=login_ok
   title=<null>
   description=<null>
-  failure=ru.yandex.qatools.allure.model.Failure@39f93225
-  start=1443743800087
-  stop=1443743800121
+  failure=ru.yandex.qatools.allure.model.Failure@720050ff
+  start=1444528670971
+  stop=1444528670981
   status=CANCELED
   severity=<null>
   steps=[]
   attachments=[]
-  labels=[ru.yandex.qatools.allure.model.Label@24b3f778, ru.yandex.qatools.allure.model.Label@164dea80]
+  labels=[ru.yandex.qatools.allure.model.Label@52c9c92a, ru.yandex.qatools.allure.model.Label@475abe6a]
   parameters=<null>
 ]
 testCaseResult={
-   "start" : 1443743800087,
-   "stop" : 1443743800121,
+   "start" : 1444528670971,
+   "stop" : 1444528670981,
    "status" : "canceled",
    "name" : "login_ok",
    "failure" : {
@@ -95,24 +95,26 @@ testCaseResult={
    "labels" : {
       "label" : [ {
          "name" : "host",
-         "value" : "Abduls-MBP.home"
+         "value" : "MacBook-Pro-2.home"
       }, {
          "name" : "thread",
-         "value" : "35253@Abduls-MBP.home.main(1)"
+         "value" : "3426@MacBook-Pro-2.home.main(1)"
       } ]
    }
 }
-testCase=ru.yandex.qatools.allure.model.TestCase@4392362c[
-  _id=ea76747b-8bad-4521-a84c-1b44c4cac45e
-  executionId=1bbf0610-8745-4dcf-b9b8-2ceab706f093
-  result=ru.yandex.qatools.allure.model.TestCaseResult@2b6fcca1
+testCase=ru.yandex.qatools.allure.model.TestCase@52d3a1a2[
+  _id=3f806111-c6a7-495a-ac3d-3398c01fdead
+  executionId=8e6dd7ca-e27b-4013-bda8-bc2788640ddd
+  threadName=dc7331de-b740-4ba3-9907-ee3762987799
+  result=ru.yandex.qatools.allure.model.TestCaseResult@1f415bb8
 ]
 testCase={
-   "_id" : "ea76747b-8bad-4521-a84c-1b44c4cac45e",
-   "executionId" : "1bbf0610-8745-4dcf-b9b8-2ceab706f093",
+   "_id" : "3f806111-c6a7-495a-ac3d-3398c01fdead",
+   "executionId" : "8e6dd7ca-e27b-4013-bda8-bc2788640ddd",
+   "threadName" : "dc7331de-b740-4ba3-9907-ee3762987799",
    "result" : {
-      "start" : 1443743800087,
-      "stop" : 1443743800121,
+      "start" : 1444528670971,
+      "stop" : 1444528670981,
       "status" : "canceled",
       "name" : "login_ok",
       "failure" : {
@@ -128,18 +130,16 @@ testCase={
       "labels" : {
          "label" : [ {
             "name" : "host",
-            "value" : "Abduls-MBP.home"
+            "value" : "MacBook-Pro-2.home"
          }, {
             "name" : "thread",
-            "value" : "35253@Abduls-MBP.home.main(1)"
+            "value" : "3426@MacBook-Pro-2.home.main(1)"
          } ]
       }
    }
 }
->>>REQUEST: /testdb/TestCase
-[WARN] [10/01/2015 19:56:40.129] [default-akka.actor.default-dispatcher-117] [ActorSystem(default)] Illegal response header: Illegal 'etag' header: Invalid input '5', expected 'W' or '"' (line 1, column 1): 560dc838fbeaf7a200c9bf4e
-^
-<<<RESPONSE (201 Created): /testdb/TestCase
+>>>REQUEST: /testaspect/TestCase/3f806111-c6a7-495a-ac3d-3398c01fdead
+<<<RESPONSE (201 Created): /testaspect/TestCase/3f806111-c6a7-495a-ac3d-3398c01fdead
 running with given plugins: []
 === Starting custom_group_search_base(plugins.LdapPluginTest)
 Skipping custom_group_search_base(plugins.LdapPluginTest): Docker is needed for the test
@@ -147,23 +147,23 @@ Skipping custom_group_search_base(plugins.LdapPluginTest): Docker is needed for 
   </testcase>
   <testcase name="login_no_ldap" classname="plugins.LdapPluginTest" time="0">
     <skipped/>
-    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@77e6761f[
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@7fcbbf75[
   name=custom_group_search_base
   title=<null>
   description=<null>
-  failure=ru.yandex.qatools.allure.model.Failure@5c997de8
-  start=1443743800573
-  stop=1443743800603
+  failure=ru.yandex.qatools.allure.model.Failure@2d31d712
+  start=1444528670982
+  stop=1444528670993
   status=CANCELED
   severity=<null>
   steps=[]
   attachments=[]
-  labels=[ru.yandex.qatools.allure.model.Label@45bf93bb, ru.yandex.qatools.allure.model.Label@6b7c4734]
+  labels=[ru.yandex.qatools.allure.model.Label@a6be3ec, ru.yandex.qatools.allure.model.Label@32a89d72]
   parameters=<null>
 ]
 testCaseResult={
-   "start" : 1443743800573,
-   "stop" : 1443743800603,
+   "start" : 1444528670982,
+   "stop" : 1444528670993,
    "status" : "canceled",
    "name" : "custom_group_search_base",
    "failure" : {
@@ -179,24 +179,26 @@ testCaseResult={
    "labels" : {
       "label" : [ {
          "name" : "host",
-         "value" : "Abduls-MBP.home"
+         "value" : "MacBook-Pro-2.home"
       }, {
          "name" : "thread",
-         "value" : "35253@Abduls-MBP.home.main(1)"
+         "value" : "3426@MacBook-Pro-2.home.main(1)"
       } ]
    }
 }
-testCase=ru.yandex.qatools.allure.model.TestCase@2f6e92ca[
-  _id=358c210b-b481-4cb4-9afa-579350c7f930
-  executionId=1bbf0610-8745-4dcf-b9b8-2ceab706f093
-  result=ru.yandex.qatools.allure.model.TestCaseResult@77e6761f
+testCase=ru.yandex.qatools.allure.model.TestCase@10baac45[
+  _id=5b9740f6-5737-4635-bc41-46393254dd18
+  executionId=8e6dd7ca-e27b-4013-bda8-bc2788640ddd
+  threadName=dc7331de-b740-4ba3-9907-ee3762987799
+  result=ru.yandex.qatools.allure.model.TestCaseResult@7fcbbf75
 ]
 testCase={
-   "_id" : "358c210b-b481-4cb4-9afa-579350c7f930",
-   "executionId" : "1bbf0610-8745-4dcf-b9b8-2ceab706f093",
+   "_id" : "5b9740f6-5737-4635-bc41-46393254dd18",
+   "executionId" : "8e6dd7ca-e27b-4013-bda8-bc2788640ddd",
+   "threadName" : "dc7331de-b740-4ba3-9907-ee3762987799",
    "result" : {
-      "start" : 1443743800573,
-      "stop" : 1443743800603,
+      "start" : 1444528670982,
+      "stop" : 1444528670993,
       "status" : "canceled",
       "name" : "custom_group_search_base",
       "failure" : {
@@ -212,42 +214,40 @@ testCase={
       "labels" : {
          "label" : [ {
             "name" : "host",
-            "value" : "Abduls-MBP.home"
+            "value" : "MacBook-Pro-2.home"
          }, {
             "name" : "thread",
-            "value" : "35253@Abduls-MBP.home.main(1)"
+            "value" : "3426@MacBook-Pro-2.home.main(1)"
          } ]
       }
    }
 }
->>>REQUEST: /testdb/TestCase
-[WARN] [10/01/2015 19:56:40.610] [default-akka.actor.default-dispatcher-118] [ActorSystem(default)] Illegal response header: Illegal 'etag' header: Invalid input '5', expected 'W' or '"' (line 1, column 1): 560dc838fbeaf7a200c9bf4f
-^
-<<<RESPONSE (201 Created): /testdb/TestCase
+>>>REQUEST: /testaspect/TestCase/5b9740f6-5737-4635-bc41-46393254dd18
 running with given plugins: []
+<<<RESPONSE (201 Created): /testaspect/TestCase/5b9740f6-5737-4635-bc41-46393254dd18
 === Starting login_no_ldap(plugins.LdapPluginTest)
 Skipping login_no_ldap(plugins.LdapPluginTest): Docker is needed for the test
 ]]></system-out>
   </testcase>
   <testcase name="custom_display_name" classname="plugins.LdapPluginTest" time="0">
     <skipped/>
-    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@2acb1264[
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@3fdcf252[
   name=login_no_ldap
   title=<null>
   description=<null>
-  failure=ru.yandex.qatools.allure.model.Failure@30a01dd8
-  start=1443743800606
-  stop=1443743800637
+  failure=ru.yandex.qatools.allure.model.Failure@15501ad5
+  start=1444528670994
+  stop=1444528671004
   status=CANCELED
   severity=<null>
   steps=[]
   attachments=[]
-  labels=[ru.yandex.qatools.allure.model.Label@1f68e4e8, ru.yandex.qatools.allure.model.Label@47b4ac83]
+  labels=[ru.yandex.qatools.allure.model.Label@b387f49, ru.yandex.qatools.allure.model.Label@181c5740]
   parameters=<null>
 ]
 testCaseResult={
-   "start" : 1443743800606,
-   "stop" : 1443743800637,
+   "start" : 1444528670994,
+   "stop" : 1444528671004,
    "status" : "canceled",
    "name" : "login_no_ldap",
    "failure" : {
@@ -263,24 +263,26 @@ testCaseResult={
    "labels" : {
       "label" : [ {
          "name" : "host",
-         "value" : "Abduls-MBP.home"
+         "value" : "MacBook-Pro-2.home"
       }, {
          "name" : "thread",
-         "value" : "35253@Abduls-MBP.home.main(1)"
+         "value" : "3426@MacBook-Pro-2.home.main(1)"
       } ]
    }
 }
-testCase=ru.yandex.qatools.allure.model.TestCase@351ede23[
-  _id=f7934f5d-e91e-431e-a5b4-10c349102cb2
-  executionId=1bbf0610-8745-4dcf-b9b8-2ceab706f093
-  result=ru.yandex.qatools.allure.model.TestCaseResult@2acb1264
+testCase=ru.yandex.qatools.allure.model.TestCase@400a6873[
+  _id=78a80b88-f92b-4d48-8a66-b41d41d59435
+  executionId=8e6dd7ca-e27b-4013-bda8-bc2788640ddd
+  threadName=dc7331de-b740-4ba3-9907-ee3762987799
+  result=ru.yandex.qatools.allure.model.TestCaseResult@3fdcf252
 ]
 testCase={
-   "_id" : "f7934f5d-e91e-431e-a5b4-10c349102cb2",
-   "executionId" : "1bbf0610-8745-4dcf-b9b8-2ceab706f093",
+   "_id" : "78a80b88-f92b-4d48-8a66-b41d41d59435",
+   "executionId" : "8e6dd7ca-e27b-4013-bda8-bc2788640ddd",
+   "threadName" : "dc7331de-b740-4ba3-9907-ee3762987799",
    "result" : {
-      "start" : 1443743800606,
-      "stop" : 1443743800637,
+      "start" : 1444528670994,
+      "stop" : 1444528671004,
       "status" : "canceled",
       "name" : "login_no_ldap",
       "failure" : {
@@ -296,42 +298,40 @@ testCase={
       "labels" : {
          "label" : [ {
             "name" : "host",
-            "value" : "Abduls-MBP.home"
+            "value" : "MacBook-Pro-2.home"
          }, {
             "name" : "thread",
-            "value" : "35253@Abduls-MBP.home.main(1)"
+            "value" : "3426@MacBook-Pro-2.home.main(1)"
          } ]
       }
    }
 }
->>>REQUEST: /testdb/TestCase
-[WARN] [10/01/2015 19:56:40.642] [default-akka.actor.default-dispatcher-135] [ActorSystem(default)] Illegal response header: Illegal 'etag' header: Invalid input '5', expected 'W' or '"' (line 1, column 1): 560dc838fbeaf7a200c9bf50
-^
-<<<RESPONSE (201 Created): /testdb/TestCase
+>>>REQUEST: /testaspect/TestCase/78a80b88-f92b-4d48-8a66-b41d41d59435
 running with given plugins: []
+<<<RESPONSE (201 Created): /testaspect/TestCase/78a80b88-f92b-4d48-8a66-b41d41d59435
 === Starting custom_display_name(plugins.LdapPluginTest)
 Skipping custom_display_name(plugins.LdapPluginTest): Docker is needed for the test
 ]]></system-out>
   </testcase>
   <testcase name="login_no_such_user" classname="plugins.LdapPluginTest" time="0">
     <skipped/>
-    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@71468613[
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@b115282[
   name=custom_display_name
   title=<null>
   description=<null>
-  failure=ru.yandex.qatools.allure.model.Failure@13f4048e
-  start=1443743800639
-  stop=1443743800669
+  failure=ru.yandex.qatools.allure.model.Failure@7372ad99
+  start=1444528671004
+  stop=1444528671014
   status=CANCELED
   severity=<null>
   steps=[]
   attachments=[]
-  labels=[ru.yandex.qatools.allure.model.Label@5477d90e, ru.yandex.qatools.allure.model.Label@6dc9a56e]
+  labels=[ru.yandex.qatools.allure.model.Label@1c8e59d, ru.yandex.qatools.allure.model.Label@33fcc2a0]
   parameters=<null>
 ]
 testCaseResult={
-   "start" : 1443743800639,
-   "stop" : 1443743800669,
+   "start" : 1444528671004,
+   "stop" : 1444528671014,
    "status" : "canceled",
    "name" : "custom_display_name",
    "failure" : {
@@ -347,24 +347,26 @@ testCaseResult={
    "labels" : {
       "label" : [ {
          "name" : "host",
-         "value" : "Abduls-MBP.home"
+         "value" : "MacBook-Pro-2.home"
       }, {
          "name" : "thread",
-         "value" : "35253@Abduls-MBP.home.main(1)"
+         "value" : "3426@MacBook-Pro-2.home.main(1)"
       } ]
    }
 }
-testCase=ru.yandex.qatools.allure.model.TestCase@287ad0da[
-  _id=e9317293-09cc-477b-9027-49bb8f339520
-  executionId=1bbf0610-8745-4dcf-b9b8-2ceab706f093
-  result=ru.yandex.qatools.allure.model.TestCaseResult@71468613
+testCase=ru.yandex.qatools.allure.model.TestCase@32f8131f[
+  _id=fd48e39c-78c0-4e06-a73b-c8ea39222bf4
+  executionId=8e6dd7ca-e27b-4013-bda8-bc2788640ddd
+  threadName=dc7331de-b740-4ba3-9907-ee3762987799
+  result=ru.yandex.qatools.allure.model.TestCaseResult@b115282
 ]
 testCase={
-   "_id" : "e9317293-09cc-477b-9027-49bb8f339520",
-   "executionId" : "1bbf0610-8745-4dcf-b9b8-2ceab706f093",
+   "_id" : "fd48e39c-78c0-4e06-a73b-c8ea39222bf4",
+   "executionId" : "8e6dd7ca-e27b-4013-bda8-bc2788640ddd",
+   "threadName" : "dc7331de-b740-4ba3-9907-ee3762987799",
    "result" : {
-      "start" : 1443743800639,
-      "stop" : 1443743800669,
+      "start" : 1444528671004,
+      "stop" : 1444528671014,
       "status" : "canceled",
       "name" : "custom_display_name",
       "failure" : {
@@ -380,42 +382,40 @@ testCase={
       "labels" : {
          "label" : [ {
             "name" : "host",
-            "value" : "Abduls-MBP.home"
+            "value" : "MacBook-Pro-2.home"
          }, {
             "name" : "thread",
-            "value" : "35253@Abduls-MBP.home.main(1)"
+            "value" : "3426@MacBook-Pro-2.home.main(1)"
          } ]
       }
    }
 }
->>>REQUEST: /testdb/TestCase
-[WARN] [10/01/2015 19:56:40.675] [default-akka.actor.default-dispatcher-136] [ActorSystem(default)] Illegal response header: Illegal 'etag' header: Invalid input '5', expected 'W' or '"' (line 1, column 1): 560dc838fbeaf7a200c9bf51
-^
-<<<RESPONSE (201 Created): /testdb/TestCase
+>>>REQUEST: /testaspect/TestCase/fd48e39c-78c0-4e06-a73b-c8ea39222bf4
 running with given plugins: []
+<<<RESPONSE (201 Created): /testaspect/TestCase/fd48e39c-78c0-4e06-a73b-c8ea39222bf4
 === Starting login_no_such_user(plugins.LdapPluginTest)
 Skipping login_no_such_user(plugins.LdapPluginTest): Docker is needed for the test
 ]]></system-out>
   </testcase>
   <testcase name="resolve_display_name_with_defaults" classname="plugins.LdapPluginTest" time="0">
     <skipped/>
-    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@5342eec5[
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@24056fc1[
   name=login_no_such_user
   title=<null>
   description=<null>
-  failure=ru.yandex.qatools.allure.model.Failure@60e47aab
-  start=1443743800672
-  stop=1443743800700
+  failure=ru.yandex.qatools.allure.model.Failure@22cd4347
+  start=1444528671015
+  stop=1444528671024
   status=CANCELED
   severity=<null>
   steps=[]
   attachments=[]
-  labels=[ru.yandex.qatools.allure.model.Label@261a66b8, ru.yandex.qatools.allure.model.Label@adc8683]
+  labels=[ru.yandex.qatools.allure.model.Label@165dae02, ru.yandex.qatools.allure.model.Label@3da43c17]
   parameters=<null>
 ]
 testCaseResult={
-   "start" : 1443743800672,
-   "stop" : 1443743800700,
+   "start" : 1444528671015,
+   "stop" : 1444528671024,
    "status" : "canceled",
    "name" : "login_no_such_user",
    "failure" : {
@@ -431,24 +431,26 @@ testCaseResult={
    "labels" : {
       "label" : [ {
          "name" : "host",
-         "value" : "Abduls-MBP.home"
+         "value" : "MacBook-Pro-2.home"
       }, {
          "name" : "thread",
-         "value" : "35253@Abduls-MBP.home.main(1)"
+         "value" : "3426@MacBook-Pro-2.home.main(1)"
       } ]
    }
 }
-testCase=ru.yandex.qatools.allure.model.TestCase@4eac65db[
-  _id=bcfa16b3-1cf2-41e4-87d7-170cc33bb26f
-  executionId=1bbf0610-8745-4dcf-b9b8-2ceab706f093
-  result=ru.yandex.qatools.allure.model.TestCaseResult@5342eec5
+testCase=ru.yandex.qatools.allure.model.TestCase@32d02705[
+  _id=c2ae7a57-8567-43c3-b16b-9dafe5a45489
+  executionId=8e6dd7ca-e27b-4013-bda8-bc2788640ddd
+  threadName=dc7331de-b740-4ba3-9907-ee3762987799
+  result=ru.yandex.qatools.allure.model.TestCaseResult@24056fc1
 ]
 testCase={
-   "_id" : "bcfa16b3-1cf2-41e4-87d7-170cc33bb26f",
-   "executionId" : "1bbf0610-8745-4dcf-b9b8-2ceab706f093",
+   "_id" : "c2ae7a57-8567-43c3-b16b-9dafe5a45489",
+   "executionId" : "8e6dd7ca-e27b-4013-bda8-bc2788640ddd",
+   "threadName" : "dc7331de-b740-4ba3-9907-ee3762987799",
    "result" : {
-      "start" : 1443743800672,
-      "stop" : 1443743800700,
+      "start" : 1444528671015,
+      "stop" : 1444528671024,
       "status" : "canceled",
       "name" : "login_no_such_user",
       "failure" : {
@@ -464,42 +466,40 @@ testCase={
       "labels" : {
          "label" : [ {
             "name" : "host",
-            "value" : "Abduls-MBP.home"
+            "value" : "MacBook-Pro-2.home"
          }, {
             "name" : "thread",
-            "value" : "35253@Abduls-MBP.home.main(1)"
+            "value" : "3426@MacBook-Pro-2.home.main(1)"
          } ]
       }
    }
 }
->>>REQUEST: /testdb/TestCase
-[WARN] [10/01/2015 19:56:40.708] [default-akka.actor.default-dispatcher-117] [ActorSystem(default)] Illegal response header: Illegal 'etag' header: Invalid input '5', expected 'W' or '"' (line 1, column 1): 560dc838fbeaf7a200c9bf52
-^
-<<<RESPONSE (201 Created): /testdb/TestCase
+>>>REQUEST: /testaspect/TestCase/c2ae7a57-8567-43c3-b16b-9dafe5a45489
 running with given plugins: []
+<<<RESPONSE (201 Created): /testaspect/TestCase/c2ae7a57-8567-43c3-b16b-9dafe5a45489
 === Starting resolve_display_name_with_defaults(plugins.LdapPluginTest)
 Skipping resolve_display_name_with_defaults(plugins.LdapPluginTest): Docker is needed for the test
 ]]></system-out>
   </testcase>
   <testcase name="resolve_email" classname="plugins.LdapPluginTest" time="0">
     <skipped/>
-    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@7e3d168e[
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@a812fb2[
   name=resolve_display_name_with_defaults
   title=<null>
   description=<null>
-  failure=ru.yandex.qatools.allure.model.Failure@149b53fa
-  start=1443743800704
-  stop=1443743800732
+  failure=ru.yandex.qatools.allure.model.Failure@71fcd9b5
+  start=1444528671025
+  stop=1444528671039
   status=CANCELED
   severity=<null>
   steps=[]
   attachments=[]
-  labels=[ru.yandex.qatools.allure.model.Label@73be4cdd, ru.yandex.qatools.allure.model.Label@751686aa]
+  labels=[ru.yandex.qatools.allure.model.Label@52ebb776, ru.yandex.qatools.allure.model.Label@32c4e89f]
   parameters=<null>
 ]
 testCaseResult={
-   "start" : 1443743800704,
-   "stop" : 1443743800732,
+   "start" : 1444528671025,
+   "stop" : 1444528671039,
    "status" : "canceled",
    "name" : "resolve_display_name_with_defaults",
    "failure" : {
@@ -515,24 +515,26 @@ testCaseResult={
    "labels" : {
       "label" : [ {
          "name" : "host",
-         "value" : "Abduls-MBP.home"
+         "value" : "MacBook-Pro-2.home"
       }, {
          "name" : "thread",
-         "value" : "35253@Abduls-MBP.home.main(1)"
+         "value" : "3426@MacBook-Pro-2.home.main(1)"
       } ]
    }
 }
-testCase=ru.yandex.qatools.allure.model.TestCase@638977e0[
-  _id=3eeb832c-e796-4820-99b1-7247dc6c91d0
-  executionId=1bbf0610-8745-4dcf-b9b8-2ceab706f093
-  result=ru.yandex.qatools.allure.model.TestCaseResult@7e3d168e
+testCase=ru.yandex.qatools.allure.model.TestCase@313bbdca[
+  _id=d4e81c47-c221-40d8-a52c-c8990e308e8e
+  executionId=8e6dd7ca-e27b-4013-bda8-bc2788640ddd
+  threadName=dc7331de-b740-4ba3-9907-ee3762987799
+  result=ru.yandex.qatools.allure.model.TestCaseResult@a812fb2
 ]
 testCase={
-   "_id" : "3eeb832c-e796-4820-99b1-7247dc6c91d0",
-   "executionId" : "1bbf0610-8745-4dcf-b9b8-2ceab706f093",
+   "_id" : "d4e81c47-c221-40d8-a52c-c8990e308e8e",
+   "executionId" : "8e6dd7ca-e27b-4013-bda8-bc2788640ddd",
+   "threadName" : "dc7331de-b740-4ba3-9907-ee3762987799",
    "result" : {
-      "start" : 1443743800704,
-      "stop" : 1443743800732,
+      "start" : 1444528671025,
+      "stop" : 1444528671039,
       "status" : "canceled",
       "name" : "resolve_display_name_with_defaults",
       "failure" : {
@@ -548,42 +550,40 @@ testCase={
       "labels" : {
          "label" : [ {
             "name" : "host",
-            "value" : "Abduls-MBP.home"
+            "value" : "MacBook-Pro-2.home"
          }, {
             "name" : "thread",
-            "value" : "35253@Abduls-MBP.home.main(1)"
+            "value" : "3426@MacBook-Pro-2.home.main(1)"
          } ]
       }
    }
 }
->>>REQUEST: /testdb/TestCase
-[WARN] [10/01/2015 19:56:40.738] [default-akka.actor.default-dispatcher-134] [ActorSystem(default)] Illegal response header: Illegal 'etag' header: Invalid input '5', expected 'W' or '"' (line 1, column 1): 560dc838fbeaf7a200c9bf53
-^
-<<<RESPONSE (201 Created): /testdb/TestCase
+>>>REQUEST: /testaspect/TestCase/d4e81c47-c221-40d8-a52c-c8990e308e8e
 running with given plugins: []
+<<<RESPONSE (201 Created): /testaspect/TestCase/d4e81c47-c221-40d8-a52c-c8990e308e8e
 === Starting resolve_email(plugins.LdapPluginTest)
 Skipping resolve_email(plugins.LdapPluginTest): Docker is needed for the test
 ]]></system-out>
   </testcase>
   <testcase name="login_email_ok" classname="plugins.LdapPluginTest" time="0">
     <skipped/>
-    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@4ac19bc6[
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@1009e17f[
   name=resolve_email
   title=<null>
   description=<null>
-  failure=ru.yandex.qatools.allure.model.Failure@2a075e70
-  start=1443743800735
-  stop=1443743800763
+  failure=ru.yandex.qatools.allure.model.Failure@6119ee47
+  start=1444528671040
+  stop=1444528671055
   status=CANCELED
   severity=<null>
   steps=[]
   attachments=[]
-  labels=[ru.yandex.qatools.allure.model.Label@492c9892, ru.yandex.qatools.allure.model.Label@533e2f4]
+  labels=[ru.yandex.qatools.allure.model.Label@4afcc209, ru.yandex.qatools.allure.model.Label@255aaa17]
   parameters=<null>
 ]
 testCaseResult={
-   "start" : 1443743800735,
-   "stop" : 1443743800763,
+   "start" : 1444528671040,
+   "stop" : 1444528671055,
    "status" : "canceled",
    "name" : "resolve_email",
    "failure" : {
@@ -599,24 +599,26 @@ testCaseResult={
    "labels" : {
       "label" : [ {
          "name" : "host",
-         "value" : "Abduls-MBP.home"
+         "value" : "MacBook-Pro-2.home"
       }, {
          "name" : "thread",
-         "value" : "35253@Abduls-MBP.home.main(1)"
+         "value" : "3426@MacBook-Pro-2.home.main(1)"
       } ]
    }
 }
-testCase=ru.yandex.qatools.allure.model.TestCase@436a563f[
-  _id=e7490911-930c-4703-bb16-b130fd2c3fb3
-  executionId=1bbf0610-8745-4dcf-b9b8-2ceab706f093
-  result=ru.yandex.qatools.allure.model.TestCaseResult@4ac19bc6
+testCase=ru.yandex.qatools.allure.model.TestCase@7a87b5da[
+  _id=78cc36ab-89b8-4374-a68d-4e738b418709
+  executionId=8e6dd7ca-e27b-4013-bda8-bc2788640ddd
+  threadName=dc7331de-b740-4ba3-9907-ee3762987799
+  result=ru.yandex.qatools.allure.model.TestCaseResult@1009e17f
 ]
 testCase={
-   "_id" : "e7490911-930c-4703-bb16-b130fd2c3fb3",
-   "executionId" : "1bbf0610-8745-4dcf-b9b8-2ceab706f093",
+   "_id" : "78cc36ab-89b8-4374-a68d-4e738b418709",
+   "executionId" : "8e6dd7ca-e27b-4013-bda8-bc2788640ddd",
+   "threadName" : "dc7331de-b740-4ba3-9907-ee3762987799",
    "result" : {
-      "start" : 1443743800735,
-      "stop" : 1443743800763,
+      "start" : 1444528671040,
+      "stop" : 1444528671055,
       "status" : "canceled",
       "name" : "resolve_email",
       "failure" : {
@@ -632,42 +634,40 @@ testCase={
       "labels" : {
          "label" : [ {
             "name" : "host",
-            "value" : "Abduls-MBP.home"
+            "value" : "MacBook-Pro-2.home"
          }, {
             "name" : "thread",
-            "value" : "35253@Abduls-MBP.home.main(1)"
+            "value" : "3426@MacBook-Pro-2.home.main(1)"
          } ]
       }
    }
 }
->>>REQUEST: /testdb/TestCase
-[WARN] [10/01/2015 19:56:40.769] [default-akka.actor.default-dispatcher-127] [ActorSystem(default)] Illegal response header: Illegal 'etag' header: Invalid input '5', expected 'W' or '"' (line 1, column 1): 560dc838fbeaf7a200c9bf54
-^
-<<<RESPONSE (201 Created): /testdb/TestCase
+>>>REQUEST: /testaspect/TestCase/78cc36ab-89b8-4374-a68d-4e738b418709
 running with given plugins: []
+<<<RESPONSE (201 Created): /testaspect/TestCase/78cc36ab-89b8-4374-a68d-4e738b418709
 === Starting login_email_ok(plugins.LdapPluginTest)
 Skipping login_email_ok(plugins.LdapPluginTest): Docker is needed for the test
 ]]></system-out>
   </testcase>
   <testcase name="resolve_group_memberships_with_defaults_negative" classname="plugins.LdapPluginTest" time="0">
     <skipped/>
-    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@2cadcff6[
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@5e6331ba[
   name=login_email_ok
   title=<null>
   description=<null>
-  failure=ru.yandex.qatools.allure.model.Failure@76e00bdb
-  start=1443743800767
-  stop=1443743800794
+  failure=ru.yandex.qatools.allure.model.Failure@29f97d69
+  start=1444528671056
+  stop=1444528671070
   status=CANCELED
   severity=<null>
   steps=[]
   attachments=[]
-  labels=[ru.yandex.qatools.allure.model.Label@7ee2423, ru.yandex.qatools.allure.model.Label@343d1d25]
+  labels=[ru.yandex.qatools.allure.model.Label@639b7167, ru.yandex.qatools.allure.model.Label@94e8b19]
   parameters=<null>
 ]
 testCaseResult={
-   "start" : 1443743800767,
-   "stop" : 1443743800794,
+   "start" : 1444528671056,
+   "stop" : 1444528671070,
    "status" : "canceled",
    "name" : "login_email_ok",
    "failure" : {
@@ -683,24 +683,26 @@ testCaseResult={
    "labels" : {
       "label" : [ {
          "name" : "host",
-         "value" : "Abduls-MBP.home"
+         "value" : "MacBook-Pro-2.home"
       }, {
          "name" : "thread",
-         "value" : "35253@Abduls-MBP.home.main(1)"
+         "value" : "3426@MacBook-Pro-2.home.main(1)"
       } ]
    }
 }
-testCase=ru.yandex.qatools.allure.model.TestCase@762da62b[
-  _id=e4444597-924e-434d-8839-e9b26a0c6d44
-  executionId=1bbf0610-8745-4dcf-b9b8-2ceab706f093
-  result=ru.yandex.qatools.allure.model.TestCaseResult@2cadcff6
+testCase=ru.yandex.qatools.allure.model.TestCase@4e67856b[
+  _id=4d2a33e8-433b-40ca-bebd-367682eebaf4
+  executionId=8e6dd7ca-e27b-4013-bda8-bc2788640ddd
+  threadName=dc7331de-b740-4ba3-9907-ee3762987799
+  result=ru.yandex.qatools.allure.model.TestCaseResult@5e6331ba
 ]
 testCase={
-   "_id" : "e4444597-924e-434d-8839-e9b26a0c6d44",
-   "executionId" : "1bbf0610-8745-4dcf-b9b8-2ceab706f093",
+   "_id" : "4d2a33e8-433b-40ca-bebd-367682eebaf4",
+   "executionId" : "8e6dd7ca-e27b-4013-bda8-bc2788640ddd",
+   "threadName" : "dc7331de-b740-4ba3-9907-ee3762987799",
    "result" : {
-      "start" : 1443743800767,
-      "stop" : 1443743800794,
+      "start" : 1444528671056,
+      "stop" : 1444528671070,
       "status" : "canceled",
       "name" : "login_email_ok",
       "failure" : {
@@ -716,18 +718,16 @@ testCase={
       "labels" : {
          "label" : [ {
             "name" : "host",
-            "value" : "Abduls-MBP.home"
+            "value" : "MacBook-Pro-2.home"
          }, {
             "name" : "thread",
-            "value" : "35253@Abduls-MBP.home.main(1)"
+            "value" : "3426@MacBook-Pro-2.home.main(1)"
          } ]
       }
    }
 }
->>>REQUEST: /testdb/TestCase
-[WARN] [10/01/2015 19:56:40.800] [default-akka.actor.default-dispatcher-119] [ActorSystem(default)] Illegal response header: Illegal 'etag' header: Invalid input '5', expected 'W' or '"' (line 1, column 1): 560dc838fbeaf7a200c9bf55
-^
-<<<RESPONSE (201 Created): /testdb/TestCase
+>>>REQUEST: /testaspect/TestCase/4d2a33e8-433b-40ca-bebd-367682eebaf4
+<<<RESPONSE (201 Created): /testaspect/TestCase/4d2a33e8-433b-40ca-bebd-367682eebaf4
 running with given plugins: []
 === Starting resolve_group_memberships_with_defaults_negative(plugins.LdapPluginTest)
 Skipping resolve_group_memberships_with_defaults_negative(plugins.LdapPluginTest): Docker is needed for the test
@@ -735,23 +735,23 @@ Skipping resolve_group_memberships_with_defaults_negative(plugins.LdapPluginTest
   </testcase>
   <testcase name="login_search_base_people_not_found" classname="plugins.LdapPluginTest" time="0">
     <skipped/>
-    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@4f676900[
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@5ef06c3f[
   name=resolve_group_memberships_with_defaults_negative
   title=<null>
   description=<null>
-  failure=ru.yandex.qatools.allure.model.Failure@73a49597
-  start=1443743800797
-  stop=1443743800826
+  failure=ru.yandex.qatools.allure.model.Failure@678a11af
+  start=1444528671071
+  stop=1444528671082
   status=CANCELED
   severity=<null>
   steps=[]
   attachments=[]
-  labels=[ru.yandex.qatools.allure.model.Label@5eb2972f, ru.yandex.qatools.allure.model.Label@29699283]
+  labels=[ru.yandex.qatools.allure.model.Label@3ef900b8, ru.yandex.qatools.allure.model.Label@73173ff9]
   parameters=<null>
 ]
 testCaseResult={
-   "start" : 1443743800797,
-   "stop" : 1443743800826,
+   "start" : 1444528671071,
+   "stop" : 1444528671082,
    "status" : "canceled",
    "name" : "resolve_group_memberships_with_defaults_negative",
    "failure" : {
@@ -767,24 +767,26 @@ testCaseResult={
    "labels" : {
       "label" : [ {
          "name" : "host",
-         "value" : "Abduls-MBP.home"
+         "value" : "MacBook-Pro-2.home"
       }, {
          "name" : "thread",
-         "value" : "35253@Abduls-MBP.home.main(1)"
+         "value" : "3426@MacBook-Pro-2.home.main(1)"
       } ]
    }
 }
-testCase=ru.yandex.qatools.allure.model.TestCase@5d32c1c7[
-  _id=0f3c4ab0-b770-4c83-8f97-2671065b07c0
-  executionId=1bbf0610-8745-4dcf-b9b8-2ceab706f093
-  result=ru.yandex.qatools.allure.model.TestCaseResult@4f676900
+testCase=ru.yandex.qatools.allure.model.TestCase@2edb2430[
+  _id=799c745b-8503-4b7d-9d6d-264b0bdbbd2d
+  executionId=8e6dd7ca-e27b-4013-bda8-bc2788640ddd
+  threadName=dc7331de-b740-4ba3-9907-ee3762987799
+  result=ru.yandex.qatools.allure.model.TestCaseResult@5ef06c3f
 ]
 testCase={
-   "_id" : "0f3c4ab0-b770-4c83-8f97-2671065b07c0",
-   "executionId" : "1bbf0610-8745-4dcf-b9b8-2ceab706f093",
+   "_id" : "799c745b-8503-4b7d-9d6d-264b0bdbbd2d",
+   "executionId" : "8e6dd7ca-e27b-4013-bda8-bc2788640ddd",
+   "threadName" : "dc7331de-b740-4ba3-9907-ee3762987799",
    "result" : {
-      "start" : 1443743800797,
-      "stop" : 1443743800826,
+      "start" : 1444528671071,
+      "stop" : 1444528671082,
       "status" : "canceled",
       "name" : "resolve_group_memberships_with_defaults_negative",
       "failure" : {
@@ -800,18 +802,16 @@ testCase={
       "labels" : {
          "label" : [ {
             "name" : "host",
-            "value" : "Abduls-MBP.home"
+            "value" : "MacBook-Pro-2.home"
          }, {
             "name" : "thread",
-            "value" : "35253@Abduls-MBP.home.main(1)"
+            "value" : "3426@MacBook-Pro-2.home.main(1)"
          } ]
       }
    }
 }
->>>REQUEST: /testdb/TestCase
-[WARN] [10/01/2015 19:56:40.832] [default-akka.actor.default-dispatcher-121] [ActorSystem(default)] Illegal response header: Illegal 'etag' header: Invalid input '5', expected 'W' or '"' (line 1, column 1): 560dc838fbeaf7a200c9bf56
-^
-<<<RESPONSE (201 Created): /testdb/TestCase
+>>>REQUEST: /testaspect/TestCase/799c745b-8503-4b7d-9d6d-264b0bdbbd2d
+<<<RESPONSE (201 Created): /testaspect/TestCase/799c745b-8503-4b7d-9d6d-264b0bdbbd2d
 running with given plugins: []
 === Starting login_search_base_people_not_found(plugins.LdapPluginTest)
 Skipping login_search_base_people_not_found(plugins.LdapPluginTest): Docker is needed for the test
@@ -819,23 +819,23 @@ Skipping login_search_base_people_not_found(plugins.LdapPluginTest): Docker is n
   </testcase>
   <testcase name="custom_mail_filter" classname="plugins.LdapPluginTest" time="0">
     <skipped/>
-    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@56c6d515[
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@718b75bc[
   name=login_search_base_people_not_found
   title=<null>
   description=<null>
-  failure=ru.yandex.qatools.allure.model.Failure@702b656a
-  start=1443743800829
-  stop=1443743800858
+  failure=ru.yandex.qatools.allure.model.Failure@12732ad8
+  start=1444528671083
+  stop=1444528671093
   status=CANCELED
   severity=<null>
   steps=[]
   attachments=[]
-  labels=[ru.yandex.qatools.allure.model.Label@528f5b7f, ru.yandex.qatools.allure.model.Label@3ccfac29]
+  labels=[ru.yandex.qatools.allure.model.Label@4b510e04, ru.yandex.qatools.allure.model.Label@2474e6cb]
   parameters=<null>
 ]
 testCaseResult={
-   "start" : 1443743800829,
-   "stop" : 1443743800858,
+   "start" : 1444528671083,
+   "stop" : 1444528671093,
    "status" : "canceled",
    "name" : "login_search_base_people_not_found",
    "failure" : {
@@ -851,24 +851,26 @@ testCaseResult={
    "labels" : {
       "label" : [ {
          "name" : "host",
-         "value" : "Abduls-MBP.home"
+         "value" : "MacBook-Pro-2.home"
       }, {
          "name" : "thread",
-         "value" : "35253@Abduls-MBP.home.main(1)"
+         "value" : "3426@MacBook-Pro-2.home.main(1)"
       } ]
    }
 }
-testCase=ru.yandex.qatools.allure.model.TestCase@5c41b8d8[
-  _id=a362968f-b359-478c-938f-4c03867493f6
-  executionId=1bbf0610-8745-4dcf-b9b8-2ceab706f093
-  result=ru.yandex.qatools.allure.model.TestCaseResult@56c6d515
+testCase=ru.yandex.qatools.allure.model.TestCase@ef8416c[
+  _id=5e7c08d9-7d69-41ff-8702-8fda65012ff5
+  executionId=8e6dd7ca-e27b-4013-bda8-bc2788640ddd
+  threadName=dc7331de-b740-4ba3-9907-ee3762987799
+  result=ru.yandex.qatools.allure.model.TestCaseResult@718b75bc
 ]
 testCase={
-   "_id" : "a362968f-b359-478c-938f-4c03867493f6",
-   "executionId" : "1bbf0610-8745-4dcf-b9b8-2ceab706f093",
+   "_id" : "5e7c08d9-7d69-41ff-8702-8fda65012ff5",
+   "executionId" : "8e6dd7ca-e27b-4013-bda8-bc2788640ddd",
+   "threadName" : "dc7331de-b740-4ba3-9907-ee3762987799",
    "result" : {
-      "start" : 1443743800829,
-      "stop" : 1443743800858,
+      "start" : 1444528671083,
+      "stop" : 1444528671093,
       "status" : "canceled",
       "name" : "login_search_base_people_not_found",
       "failure" : {
@@ -884,18 +886,16 @@ testCase={
       "labels" : {
          "label" : [ {
             "name" : "host",
-            "value" : "Abduls-MBP.home"
+            "value" : "MacBook-Pro-2.home"
          }, {
             "name" : "thread",
-            "value" : "35253@Abduls-MBP.home.main(1)"
+            "value" : "3426@MacBook-Pro-2.home.main(1)"
          } ]
       }
    }
 }
->>>REQUEST: /testdb/TestCase
-[WARN] [10/01/2015 19:56:40.864] [default-akka.actor.default-dispatcher-127] [ActorSystem(default)] Illegal response header: Illegal 'etag' header: Invalid input '5', expected 'W' or '"' (line 1, column 1): 560dc838fbeaf7a200c9bf57
-^
-<<<RESPONSE (201 Created): /testdb/TestCase
+>>>REQUEST: /testaspect/TestCase/5e7c08d9-7d69-41ff-8702-8fda65012ff5
+<<<RESPONSE (201 Created): /testaspect/TestCase/5e7c08d9-7d69-41ff-8702-8fda65012ff5
 running with given plugins: []
 === Starting custom_mail_filter(plugins.LdapPluginTest)
 Skipping custom_mail_filter(plugins.LdapPluginTest): Docker is needed for the test
@@ -903,23 +903,23 @@ Skipping custom_mail_filter(plugins.LdapPluginTest): Docker is needed for the te
   </testcase>
   <testcase name="custom_group_membership_filter" classname="plugins.LdapPluginTest" time="0">
     <skipped/>
-    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@54387873[
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@66c96d67[
   name=custom_mail_filter
   title=<null>
   description=<null>
-  failure=ru.yandex.qatools.allure.model.Failure@3a80c534
-  start=1443743800861
-  stop=1443743800889
+  failure=ru.yandex.qatools.allure.model.Failure@5c7e7592
+  start=1444528671094
+  stop=1444528671104
   status=CANCELED
   severity=<null>
   steps=[]
   attachments=[]
-  labels=[ru.yandex.qatools.allure.model.Label@fd5689d, ru.yandex.qatools.allure.model.Label@36e3321e]
+  labels=[ru.yandex.qatools.allure.model.Label@28ebed1f, ru.yandex.qatools.allure.model.Label@1725944c]
   parameters=<null>
 ]
 testCaseResult={
-   "start" : 1443743800861,
-   "stop" : 1443743800889,
+   "start" : 1444528671094,
+   "stop" : 1444528671104,
    "status" : "canceled",
    "name" : "custom_mail_filter",
    "failure" : {
@@ -935,24 +935,26 @@ testCaseResult={
    "labels" : {
       "label" : [ {
          "name" : "host",
-         "value" : "Abduls-MBP.home"
+         "value" : "MacBook-Pro-2.home"
       }, {
          "name" : "thread",
-         "value" : "35253@Abduls-MBP.home.main(1)"
+         "value" : "3426@MacBook-Pro-2.home.main(1)"
       } ]
    }
 }
-testCase=ru.yandex.qatools.allure.model.TestCase@218f2f51[
-  _id=356591f7-ae50-476f-9fe1-ae94422cd6d8
-  executionId=1bbf0610-8745-4dcf-b9b8-2ceab706f093
-  result=ru.yandex.qatools.allure.model.TestCaseResult@54387873
+testCase=ru.yandex.qatools.allure.model.TestCase@3a2a619a[
+  _id=cd1d6d40-5f84-44c3-8c4f-256606d5b887
+  executionId=8e6dd7ca-e27b-4013-bda8-bc2788640ddd
+  threadName=dc7331de-b740-4ba3-9907-ee3762987799
+  result=ru.yandex.qatools.allure.model.TestCaseResult@66c96d67
 ]
 testCase={
-   "_id" : "356591f7-ae50-476f-9fe1-ae94422cd6d8",
-   "executionId" : "1bbf0610-8745-4dcf-b9b8-2ceab706f093",
+   "_id" : "cd1d6d40-5f84-44c3-8c4f-256606d5b887",
+   "executionId" : "8e6dd7ca-e27b-4013-bda8-bc2788640ddd",
+   "threadName" : "dc7331de-b740-4ba3-9907-ee3762987799",
    "result" : {
-      "start" : 1443743800861,
-      "stop" : 1443743800889,
+      "start" : 1444528671094,
+      "stop" : 1444528671104,
       "status" : "canceled",
       "name" : "custom_mail_filter",
       "failure" : {
@@ -968,18 +970,16 @@ testCase={
       "labels" : {
          "label" : [ {
             "name" : "host",
-            "value" : "Abduls-MBP.home"
+            "value" : "MacBook-Pro-2.home"
          }, {
             "name" : "thread",
-            "value" : "35253@Abduls-MBP.home.main(1)"
+            "value" : "3426@MacBook-Pro-2.home.main(1)"
          } ]
       }
    }
 }
->>>REQUEST: /testdb/TestCase
-[WARN] [10/01/2015 19:56:40.895] [default-akka.actor.default-dispatcher-127] [ActorSystem(default)] Illegal response header: Illegal 'etag' header: Invalid input '5', expected 'W' or '"' (line 1, column 1): 560dc838fbeaf7a200c9bf58
-^
-<<<RESPONSE (201 Created): /testdb/TestCase
+>>>REQUEST: /testaspect/TestCase/cd1d6d40-5f84-44c3-8c4f-256606d5b887
+<<<RESPONSE (201 Created): /testaspect/TestCase/cd1d6d40-5f84-44c3-8c4f-256606d5b887
 running with given plugins: []
 === Starting custom_group_membership_filter(plugins.LdapPluginTest)
 Skipping custom_group_membership_filter(plugins.LdapPluginTest): Docker is needed for the test
@@ -987,23 +987,23 @@ Skipping custom_group_membership_filter(plugins.LdapPluginTest): Docker is neede
   </testcase>
   <testcase name="login_use_fallback_server" classname="plugins.LdapPluginTest" time="0">
     <skipped/>
-    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@20f63ddc[
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@4bed28b7[
   name=custom_group_membership_filter
   title=<null>
   description=<null>
-  failure=ru.yandex.qatools.allure.model.Failure@210c1b9d
-  start=1443743800892
-  stop=1443743800919
+  failure=ru.yandex.qatools.allure.model.Failure@5f9bd90a
+  start=1444528671105
+  stop=1444528671115
   status=CANCELED
   severity=<null>
   steps=[]
   attachments=[]
-  labels=[ru.yandex.qatools.allure.model.Label@69bc4024, ru.yandex.qatools.allure.model.Label@3578a45b]
+  labels=[ru.yandex.qatools.allure.model.Label@3776f8c0, ru.yandex.qatools.allure.model.Label@4184874c]
   parameters=<null>
 ]
 testCaseResult={
-   "start" : 1443743800892,
-   "stop" : 1443743800919,
+   "start" : 1444528671105,
+   "stop" : 1444528671115,
    "status" : "canceled",
    "name" : "custom_group_membership_filter",
    "failure" : {
@@ -1019,24 +1019,26 @@ testCaseResult={
    "labels" : {
       "label" : [ {
          "name" : "host",
-         "value" : "Abduls-MBP.home"
+         "value" : "MacBook-Pro-2.home"
       }, {
          "name" : "thread",
-         "value" : "35253@Abduls-MBP.home.main(1)"
+         "value" : "3426@MacBook-Pro-2.home.main(1)"
       } ]
    }
 }
-testCase=ru.yandex.qatools.allure.model.TestCase@24f177f5[
-  _id=2688c2ed-ca78-4bf0-9205-dd1e0fcc121b
-  executionId=1bbf0610-8745-4dcf-b9b8-2ceab706f093
-  result=ru.yandex.qatools.allure.model.TestCaseResult@20f63ddc
+testCase=ru.yandex.qatools.allure.model.TestCase@630eb75b[
+  _id=27e3d67e-6658-41c5-b325-4fb6c03ff84a
+  executionId=8e6dd7ca-e27b-4013-bda8-bc2788640ddd
+  threadName=dc7331de-b740-4ba3-9907-ee3762987799
+  result=ru.yandex.qatools.allure.model.TestCaseResult@4bed28b7
 ]
 testCase={
-   "_id" : "2688c2ed-ca78-4bf0-9205-dd1e0fcc121b",
-   "executionId" : "1bbf0610-8745-4dcf-b9b8-2ceab706f093",
+   "_id" : "27e3d67e-6658-41c5-b325-4fb6c03ff84a",
+   "executionId" : "8e6dd7ca-e27b-4013-bda8-bc2788640ddd",
+   "threadName" : "dc7331de-b740-4ba3-9907-ee3762987799",
    "result" : {
-      "start" : 1443743800892,
-      "stop" : 1443743800919,
+      "start" : 1444528671105,
+      "stop" : 1444528671115,
       "status" : "canceled",
       "name" : "custom_group_membership_filter",
       "failure" : {
@@ -1052,18 +1054,16 @@ testCase={
       "labels" : {
          "label" : [ {
             "name" : "host",
-            "value" : "Abduls-MBP.home"
+            "value" : "MacBook-Pro-2.home"
          }, {
             "name" : "thread",
-            "value" : "35253@Abduls-MBP.home.main(1)"
+            "value" : "3426@MacBook-Pro-2.home.main(1)"
          } ]
       }
    }
 }
->>>REQUEST: /testdb/TestCase
-[WARN] [10/01/2015 19:56:40.925] [default-akka.actor.default-dispatcher-134] [ActorSystem(default)] Illegal response header: Illegal 'etag' header: Invalid input '5', expected 'W' or '"' (line 1, column 1): 560dc838fbeaf7a200c9bf59
-^
-<<<RESPONSE (201 Created): /testdb/TestCase
+>>>REQUEST: /testaspect/TestCase/27e3d67e-6658-41c5-b325-4fb6c03ff84a
+<<<RESPONSE (201 Created): /testaspect/TestCase/27e3d67e-6658-41c5-b325-4fb6c03ff84a
 running with given plugins: []
 === Starting login_use_fallback_server(plugins.LdapPluginTest)
 Skipping login_use_fallback_server(plugins.LdapPluginTest): Docker is needed for the test
@@ -1071,23 +1071,23 @@ Skipping login_use_fallback_server(plugins.LdapPluginTest): Docker is needed for
   </testcase>
   <testcase name="login_search_base_people_ok" classname="plugins.LdapPluginTest" time="0">
     <skipped/>
-    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@2e0516a3[
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@71480530[
   name=login_use_fallback_server
   title=<null>
   description=<null>
-  failure=ru.yandex.qatools.allure.model.Failure@32a4ea4e
-  start=1443743800922
-  stop=1443743800950
+  failure=ru.yandex.qatools.allure.model.Failure@192e8f14
+  start=1444528671116
+  stop=1444528671127
   status=CANCELED
   severity=<null>
   steps=[]
   attachments=[]
-  labels=[ru.yandex.qatools.allure.model.Label@347b370c, ru.yandex.qatools.allure.model.Label@26aee0a6]
+  labels=[ru.yandex.qatools.allure.model.Label@1bd769c4, ru.yandex.qatools.allure.model.Label@3c5c73d6]
   parameters=<null>
 ]
 testCaseResult={
-   "start" : 1443743800922,
-   "stop" : 1443743800950,
+   "start" : 1444528671116,
+   "stop" : 1444528671127,
    "status" : "canceled",
    "name" : "login_use_fallback_server",
    "failure" : {
@@ -1103,24 +1103,26 @@ testCaseResult={
    "labels" : {
       "label" : [ {
          "name" : "host",
-         "value" : "Abduls-MBP.home"
+         "value" : "MacBook-Pro-2.home"
       }, {
          "name" : "thread",
-         "value" : "35253@Abduls-MBP.home.main(1)"
+         "value" : "3426@MacBook-Pro-2.home.main(1)"
       } ]
    }
 }
-testCase=ru.yandex.qatools.allure.model.TestCase@20184ade[
-  _id=840e78d3-6b42-48e3-975f-5efd5be246dd
-  executionId=1bbf0610-8745-4dcf-b9b8-2ceab706f093
-  result=ru.yandex.qatools.allure.model.TestCaseResult@2e0516a3
+testCase=ru.yandex.qatools.allure.model.TestCase@d0c80e8[
+  _id=e1ddc829-e49a-40b8-8819-2e57ee52d9ec
+  executionId=8e6dd7ca-e27b-4013-bda8-bc2788640ddd
+  threadName=dc7331de-b740-4ba3-9907-ee3762987799
+  result=ru.yandex.qatools.allure.model.TestCaseResult@71480530
 ]
 testCase={
-   "_id" : "840e78d3-6b42-48e3-975f-5efd5be246dd",
-   "executionId" : "1bbf0610-8745-4dcf-b9b8-2ceab706f093",
+   "_id" : "e1ddc829-e49a-40b8-8819-2e57ee52d9ec",
+   "executionId" : "8e6dd7ca-e27b-4013-bda8-bc2788640ddd",
+   "threadName" : "dc7331de-b740-4ba3-9907-ee3762987799",
    "result" : {
-      "start" : 1443743800922,
-      "stop" : 1443743800950,
+      "start" : 1444528671116,
+      "stop" : 1444528671127,
       "status" : "canceled",
       "name" : "login_use_fallback_server",
       "failure" : {
@@ -1136,18 +1138,16 @@ testCase={
       "labels" : {
          "label" : [ {
             "name" : "host",
-            "value" : "Abduls-MBP.home"
+            "value" : "MacBook-Pro-2.home"
          }, {
             "name" : "thread",
-            "value" : "35253@Abduls-MBP.home.main(1)"
+            "value" : "3426@MacBook-Pro-2.home.main(1)"
          } ]
       }
    }
 }
->>>REQUEST: /testdb/TestCase
-[WARN] [10/01/2015 19:56:40.956] [default-akka.actor.default-dispatcher-129] [ActorSystem(default)] Illegal response header: Illegal 'etag' header: Invalid input '5', expected 'W' or '"' (line 1, column 1): 560dc838fbeaf7a200c9bf5a
-^
-<<<RESPONSE (201 Created): /testdb/TestCase
+>>>REQUEST: /testaspect/TestCase/e1ddc829-e49a-40b8-8819-2e57ee52d9ec
+<<<RESPONSE (201 Created): /testaspect/TestCase/e1ddc829-e49a-40b8-8819-2e57ee52d9ec
 running with given plugins: []
 === Starting login_search_base_people_ok(plugins.LdapPluginTest)
 Skipping login_search_base_people_ok(plugins.LdapPluginTest): Docker is needed for the test
@@ -1155,23 +1155,23 @@ Skipping login_search_base_people_ok(plugins.LdapPluginTest): Docker is needed f
   </testcase>
   <testcase name="resolve_group_memberships_with_defaults" classname="plugins.LdapPluginTest" time="0">
     <skipped/>
-    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@e994ca[
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@4cd0daf7[
   name=login_search_base_people_ok
   title=<null>
   description=<null>
-  failure=ru.yandex.qatools.allure.model.Failure@5a205ee5
-  start=1443743800953
-  stop=1443743800982
+  failure=ru.yandex.qatools.allure.model.Failure@61422d31
+  start=1444528671128
+  stop=1444528671139
   status=CANCELED
   severity=<null>
   steps=[]
   attachments=[]
-  labels=[ru.yandex.qatools.allure.model.Label@7fb44737, ru.yandex.qatools.allure.model.Label@11295cb1]
+  labels=[ru.yandex.qatools.allure.model.Label@5fce42c3, ru.yandex.qatools.allure.model.Label@28cb0f81]
   parameters=<null>
 ]
 testCaseResult={
-   "start" : 1443743800953,
-   "stop" : 1443743800982,
+   "start" : 1444528671128,
+   "stop" : 1444528671139,
    "status" : "canceled",
    "name" : "login_search_base_people_ok",
    "failure" : {
@@ -1187,24 +1187,26 @@ testCaseResult={
    "labels" : {
       "label" : [ {
          "name" : "host",
-         "value" : "Abduls-MBP.home"
+         "value" : "MacBook-Pro-2.home"
       }, {
          "name" : "thread",
-         "value" : "35253@Abduls-MBP.home.main(1)"
+         "value" : "3426@MacBook-Pro-2.home.main(1)"
       } ]
    }
 }
-testCase=ru.yandex.qatools.allure.model.TestCase@5daad59a[
-  _id=f16e773e-19b3-44e1-bfa3-544d0ab60537
-  executionId=1bbf0610-8745-4dcf-b9b8-2ceab706f093
-  result=ru.yandex.qatools.allure.model.TestCaseResult@e994ca
+testCase=ru.yandex.qatools.allure.model.TestCase@62867f0d[
+  _id=613768ad-8802-47cc-8505-d7d9c7b18a7d
+  executionId=8e6dd7ca-e27b-4013-bda8-bc2788640ddd
+  threadName=dc7331de-b740-4ba3-9907-ee3762987799
+  result=ru.yandex.qatools.allure.model.TestCaseResult@4cd0daf7
 ]
 testCase={
-   "_id" : "f16e773e-19b3-44e1-bfa3-544d0ab60537",
-   "executionId" : "1bbf0610-8745-4dcf-b9b8-2ceab706f093",
+   "_id" : "613768ad-8802-47cc-8505-d7d9c7b18a7d",
+   "executionId" : "8e6dd7ca-e27b-4013-bda8-bc2788640ddd",
+   "threadName" : "dc7331de-b740-4ba3-9907-ee3762987799",
    "result" : {
-      "start" : 1443743800953,
-      "stop" : 1443743800982,
+      "start" : 1444528671128,
+      "stop" : 1444528671139,
       "status" : "canceled",
       "name" : "login_search_base_people_ok",
       "failure" : {
@@ -1220,18 +1222,16 @@ testCase={
       "labels" : {
          "label" : [ {
             "name" : "host",
-            "value" : "Abduls-MBP.home"
+            "value" : "MacBook-Pro-2.home"
          }, {
             "name" : "thread",
-            "value" : "35253@Abduls-MBP.home.main(1)"
+            "value" : "3426@MacBook-Pro-2.home.main(1)"
          } ]
       }
    }
 }
->>>REQUEST: /testdb/TestCase
-[WARN] [10/01/2015 19:56:40.988] [default-akka.actor.default-dispatcher-115] [ActorSystem(default)] Illegal response header: Illegal 'etag' header: Invalid input '5', expected 'W' or '"' (line 1, column 1): 560dc838fbeaf7a200c9bf5b
-^
-<<<RESPONSE (201 Created): /testdb/TestCase
+>>>REQUEST: /testaspect/TestCase/613768ad-8802-47cc-8505-d7d9c7b18a7d
+<<<RESPONSE (201 Created): /testaspect/TestCase/613768ad-8802-47cc-8505-d7d9c7b18a7d
 running with given plugins: []
 === Starting resolve_group_memberships_with_defaults(plugins.LdapPluginTest)
 Skipping resolve_group_memberships_with_defaults(plugins.LdapPluginTest): Docker is needed for the test
@@ -1239,23 +1239,23 @@ Skipping resolve_group_memberships_with_defaults(plugins.LdapPluginTest): Docker
   </testcase>
   <testcase name="login_wrong_password" classname="plugins.LdapPluginTest" time="0">
     <skipped/>
-    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@552bee2f[
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@4144859c[
   name=resolve_group_memberships_with_defaults
   title=<null>
   description=<null>
-  failure=ru.yandex.qatools.allure.model.Failure@6a543e09
-  start=1443743800986
-  stop=1443743801014
+  failure=ru.yandex.qatools.allure.model.Failure@1525a5d
+  start=1444528671140
+  stop=1444528671151
   status=CANCELED
   severity=<null>
   steps=[]
   attachments=[]
-  labels=[ru.yandex.qatools.allure.model.Label@2d0f548a, ru.yandex.qatools.allure.model.Label@1fc3df43]
+  labels=[ru.yandex.qatools.allure.model.Label@1adcd850, ru.yandex.qatools.allure.model.Label@bbc89f7]
   parameters=<null>
 ]
 testCaseResult={
-   "start" : 1443743800986,
-   "stop" : 1443743801014,
+   "start" : 1444528671140,
+   "stop" : 1444528671151,
    "status" : "canceled",
    "name" : "resolve_group_memberships_with_defaults",
    "failure" : {
@@ -1271,24 +1271,26 @@ testCaseResult={
    "labels" : {
       "label" : [ {
          "name" : "host",
-         "value" : "Abduls-MBP.home"
+         "value" : "MacBook-Pro-2.home"
       }, {
          "name" : "thread",
-         "value" : "35253@Abduls-MBP.home.main(1)"
+         "value" : "3426@MacBook-Pro-2.home.main(1)"
       } ]
    }
 }
-testCase=ru.yandex.qatools.allure.model.TestCase@15130002[
-  _id=be93bc81-1539-4741-a3f9-42fc4638cdf7
-  executionId=1bbf0610-8745-4dcf-b9b8-2ceab706f093
-  result=ru.yandex.qatools.allure.model.TestCaseResult@552bee2f
+testCase=ru.yandex.qatools.allure.model.TestCase@6e318579[
+  _id=c721018c-f91b-44b1-aca6-55b79479aa26
+  executionId=8e6dd7ca-e27b-4013-bda8-bc2788640ddd
+  threadName=dc7331de-b740-4ba3-9907-ee3762987799
+  result=ru.yandex.qatools.allure.model.TestCaseResult@4144859c
 ]
 testCase={
-   "_id" : "be93bc81-1539-4741-a3f9-42fc4638cdf7",
-   "executionId" : "1bbf0610-8745-4dcf-b9b8-2ceab706f093",
+   "_id" : "c721018c-f91b-44b1-aca6-55b79479aa26",
+   "executionId" : "8e6dd7ca-e27b-4013-bda8-bc2788640ddd",
+   "threadName" : "dc7331de-b740-4ba3-9907-ee3762987799",
    "result" : {
-      "start" : 1443743800986,
-      "stop" : 1443743801014,
+      "start" : 1444528671140,
+      "stop" : 1444528671151,
       "status" : "canceled",
       "name" : "resolve_group_memberships_with_defaults",
       "failure" : {
@@ -1304,18 +1306,16 @@ testCase={
       "labels" : {
          "label" : [ {
             "name" : "host",
-            "value" : "Abduls-MBP.home"
+            "value" : "MacBook-Pro-2.home"
          }, {
             "name" : "thread",
-            "value" : "35253@Abduls-MBP.home.main(1)"
+            "value" : "3426@MacBook-Pro-2.home.main(1)"
          } ]
       }
    }
 }
->>>REQUEST: /testdb/TestCase
-[WARN] [10/01/2015 19:56:41.021] [default-akka.actor.default-dispatcher-134] [ActorSystem(default)] Illegal response header: Illegal 'etag' header: Invalid input '5', expected 'W' or '"' (line 1, column 1): 560dc839fbeaf7a200c9bf5c
-^
-<<<RESPONSE (201 Created): /testdb/TestCase
+>>>REQUEST: /testaspect/TestCase/c721018c-f91b-44b1-aca6-55b79479aa26
+<<<RESPONSE (201 Created): /testaspect/TestCase/c721018c-f91b-44b1-aca6-55b79479aa26
 running with given plugins: []
 === Starting login_wrong_password(plugins.LdapPluginTest)
 Skipping login_wrong_password(plugins.LdapPluginTest): Docker is needed for the test
@@ -1323,23 +1323,23 @@ Skipping login_wrong_password(plugins.LdapPluginTest): Docker is needed for the 
   </testcase>
   <testcase name="login_ok" classname="plugins.LdapPluginTest" time="0">
     <skipped/>
-    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@6fa2a006[
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@7a249c09[
   name=login_wrong_password
   title=<null>
   description=<null>
-  failure=ru.yandex.qatools.allure.model.Failure@70592729
-  start=1443743801017
-  stop=1443743801046
+  failure=ru.yandex.qatools.allure.model.Failure@1127496d
+  start=1444528671152
+  stop=1444528671162
   status=CANCELED
   severity=<null>
   steps=[]
   attachments=[]
-  labels=[ru.yandex.qatools.allure.model.Label@2fdf7da2, ru.yandex.qatools.allure.model.Label@43b172e3]
+  labels=[ru.yandex.qatools.allure.model.Label@3d7fc3c5, ru.yandex.qatools.allure.model.Label@4c32468f]
   parameters=<null>
 ]
 testCaseResult={
-   "start" : 1443743801017,
-   "stop" : 1443743801046,
+   "start" : 1444528671152,
+   "stop" : 1444528671162,
    "status" : "canceled",
    "name" : "login_wrong_password",
    "failure" : {
@@ -1355,24 +1355,26 @@ testCaseResult={
    "labels" : {
       "label" : [ {
          "name" : "host",
-         "value" : "Abduls-MBP.home"
+         "value" : "MacBook-Pro-2.home"
       }, {
          "name" : "thread",
-         "value" : "35253@Abduls-MBP.home.main(1)"
+         "value" : "3426@MacBook-Pro-2.home.main(1)"
       } ]
    }
 }
-testCase=ru.yandex.qatools.allure.model.TestCase@39695803[
-  _id=3355881e-e759-42b4-8e89-6f5424e5dcd9
-  executionId=1bbf0610-8745-4dcf-b9b8-2ceab706f093
-  result=ru.yandex.qatools.allure.model.TestCaseResult@6fa2a006
+testCase=ru.yandex.qatools.allure.model.TestCase@12a85fd4[
+  _id=30b54a58-14ca-4614-a002-f06c6e6793b9
+  executionId=8e6dd7ca-e27b-4013-bda8-bc2788640ddd
+  threadName=dc7331de-b740-4ba3-9907-ee3762987799
+  result=ru.yandex.qatools.allure.model.TestCaseResult@7a249c09
 ]
 testCase={
-   "_id" : "3355881e-e759-42b4-8e89-6f5424e5dcd9",
-   "executionId" : "1bbf0610-8745-4dcf-b9b8-2ceab706f093",
+   "_id" : "30b54a58-14ca-4614-a002-f06c6e6793b9",
+   "executionId" : "8e6dd7ca-e27b-4013-bda8-bc2788640ddd",
+   "threadName" : "dc7331de-b740-4ba3-9907-ee3762987799",
    "result" : {
-      "start" : 1443743801017,
-      "stop" : 1443743801046,
+      "start" : 1444528671152,
+      "stop" : 1444528671162,
       "status" : "canceled",
       "name" : "login_wrong_password",
       "failure" : {
@@ -1388,18 +1390,16 @@ testCase={
       "labels" : {
          "label" : [ {
             "name" : "host",
-            "value" : "Abduls-MBP.home"
+            "value" : "MacBook-Pro-2.home"
          }, {
             "name" : "thread",
-            "value" : "35253@Abduls-MBP.home.main(1)"
+            "value" : "3426@MacBook-Pro-2.home.main(1)"
          } ]
       }
    }
 }
->>>REQUEST: /testdb/TestCase
-[WARN] [10/01/2015 19:56:41.052] [default-akka.actor.default-dispatcher-122] [ActorSystem(default)] Illegal response header: Illegal 'etag' header: Invalid input '5', expected 'W' or '"' (line 1, column 1): 560dc839fbeaf7a200c9bf5d
-^
-<<<RESPONSE (201 Created): /testdb/TestCase
+>>>REQUEST: /testaspect/TestCase/30b54a58-14ca-4614-a002-f06c6e6793b9
+<<<RESPONSE (201 Created): /testaspect/TestCase/30b54a58-14ca-4614-a002-f06c6e6793b9
 running with given plugins: []
 === Starting login_ok(plugins.LdapPluginTest)
 Skipping login_ok(plugins.LdapPluginTest): Docker is needed for the test

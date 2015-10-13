@@ -63,23 +63,23 @@
   </properties>
   <testcase name="testConnection" classname="plugins.jclouds.JCloudsPluginTest" time="0">
     <skipped/>
-    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@1bc6c20d[
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@2579b06c[
   name=publish_javadoc_from_freestyle_job
   title=<null>
   description=<null>
   failure=<null>
-  start=1443743621597
-  stop=1443743719181
+  start=1444528449036
+  stop=1444528484349
   status=PASSED
   severity=<null>
   steps=[]
   attachments=[]
-  labels=[ru.yandex.qatools.allure.model.Label@aedc426, ru.yandex.qatools.allure.model.Label@39b85a73]
+  labels=[ru.yandex.qatools.allure.model.Label@37215f46, ru.yandex.qatools.allure.model.Label@364659e1]
   parameters=<null>
 ]
 testCaseResult={
-   "start" : 1443743621597,
-   "stop" : 1443743719181,
+   "start" : 1444528449036,
+   "stop" : 1444528484349,
    "status" : "passed",
    "name" : "publish_javadoc_from_freestyle_job",
    "steps" : {
@@ -91,24 +91,26 @@ testCaseResult={
    "labels" : {
       "label" : [ {
          "name" : "host",
-         "value" : "Abduls-MBP.home"
+         "value" : "MacBook-Pro-2.home"
       }, {
          "name" : "thread",
-         "value" : "35252@Abduls-MBP.home.main(1)"
+         "value" : "3426@MacBook-Pro-2.home.main(1)"
       } ]
    }
 }
-testCase=ru.yandex.qatools.allure.model.TestCase@5788722f[
-  _id=eb8982ad-57f0-47f8-839b-74e33d6bcd75
-  executionId=7701d757-07c3-4ee5-9df4-52c16ef79685
-  result=ru.yandex.qatools.allure.model.TestCaseResult@1bc6c20d
+testCase=ru.yandex.qatools.allure.model.TestCase@309b7142[
+  _id=2d365c65-a77a-49c9-bd29-525cdcad542c
+  executionId=8e6dd7ca-e27b-4013-bda8-bc2788640ddd
+  threadName=dc7331de-b740-4ba3-9907-ee3762987799
+  result=ru.yandex.qatools.allure.model.TestCaseResult@2579b06c
 ]
 testCase={
-   "_id" : "eb8982ad-57f0-47f8-839b-74e33d6bcd75",
-   "executionId" : "7701d757-07c3-4ee5-9df4-52c16ef79685",
+   "_id" : "2d365c65-a77a-49c9-bd29-525cdcad542c",
+   "executionId" : "8e6dd7ca-e27b-4013-bda8-bc2788640ddd",
+   "threadName" : "dc7331de-b740-4ba3-9907-ee3762987799",
    "result" : {
-      "start" : 1443743621597,
-      "stop" : 1443743719181,
+      "start" : 1444528449036,
+      "stop" : 1444528484349,
       "status" : "passed",
       "name" : "publish_javadoc_from_freestyle_job",
       "steps" : {
@@ -120,18 +122,16 @@ testCase={
       "labels" : {
          "label" : [ {
             "name" : "host",
-            "value" : "Abduls-MBP.home"
+            "value" : "MacBook-Pro-2.home"
          }, {
             "name" : "thread",
-            "value" : "35252@Abduls-MBP.home.main(1)"
+            "value" : "3426@MacBook-Pro-2.home.main(1)"
          } ]
       }
    }
 }
->>>REQUEST: /testdb/TestCase
-[WARN] [10/01/2015 19:55:19.199] [default-akka.actor.default-dispatcher-100] [ActorSystem(default)] Illegal response header: Illegal 'etag' header: Invalid input '5', expected 'W' or '"' (line 1, column 1): 560dc7e7fbeaf7a200c9bf34
-^
-<<<RESPONSE (201 Created): /testdb/TestCase
+>>>REQUEST: /testaspect/TestCase/2d365c65-a77a-49c9-bd29-525cdcad542c
+<<<RESPONSE (201 Created): /testaspect/TestCase/2d365c65-a77a-49c9-bd29-525cdcad542c
 running with given plugins: []
 === Starting testConnection(plugins.jclouds.JCloudsPluginTest)
 Skipping testConnection(plugins.jclouds.JCloudsPluginTest): Required property not provided: JCloudsPluginTest.ENDPOINT
@@ -139,23 +139,23 @@ Skipping testConnection(plugins.jclouds.JCloudsPluginTest): Required property no
   </testcase>
   <testcase name="checkImageNameRegex" classname="plugins.jclouds.JCloudsPluginTest" time="0">
     <skipped/>
-    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@4ef31221[
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@7daa013c[
   name=testConnection
   title=<null>
   description=<null>
-  failure=ru.yandex.qatools.allure.model.Failure@4e9e0c6
-  start=1443743719206
-  stop=1443743719215
+  failure=ru.yandex.qatools.allure.model.Failure@f927c58
+  start=1444528484352
+  stop=1444528484354
   status=CANCELED
   severity=<null>
   steps=[]
   attachments=[]
-  labels=[ru.yandex.qatools.allure.model.Label@1a819901, ru.yandex.qatools.allure.model.Label@588d630d]
+  labels=[ru.yandex.qatools.allure.model.Label@74ab3cda, ru.yandex.qatools.allure.model.Label@1ed7fae0]
   parameters=<null>
 ]
 testCaseResult={
-   "start" : 1443743719206,
-   "stop" : 1443743719215,
+   "start" : 1444528484352,
+   "stop" : 1444528484354,
    "status" : "canceled",
    "name" : "testConnection",
    "failure" : {
@@ -171,24 +171,26 @@ testCaseResult={
    "labels" : {
       "label" : [ {
          "name" : "host",
-         "value" : "Abduls-MBP.home"
+         "value" : "MacBook-Pro-2.home"
       }, {
          "name" : "thread",
-         "value" : "35252@Abduls-MBP.home.main(1)"
+         "value" : "3426@MacBook-Pro-2.home.main(1)"
       } ]
    }
 }
-testCase=ru.yandex.qatools.allure.model.TestCase@eb91027[
-  _id=d8d85b06-82ad-4f03-bdfb-7f89e27a867b
-  executionId=7701d757-07c3-4ee5-9df4-52c16ef79685
-  result=ru.yandex.qatools.allure.model.TestCaseResult@4ef31221
+testCase=ru.yandex.qatools.allure.model.TestCase@33d9abe7[
+  _id=5fe4a368-724b-4dde-844f-88f418c23dc5
+  executionId=8e6dd7ca-e27b-4013-bda8-bc2788640ddd
+  threadName=dc7331de-b740-4ba3-9907-ee3762987799
+  result=ru.yandex.qatools.allure.model.TestCaseResult@7daa013c
 ]
 testCase={
-   "_id" : "d8d85b06-82ad-4f03-bdfb-7f89e27a867b",
-   "executionId" : "7701d757-07c3-4ee5-9df4-52c16ef79685",
+   "_id" : "5fe4a368-724b-4dde-844f-88f418c23dc5",
+   "executionId" : "8e6dd7ca-e27b-4013-bda8-bc2788640ddd",
+   "threadName" : "dc7331de-b740-4ba3-9907-ee3762987799",
    "result" : {
-      "start" : 1443743719206,
-      "stop" : 1443743719215,
+      "start" : 1444528484352,
+      "stop" : 1444528484354,
       "status" : "canceled",
       "name" : "testConnection",
       "failure" : {
@@ -204,42 +206,40 @@ testCase={
       "labels" : {
          "label" : [ {
             "name" : "host",
-            "value" : "Abduls-MBP.home"
+            "value" : "MacBook-Pro-2.home"
          }, {
             "name" : "thread",
-            "value" : "35252@Abduls-MBP.home.main(1)"
+            "value" : "3426@MacBook-Pro-2.home.main(1)"
          } ]
       }
    }
 }
->>>REQUEST: /testdb/TestCase
-[WARN] [10/01/2015 19:55:19.224] [default-akka.actor.default-dispatcher-92] [ActorSystem(default)] Illegal response header: Illegal 'etag' header: Invalid input '5', expected 'W' or '"' (line 1, column 1): 560dc7e7fbeaf7a200c9bf35
-^
-<<<RESPONSE (201 Created): /testdb/TestCase
+>>>REQUEST: /testaspect/TestCase/5fe4a368-724b-4dde-844f-88f418c23dc5
 running with given plugins: []
+<<<RESPONSE (201 Created): /testaspect/TestCase/5fe4a368-724b-4dde-844f-88f418c23dc5
 === Starting checkImageNameRegex(plugins.jclouds.JCloudsPluginTest)
 Skipping checkImageNameRegex(plugins.jclouds.JCloudsPluginTest): Required property not provided: JCloudsPluginTest.IMAGE_NAME_REGEX
 ]]></system-out>
   </testcase>
   <testcase name="checkImageId" classname="plugins.jclouds.JCloudsPluginTest" time="0">
     <skipped/>
-    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@186295cc[
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@7229a04a[
   name=checkImageNameRegex
   title=<null>
   description=<null>
-  failure=ru.yandex.qatools.allure.model.Failure@4e85dcb2
-  start=1443743719221
-  stop=1443743719234
+  failure=ru.yandex.qatools.allure.model.Failure@2be67af2
+  start=1444528484355
+  stop=1444528484358
   status=CANCELED
   severity=<null>
   steps=[]
   attachments=[]
-  labels=[ru.yandex.qatools.allure.model.Label@1b28cff, ru.yandex.qatools.allure.model.Label@73dbe25]
+  labels=[ru.yandex.qatools.allure.model.Label@7dd0ddb7, ru.yandex.qatools.allure.model.Label@640677e4]
   parameters=<null>
 ]
 testCaseResult={
-   "start" : 1443743719221,
-   "stop" : 1443743719234,
+   "start" : 1444528484355,
+   "stop" : 1444528484358,
    "status" : "canceled",
    "name" : "checkImageNameRegex",
    "failure" : {
@@ -255,24 +255,26 @@ testCaseResult={
    "labels" : {
       "label" : [ {
          "name" : "host",
-         "value" : "Abduls-MBP.home"
+         "value" : "MacBook-Pro-2.home"
       }, {
          "name" : "thread",
-         "value" : "35252@Abduls-MBP.home.main(1)"
+         "value" : "3426@MacBook-Pro-2.home.main(1)"
       } ]
    }
 }
-testCase=ru.yandex.qatools.allure.model.TestCase@bfd97fb[
-  _id=78b57171-c783-40ab-80fc-9b521b7d4f65
-  executionId=7701d757-07c3-4ee5-9df4-52c16ef79685
-  result=ru.yandex.qatools.allure.model.TestCaseResult@186295cc
+testCase=ru.yandex.qatools.allure.model.TestCase@5b92b0de[
+  _id=f9c554ac-a461-4954-ac07-964b2cd3792e
+  executionId=8e6dd7ca-e27b-4013-bda8-bc2788640ddd
+  threadName=dc7331de-b740-4ba3-9907-ee3762987799
+  result=ru.yandex.qatools.allure.model.TestCaseResult@7229a04a
 ]
 testCase={
-   "_id" : "78b57171-c783-40ab-80fc-9b521b7d4f65",
-   "executionId" : "7701d757-07c3-4ee5-9df4-52c16ef79685",
+   "_id" : "f9c554ac-a461-4954-ac07-964b2cd3792e",
+   "executionId" : "8e6dd7ca-e27b-4013-bda8-bc2788640ddd",
+   "threadName" : "dc7331de-b740-4ba3-9907-ee3762987799",
    "result" : {
-      "start" : 1443743719221,
-      "stop" : 1443743719234,
+      "start" : 1444528484355,
+      "stop" : 1444528484358,
       "status" : "canceled",
       "name" : "checkImageNameRegex",
       "failure" : {
@@ -288,42 +290,40 @@ testCase={
       "labels" : {
          "label" : [ {
             "name" : "host",
-            "value" : "Abduls-MBP.home"
+            "value" : "MacBook-Pro-2.home"
          }, {
             "name" : "thread",
-            "value" : "35252@Abduls-MBP.home.main(1)"
+            "value" : "3426@MacBook-Pro-2.home.main(1)"
          } ]
       }
    }
 }
->>>REQUEST: /testdb/TestCase
-[WARN] [10/01/2015 19:55:19.244] [default-akka.actor.default-dispatcher-82] [ActorSystem(default)] Illegal response header: Illegal 'etag' header: Invalid input '5', expected 'W' or '"' (line 1, column 1): 560dc7e7fbeaf7a200c9bf36
-^
-<<<RESPONSE (201 Created): /testdb/TestCase
+>>>REQUEST: /testaspect/TestCase/f9c554ac-a461-4954-ac07-964b2cd3792e
 running with given plugins: []
+<<<RESPONSE (201 Created): /testaspect/TestCase/f9c554ac-a461-4954-ac07-964b2cd3792e
 === Starting checkImageId(plugins.jclouds.JCloudsPluginTest)
 Skipping checkImageId(plugins.jclouds.JCloudsPluginTest): Required property not provided: JCloudsPluginTest.IMAGE_ID
 ]]></system-out>
   </testcase>
   <testcase name="checkHardwareId" classname="plugins.jclouds.JCloudsPluginTest" time="0">
     <skipped/>
-    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@21c34bf8[
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@378c80d0[
   name=checkImageId
   title=<null>
   description=<null>
-  failure=ru.yandex.qatools.allure.model.Failure@559e3f67
-  start=1443743719241
-  stop=1443743719258
+  failure=ru.yandex.qatools.allure.model.Failure@7a46c1b0
+  start=1444528484358
+  stop=1444528484361
   status=CANCELED
   severity=<null>
   steps=[]
   attachments=[]
-  labels=[ru.yandex.qatools.allure.model.Label@23d0944b, ru.yandex.qatools.allure.model.Label@72f24a84]
+  labels=[ru.yandex.qatools.allure.model.Label@545ec6c9, ru.yandex.qatools.allure.model.Label@11310c81]
   parameters=<null>
 ]
 testCaseResult={
-   "start" : 1443743719241,
-   "stop" : 1443743719258,
+   "start" : 1444528484358,
+   "stop" : 1444528484361,
    "status" : "canceled",
    "name" : "checkImageId",
    "failure" : {
@@ -339,24 +339,26 @@ testCaseResult={
    "labels" : {
       "label" : [ {
          "name" : "host",
-         "value" : "Abduls-MBP.home"
+         "value" : "MacBook-Pro-2.home"
       }, {
          "name" : "thread",
-         "value" : "35252@Abduls-MBP.home.main(1)"
+         "value" : "3426@MacBook-Pro-2.home.main(1)"
       } ]
    }
 }
-testCase=ru.yandex.qatools.allure.model.TestCase@49d543a9[
-  _id=48785005-8762-4a72-9cef-17d7d8d3090d
-  executionId=7701d757-07c3-4ee5-9df4-52c16ef79685
-  result=ru.yandex.qatools.allure.model.TestCaseResult@21c34bf8
+testCase=ru.yandex.qatools.allure.model.TestCase@42688477[
+  _id=a2dd4496-4288-4e2e-b329-4d02c0e5dd81
+  executionId=8e6dd7ca-e27b-4013-bda8-bc2788640ddd
+  threadName=dc7331de-b740-4ba3-9907-ee3762987799
+  result=ru.yandex.qatools.allure.model.TestCaseResult@378c80d0
 ]
 testCase={
-   "_id" : "48785005-8762-4a72-9cef-17d7d8d3090d",
-   "executionId" : "7701d757-07c3-4ee5-9df4-52c16ef79685",
+   "_id" : "a2dd4496-4288-4e2e-b329-4d02c0e5dd81",
+   "executionId" : "8e6dd7ca-e27b-4013-bda8-bc2788640ddd",
+   "threadName" : "dc7331de-b740-4ba3-9907-ee3762987799",
    "result" : {
-      "start" : 1443743719241,
-      "stop" : 1443743719258,
+      "start" : 1444528484358,
+      "stop" : 1444528484361,
       "status" : "canceled",
       "name" : "checkImageId",
       "failure" : {
@@ -372,18 +374,16 @@ testCase={
       "labels" : {
          "label" : [ {
             "name" : "host",
-            "value" : "Abduls-MBP.home"
+            "value" : "MacBook-Pro-2.home"
          }, {
             "name" : "thread",
-            "value" : "35252@Abduls-MBP.home.main(1)"
+            "value" : "3426@MacBook-Pro-2.home.main(1)"
          } ]
       }
    }
 }
->>>REQUEST: /testdb/TestCase
-[WARN] [10/01/2015 19:55:19.270] [default-akka.actor.default-dispatcher-82] [ActorSystem(default)] Illegal response header: Illegal 'etag' header: Invalid input '5', expected 'W' or '"' (line 1, column 1): 560dc7e7fbeaf7a200c9bf37
-^
-<<<RESPONSE (201 Created): /testdb/TestCase
+>>>REQUEST: /testaspect/TestCase/a2dd4496-4288-4e2e-b329-4d02c0e5dd81
+<<<RESPONSE (201 Created): /testaspect/TestCase/a2dd4496-4288-4e2e-b329-4d02c0e5dd81
 running with given plugins: []
 === Starting checkHardwareId(plugins.jclouds.JCloudsPluginTest)
 Skipping checkHardwareId(plugins.jclouds.JCloudsPluginTest): Required property not provided: JCloudsPluginTest.HARDWARE_ID

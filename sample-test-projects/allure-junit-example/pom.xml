@@ -24,6 +24,14 @@
             <version>${allure.version}</version>
         </dependency>
  -->
+
+        <dependency>
+            <groupId>com.spiderqa.agent</groupId>
+            <artifactId>test-event-producer</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+
         <dependency>
             <groupId>com.spiderqa.agent</groupId>
             <artifactId>test-event-producer</artifactId>
@@ -52,7 +60,7 @@
                     <properties>
                         <property>
                             <name>listener</name>
-                            <value>ru.yandex.qatools.allure.junit.AllureRunListener</value>
+                            <value>com.spiderqa.agent.junit.SpiderQaJUnitListener</value>
                         </property>
                     </properties>
 

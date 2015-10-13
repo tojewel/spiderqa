@@ -1,43 +1,18 @@
 -------------------------------------------------------------------------------
 Test set: core.BuildHistoryTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 199.811 sec <<< FAILURE! - in core.BuildHistoryTest
-slave_build_history(core.BuildHistoryTest)  Time elapsed: 74.29 sec  <<< ERROR!
-org.openqa.selenium.UnhandledAlertException: Unexpected modal dialog (text: This page is asking you to confirm that you want to leave - data you have entered may not be saved.): This page is asking you to confirm that you want to leave - data you have entered may not be saved.
+Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 180.577 sec <<< FAILURE! - in core.BuildHistoryTest
+slave_build_history(core.BuildHistoryTest)  Time elapsed: 138.688 sec  <<< ERROR!
+org.openqa.selenium.TimeoutException: Timed out after 120 seconds: Next build of restricted_maid is started
 Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
-System info: host: 'Abduls-MBP.home', ip: '192.168.1.8', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.5', java.version: '1.8.0_60'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: fd6f65f1-2ef2-4541-840c-6eb902e9c821
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.createUnhandledAlertException(ErrorHandler.java:187)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:154)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
-	at org.openqa.selenium.remote.RemoteWebDriver.getPageSource(RemoteWebDriver.java:455)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:102)
-	at com.sun.proxy.$Proxy37.getPageSource(Unknown Source)
-	at org.jenkinsci.test.acceptance.selenium.SanityChecker.isFastPath(SanityChecker.java:88)
-	at org.jenkinsci.test.acceptance.selenium.SanityChecker.checkSanity(SanityChecker.java:59)
-	at org.jenkinsci.test.acceptance.selenium.SanityChecker.afterNavigateTo(SanityChecker.java:45)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:79)
-	at com.sun.proxy.$Proxy36.afterNavigateTo(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:161)
-	at org.jenkinsci.test.acceptance.po.CapybaraPortingLayerImpl.visit(CapybaraPortingLayerImpl.java:77)
-	at org.jenkinsci.test.acceptance.po.Job.scheduleBuild(Job.java:258)
-	at org.jenkinsci.test.acceptance.po.Job.scheduleBuild(Job.java:253)
+System info: host: 'MacBook-Pro-2.home', ip: '192.168.1.6', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.5', java.version: '1.8.0_60'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:260)
+	at org.jenkinsci.test.acceptance.junit.Wait.timeoutException(Wait.java:127)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at org.jenkinsci.test.acceptance.junit.Wait.until(Wait.java:72)
+	at org.jenkinsci.test.acceptance.po.Build.waitUntilStarted(Build.java:73)
+	at org.jenkinsci.test.acceptance.po.Build.waitUntilStarted(Build.java:66)
 	at org.jenkinsci.test.acceptance.po.Job.startBuild(Job.java:245)
 	at core.BuildHistoryTest.slave_build_history(BuildHistoryTest.java:29)
 

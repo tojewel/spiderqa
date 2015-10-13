@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="plugins.WsCleanupPluginTest" time="180.389" tests="3" errors="3" skipped="0" failures="0">
+<testsuite name="plugins.WsCleanupPluginTest" time="52.691" tests="3" errors="3" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib"/>
@@ -61,7 +61,7 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="clean_up_before_build" classname="plugins.WsCleanupPluginTest" time="66.033">
+  <testcase name="clean_up_before_build" classname="plugins.WsCleanupPluginTest" time="17.036">
     <error message="org.apache.http.entity.ContentType.create(Ljava/lang/String;[Lorg/apache/http/NameValuePair;)Lorg/apache/http/entity/ContentType;" type="java.lang.NoSuchMethodError">java.lang.NoSuchMethodError: org.apache.http.entity.ContentType.create(Ljava/lang/String;[Lorg/apache/http/NameValuePair;)Lorg/apache/http/entity/ContentType;
 	at org.apache.http.entity.mime.MultipartEntityBuilder.buildEntity(MultipartEntityBuilder.java:209)
 	at org.apache.http.entity.mime.MultipartEntityBuilder.build(MultipartEntityBuilder.java:230)
@@ -89,28 +89,28 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
 </error>
-    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@da9374c[
-  name=run_new_script
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@7dd31fff[
+  name=parallelTests
   title=<null>
   description=<null>
-  failure=ru.yandex.qatools.allure.model.Failure@34647f58
-  start=1443745476197
-  stop=1443745545306
+  failure=ru.yandex.qatools.allure.model.Failure@4432a527
+  start=1444531308893
+  stop=1444531327852
   status=BROKEN
   severity=<null>
   steps=[]
   attachments=[]
-  labels=[ru.yandex.qatools.allure.model.Label@14b96c1e, ru.yandex.qatools.allure.model.Label@229514ff]
+  labels=[ru.yandex.qatools.allure.model.Label@56407811, ru.yandex.qatools.allure.model.Label@7ca9b1a1]
   parameters=<null>
 ]
 testCaseResult={
-   "start" : 1443745476197,
-   "stop" : 1443745545306,
+   "start" : 1444531308893,
+   "stop" : 1444531327852,
    "status" : "broken",
-   "name" : "run_new_script",
+   "name" : "parallelTests",
    "failure" : {
       "message" : "NoSuchMethodError: org.apache.http.entity.ContentType.create(Ljava/lang/String;[Lorg/apache/http/NameValuePair;)Lorg/apache/http/entity/ContentType;",
-      "stack-trace" : "java.lang.NoSuchMethodError: org.apache.http.entity.ContentType.create(Ljava/lang/String;[Lorg/apache/http/NameValuePair;)Lorg/apache/http/entity/ContentType;\n\tat org.apache.http.entity.mime.MultipartEntityBuilder.buildEntity(MultipartEntityBuilder.java:209)\n\tat org.apache.http.entity.mime.MultipartEntityBuilder.build(MultipartEntityBuilder.java:230)\n\tat org.jenkinsci.test.acceptance.update_center.PluginMetadata.uploadTo(PluginMetadata.java:65)\n\tat org.jenkinsci.test.acceptance.po.PluginManager.installPlugins(PluginManager.java:173)\n\tat org.jenkinsci.test.acceptance.junit.WithPlugins$RuleImpl$1.doInstall(WithPlugins.java:139)\n\tat org.jenkinsci.test.acceptance.junit.WithPlugins$RuleImpl$1.installPlugins(WithPlugins.java:119)\n\tat org.jenkinsci.test.acceptance.junit.WithPlugins$RuleImpl$1.evaluate(WithPlugins.java:92)\n\tat org.jenkinsci.test.acceptance.junit.JenkinsAcceptanceTestRule$1$2$1.evaluate(JenkinsAcceptanceTestRule.java:129)\n\tat org.jenkinsci.test.acceptance.junit.FilterRule$1.evaluate(FilterRule.java:62)\n\tat org.jenkinsci.test.acceptance.junit.JenkinsAcceptanceTestRule$1.evaluate(JenkinsAcceptanceTestRule.java:55)\n\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n"
+      "stack-trace" : "java.lang.NoSuchMethodError: org.apache.http.entity.ContentType.create(Ljava/lang/String;[Lorg/apache/http/NameValuePair;)Lorg/apache/http/entity/ContentType;\n\tat org.apache.http.entity.mime.MultipartEntityBuilder.buildEntity(MultipartEntityBuilder.java:209)\n\tat org.apache.http.entity.mime.MultipartEntityBuilder.build(MultipartEntityBuilder.java:230)\n\tat org.jenkinsci.test.acceptance.update_center.PluginMetadata.uploadTo(PluginMetadata.java:65)\n\tat org.jenkinsci.test.acceptance.po.PluginManager.installPlugins(PluginManager.java:173)\n\tat org.jenkinsci.test.acceptance.junit.WithPlugins$RuleImpl$1.doInstall(WithPlugins.java:139)\n\tat org.jenkinsci.test.acceptance.junit.WithPlugins$RuleImpl$1.installPlugins(WithPlugins.java:119)\n\tat org.jenkinsci.test.acceptance.junit.WithPlugins$RuleImpl$1.evaluate(WithPlugins.java:91)\n\tat org.jenkinsci.test.acceptance.junit.Native$RuleImpl$1.evaluate(Native.java:43)\n\tat org.jenkinsci.test.acceptance.junit.JenkinsAcceptanceTestRule$1$2$1.evaluate(JenkinsAcceptanceTestRule.java:129)\n\tat org.jenkinsci.test.acceptance.junit.FilterRule$1.evaluate(FilterRule.java:62)\n\tat org.jenkinsci.test.acceptance.junit.JenkinsAcceptanceTestRule$1.evaluate(JenkinsAcceptanceTestRule.java:55)\n\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n"
    },
    "steps" : {
       "step" : [ ]
@@ -121,29 +121,31 @@ testCaseResult={
    "labels" : {
       "label" : [ {
          "name" : "host",
-         "value" : "Abduls-MBP.home"
+         "value" : "MacBook-Pro-2.home"
       }, {
          "name" : "thread",
-         "value" : "35253@Abduls-MBP.home.main(1)"
+         "value" : "3426@MacBook-Pro-2.home.main(1)"
       } ]
    }
 }
-testCase=ru.yandex.qatools.allure.model.TestCase@664254b6[
-  _id=bb593bc1-529f-4a7c-9384-c2be9f97a1f7
-  executionId=1bbf0610-8745-4dcf-b9b8-2ceab706f093
-  result=ru.yandex.qatools.allure.model.TestCaseResult@da9374c
+testCase=ru.yandex.qatools.allure.model.TestCase@1960652c[
+  _id=27c1043b-b469-4725-9d96-4edae6c23c1b
+  executionId=8e6dd7ca-e27b-4013-bda8-bc2788640ddd
+  threadName=dc7331de-b740-4ba3-9907-ee3762987799
+  result=ru.yandex.qatools.allure.model.TestCaseResult@7dd31fff
 ]
 testCase={
-   "_id" : "bb593bc1-529f-4a7c-9384-c2be9f97a1f7",
-   "executionId" : "1bbf0610-8745-4dcf-b9b8-2ceab706f093",
+   "_id" : "27c1043b-b469-4725-9d96-4edae6c23c1b",
+   "executionId" : "8e6dd7ca-e27b-4013-bda8-bc2788640ddd",
+   "threadName" : "dc7331de-b740-4ba3-9907-ee3762987799",
    "result" : {
-      "start" : 1443745476197,
-      "stop" : 1443745545306,
+      "start" : 1444531308893,
+      "stop" : 1444531327852,
       "status" : "broken",
-      "name" : "run_new_script",
+      "name" : "parallelTests",
       "failure" : {
          "message" : "NoSuchMethodError: org.apache.http.entity.ContentType.create(Ljava/lang/String;[Lorg/apache/http/NameValuePair;)Lorg/apache/http/entity/ContentType;",
-         "stack-trace" : "java.lang.NoSuchMethodError: org.apache.http.entity.ContentType.create(Ljava/lang/String;[Lorg/apache/http/NameValuePair;)Lorg/apache/http/entity/ContentType;\n\tat org.apache.http.entity.mime.MultipartEntityBuilder.buildEntity(MultipartEntityBuilder.java:209)\n\tat org.apache.http.entity.mime.MultipartEntityBuilder.build(MultipartEntityBuilder.java:230)\n\tat org.jenkinsci.test.acceptance.update_center.PluginMetadata.uploadTo(PluginMetadata.java:65)\n\tat org.jenkinsci.test.acceptance.po.PluginManager.installPlugins(PluginManager.java:173)\n\tat org.jenkinsci.test.acceptance.junit.WithPlugins$RuleImpl$1.doInstall(WithPlugins.java:139)\n\tat org.jenkinsci.test.acceptance.junit.WithPlugins$RuleImpl$1.installPlugins(WithPlugins.java:119)\n\tat org.jenkinsci.test.acceptance.junit.WithPlugins$RuleImpl$1.evaluate(WithPlugins.java:92)\n\tat org.jenkinsci.test.acceptance.junit.JenkinsAcceptanceTestRule$1$2$1.evaluate(JenkinsAcceptanceTestRule.java:129)\n\tat org.jenkinsci.test.acceptance.junit.FilterRule$1.evaluate(FilterRule.java:62)\n\tat org.jenkinsci.test.acceptance.junit.JenkinsAcceptanceTestRule$1.evaluate(JenkinsAcceptanceTestRule.java:55)\n\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n"
+         "stack-trace" : "java.lang.NoSuchMethodError: org.apache.http.entity.ContentType.create(Ljava/lang/String;[Lorg/apache/http/NameValuePair;)Lorg/apache/http/entity/ContentType;\n\tat org.apache.http.entity.mime.MultipartEntityBuilder.buildEntity(MultipartEntityBuilder.java:209)\n\tat org.apache.http.entity.mime.MultipartEntityBuilder.build(MultipartEntityBuilder.java:230)\n\tat org.jenkinsci.test.acceptance.update_center.PluginMetadata.uploadTo(PluginMetadata.java:65)\n\tat org.jenkinsci.test.acceptance.po.PluginManager.installPlugins(PluginManager.java:173)\n\tat org.jenkinsci.test.acceptance.junit.WithPlugins$RuleImpl$1.doInstall(WithPlugins.java:139)\n\tat org.jenkinsci.test.acceptance.junit.WithPlugins$RuleImpl$1.installPlugins(WithPlugins.java:119)\n\tat org.jenkinsci.test.acceptance.junit.WithPlugins$RuleImpl$1.evaluate(WithPlugins.java:91)\n\tat org.jenkinsci.test.acceptance.junit.Native$RuleImpl$1.evaluate(Native.java:43)\n\tat org.jenkinsci.test.acceptance.junit.JenkinsAcceptanceTestRule$1$2$1.evaluate(JenkinsAcceptanceTestRule.java:129)\n\tat org.jenkinsci.test.acceptance.junit.FilterRule$1.evaluate(FilterRule.java:62)\n\tat org.jenkinsci.test.acceptance.junit.JenkinsAcceptanceTestRule$1.evaluate(JenkinsAcceptanceTestRule.java:55)\n\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n"
       },
       "steps" : {
          "step" : [ ]
@@ -154,87 +156,87 @@ testCase={
       "labels" : {
          "label" : [ {
             "name" : "host",
-            "value" : "Abduls-MBP.home"
+            "value" : "MacBook-Pro-2.home"
          }, {
             "name" : "thread",
-            "value" : "35253@Abduls-MBP.home.main(1)"
+            "value" : "3426@MacBook-Pro-2.home.main(1)"
          } ]
       }
    }
 }
->>>REQUEST: /testdb/TestCase
-[WARN] [10/01/2015 20:25:45.335] [default-akka.actor.default-dispatcher-187] [ActorSystem(default)] Illegal response header: Illegal 'etag' header: Invalid input '5', expected 'W' or '"' (line 1, column 1): 560dcf09fbeaf7a200c9bff4
-^
-<<<RESPONSE (201 Created): /testdb/TestCase
+>>>REQUEST: /testaspect/TestCase/27c1043b-b469-4725-9d96-4edae6c23c1b
+<<<RESPONSE (201 Created): /testaspect/TestCase/27c1043b-b469-4725-9d96-4edae6c23c1b
 running with given plugins: []
 === Starting clean_up_before_build(plugins.WsCleanupPluginTest)
-Starting Jenkins: JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home JENKINS_HOME=/Users/abduljewel/Documents/c/spiderqa/sample-test-projects/acceptance-test-harness/target/jenkins7290911467968894072home /Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/bin/java -Duser.language=en -jar ./jenkins.war --ajp13Port=-1 --httpPort=56783
-master56783|Running from: /Users/abduljewel/Documents/c/spiderqa/sample-test-projects/acceptance-test-harness/jenkins.war
-master56783|webroot: EnvVars.masterEnvVars.get("JENKINS_HOME")
-master56783|Oct 01, 2015 8:25:47 PM winstone.Logger logInternal
-master56783|INFO: Beginning extraction from war file
-master56783|Oct 01, 2015 8:25:50 PM org.eclipse.jetty.util.log.JavaUtilLog info
-master56783|INFO: jetty-winstone-2.8
-master56783|Oct 01, 2015 8:25:53 PM org.eclipse.jetty.util.log.JavaUtilLog info
-master56783|INFO: NO JSP Support for , did not find org.apache.jasper.servlet.JspServlet
-master56783|Jenkins home directory: /Users/abduljewel/Documents/c/spiderqa/sample-test-projects/acceptance-test-harness/target/jenkins7290911467968894072home found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
-master56783|Oct 01, 2015 8:25:56 PM org.eclipse.jetty.util.log.JavaUtilLog info
-master56783|INFO: Started SelectChannelConnector@0.0.0.0:56783
-master56783|Oct 01, 2015 8:25:56 PM winstone.Logger logInternal
-master56783|INFO: Winstone Servlet Engine v2.0 running: controlPort=disabled
-master56783|Oct 01, 2015 8:25:57 PM jenkins.InitReactorRunner$1 onAttained
-master56783|INFO: Started initialization
-master56783|Oct 01, 2015 8:26:34 PM jenkins.InitReactorRunner$1 onAttained
-master56783|INFO: Listed all plugins
-master56783|Oct 01, 2015 8:26:34 PM jenkins.InitReactorRunner$1 onAttained
-master56783|INFO: Prepared all plugins
-master56783|Oct 01, 2015 8:26:34 PM jenkins.InitReactorRunner$1 onAttained
-master56783|INFO: Started all plugins
-master56783|Oct 01, 2015 8:26:34 PM jenkins.InitReactorRunner$1 onAttained
-master56783|INFO: Augmented all extensions
-master56783|Oct 01, 2015 8:26:39 PM jenkins.InitReactorRunner$1 onAttained
-master56783|INFO: Loaded all jobs
-master56783|Oct 01, 2015 8:26:42 PM hudson.model.AsyncPeriodicWork$1 run
-master56783|INFO: Started Download metadata
-master56783|Oct 01, 2015 8:26:43 PM org.jenkinsci.main.modules.sshd.SSHD start
-master56783|INFO: Started SSHD at port 51162
-master56783|Oct 01, 2015 8:26:43 PM jenkins.InitReactorRunner$1 onAttained
-master56783|INFO: Completed initialization
-master56783|Oct 01, 2015 8:26:43 PM hudson.UDPBroadcastThread run
-master56783|WARNING: UDP handling problem
-master56783|java.net.SocketException: Can't assign requested address
-master56783|	at java.net.PlainDatagramSocketImpl.join(Native Method)
-master56783|	at java.net.AbstractPlainDatagramSocketImpl.join(AbstractPlainDatagramSocketImpl.java:179)
-master56783|	at java.net.MulticastSocket.joinGroup(MulticastSocket.java:323)
-master56783|	at hudson.UDPBroadcastThread.run(UDPBroadcastThread.java:77)
-master56783|
-master56783|Oct 01, 2015 8:26:43 PM hudson.WebAppMain$3 run
-master56783|INFO: Jenkins is fully up and running
-master56783|Oct 01, 2015 8:26:46 PM hudson.model.UpdateSite updateData
-master56783|INFO: Obtained the latest update center data file for UpdateSource default
-master56783|Oct 01, 2015 8:26:46 PM hudson.model.DownloadService$Downloadable load
-master56783|INFO: Obtained the updated data file for hudson.tasks.Maven.MavenInstaller
-master56783|Oct 01, 2015 8:26:47 PM hudson.model.DownloadService$Downloadable load
-master56783|INFO: Obtained the updated data file for hudson.tasks.Ant.AntInstaller
-master56783|Oct 01, 2015 8:26:49 PM hudson.model.DownloadService$Downloadable load
-master56783|INFO: Obtained the updated data file for hudson.tools.JDKInstaller
-master56783|Oct 01, 2015 8:26:49 PM hudson.model.AsyncPeriodicWork$1 run
-master56783|INFO: Finished Download metadata. 7,370 ms
+Starting Jenkins: JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home JENKINS_HOME=/Users/abduljewel/Documents/c/spiderqa/sample-test-projects/acceptance-test-harness/target/jenkins6800904989597209682home /Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/bin/java -Duser.language=en -jar ./jenkins.war --ajp13Port=-1 --httpPort=60673
+master60673|Running from: /Users/abduljewel/Documents/c/spiderqa/sample-test-projects/acceptance-test-harness/jenkins.war
+master60673|webroot: EnvVars.masterEnvVars.get("JENKINS_HOME")
+master60673|Oct 10, 2015 10:42:08 PM winstone.Logger logInternal
+master60673|INFO: Beginning extraction from war file
+master60673|Oct 10, 2015 10:42:09 PM org.eclipse.jetty.util.log.JavaUtilLog info
+master60673|INFO: jetty-winstone-2.8
+master60673|Oct 10, 2015 10:42:10 PM org.eclipse.jetty.util.log.JavaUtilLog info
+master60673|INFO: NO JSP Support for , did not find org.apache.jasper.servlet.JspServlet
+master60673|Jenkins home directory: /Users/abduljewel/Documents/c/spiderqa/sample-test-projects/acceptance-test-harness/target/jenkins6800904989597209682home found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+master60673|Oct 10, 2015 10:42:11 PM org.eclipse.jetty.util.log.JavaUtilLog info
+master60673|INFO: Started SelectChannelConnector@0.0.0.0:60673
+master60673|Oct 10, 2015 10:42:11 PM winstone.Logger logInternal
+master60673|INFO: Winstone Servlet Engine v2.0 running: controlPort=disabled
+master60673|Oct 10, 2015 10:42:11 PM jenkins.InitReactorRunner$1 onAttained
+master60673|INFO: Started initialization
+master60673|Oct 10, 2015 10:42:19 PM jenkins.InitReactorRunner$1 onAttained
+master60673|INFO: Listed all plugins
+master60673|Oct 10, 2015 10:42:19 PM jenkins.InitReactorRunner$1 onAttained
+master60673|INFO: Prepared all plugins
+master60673|Oct 10, 2015 10:42:20 PM jenkins.InitReactorRunner$1 onAttained
+master60673|INFO: Started all plugins
+master60673|Oct 10, 2015 10:42:20 PM jenkins.InitReactorRunner$1 onAttained
+master60673|INFO: Augmented all extensions
+master60673|Oct 10, 2015 10:42:21 PM jenkins.InitReactorRunner$1 onAttained
+master60673|INFO: Loaded all jobs
+master60673|Oct 10, 2015 10:42:22 PM hudson.model.AsyncPeriodicWork$1 run
+master60673|INFO: Started Download metadata
+master60673|Oct 10, 2015 10:42:22 PM org.jenkinsci.main.modules.sshd.SSHD start
+master60673|INFO: Started SSHD at port 52399
+master60673|Oct 10, 2015 10:42:22 PM jenkins.InitReactorRunner$1 onAttained
+master60673|INFO: Completed initialization
+master60673|Oct 10, 2015 10:42:22 PM hudson.WebAppMain$3 run
+master60673|INFO: Jenkins is fully up and running
+master60673|Oct 10, 2015 10:42:23 PM hudson.model.UpdateSite updateData
+master60673|INFO: Obtained the latest update center data file for UpdateSource default
+master60673|Oct 10, 2015 10:42:24 PM hudson.model.DownloadService$Downloadable load
+master60673|INFO: Obtained the updated data file for hudson.tasks.Maven.MavenInstaller
+master60673|Oct 10, 2015 10:42:24 PM hudson.model.DownloadService$Downloadable load
+master60673|INFO: Obtained the updated data file for hudson.tasks.Ant.AntInstaller
 Jenkins is stopped
 ]]></system-out>
-    <system-err><![CDATA[Oct 01, 2015 8:25:46 PM org.jenkinsci.test.acceptance.controller.LocalController startNow
-INFO: Waiting for Jenkins to become running in http://127.0.0.1:56783/
-Oct 01, 2015 8:26:43 PM org.jenkinsci.test.acceptance.controller.LocalController startNow
-INFO: Jenkins is running in http://127.0.0.1:56783/
-Oct 01, 2015 8:26:52 PM org.jenkinsci.test.acceptance.po.PluginManager installationStatus
+    <system-err><![CDATA[Oct 10, 2015 10:42:07 PM org.jenkinsci.test.acceptance.controller.LocalController startNow
+INFO: Waiting for Jenkins to become running in http://127.0.0.1:60673/
+Oct 10, 2015 10:42:22 PM org.jenkinsci.test.acceptance.controller.LocalController startNow
+INFO: Jenkins is running in http://127.0.0.1:60673/
+Oct 10, 2015 10:42:22 PM org.openqa.selenium.phantomjs.PhantomJSDriverService <init>
+INFO: executable: /usr/local/bin/phantomjs
+Oct 10, 2015 10:42:22 PM org.openqa.selenium.phantomjs.PhantomJSDriverService <init>
+INFO: port: 7438
+Oct 10, 2015 10:42:22 PM org.openqa.selenium.phantomjs.PhantomJSDriverService <init>
+INFO: arguments: [--webdriver=7438, --webdriver-logfile=/Users/abduljewel/Documents/c/spiderqa/sample-test-projects/acceptance-test-harness/phantomjsdriver.log]
+Oct 10, 2015 10:42:22 PM org.openqa.selenium.phantomjs.PhantomJSDriverService <init>
+INFO: environment: {}
+[INFO  - 2015-10-11T02:42:22.868Z] GhostDriver - Main - running on port 7438
+[INFO  - 2015-10-11T02:42:23.133Z] Session [b33eb270-6fc1-11e5-8323-eda086904232] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.0.0 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2015-10-11T02:42:23.133Z] Session [b33eb270-6fc1-11e5-8323-eda086904232] - page.customHeaders:  - {"Accept-Language":"en"}
+[INFO  - 2015-10-11T02:42:23.133Z] Session [b33eb270-6fc1-11e5-8323-eda086904232] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.0.0","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"mac-10.9 (Mavericks)-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"},"phantomjs.page.customHeaders.Accept-Language":"en"}
+[INFO  - 2015-10-11T02:42:23.133Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: b33eb270-6fc1-11e5-8323-eda086904232
+Oct 10, 2015 10:42:24 PM org.jenkinsci.test.acceptance.po.PluginManager installationStatus
 INFO: ws-cleanup is not installed
-Oct 01, 2015 8:26:52 PM org.jenkinsci.test.acceptance.po.PluginManager installationStatus
+Oct 10, 2015 10:42:24 PM org.jenkinsci.test.acceptance.po.PluginManager installationStatus
 INFO: ws-cleanup is not installed
-Oct 01, 2015 8:26:52 PM org.jenkinsci.test.acceptance.po.PluginManager installationStatus
+Oct 10, 2015 10:42:24 PM org.jenkinsci.test.acceptance.po.PluginManager installationStatus
 INFO: ws-cleanup@0.28 is not installed
+[INFO  - 2015-10-11T02:42:24.279Z] ShutdownReqHand - _handle - About to shutdown
 ]]></system-err>
   </testcase>
-  <testcase name="clean_up_after_build" classname="plugins.WsCleanupPluginTest" time="66.006">
+  <testcase name="clean_up_after_build" classname="plugins.WsCleanupPluginTest" time="17.889">
     <error message="org.apache.http.entity.ContentType.create(Ljava/lang/String;[Lorg/apache/http/NameValuePair;)Lorg/apache/http/entity/ContentType;" type="java.lang.NoSuchMethodError">java.lang.NoSuchMethodError: org.apache.http.entity.ContentType.create(Ljava/lang/String;[Lorg/apache/http/NameValuePair;)Lorg/apache/http/entity/ContentType;
 	at org.apache.http.entity.mime.MultipartEntityBuilder.buildEntity(MultipartEntityBuilder.java:209)
 	at org.apache.http.entity.mime.MultipartEntityBuilder.build(MultipartEntityBuilder.java:230)
@@ -262,23 +264,23 @@ INFO: ws-cleanup@0.28 is not installed
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
 </error>
-    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@2f58f492[
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@15720e27[
   name=clean_up_before_build
   title=<null>
   description=<null>
-  failure=ru.yandex.qatools.allure.model.Failure@903c13
-  start=1443745546655
-  stop=1443745612685
+  failure=ru.yandex.qatools.allure.model.Failure@64a77a27
+  start=1444531327855
+  stop=1444531344956
   status=BROKEN
   severity=<null>
   steps=[]
   attachments=[]
-  labels=[ru.yandex.qatools.allure.model.Label@4ae5ddc0, ru.yandex.qatools.allure.model.Label@36ab69d9]
+  labels=[ru.yandex.qatools.allure.model.Label@60f1837e, ru.yandex.qatools.allure.model.Label@434e14e8]
   parameters=<null>
 ]
 testCaseResult={
-   "start" : 1443745546655,
-   "stop" : 1443745612685,
+   "start" : 1444531327855,
+   "stop" : 1444531344956,
    "status" : "broken",
    "name" : "clean_up_before_build",
    "failure" : {
@@ -294,24 +296,26 @@ testCaseResult={
    "labels" : {
       "label" : [ {
          "name" : "host",
-         "value" : "Abduls-MBP.home"
+         "value" : "MacBook-Pro-2.home"
       }, {
          "name" : "thread",
-         "value" : "35253@Abduls-MBP.home.main(1)"
+         "value" : "3426@MacBook-Pro-2.home.main(1)"
       } ]
    }
 }
-testCase=ru.yandex.qatools.allure.model.TestCase@5ebfe7fa[
-  _id=955a8a3c-671b-4dee-8f13-61adf7e17114
-  executionId=1bbf0610-8745-4dcf-b9b8-2ceab706f093
-  result=ru.yandex.qatools.allure.model.TestCaseResult@2f58f492
+testCase=ru.yandex.qatools.allure.model.TestCase@46482990[
+  _id=8c71c4c9-bd2c-4f4e-941d-2e19b030d1fa
+  executionId=8e6dd7ca-e27b-4013-bda8-bc2788640ddd
+  threadName=dc7331de-b740-4ba3-9907-ee3762987799
+  result=ru.yandex.qatools.allure.model.TestCaseResult@15720e27
 ]
 testCase={
-   "_id" : "955a8a3c-671b-4dee-8f13-61adf7e17114",
-   "executionId" : "1bbf0610-8745-4dcf-b9b8-2ceab706f093",
+   "_id" : "8c71c4c9-bd2c-4f4e-941d-2e19b030d1fa",
+   "executionId" : "8e6dd7ca-e27b-4013-bda8-bc2788640ddd",
+   "threadName" : "dc7331de-b740-4ba3-9907-ee3762987799",
    "result" : {
-      "start" : 1443745546655,
-      "stop" : 1443745612685,
+      "start" : 1444531327855,
+      "stop" : 1444531344956,
       "status" : "broken",
       "name" : "clean_up_before_build",
       "failure" : {
@@ -327,87 +331,87 @@ testCase={
       "labels" : {
          "label" : [ {
             "name" : "host",
-            "value" : "Abduls-MBP.home"
+            "value" : "MacBook-Pro-2.home"
          }, {
             "name" : "thread",
-            "value" : "35253@Abduls-MBP.home.main(1)"
+            "value" : "3426@MacBook-Pro-2.home.main(1)"
          } ]
       }
    }
 }
->>>REQUEST: /testdb/TestCase
-[WARN] [10/01/2015 20:26:52.695] [default-akka.actor.default-dispatcher-195] [ActorSystem(default)] Illegal response header: Illegal 'etag' header: Invalid input '5', expected 'W' or '"' (line 1, column 1): 560dcf4cfbeaf7a200c9bff9
-^
-<<<RESPONSE (201 Created): /testdb/TestCase
+>>>REQUEST: /testaspect/TestCase/8c71c4c9-bd2c-4f4e-941d-2e19b030d1fa
 running with given plugins: []
+<<<RESPONSE (201 Created): /testaspect/TestCase/8c71c4c9-bd2c-4f4e-941d-2e19b030d1fa
 === Starting clean_up_after_build(plugins.WsCleanupPluginTest)
-Starting Jenkins: JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home JENKINS_HOME=/Users/abduljewel/Documents/c/spiderqa/sample-test-projects/acceptance-test-harness/target/jenkins2552964202245054045home /Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/bin/java -Duser.language=en -jar ./jenkins.war --ajp13Port=-1 --httpPort=54142
-master54142|Running from: /Users/abduljewel/Documents/c/spiderqa/sample-test-projects/acceptance-test-harness/jenkins.war
-master54142|webroot: EnvVars.masterEnvVars.get("JENKINS_HOME")
-master54142|Oct 01, 2015 8:26:53 PM winstone.Logger logInternal
-master54142|INFO: Beginning extraction from war file
-master54142|Oct 01, 2015 8:26:57 PM org.eclipse.jetty.util.log.JavaUtilLog info
-master54142|INFO: jetty-winstone-2.8
-master54142|Oct 01, 2015 8:27:01 PM org.eclipse.jetty.util.log.JavaUtilLog info
-master54142|INFO: NO JSP Support for , did not find org.apache.jasper.servlet.JspServlet
-master54142|Jenkins home directory: /Users/abduljewel/Documents/c/spiderqa/sample-test-projects/acceptance-test-harness/target/jenkins2552964202245054045home found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
-master54142|Oct 01, 2015 8:27:04 PM org.eclipse.jetty.util.log.JavaUtilLog info
-master54142|INFO: Started SelectChannelConnector@0.0.0.0:54142
-master54142|Oct 01, 2015 8:27:04 PM winstone.Logger logInternal
-master54142|INFO: Winstone Servlet Engine v2.0 running: controlPort=disabled
-master54142|Oct 01, 2015 8:27:05 PM jenkins.InitReactorRunner$1 onAttained
-master54142|INFO: Started initialization
-master54142|Oct 01, 2015 8:27:40 PM jenkins.InitReactorRunner$1 onAttained
-master54142|INFO: Listed all plugins
-master54142|Oct 01, 2015 8:27:40 PM jenkins.InitReactorRunner$1 onAttained
-master54142|INFO: Prepared all plugins
-master54142|Oct 01, 2015 8:27:41 PM jenkins.InitReactorRunner$1 onAttained
-master54142|INFO: Started all plugins
-master54142|Oct 01, 2015 8:27:41 PM jenkins.InitReactorRunner$1 onAttained
-master54142|INFO: Augmented all extensions
-master54142|Oct 01, 2015 8:27:45 PM jenkins.InitReactorRunner$1 onAttained
-master54142|INFO: Loaded all jobs
-master54142|Oct 01, 2015 8:27:48 PM hudson.model.AsyncPeriodicWork$1 run
-master54142|INFO: Started Download metadata
-master54142|Oct 01, 2015 8:27:49 PM org.jenkinsci.main.modules.sshd.SSHD start
-master54142|INFO: Started SSHD at port 51518
-master54142|Oct 01, 2015 8:27:49 PM jenkins.InitReactorRunner$1 onAttained
-master54142|INFO: Completed initialization
-master54142|Oct 01, 2015 8:27:49 PM hudson.UDPBroadcastThread run
-master54142|WARNING: UDP handling problem
-master54142|java.net.SocketException: Can't assign requested address
-master54142|	at java.net.PlainDatagramSocketImpl.join(Native Method)
-master54142|	at java.net.AbstractPlainDatagramSocketImpl.join(AbstractPlainDatagramSocketImpl.java:179)
-master54142|	at java.net.MulticastSocket.joinGroup(MulticastSocket.java:323)
-master54142|	at hudson.UDPBroadcastThread.run(UDPBroadcastThread.java:77)
-master54142|
-master54142|Oct 01, 2015 8:27:49 PM hudson.WebAppMain$3 run
-master54142|INFO: Jenkins is fully up and running
-master54142|Oct 01, 2015 8:27:52 PM hudson.model.UpdateSite updateData
-master54142|INFO: Obtained the latest update center data file for UpdateSource default
-master54142|Oct 01, 2015 8:27:52 PM hudson.model.DownloadService$Downloadable load
-master54142|INFO: Obtained the updated data file for hudson.tasks.Maven.MavenInstaller
-master54142|Oct 01, 2015 8:27:53 PM hudson.model.DownloadService$Downloadable load
-master54142|INFO: Obtained the updated data file for hudson.tasks.Ant.AntInstaller
-master54142|Oct 01, 2015 8:27:54 PM hudson.model.DownloadService$Downloadable load
-master54142|INFO: Obtained the updated data file for hudson.tools.JDKInstaller
-master54142|Oct 01, 2015 8:27:54 PM hudson.model.AsyncPeriodicWork$1 run
-master54142|INFO: Finished Download metadata. 5,568 ms
+Starting Jenkins: JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home JENKINS_HOME=/Users/abduljewel/Documents/c/spiderqa/sample-test-projects/acceptance-test-harness/target/jenkins2276651180225921201home /Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/bin/java -Duser.language=en -jar ./jenkins.war --ajp13Port=-1 --httpPort=53695
+master53695|Running from: /Users/abduljewel/Documents/c/spiderqa/sample-test-projects/acceptance-test-harness/jenkins.war
+master53695|webroot: EnvVars.masterEnvVars.get("JENKINS_HOME")
+master53695|Oct 10, 2015 10:42:25 PM winstone.Logger logInternal
+master53695|INFO: Beginning extraction from war file
+master53695|Oct 10, 2015 10:42:26 PM org.eclipse.jetty.util.log.JavaUtilLog info
+master53695|INFO: jetty-winstone-2.8
+master53695|Oct 10, 2015 10:42:27 PM org.eclipse.jetty.util.log.JavaUtilLog info
+master53695|INFO: NO JSP Support for , did not find org.apache.jasper.servlet.JspServlet
+master53695|Jenkins home directory: /Users/abduljewel/Documents/c/spiderqa/sample-test-projects/acceptance-test-harness/target/jenkins2276651180225921201home found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+master53695|Oct 10, 2015 10:42:28 PM org.eclipse.jetty.util.log.JavaUtilLog info
+master53695|INFO: Started SelectChannelConnector@0.0.0.0:53695
+master53695|Oct 10, 2015 10:42:28 PM winstone.Logger logInternal
+master53695|INFO: Winstone Servlet Engine v2.0 running: controlPort=disabled
+master53695|Oct 10, 2015 10:42:28 PM jenkins.InitReactorRunner$1 onAttained
+master53695|INFO: Started initialization
+master53695|Oct 10, 2015 10:42:37 PM jenkins.InitReactorRunner$1 onAttained
+master53695|INFO: Listed all plugins
+master53695|Oct 10, 2015 10:42:37 PM jenkins.InitReactorRunner$1 onAttained
+master53695|INFO: Prepared all plugins
+master53695|Oct 10, 2015 10:42:37 PM jenkins.InitReactorRunner$1 onAttained
+master53695|INFO: Started all plugins
+master53695|Oct 10, 2015 10:42:37 PM jenkins.InitReactorRunner$1 onAttained
+master53695|INFO: Augmented all extensions
+master53695|Oct 10, 2015 10:42:39 PM jenkins.InitReactorRunner$1 onAttained
+master53695|INFO: Loaded all jobs
+master53695|Oct 10, 2015 10:42:40 PM hudson.model.AsyncPeriodicWork$1 run
+master53695|INFO: Started Download metadata
+master53695|Oct 10, 2015 10:42:40 PM org.jenkinsci.main.modules.sshd.SSHD start
+master53695|INFO: Started SSHD at port 52420
+master53695|Oct 10, 2015 10:42:40 PM jenkins.InitReactorRunner$1 onAttained
+master53695|INFO: Completed initialization
+master53695|Oct 10, 2015 10:42:40 PM hudson.WebAppMain$3 run
+master53695|INFO: Jenkins is fully up and running
+master53695|Oct 10, 2015 10:42:41 PM hudson.model.UpdateSite updateData
+master53695|INFO: Obtained the latest update center data file for UpdateSource default
+master53695|Oct 10, 2015 10:42:42 PM hudson.model.DownloadService$Downloadable load
+master53695|INFO: Obtained the updated data file for hudson.tasks.Maven.MavenInstaller
+master53695|Oct 10, 2015 10:42:42 PM hudson.model.DownloadService$Downloadable load
+master53695|INFO: Obtained the updated data file for hudson.tasks.Ant.AntInstaller
 Jenkins is stopped
 ]]></system-out>
-    <system-err><![CDATA[Oct 01, 2015 8:26:52 PM org.jenkinsci.test.acceptance.controller.LocalController startNow
-INFO: Waiting for Jenkins to become running in http://127.0.0.1:54142/
-Oct 01, 2015 8:27:49 PM org.jenkinsci.test.acceptance.controller.LocalController startNow
-INFO: Jenkins is running in http://127.0.0.1:54142/
-Oct 01, 2015 8:27:57 PM org.jenkinsci.test.acceptance.po.PluginManager installationStatus
+    <system-err><![CDATA[Oct 10, 2015 10:42:24 PM org.jenkinsci.test.acceptance.controller.LocalController startNow
+INFO: Waiting for Jenkins to become running in http://127.0.0.1:53695/
+Oct 10, 2015 10:42:40 PM org.jenkinsci.test.acceptance.controller.LocalController startNow
+INFO: Jenkins is running in http://127.0.0.1:53695/
+Oct 10, 2015 10:42:40 PM org.openqa.selenium.phantomjs.PhantomJSDriverService <init>
+INFO: executable: /usr/local/bin/phantomjs
+Oct 10, 2015 10:42:40 PM org.openqa.selenium.phantomjs.PhantomJSDriverService <init>
+INFO: port: 20515
+Oct 10, 2015 10:42:40 PM org.openqa.selenium.phantomjs.PhantomJSDriverService <init>
+INFO: arguments: [--webdriver=20515, --webdriver-logfile=/Users/abduljewel/Documents/c/spiderqa/sample-test-projects/acceptance-test-harness/phantomjsdriver.log]
+Oct 10, 2015 10:42:40 PM org.openqa.selenium.phantomjs.PhantomJSDriverService <init>
+INFO: environment: {}
+[INFO  - 2015-10-11T02:42:40.830Z] GhostDriver - Main - running on port 20515
+[INFO  - 2015-10-11T02:42:41.099Z] Session [bdf46570-6fc1-11e5-a34c-bdf0735156d8] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.0.0 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2015-10-11T02:42:41.099Z] Session [bdf46570-6fc1-11e5-a34c-bdf0735156d8] - page.customHeaders:  - {"Accept-Language":"en"}
+[INFO  - 2015-10-11T02:42:41.100Z] Session [bdf46570-6fc1-11e5-a34c-bdf0735156d8] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.0.0","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"mac-10.9 (Mavericks)-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"},"phantomjs.page.customHeaders.Accept-Language":"en"}
+[INFO  - 2015-10-11T02:42:41.100Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: bdf46570-6fc1-11e5-a34c-bdf0735156d8
+Oct 10, 2015 10:42:42 PM org.jenkinsci.test.acceptance.po.PluginManager installationStatus
 INFO: ws-cleanup is not installed
-Oct 01, 2015 8:27:57 PM org.jenkinsci.test.acceptance.po.PluginManager installationStatus
+Oct 10, 2015 10:42:42 PM org.jenkinsci.test.acceptance.po.PluginManager installationStatus
 INFO: ws-cleanup is not installed
-Oct 01, 2015 8:27:57 PM org.jenkinsci.test.acceptance.po.PluginManager installationStatus
+Oct 10, 2015 10:42:42 PM org.jenkinsci.test.acceptance.po.PluginManager installationStatus
 INFO: ws-cleanup@0.28 is not installed
+[INFO  - 2015-10-11T02:42:42.180Z] ShutdownReqHand - _handle - About to shutdown
 ]]></system-err>
   </testcase>
-  <testcase name="do_not_clean_by_default" classname="plugins.WsCleanupPluginTest" time="48.35">
+  <testcase name="do_not_clean_by_default" classname="plugins.WsCleanupPluginTest" time="17.766">
     <error message="org.apache.http.entity.ContentType.create(Ljava/lang/String;[Lorg/apache/http/NameValuePair;)Lorg/apache/http/entity/ContentType;" type="java.lang.NoSuchMethodError">java.lang.NoSuchMethodError: org.apache.http.entity.ContentType.create(Ljava/lang/String;[Lorg/apache/http/NameValuePair;)Lorg/apache/http/entity/ContentType;
 	at org.apache.http.entity.mime.MultipartEntityBuilder.buildEntity(MultipartEntityBuilder.java:209)
 	at org.apache.http.entity.mime.MultipartEntityBuilder.build(MultipartEntityBuilder.java:230)
@@ -435,23 +439,23 @@ INFO: ws-cleanup@0.28 is not installed
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
 </error>
-    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@64887fbc[
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@3ee67568[
   name=clean_up_after_build
   title=<null>
   description=<null>
-  failure=ru.yandex.qatools.allure.model.Failure@26b3fe8
-  start=1443745612690
-  stop=1443745678757
+  failure=ru.yandex.qatools.allure.model.Failure@ed886ec
+  start=1444531344957
+  stop=1444531362859
   status=BROKEN
   severity=<null>
   steps=[]
   attachments=[]
-  labels=[ru.yandex.qatools.allure.model.Label@1f6d7e7c, ru.yandex.qatools.allure.model.Label@20518250]
+  labels=[ru.yandex.qatools.allure.model.Label@1e2f87c7, ru.yandex.qatools.allure.model.Label@180c8652]
   parameters=<null>
 ]
 testCaseResult={
-   "start" : 1443745612690,
-   "stop" : 1443745678757,
+   "start" : 1444531344957,
+   "stop" : 1444531362859,
    "status" : "broken",
    "name" : "clean_up_after_build",
    "failure" : {
@@ -467,24 +471,26 @@ testCaseResult={
    "labels" : {
       "label" : [ {
          "name" : "host",
-         "value" : "Abduls-MBP.home"
+         "value" : "MacBook-Pro-2.home"
       }, {
          "name" : "thread",
-         "value" : "35253@Abduls-MBP.home.main(1)"
+         "value" : "3426@MacBook-Pro-2.home.main(1)"
       } ]
    }
 }
-testCase=ru.yandex.qatools.allure.model.TestCase@7836c79[
-  _id=923b5c87-9853-42a8-ac66-d9ecefbc8e69
-  executionId=1bbf0610-8745-4dcf-b9b8-2ceab706f093
-  result=ru.yandex.qatools.allure.model.TestCaseResult@64887fbc
+testCase=ru.yandex.qatools.allure.model.TestCase@15cced0e[
+  _id=dbbd3369-327b-4f67-a519-63bac0126424
+  executionId=8e6dd7ca-e27b-4013-bda8-bc2788640ddd
+  threadName=dc7331de-b740-4ba3-9907-ee3762987799
+  result=ru.yandex.qatools.allure.model.TestCaseResult@3ee67568
 ]
 testCase={
-   "_id" : "923b5c87-9853-42a8-ac66-d9ecefbc8e69",
-   "executionId" : "1bbf0610-8745-4dcf-b9b8-2ceab706f093",
+   "_id" : "dbbd3369-327b-4f67-a519-63bac0126424",
+   "executionId" : "8e6dd7ca-e27b-4013-bda8-bc2788640ddd",
+   "threadName" : "dc7331de-b740-4ba3-9907-ee3762987799",
    "result" : {
-      "start" : 1443745612690,
-      "stop" : 1443745678757,
+      "start" : 1444531344957,
+      "stop" : 1444531362859,
       "status" : "broken",
       "name" : "clean_up_after_build",
       "failure" : {
@@ -500,84 +506,84 @@ testCase={
       "labels" : {
          "label" : [ {
             "name" : "host",
-            "value" : "Abduls-MBP.home"
+            "value" : "MacBook-Pro-2.home"
          }, {
             "name" : "thread",
-            "value" : "35253@Abduls-MBP.home.main(1)"
+            "value" : "3426@MacBook-Pro-2.home.main(1)"
          } ]
       }
    }
 }
->>>REQUEST: /testdb/TestCase
+>>>REQUEST: /testaspect/TestCase/dbbd3369-327b-4f67-a519-63bac0126424
 running with given plugins: []
+<<<RESPONSE (201 Created): /testaspect/TestCase/dbbd3369-327b-4f67-a519-63bac0126424
 === Starting do_not_clean_by_default(plugins.WsCleanupPluginTest)
-[WARN] [10/01/2015 20:27:58.769] [default-akka.actor.default-dispatcher-217] [ActorSystem(default)] Illegal response header: Illegal 'etag' header: Invalid input '5', expected 'W' or '"' (line 1, column 1): 560dcf8efbeaf7a200c9c002
-^
-<<<RESPONSE (201 Created): /testdb/TestCase
-Starting Jenkins: JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home JENKINS_HOME=/Users/abduljewel/Documents/c/spiderqa/sample-test-projects/acceptance-test-harness/target/jenkins7560261945210702912home /Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/bin/java -Duser.language=en -jar ./jenkins.war --ajp13Port=-1 --httpPort=56965
-master56965|Running from: /Users/abduljewel/Documents/c/spiderqa/sample-test-projects/acceptance-test-harness/jenkins.war
-master56965|webroot: EnvVars.masterEnvVars.get("JENKINS_HOME")
-master56965|Oct 01, 2015 8:27:59 PM winstone.Logger logInternal
-master56965|INFO: Beginning extraction from war file
-master56965|Oct 01, 2015 8:28:03 PM org.eclipse.jetty.util.log.JavaUtilLog info
-master56965|INFO: jetty-winstone-2.8
-master56965|Oct 01, 2015 8:28:07 PM org.eclipse.jetty.util.log.JavaUtilLog info
-master56965|INFO: NO JSP Support for , did not find org.apache.jasper.servlet.JspServlet
-master56965|Jenkins home directory: /Users/abduljewel/Documents/c/spiderqa/sample-test-projects/acceptance-test-harness/target/jenkins7560261945210702912home found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
-master56965|Oct 01, 2015 8:28:09 PM org.eclipse.jetty.util.log.JavaUtilLog info
-master56965|INFO: Started SelectChannelConnector@0.0.0.0:56965
-master56965|Oct 01, 2015 8:28:09 PM winstone.Logger logInternal
-master56965|INFO: Winstone Servlet Engine v2.0 running: controlPort=disabled
-master56965|Oct 01, 2015 8:28:10 PM jenkins.InitReactorRunner$1 onAttained
-master56965|INFO: Started initialization
-master56965|Oct 01, 2015 8:28:34 PM jenkins.InitReactorRunner$1 onAttained
-master56965|INFO: Listed all plugins
-master56965|Oct 01, 2015 8:28:34 PM jenkins.InitReactorRunner$1 onAttained
-master56965|INFO: Prepared all plugins
-master56965|Oct 01, 2015 8:28:34 PM jenkins.InitReactorRunner$1 onAttained
-master56965|INFO: Started all plugins
-master56965|Oct 01, 2015 8:28:34 PM jenkins.InitReactorRunner$1 onAttained
-master56965|INFO: Augmented all extensions
-master56965|Oct 01, 2015 8:28:37 PM jenkins.InitReactorRunner$1 onAttained
-master56965|INFO: Loaded all jobs
-master56965|Oct 01, 2015 8:28:40 PM hudson.model.AsyncPeriodicWork$1 run
-master56965|INFO: Started Download metadata
-master56965|Oct 01, 2015 8:28:40 PM org.jenkinsci.main.modules.sshd.SSHD start
-master56965|INFO: Started SSHD at port 51765
-master56965|Oct 01, 2015 8:28:40 PM jenkins.InitReactorRunner$1 onAttained
-master56965|INFO: Completed initialization
-master56965|Oct 01, 2015 8:28:40 PM hudson.UDPBroadcastThread run
-master56965|WARNING: UDP handling problem
-master56965|java.net.SocketException: Can't assign requested address
-master56965|	at java.net.PlainDatagramSocketImpl.join(Native Method)
-master56965|	at java.net.AbstractPlainDatagramSocketImpl.join(AbstractPlainDatagramSocketImpl.java:179)
-master56965|	at java.net.MulticastSocket.joinGroup(MulticastSocket.java:323)
-master56965|	at hudson.UDPBroadcastThread.run(UDPBroadcastThread.java:77)
-master56965|
-master56965|Oct 01, 2015 8:28:40 PM hudson.WebAppMain$3 run
-master56965|INFO: Jenkins is fully up and running
-master56965|Oct 01, 2015 8:28:44 PM hudson.model.UpdateSite updateData
-master56965|INFO: Obtained the latest update center data file for UpdateSource default
-master56965|Oct 01, 2015 8:28:44 PM hudson.model.DownloadService$Downloadable load
-master56965|INFO: Obtained the updated data file for hudson.tasks.Maven.MavenInstaller
-master56965|Oct 01, 2015 8:28:44 PM hudson.model.DownloadService$Downloadable load
-master56965|INFO: Obtained the updated data file for hudson.tasks.Ant.AntInstaller
-master56965|Oct 01, 2015 8:28:45 PM hudson.model.DownloadService$Downloadable load
-master56965|INFO: Obtained the updated data file for hudson.tools.JDKInstaller
-master56965|Oct 01, 2015 8:28:45 PM hudson.model.AsyncPeriodicWork$1 run
-master56965|INFO: Finished Download metadata. 5,411 ms
+Starting Jenkins: JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home JENKINS_HOME=/Users/abduljewel/Documents/c/spiderqa/sample-test-projects/acceptance-test-harness/target/jenkins7024319949109446335home /Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/bin/java -Duser.language=en -jar ./jenkins.war --ajp13Port=-1 --httpPort=57224
+master57224|Running from: /Users/abduljewel/Documents/c/spiderqa/sample-test-projects/acceptance-test-harness/jenkins.war
+master57224|webroot: EnvVars.masterEnvVars.get("JENKINS_HOME")
+master57224|Oct 10, 2015 10:42:43 PM winstone.Logger logInternal
+master57224|INFO: Beginning extraction from war file
+master57224|Oct 10, 2015 10:42:44 PM org.eclipse.jetty.util.log.JavaUtilLog info
+master57224|INFO: jetty-winstone-2.8
+master57224|Oct 10, 2015 10:42:45 PM org.eclipse.jetty.util.log.JavaUtilLog info
+master57224|INFO: NO JSP Support for , did not find org.apache.jasper.servlet.JspServlet
+master57224|Jenkins home directory: /Users/abduljewel/Documents/c/spiderqa/sample-test-projects/acceptance-test-harness/target/jenkins7024319949109446335home found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+master57224|Oct 10, 2015 10:42:46 PM org.eclipse.jetty.util.log.JavaUtilLog info
+master57224|INFO: Started SelectChannelConnector@0.0.0.0:57224
+master57224|Oct 10, 2015 10:42:46 PM winstone.Logger logInternal
+master57224|INFO: Winstone Servlet Engine v2.0 running: controlPort=disabled
+master57224|Oct 10, 2015 10:42:46 PM jenkins.InitReactorRunner$1 onAttained
+master57224|INFO: Started initialization
+master57224|Oct 10, 2015 10:42:55 PM jenkins.InitReactorRunner$1 onAttained
+master57224|INFO: Listed all plugins
+master57224|Oct 10, 2015 10:42:55 PM jenkins.InitReactorRunner$1 onAttained
+master57224|INFO: Prepared all plugins
+master57224|Oct 10, 2015 10:42:55 PM jenkins.InitReactorRunner$1 onAttained
+master57224|INFO: Started all plugins
+master57224|Oct 10, 2015 10:42:55 PM jenkins.InitReactorRunner$1 onAttained
+master57224|INFO: Augmented all extensions
+master57224|Oct 10, 2015 10:42:56 PM jenkins.InitReactorRunner$1 onAttained
+master57224|INFO: Loaded all jobs
+master57224|Oct 10, 2015 10:42:58 PM hudson.model.AsyncPeriodicWork$1 run
+master57224|INFO: Started Download metadata
+master57224|Oct 10, 2015 10:42:58 PM org.jenkinsci.main.modules.sshd.SSHD start
+master57224|INFO: Started SSHD at port 52442
+master57224|Oct 10, 2015 10:42:58 PM jenkins.InitReactorRunner$1 onAttained
+master57224|INFO: Completed initialization
+master57224|Oct 10, 2015 10:42:58 PM hudson.WebAppMain$3 run
+master57224|INFO: Jenkins is fully up and running
+master57224|Oct 10, 2015 10:42:59 PM hudson.model.UpdateSite updateData
+master57224|INFO: Obtained the latest update center data file for UpdateSource default
+master57224|Oct 10, 2015 10:42:59 PM hudson.model.DownloadService$Downloadable load
+master57224|INFO: Obtained the updated data file for hudson.tasks.Maven.MavenInstaller
+master57224|Oct 10, 2015 10:43:00 PM hudson.model.DownloadService$Downloadable load
+master57224|INFO: Obtained the updated data file for hudson.tasks.Ant.AntInstaller
 Jenkins is stopped
 ]]></system-out>
-    <system-err><![CDATA[Oct 01, 2015 8:27:58 PM org.jenkinsci.test.acceptance.controller.LocalController startNow
-INFO: Waiting for Jenkins to become running in http://127.0.0.1:56965/
-Oct 01, 2015 8:28:40 PM org.jenkinsci.test.acceptance.controller.LocalController startNow
-INFO: Jenkins is running in http://127.0.0.1:56965/
-Oct 01, 2015 8:28:46 PM org.jenkinsci.test.acceptance.po.PluginManager installationStatus
+    <system-err><![CDATA[Oct 10, 2015 10:42:42 PM org.jenkinsci.test.acceptance.controller.LocalController startNow
+INFO: Waiting for Jenkins to become running in http://127.0.0.1:57224/
+Oct 10, 2015 10:42:58 PM org.jenkinsci.test.acceptance.controller.LocalController startNow
+INFO: Jenkins is running in http://127.0.0.1:57224/
+Oct 10, 2015 10:42:58 PM org.openqa.selenium.phantomjs.PhantomJSDriverService <init>
+INFO: executable: /usr/local/bin/phantomjs
+Oct 10, 2015 10:42:58 PM org.openqa.selenium.phantomjs.PhantomJSDriverService <init>
+INFO: port: 6254
+Oct 10, 2015 10:42:58 PM org.openqa.selenium.phantomjs.PhantomJSDriverService <init>
+INFO: arguments: [--webdriver=6254, --webdriver-logfile=/Users/abduljewel/Documents/c/spiderqa/sample-test-projects/acceptance-test-harness/phantomjsdriver.log]
+Oct 10, 2015 10:42:58 PM org.openqa.selenium.phantomjs.PhantomJSDriverService <init>
+INFO: environment: {}
+[INFO  - 2015-10-11T02:42:58.681Z] GhostDriver - Main - running on port 6254
+[INFO  - 2015-10-11T02:42:58.921Z] Session [c893d150-6fc1-11e5-a9b0-13920540e00a] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.0.0 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2015-10-11T02:42:58.921Z] Session [c893d150-6fc1-11e5-a9b0-13920540e00a] - page.customHeaders:  - {"Accept-Language":"en"}
+[INFO  - 2015-10-11T02:42:58.921Z] Session [c893d150-6fc1-11e5-a9b0-13920540e00a] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.0.0","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"mac-10.9 (Mavericks)-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"},"phantomjs.page.customHeaders.Accept-Language":"en"}
+[INFO  - 2015-10-11T02:42:58.921Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: c893d150-6fc1-11e5-a9b0-13920540e00a
+Oct 10, 2015 10:42:59 PM org.jenkinsci.test.acceptance.po.PluginManager installationStatus
 INFO: ws-cleanup is not installed
-Oct 01, 2015 8:28:46 PM org.jenkinsci.test.acceptance.po.PluginManager installationStatus
+Oct 10, 2015 10:42:59 PM org.jenkinsci.test.acceptance.po.PluginManager installationStatus
 INFO: ws-cleanup is not installed
-Oct 01, 2015 8:28:46 PM org.jenkinsci.test.acceptance.po.PluginManager installationStatus
+Oct 10, 2015 10:42:59 PM org.jenkinsci.test.acceptance.po.PluginManager installationStatus
 INFO: ws-cleanup@0.28 is not installed
+[INFO  - 2015-10-11T02:42:59.957Z] ShutdownReqHand - _handle - About to shutdown
 ]]></system-err>
   </testcase>
 </testsuite>

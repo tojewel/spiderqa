@@ -63,23 +63,23 @@
   </properties>
   <testcase name="build_has_changes" classname="plugins.SubversionPluginTest" time="0">
     <skipped/>
-    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@51132514[
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@f235c06[
   name=always_checkout_fresh_copy
   title=<null>
   description=<null>
-  failure=ru.yandex.qatools.allure.model.Failure@20864cd1
-  start=1443744945929
-  stop=1443744945964
+  failure=ru.yandex.qatools.allure.model.Failure@171a8cc8
+  start=1444530541707
+  stop=1444530541718
   status=CANCELED
   severity=<null>
   steps=[]
   attachments=[]
-  labels=[ru.yandex.qatools.allure.model.Label@5c839677, ru.yandex.qatools.allure.model.Label@3193e21d]
+  labels=[ru.yandex.qatools.allure.model.Label@6a642679, ru.yandex.qatools.allure.model.Label@3567140a]
   parameters=<null>
 ]
 testCaseResult={
-   "start" : 1443744945929,
-   "stop" : 1443744945964,
+   "start" : 1444530541707,
+   "stop" : 1444530541718,
    "status" : "canceled",
    "name" : "always_checkout_fresh_copy",
    "failure" : {
@@ -95,24 +95,26 @@ testCaseResult={
    "labels" : {
       "label" : [ {
          "name" : "host",
-         "value" : "Abduls-MBP.home"
+         "value" : "MacBook-Pro-2.home"
       }, {
          "name" : "thread",
-         "value" : "35249@Abduls-MBP.home.main(1)"
+         "value" : "3426@MacBook-Pro-2.home.main(1)"
       } ]
    }
 }
-testCase=ru.yandex.qatools.allure.model.TestCase@79604abe[
-  _id=61a1d860-d38a-40d1-97af-277a31ea3630
-  executionId=745bfd3b-0516-4592-8852-a31b4b74d11f
-  result=ru.yandex.qatools.allure.model.TestCaseResult@51132514
+testCase=ru.yandex.qatools.allure.model.TestCase@2031adcc[
+  _id=44e710d4-6246-4b6e-afab-c1f6f272b149
+  executionId=8e6dd7ca-e27b-4013-bda8-bc2788640ddd
+  threadName=dc7331de-b740-4ba3-9907-ee3762987799
+  result=ru.yandex.qatools.allure.model.TestCaseResult@f235c06
 ]
 testCase={
-   "_id" : "61a1d860-d38a-40d1-97af-277a31ea3630",
-   "executionId" : "745bfd3b-0516-4592-8852-a31b4b74d11f",
+   "_id" : "44e710d4-6246-4b6e-afab-c1f6f272b149",
+   "executionId" : "8e6dd7ca-e27b-4013-bda8-bc2788640ddd",
+   "threadName" : "dc7331de-b740-4ba3-9907-ee3762987799",
    "result" : {
-      "start" : 1443744945929,
-      "stop" : 1443744945964,
+      "start" : 1444530541707,
+      "stop" : 1444530541718,
       "status" : "canceled",
       "name" : "always_checkout_fresh_copy",
       "failure" : {
@@ -128,18 +130,16 @@ testCase={
       "labels" : {
          "label" : [ {
             "name" : "host",
-            "value" : "Abduls-MBP.home"
+            "value" : "MacBook-Pro-2.home"
          }, {
             "name" : "thread",
-            "value" : "35249@Abduls-MBP.home.main(1)"
+            "value" : "3426@MacBook-Pro-2.home.main(1)"
          } ]
       }
    }
 }
->>>REQUEST: /testdb/TestCase
-[WARN] [10/01/2015 20:15:45.977] [default-akka.actor.default-dispatcher-122] [ActorSystem(default)] Illegal response header: Illegal 'etag' header: Invalid input '5', expected 'W' or '"' (line 1, column 1): 560dccb1fbeaf7a200c9bfbf
-^
-<<<RESPONSE (201 Created): /testdb/TestCase
+>>>REQUEST: /testaspect/TestCase/44e710d4-6246-4b6e-afab-c1f6f272b149
+<<<RESPONSE (201 Created): /testaspect/TestCase/44e710d4-6246-4b6e-afab-c1f6f272b149
 running with given plugins: []
 === Starting build_has_changes(plugins.SubversionPluginTest)
 Skipping build_has_changes(plugins.SubversionPluginTest): Docker is needed for the test
@@ -147,23 +147,23 @@ Skipping build_has_changes(plugins.SubversionPluginTest): Docker is needed for t
   </testcase>
   <testcase name="run_basic_subversion_build_svn_userPwd" classname="plugins.SubversionPluginTest" time="0">
     <skipped/>
-    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@184de357[
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@4e62e145[
   name=build_has_changes
   title=<null>
   description=<null>
-  failure=ru.yandex.qatools.allure.model.Failure@efe49ab
-  start=1443744946081
-  stop=1443744946110
+  failure=ru.yandex.qatools.allure.model.Failure@43654615
+  start=1444530541719
+  stop=1444530541730
   status=CANCELED
   severity=<null>
   steps=[]
   attachments=[]
-  labels=[ru.yandex.qatools.allure.model.Label@6dcf7b6a, ru.yandex.qatools.allure.model.Label@53dba9cd]
+  labels=[ru.yandex.qatools.allure.model.Label@661d038e, ru.yandex.qatools.allure.model.Label@e43e271]
   parameters=<null>
 ]
 testCaseResult={
-   "start" : 1443744946081,
-   "stop" : 1443744946110,
+   "start" : 1444530541719,
+   "stop" : 1444530541730,
    "status" : "canceled",
    "name" : "build_has_changes",
    "failure" : {
@@ -179,24 +179,26 @@ testCaseResult={
    "labels" : {
       "label" : [ {
          "name" : "host",
-         "value" : "Abduls-MBP.home"
+         "value" : "MacBook-Pro-2.home"
       }, {
          "name" : "thread",
-         "value" : "35249@Abduls-MBP.home.main(1)"
+         "value" : "3426@MacBook-Pro-2.home.main(1)"
       } ]
    }
 }
-testCase=ru.yandex.qatools.allure.model.TestCase@247bbfba[
-  _id=00a6c5e3-e84d-49a3-9eb2-10ff997a889e
-  executionId=745bfd3b-0516-4592-8852-a31b4b74d11f
-  result=ru.yandex.qatools.allure.model.TestCaseResult@184de357
+testCase=ru.yandex.qatools.allure.model.TestCase@57f25235[
+  _id=4c20e56d-a973-40bf-af9e-653130b9fcbf
+  executionId=8e6dd7ca-e27b-4013-bda8-bc2788640ddd
+  threadName=dc7331de-b740-4ba3-9907-ee3762987799
+  result=ru.yandex.qatools.allure.model.TestCaseResult@4e62e145
 ]
 testCase={
-   "_id" : "00a6c5e3-e84d-49a3-9eb2-10ff997a889e",
-   "executionId" : "745bfd3b-0516-4592-8852-a31b4b74d11f",
+   "_id" : "4c20e56d-a973-40bf-af9e-653130b9fcbf",
+   "executionId" : "8e6dd7ca-e27b-4013-bda8-bc2788640ddd",
+   "threadName" : "dc7331de-b740-4ba3-9907-ee3762987799",
    "result" : {
-      "start" : 1443744946081,
-      "stop" : 1443744946110,
+      "start" : 1444530541719,
+      "stop" : 1444530541730,
       "status" : "canceled",
       "name" : "build_has_changes",
       "failure" : {
@@ -212,42 +214,40 @@ testCase={
       "labels" : {
          "label" : [ {
             "name" : "host",
-            "value" : "Abduls-MBP.home"
+            "value" : "MacBook-Pro-2.home"
          }, {
             "name" : "thread",
-            "value" : "35249@Abduls-MBP.home.main(1)"
+            "value" : "3426@MacBook-Pro-2.home.main(1)"
          } ]
       }
    }
 }
->>>REQUEST: /testdb/TestCase
+>>>REQUEST: /testaspect/TestCase/4c20e56d-a973-40bf-af9e-653130b9fcbf
 running with given plugins: []
+<<<RESPONSE (201 Created): /testaspect/TestCase/4c20e56d-a973-40bf-af9e-653130b9fcbf
 === Starting run_basic_subversion_build_svn_userPwd(plugins.SubversionPluginTest)
-[WARN] [10/01/2015 20:15:46.125] [default-akka.actor.default-dispatcher-139] [ActorSystem(default)] Illegal response header: Illegal 'etag' header: Invalid input '5', expected 'W' or '"' (line 1, column 1): 560dccb2fbeaf7a200c9bfc0
-^
-<<<RESPONSE (201 Created): /testdb/TestCase
 Skipping run_basic_subversion_build_svn_userPwd(plugins.SubversionPluginTest): Docker is needed for the test
 ]]></system-out>
   </testcase>
   <testcase name="build_has_no_changes" classname="plugins.SubversionPluginTest" time="0">
     <skipped/>
-    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@59fea5f5[
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@7d9be41[
   name=run_basic_subversion_build_svn_userPwd
   title=<null>
   description=<null>
-  failure=ru.yandex.qatools.allure.model.Failure@78eafad
-  start=1443744946113
-  stop=1443744946151
+  failure=ru.yandex.qatools.allure.model.Failure@397c54e3
+  start=1444530541732
+  stop=1444530541743
   status=CANCELED
   severity=<null>
   steps=[]
   attachments=[]
-  labels=[ru.yandex.qatools.allure.model.Label@70f4abc1, ru.yandex.qatools.allure.model.Label@26d028f7]
+  labels=[ru.yandex.qatools.allure.model.Label@57c05c70, ru.yandex.qatools.allure.model.Label@73659b62]
   parameters=<null>
 ]
 testCaseResult={
-   "start" : 1443744946113,
-   "stop" : 1443744946151,
+   "start" : 1444530541732,
+   "stop" : 1444530541743,
    "status" : "canceled",
    "name" : "run_basic_subversion_build_svn_userPwd",
    "failure" : {
@@ -263,24 +263,26 @@ testCaseResult={
    "labels" : {
       "label" : [ {
          "name" : "host",
-         "value" : "Abduls-MBP.home"
+         "value" : "MacBook-Pro-2.home"
       }, {
          "name" : "thread",
-         "value" : "35249@Abduls-MBP.home.main(1)"
+         "value" : "3426@MacBook-Pro-2.home.main(1)"
       } ]
    }
 }
-testCase=ru.yandex.qatools.allure.model.TestCase@a2df0d5[
-  _id=a667576d-b059-4512-a9c4-72ae2ff10bf5
-  executionId=745bfd3b-0516-4592-8852-a31b4b74d11f
-  result=ru.yandex.qatools.allure.model.TestCaseResult@59fea5f5
+testCase=ru.yandex.qatools.allure.model.TestCase@398408f9[
+  _id=e46b7130-c8a5-4d7a-8ddb-64fcdbd781d1
+  executionId=8e6dd7ca-e27b-4013-bda8-bc2788640ddd
+  threadName=dc7331de-b740-4ba3-9907-ee3762987799
+  result=ru.yandex.qatools.allure.model.TestCaseResult@7d9be41
 ]
 testCase={
-   "_id" : "a667576d-b059-4512-a9c4-72ae2ff10bf5",
-   "executionId" : "745bfd3b-0516-4592-8852-a31b4b74d11f",
+   "_id" : "e46b7130-c8a5-4d7a-8ddb-64fcdbd781d1",
+   "executionId" : "8e6dd7ca-e27b-4013-bda8-bc2788640ddd",
+   "threadName" : "dc7331de-b740-4ba3-9907-ee3762987799",
    "result" : {
-      "start" : 1443744946113,
-      "stop" : 1443744946151,
+      "start" : 1444530541732,
+      "stop" : 1444530541743,
       "status" : "canceled",
       "name" : "run_basic_subversion_build_svn_userPwd",
       "failure" : {
@@ -296,18 +298,16 @@ testCase={
       "labels" : {
          "label" : [ {
             "name" : "host",
-            "value" : "Abduls-MBP.home"
+            "value" : "MacBook-Pro-2.home"
          }, {
             "name" : "thread",
-            "value" : "35249@Abduls-MBP.home.main(1)"
+            "value" : "3426@MacBook-Pro-2.home.main(1)"
          } ]
       }
    }
 }
->>>REQUEST: /testdb/TestCase
-[WARN] [10/01/2015 20:15:46.158] [default-akka.actor.default-dispatcher-122] [ActorSystem(default)] Illegal response header: Illegal 'etag' header: Invalid input '5', expected 'W' or '"' (line 1, column 1): 560dccb2fbeaf7a200c9bfc1
-^
-<<<RESPONSE (201 Created): /testdb/TestCase
+>>>REQUEST: /testaspect/TestCase/e46b7130-c8a5-4d7a-8ddb-64fcdbd781d1
+<<<RESPONSE (201 Created): /testaspect/TestCase/e46b7130-c8a5-4d7a-8ddb-64fcdbd781d1
 running with given plugins: []
 === Starting build_has_no_changes(plugins.SubversionPluginTest)
 Skipping build_has_no_changes(plugins.SubversionPluginTest): Docker is needed for the test
@@ -315,23 +315,23 @@ Skipping build_has_no_changes(plugins.SubversionPluginTest): Docker is needed fo
   </testcase>
   <testcase name="poll_for_changes_excluded" classname="plugins.SubversionPluginTest" time="0">
     <skipped/>
-    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@da34eb0[
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@1b76fea[
   name=build_has_no_changes
   title=<null>
   description=<null>
-  failure=ru.yandex.qatools.allure.model.Failure@785a4557
-  start=1443744946155
-  stop=1443744946182
+  failure=ru.yandex.qatools.allure.model.Failure@bae3ee5
+  start=1444530541743
+  stop=1444530541757
   status=CANCELED
   severity=<null>
   steps=[]
   attachments=[]
-  labels=[ru.yandex.qatools.allure.model.Label@2bf3ec4, ru.yandex.qatools.allure.model.Label@3b5da0b0]
+  labels=[ru.yandex.qatools.allure.model.Label@4821d479, ru.yandex.qatools.allure.model.Label@5dbff955]
   parameters=<null>
 ]
 testCaseResult={
-   "start" : 1443744946155,
-   "stop" : 1443744946182,
+   "start" : 1444530541743,
+   "stop" : 1444530541757,
    "status" : "canceled",
    "name" : "build_has_no_changes",
    "failure" : {
@@ -347,24 +347,26 @@ testCaseResult={
    "labels" : {
       "label" : [ {
          "name" : "host",
-         "value" : "Abduls-MBP.home"
+         "value" : "MacBook-Pro-2.home"
       }, {
          "name" : "thread",
-         "value" : "35249@Abduls-MBP.home.main(1)"
+         "value" : "3426@MacBook-Pro-2.home.main(1)"
       } ]
    }
 }
-testCase=ru.yandex.qatools.allure.model.TestCase@2c9cafa5[
-  _id=07817fe0-eadb-4be1-927c-4e677fa402b0
-  executionId=745bfd3b-0516-4592-8852-a31b4b74d11f
-  result=ru.yandex.qatools.allure.model.TestCaseResult@da34eb0
+testCase=ru.yandex.qatools.allure.model.TestCase@674d1537[
+  _id=6ff18a0f-7aa5-4560-a7b7-ceb7f350ba0b
+  executionId=8e6dd7ca-e27b-4013-bda8-bc2788640ddd
+  threadName=dc7331de-b740-4ba3-9907-ee3762987799
+  result=ru.yandex.qatools.allure.model.TestCaseResult@1b76fea
 ]
 testCase={
-   "_id" : "07817fe0-eadb-4be1-927c-4e677fa402b0",
-   "executionId" : "745bfd3b-0516-4592-8852-a31b4b74d11f",
+   "_id" : "6ff18a0f-7aa5-4560-a7b7-ceb7f350ba0b",
+   "executionId" : "8e6dd7ca-e27b-4013-bda8-bc2788640ddd",
+   "threadName" : "dc7331de-b740-4ba3-9907-ee3762987799",
    "result" : {
-      "start" : 1443744946155,
-      "stop" : 1443744946182,
+      "start" : 1444530541743,
+      "stop" : 1444530541757,
       "status" : "canceled",
       "name" : "build_has_no_changes",
       "failure" : {
@@ -380,42 +382,40 @@ testCase={
       "labels" : {
          "label" : [ {
             "name" : "host",
-            "value" : "Abduls-MBP.home"
+            "value" : "MacBook-Pro-2.home"
          }, {
             "name" : "thread",
-            "value" : "35249@Abduls-MBP.home.main(1)"
+            "value" : "3426@MacBook-Pro-2.home.main(1)"
          } ]
       }
    }
 }
->>>REQUEST: /testdb/TestCase
-[WARN] [10/01/2015 20:15:46.190] [default-akka.actor.default-dispatcher-122] [ActorSystem(default)] Illegal response header: Illegal 'etag' header: Invalid input '5', expected 'W' or '"' (line 1, column 1): 560dccb2fbeaf7a200c9bfc2
-^
-<<<RESPONSE (201 Created): /testdb/TestCase
+>>>REQUEST: /testaspect/TestCase/6ff18a0f-7aa5-4560-a7b7-ceb7f350ba0b
 running with given plugins: []
 === Starting poll_for_changes_excluded(plugins.SubversionPluginTest)
+<<<RESPONSE (201 Created): /testaspect/TestCase/6ff18a0f-7aa5-4560-a7b7-ceb7f350ba0b
 Skipping poll_for_changes_excluded(plugins.SubversionPluginTest): Docker is needed for the test
 ]]></system-out>
   </testcase>
   <testcase name="build_has_changes_and_repoBrowser" classname="plugins.SubversionPluginTest" time="0">
     <skipped/>
-    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@40fe8fd5[
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@1f7127fa[
   name=poll_for_changes_excluded
   title=<null>
   description=<null>
-  failure=ru.yandex.qatools.allure.model.Failure@37ffe4f3
-  start=1443744946187
-  stop=1443744946222
+  failure=ru.yandex.qatools.allure.model.Failure@7e0146ec
+  start=1444530541758
+  stop=1444530541770
   status=CANCELED
   severity=<null>
   steps=[]
   attachments=[]
-  labels=[ru.yandex.qatools.allure.model.Label@4fa0ee7e, ru.yandex.qatools.allure.model.Label@202f054f]
+  labels=[ru.yandex.qatools.allure.model.Label@3a49e914, ru.yandex.qatools.allure.model.Label@5b248b97]
   parameters=<null>
 ]
 testCaseResult={
-   "start" : 1443744946187,
-   "stop" : 1443744946222,
+   "start" : 1444530541758,
+   "stop" : 1444530541770,
    "status" : "canceled",
    "name" : "poll_for_changes_excluded",
    "failure" : {
@@ -431,24 +431,26 @@ testCaseResult={
    "labels" : {
       "label" : [ {
          "name" : "host",
-         "value" : "Abduls-MBP.home"
+         "value" : "MacBook-Pro-2.home"
       }, {
          "name" : "thread",
-         "value" : "35249@Abduls-MBP.home.main(1)"
+         "value" : "3426@MacBook-Pro-2.home.main(1)"
       } ]
    }
 }
-testCase=ru.yandex.qatools.allure.model.TestCase@141bb6b8[
-  _id=44e5703d-863c-4fee-8444-1ede9b4a0720
-  executionId=745bfd3b-0516-4592-8852-a31b4b74d11f
-  result=ru.yandex.qatools.allure.model.TestCaseResult@40fe8fd5
+testCase=ru.yandex.qatools.allure.model.TestCase@4dfc39fe[
+  _id=936490ce-2ced-47bc-985c-e2cbd0cc0384
+  executionId=8e6dd7ca-e27b-4013-bda8-bc2788640ddd
+  threadName=dc7331de-b740-4ba3-9907-ee3762987799
+  result=ru.yandex.qatools.allure.model.TestCaseResult@1f7127fa
 ]
 testCase={
-   "_id" : "44e5703d-863c-4fee-8444-1ede9b4a0720",
-   "executionId" : "745bfd3b-0516-4592-8852-a31b4b74d11f",
+   "_id" : "936490ce-2ced-47bc-985c-e2cbd0cc0384",
+   "executionId" : "8e6dd7ca-e27b-4013-bda8-bc2788640ddd",
+   "threadName" : "dc7331de-b740-4ba3-9907-ee3762987799",
    "result" : {
-      "start" : 1443744946187,
-      "stop" : 1443744946222,
+      "start" : 1444530541758,
+      "stop" : 1444530541770,
       "status" : "canceled",
       "name" : "poll_for_changes_excluded",
       "failure" : {
@@ -464,42 +466,40 @@ testCase={
       "labels" : {
          "label" : [ {
             "name" : "host",
-            "value" : "Abduls-MBP.home"
+            "value" : "MacBook-Pro-2.home"
          }, {
             "name" : "thread",
-            "value" : "35249@Abduls-MBP.home.main(1)"
+            "value" : "3426@MacBook-Pro-2.home.main(1)"
          } ]
       }
    }
 }
->>>REQUEST: /testdb/TestCase
-[WARN] [10/01/2015 20:15:46.249] [default-akka.actor.default-dispatcher-157] [ActorSystem(default)] Illegal response header: Illegal 'etag' header: Invalid input '5', expected 'W' or '"' (line 1, column 1): 560dccb2fbeaf7a200c9bfc3
-^
-<<<RESPONSE (201 Created): /testdb/TestCase
+>>>REQUEST: /testaspect/TestCase/936490ce-2ced-47bc-985c-e2cbd0cc0384
 running with given plugins: []
+<<<RESPONSE (201 Created): /testaspect/TestCase/936490ce-2ced-47bc-985c-e2cbd0cc0384
 === Starting build_has_changes_and_repoBrowser(plugins.SubversionPluginTest)
 Skipping build_has_changes_and_repoBrowser(plugins.SubversionPluginTest): Docker is needed for the test
 ]]></system-out>
   </testcase>
   <testcase name="clean_checkout" classname="plugins.SubversionPluginTest" time="0">
     <skipped/>
-    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@631bc9f4[
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@31e5b64f[
   name=build_has_changes_and_repoBrowser
   title=<null>
   description=<null>
-  failure=ru.yandex.qatools.allure.model.Failure@642c72cf
-  start=1443744946246
-  stop=1443744946293
+  failure=ru.yandex.qatools.allure.model.Failure@475ef4da
+  start=1444530541771
+  stop=1444530541783
   status=CANCELED
   severity=<null>
   steps=[]
   attachments=[]
-  labels=[ru.yandex.qatools.allure.model.Label@4e6cbdf1, ru.yandex.qatools.allure.model.Label@67fac095]
+  labels=[ru.yandex.qatools.allure.model.Label@21fca0d7, ru.yandex.qatools.allure.model.Label@30d689c6]
   parameters=<null>
 ]
 testCaseResult={
-   "start" : 1443744946246,
-   "stop" : 1443744946293,
+   "start" : 1444530541771,
+   "stop" : 1444530541783,
    "status" : "canceled",
    "name" : "build_has_changes_and_repoBrowser",
    "failure" : {
@@ -515,24 +515,26 @@ testCaseResult={
    "labels" : {
       "label" : [ {
          "name" : "host",
-         "value" : "Abduls-MBP.home"
+         "value" : "MacBook-Pro-2.home"
       }, {
          "name" : "thread",
-         "value" : "35249@Abduls-MBP.home.main(1)"
+         "value" : "3426@MacBook-Pro-2.home.main(1)"
       } ]
    }
 }
-testCase=ru.yandex.qatools.allure.model.TestCase@5a13f1f7[
-  _id=877ae346-fc7e-4c3a-bd80-b023ec471f0d
-  executionId=745bfd3b-0516-4592-8852-a31b4b74d11f
-  result=ru.yandex.qatools.allure.model.TestCaseResult@631bc9f4
+testCase=ru.yandex.qatools.allure.model.TestCase@2c9d065d[
+  _id=af0ddd3f-18ad-47c9-930e-6b8b7e73e3b9
+  executionId=8e6dd7ca-e27b-4013-bda8-bc2788640ddd
+  threadName=dc7331de-b740-4ba3-9907-ee3762987799
+  result=ru.yandex.qatools.allure.model.TestCaseResult@31e5b64f
 ]
 testCase={
-   "_id" : "877ae346-fc7e-4c3a-bd80-b023ec471f0d",
-   "executionId" : "745bfd3b-0516-4592-8852-a31b4b74d11f",
+   "_id" : "af0ddd3f-18ad-47c9-930e-6b8b7e73e3b9",
+   "executionId" : "8e6dd7ca-e27b-4013-bda8-bc2788640ddd",
+   "threadName" : "dc7331de-b740-4ba3-9907-ee3762987799",
    "result" : {
-      "start" : 1443744946246,
-      "stop" : 1443744946293,
+      "start" : 1444530541771,
+      "stop" : 1444530541783,
       "status" : "canceled",
       "name" : "build_has_changes_and_repoBrowser",
       "failure" : {
@@ -548,42 +550,40 @@ testCase={
       "labels" : {
          "label" : [ {
             "name" : "host",
-            "value" : "Abduls-MBP.home"
+            "value" : "MacBook-Pro-2.home"
          }, {
             "name" : "thread",
-            "value" : "35249@Abduls-MBP.home.main(1)"
+            "value" : "3426@MacBook-Pro-2.home.main(1)"
          } ]
       }
    }
 }
->>>REQUEST: /testdb/TestCase
-[WARN] [10/01/2015 20:15:46.305] [default-akka.actor.default-dispatcher-137] [ActorSystem(default)] Illegal response header: Illegal 'etag' header: Invalid input '5', expected 'W' or '"' (line 1, column 1): 560dccb2fbeaf7a200c9bfc4
-^
-<<<RESPONSE (201 Created): /testdb/TestCase
+>>>REQUEST: /testaspect/TestCase/af0ddd3f-18ad-47c9-930e-6b8b7e73e3b9
 running with given plugins: []
 === Starting clean_checkout(plugins.SubversionPluginTest)
+<<<RESPONSE (201 Created): /testaspect/TestCase/af0ddd3f-18ad-47c9-930e-6b8b7e73e3b9
 Skipping clean_checkout(plugins.SubversionPluginTest): Docker is needed for the test
 ]]></system-out>
   </testcase>
   <testcase name="run_basic_subversion_build_userPwd" classname="plugins.SubversionPluginTest" time="0">
     <skipped/>
-    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@15186ce0[
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@3586395d[
   name=clean_checkout
   title=<null>
   description=<null>
-  failure=ru.yandex.qatools.allure.model.Failure@745926c3
-  start=1443744946303
-  stop=1443744946332
+  failure=ru.yandex.qatools.allure.model.Failure@5ef26d05
+  start=1444530541784
+  stop=1444530541798
   status=CANCELED
   severity=<null>
   steps=[]
   attachments=[]
-  labels=[ru.yandex.qatools.allure.model.Label@75dd0f94, ru.yandex.qatools.allure.model.Label@72324965]
+  labels=[ru.yandex.qatools.allure.model.Label@7e5d29a6, ru.yandex.qatools.allure.model.Label@717996cf]
   parameters=<null>
 ]
 testCaseResult={
-   "start" : 1443744946303,
-   "stop" : 1443744946332,
+   "start" : 1444530541784,
+   "stop" : 1444530541798,
    "status" : "canceled",
    "name" : "clean_checkout",
    "failure" : {
@@ -599,24 +599,26 @@ testCaseResult={
    "labels" : {
       "label" : [ {
          "name" : "host",
-         "value" : "Abduls-MBP.home"
+         "value" : "MacBook-Pro-2.home"
       }, {
          "name" : "thread",
-         "value" : "35249@Abduls-MBP.home.main(1)"
+         "value" : "3426@MacBook-Pro-2.home.main(1)"
       } ]
    }
 }
-testCase=ru.yandex.qatools.allure.model.TestCase@249b54af[
-  _id=c799ba5a-d81f-40de-8696-8ee5054d9123
-  executionId=745bfd3b-0516-4592-8852-a31b4b74d11f
-  result=ru.yandex.qatools.allure.model.TestCaseResult@15186ce0
+testCase=ru.yandex.qatools.allure.model.TestCase@7531156c[
+  _id=695663e6-2e81-4d9d-978c-7d1c590f09da
+  executionId=8e6dd7ca-e27b-4013-bda8-bc2788640ddd
+  threadName=dc7331de-b740-4ba3-9907-ee3762987799
+  result=ru.yandex.qatools.allure.model.TestCaseResult@3586395d
 ]
 testCase={
-   "_id" : "c799ba5a-d81f-40de-8696-8ee5054d9123",
-   "executionId" : "745bfd3b-0516-4592-8852-a31b4b74d11f",
+   "_id" : "695663e6-2e81-4d9d-978c-7d1c590f09da",
+   "executionId" : "8e6dd7ca-e27b-4013-bda8-bc2788640ddd",
+   "threadName" : "dc7331de-b740-4ba3-9907-ee3762987799",
    "result" : {
-      "start" : 1443744946303,
-      "stop" : 1443744946332,
+      "start" : 1444530541784,
+      "stop" : 1444530541798,
       "status" : "canceled",
       "name" : "clean_checkout",
       "failure" : {
@@ -632,18 +634,16 @@ testCase={
       "labels" : {
          "label" : [ {
             "name" : "host",
-            "value" : "Abduls-MBP.home"
+            "value" : "MacBook-Pro-2.home"
          }, {
             "name" : "thread",
-            "value" : "35249@Abduls-MBP.home.main(1)"
+            "value" : "3426@MacBook-Pro-2.home.main(1)"
          } ]
       }
    }
 }
->>>REQUEST: /testdb/TestCase
-[WARN] [10/01/2015 20:15:46.339] [default-akka.actor.default-dispatcher-137] [ActorSystem(default)] Illegal response header: Illegal 'etag' header: Invalid input '5', expected 'W' or '"' (line 1, column 1): 560dccb2fbeaf7a200c9bfc5
-^
-<<<RESPONSE (201 Created): /testdb/TestCase
+>>>REQUEST: /testaspect/TestCase/695663e6-2e81-4d9d-978c-7d1c590f09da
+<<<RESPONSE (201 Created): /testaspect/TestCase/695663e6-2e81-4d9d-978c-7d1c590f09da
 running with given plugins: []
 === Starting run_basic_subversion_build_userPwd(plugins.SubversionPluginTest)
 Skipping run_basic_subversion_build_userPwd(plugins.SubversionPluginTest): Docker is needed for the test
@@ -651,23 +651,23 @@ Skipping run_basic_subversion_build_userPwd(plugins.SubversionPluginTest): Docke
   </testcase>
   <testcase name="run_basic_subversion_build" classname="plugins.SubversionPluginTest" time="0">
     <skipped/>
-    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@46c662f2[
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@59bddd49[
   name=run_basic_subversion_build_userPwd
   title=<null>
   description=<null>
-  failure=ru.yandex.qatools.allure.model.Failure@4afdfc0f
-  start=1443744946336
-  stop=1443744946364
+  failure=ru.yandex.qatools.allure.model.Failure@1d7625c
+  start=1444530541799
+  stop=1444530541813
   status=CANCELED
   severity=<null>
   steps=[]
   attachments=[]
-  labels=[ru.yandex.qatools.allure.model.Label@10b67f54, ru.yandex.qatools.allure.model.Label@30798137]
+  labels=[ru.yandex.qatools.allure.model.Label@3fba860a, ru.yandex.qatools.allure.model.Label@431cb57]
   parameters=<null>
 ]
 testCaseResult={
-   "start" : 1443744946336,
-   "stop" : 1443744946364,
+   "start" : 1444530541799,
+   "stop" : 1444530541813,
    "status" : "canceled",
    "name" : "run_basic_subversion_build_userPwd",
    "failure" : {
@@ -683,24 +683,26 @@ testCaseResult={
    "labels" : {
       "label" : [ {
          "name" : "host",
-         "value" : "Abduls-MBP.home"
+         "value" : "MacBook-Pro-2.home"
       }, {
          "name" : "thread",
-         "value" : "35249@Abduls-MBP.home.main(1)"
+         "value" : "3426@MacBook-Pro-2.home.main(1)"
       } ]
    }
 }
-testCase=ru.yandex.qatools.allure.model.TestCase@455da438[
-  _id=e31c3942-08c8-4997-bf1e-a26369b2e3e0
-  executionId=745bfd3b-0516-4592-8852-a31b4b74d11f
-  result=ru.yandex.qatools.allure.model.TestCaseResult@46c662f2
+testCase=ru.yandex.qatools.allure.model.TestCase@3351090d[
+  _id=c5a77b01-f561-4a27-ae13-23e8ecb67143
+  executionId=8e6dd7ca-e27b-4013-bda8-bc2788640ddd
+  threadName=dc7331de-b740-4ba3-9907-ee3762987799
+  result=ru.yandex.qatools.allure.model.TestCaseResult@59bddd49
 ]
 testCase={
-   "_id" : "e31c3942-08c8-4997-bf1e-a26369b2e3e0",
-   "executionId" : "745bfd3b-0516-4592-8852-a31b4b74d11f",
+   "_id" : "c5a77b01-f561-4a27-ae13-23e8ecb67143",
+   "executionId" : "8e6dd7ca-e27b-4013-bda8-bc2788640ddd",
+   "threadName" : "dc7331de-b740-4ba3-9907-ee3762987799",
    "result" : {
-      "start" : 1443744946336,
-      "stop" : 1443744946364,
+      "start" : 1444530541799,
+      "stop" : 1444530541813,
       "status" : "canceled",
       "name" : "run_basic_subversion_build_userPwd",
       "failure" : {
@@ -716,42 +718,40 @@ testCase={
       "labels" : {
          "label" : [ {
             "name" : "host",
-            "value" : "Abduls-MBP.home"
+            "value" : "MacBook-Pro-2.home"
          }, {
             "name" : "thread",
-            "value" : "35249@Abduls-MBP.home.main(1)"
+            "value" : "3426@MacBook-Pro-2.home.main(1)"
          } ]
       }
    }
 }
->>>REQUEST: /testdb/TestCase
-[WARN] [10/01/2015 20:15:46.372] [default-akka.actor.default-dispatcher-156] [ActorSystem(default)] Illegal response header: Illegal 'etag' header: Invalid input '5', expected 'W' or '"' (line 1, column 1): 560dccb2fbeaf7a200c9bfc6
-^
-<<<RESPONSE (201 Created): /testdb/TestCase
+>>>REQUEST: /testaspect/TestCase/c5a77b01-f561-4a27-ae13-23e8ecb67143
 running with given plugins: []
+<<<RESPONSE (201 Created): /testaspect/TestCase/c5a77b01-f561-4a27-ae13-23e8ecb67143
 === Starting run_basic_subversion_build(plugins.SubversionPluginTest)
 Skipping run_basic_subversion_build(plugins.SubversionPluginTest): Docker is needed for the test
 ]]></system-out>
   </testcase>
   <testcase name="checkout_specific_revision" classname="plugins.SubversionPluginTest" time="0">
     <skipped/>
-    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@4cc26df[
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@1a6441e4[
   name=run_basic_subversion_build
   title=<null>
   description=<null>
-  failure=ru.yandex.qatools.allure.model.Failure@7848321e
-  start=1443744946370
-  stop=1443744946443
+  failure=ru.yandex.qatools.allure.model.Failure@772b024f
+  start=1444530541814
+  stop=1444530541824
   status=CANCELED
   severity=<null>
   steps=[]
   attachments=[]
-  labels=[ru.yandex.qatools.allure.model.Label@f4f843f, ru.yandex.qatools.allure.model.Label@7b5833ee]
+  labels=[ru.yandex.qatools.allure.model.Label@789f5cd0, ru.yandex.qatools.allure.model.Label@685a0e48]
   parameters=<null>
 ]
 testCaseResult={
-   "start" : 1443744946370,
-   "stop" : 1443744946443,
+   "start" : 1444530541814,
+   "stop" : 1444530541824,
    "status" : "canceled",
    "name" : "run_basic_subversion_build",
    "failure" : {
@@ -767,24 +767,26 @@ testCaseResult={
    "labels" : {
       "label" : [ {
          "name" : "host",
-         "value" : "Abduls-MBP.home"
+         "value" : "MacBook-Pro-2.home"
       }, {
          "name" : "thread",
-         "value" : "35249@Abduls-MBP.home.main(1)"
+         "value" : "3426@MacBook-Pro-2.home.main(1)"
       } ]
    }
 }
-testCase=ru.yandex.qatools.allure.model.TestCase@1e471884[
-  _id=b20bc223-4316-4f5e-b239-96020a642943
-  executionId=745bfd3b-0516-4592-8852-a31b4b74d11f
-  result=ru.yandex.qatools.allure.model.TestCaseResult@4cc26df
+testCase=ru.yandex.qatools.allure.model.TestCase@500919c6[
+  _id=9b7f945c-db26-4ab6-8c6d-1d26c439bf5d
+  executionId=8e6dd7ca-e27b-4013-bda8-bc2788640ddd
+  threadName=dc7331de-b740-4ba3-9907-ee3762987799
+  result=ru.yandex.qatools.allure.model.TestCaseResult@1a6441e4
 ]
 testCase={
-   "_id" : "b20bc223-4316-4f5e-b239-96020a642943",
-   "executionId" : "745bfd3b-0516-4592-8852-a31b4b74d11f",
+   "_id" : "9b7f945c-db26-4ab6-8c6d-1d26c439bf5d",
+   "executionId" : "8e6dd7ca-e27b-4013-bda8-bc2788640ddd",
+   "threadName" : "dc7331de-b740-4ba3-9907-ee3762987799",
    "result" : {
-      "start" : 1443744946370,
-      "stop" : 1443744946443,
+      "start" : 1444530541814,
+      "stop" : 1444530541824,
       "status" : "canceled",
       "name" : "run_basic_subversion_build",
       "failure" : {
@@ -800,18 +802,16 @@ testCase={
       "labels" : {
          "label" : [ {
             "name" : "host",
-            "value" : "Abduls-MBP.home"
+            "value" : "MacBook-Pro-2.home"
          }, {
             "name" : "thread",
-            "value" : "35249@Abduls-MBP.home.main(1)"
+            "value" : "3426@MacBook-Pro-2.home.main(1)"
          } ]
       }
    }
 }
->>>REQUEST: /testdb/TestCase
-[WARN] [10/01/2015 20:15:46.449] [default-akka.actor.default-dispatcher-161] [ActorSystem(default)] Illegal response header: Illegal 'etag' header: Invalid input '5', expected 'W' or '"' (line 1, column 1): 560dccb2fbeaf7a200c9bfc7
-^
-<<<RESPONSE (201 Created): /testdb/TestCase
+>>>REQUEST: /testaspect/TestCase/9b7f945c-db26-4ab6-8c6d-1d26c439bf5d
+<<<RESPONSE (201 Created): /testaspect/TestCase/9b7f945c-db26-4ab6-8c6d-1d26c439bf5d
 running with given plugins: []
 === Starting checkout_specific_revision(plugins.SubversionPluginTest)
 Skipping checkout_specific_revision(plugins.SubversionPluginTest): Docker is needed for the test
@@ -819,23 +819,23 @@ Skipping checkout_specific_revision(plugins.SubversionPluginTest): Docker is nee
   </testcase>
   <testcase name="poll_for_changes" classname="plugins.SubversionPluginTest" time="0">
     <skipped/>
-    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@71ad959b[
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@275c19bc[
   name=checkout_specific_revision
   title=<null>
   description=<null>
-  failure=ru.yandex.qatools.allure.model.Failure@1d7c9811
-  start=1443744946446
-  stop=1443744946474
+  failure=ru.yandex.qatools.allure.model.Failure@36434536
+  start=1444530541825
+  stop=1444530541838
   status=CANCELED
   severity=<null>
   steps=[]
   attachments=[]
-  labels=[ru.yandex.qatools.allure.model.Label@3b362f1, ru.yandex.qatools.allure.model.Label@6451a288]
+  labels=[ru.yandex.qatools.allure.model.Label@23ae44e7, ru.yandex.qatools.allure.model.Label@4115a2ed]
   parameters=<null>
 ]
 testCaseResult={
-   "start" : 1443744946446,
-   "stop" : 1443744946474,
+   "start" : 1444530541825,
+   "stop" : 1444530541838,
    "status" : "canceled",
    "name" : "checkout_specific_revision",
    "failure" : {
@@ -851,24 +851,26 @@ testCaseResult={
    "labels" : {
       "label" : [ {
          "name" : "host",
-         "value" : "Abduls-MBP.home"
+         "value" : "MacBook-Pro-2.home"
       }, {
          "name" : "thread",
-         "value" : "35249@Abduls-MBP.home.main(1)"
+         "value" : "3426@MacBook-Pro-2.home.main(1)"
       } ]
    }
 }
-testCase=ru.yandex.qatools.allure.model.TestCase@79cdf2d4[
-  _id=00a8145b-b41f-40a4-9125-1c431091c763
-  executionId=745bfd3b-0516-4592-8852-a31b4b74d11f
-  result=ru.yandex.qatools.allure.model.TestCaseResult@71ad959b
+testCase=ru.yandex.qatools.allure.model.TestCase@6c3d28a[
+  _id=eaba74a5-898b-4c1f-8eb7-6a0a006fcf10
+  executionId=8e6dd7ca-e27b-4013-bda8-bc2788640ddd
+  threadName=dc7331de-b740-4ba3-9907-ee3762987799
+  result=ru.yandex.qatools.allure.model.TestCaseResult@275c19bc
 ]
 testCase={
-   "_id" : "00a8145b-b41f-40a4-9125-1c431091c763",
-   "executionId" : "745bfd3b-0516-4592-8852-a31b4b74d11f",
+   "_id" : "eaba74a5-898b-4c1f-8eb7-6a0a006fcf10",
+   "executionId" : "8e6dd7ca-e27b-4013-bda8-bc2788640ddd",
+   "threadName" : "dc7331de-b740-4ba3-9907-ee3762987799",
    "result" : {
-      "start" : 1443744946446,
-      "stop" : 1443744946474,
+      "start" : 1444530541825,
+      "stop" : 1444530541838,
       "status" : "canceled",
       "name" : "checkout_specific_revision",
       "failure" : {
@@ -884,18 +886,16 @@ testCase={
       "labels" : {
          "label" : [ {
             "name" : "host",
-            "value" : "Abduls-MBP.home"
+            "value" : "MacBook-Pro-2.home"
          }, {
             "name" : "thread",
-            "value" : "35249@Abduls-MBP.home.main(1)"
+            "value" : "3426@MacBook-Pro-2.home.main(1)"
          } ]
       }
    }
 }
->>>REQUEST: /testdb/TestCase
-[WARN] [10/01/2015 20:15:46.481] [default-akka.actor.default-dispatcher-169] [ActorSystem(default)] Illegal response header: Illegal 'etag' header: Invalid input '5', expected 'W' or '"' (line 1, column 1): 560dccb2fbeaf7a200c9bfc8
-^
-<<<RESPONSE (201 Created): /testdb/TestCase
+>>>REQUEST: /testaspect/TestCase/eaba74a5-898b-4c1f-8eb7-6a0a006fcf10
+<<<RESPONSE (201 Created): /testaspect/TestCase/eaba74a5-898b-4c1f-8eb7-6a0a006fcf10
 running with given plugins: []
 === Starting poll_for_changes(plugins.SubversionPluginTest)
 Skipping poll_for_changes(plugins.SubversionPluginTest): Docker is needed for the test
@@ -903,23 +903,23 @@ Skipping poll_for_changes(plugins.SubversionPluginTest): Docker is needed for th
   </testcase>
   <testcase name="always_checkout_fresh_copy" classname="plugins.SubversionPluginTest" time="0">
     <skipped/>
-    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@59313495[
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@acd1824[
   name=poll_for_changes
   title=<null>
   description=<null>
-  failure=ru.yandex.qatools.allure.model.Failure@4a04ca74
-  start=1443744946477
-  stop=1443744946507
+  failure=ru.yandex.qatools.allure.model.Failure@45ef716a
+  start=1444530541839
+  stop=1444530541853
   status=CANCELED
   severity=<null>
   steps=[]
   attachments=[]
-  labels=[ru.yandex.qatools.allure.model.Label@455cbf18, ru.yandex.qatools.allure.model.Label@24aedcc5]
+  labels=[ru.yandex.qatools.allure.model.Label@360386b0, ru.yandex.qatools.allure.model.Label@30beab13]
   parameters=<null>
 ]
 testCaseResult={
-   "start" : 1443744946477,
-   "stop" : 1443744946507,
+   "start" : 1444530541839,
+   "stop" : 1444530541853,
    "status" : "canceled",
    "name" : "poll_for_changes",
    "failure" : {
@@ -935,24 +935,26 @@ testCaseResult={
    "labels" : {
       "label" : [ {
          "name" : "host",
-         "value" : "Abduls-MBP.home"
+         "value" : "MacBook-Pro-2.home"
       }, {
          "name" : "thread",
-         "value" : "35249@Abduls-MBP.home.main(1)"
+         "value" : "3426@MacBook-Pro-2.home.main(1)"
       } ]
    }
 }
-testCase=ru.yandex.qatools.allure.model.TestCase@74ebd159[
-  _id=fc32f700-6fb5-4c3a-b80f-ae5287ec6f70
-  executionId=745bfd3b-0516-4592-8852-a31b4b74d11f
-  result=ru.yandex.qatools.allure.model.TestCaseResult@59313495
+testCase=ru.yandex.qatools.allure.model.TestCase@52508918[
+  _id=55432902-72b8-40a6-a0bb-e47c7e85fbe9
+  executionId=8e6dd7ca-e27b-4013-bda8-bc2788640ddd
+  threadName=dc7331de-b740-4ba3-9907-ee3762987799
+  result=ru.yandex.qatools.allure.model.TestCaseResult@acd1824
 ]
 testCase={
-   "_id" : "fc32f700-6fb5-4c3a-b80f-ae5287ec6f70",
-   "executionId" : "745bfd3b-0516-4592-8852-a31b4b74d11f",
+   "_id" : "55432902-72b8-40a6-a0bb-e47c7e85fbe9",
+   "executionId" : "8e6dd7ca-e27b-4013-bda8-bc2788640ddd",
+   "threadName" : "dc7331de-b740-4ba3-9907-ee3762987799",
    "result" : {
-      "start" : 1443744946477,
-      "stop" : 1443744946507,
+      "start" : 1444530541839,
+      "stop" : 1444530541853,
       "status" : "canceled",
       "name" : "poll_for_changes",
       "failure" : {
@@ -968,20 +970,18 @@ testCase={
       "labels" : {
          "label" : [ {
             "name" : "host",
-            "value" : "Abduls-MBP.home"
+            "value" : "MacBook-Pro-2.home"
          }, {
             "name" : "thread",
-            "value" : "35249@Abduls-MBP.home.main(1)"
+            "value" : "3426@MacBook-Pro-2.home.main(1)"
          } ]
       }
    }
 }
->>>REQUEST: /testdb/TestCase
-[WARN] [10/01/2015 20:15:46.514] [default-akka.actor.default-dispatcher-161] [ActorSystem(default)] Illegal response header: Illegal 'etag' header: Invalid input '5', expected 'W' or '"' (line 1, column 1): 560dccb2fbeaf7a200c9bfc9
-^
-<<<RESPONSE (201 Created): /testdb/TestCase
+>>>REQUEST: /testaspect/TestCase/55432902-72b8-40a6-a0bb-e47c7e85fbe9
 running with given plugins: []
 === Starting always_checkout_fresh_copy(plugins.SubversionPluginTest)
+<<<RESPONSE (201 Created): /testaspect/TestCase/55432902-72b8-40a6-a0bb-e47c7e85fbe9
 Skipping always_checkout_fresh_copy(plugins.SubversionPluginTest): Docker is needed for the test
 ]]></system-out>
   </testcase>

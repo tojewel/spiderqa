@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: plugins.SupportCorePluginTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 65.063 sec <<< FAILURE! - in plugins.SupportCorePluginTest
-emptyLogger(plugins.SupportCorePluginTest)  Time elapsed: 65.059 sec  <<< ERROR!
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 16.98 sec <<< FAILURE! - in plugins.SupportCorePluginTest
+emptyLogger(plugins.SupportCorePluginTest)  Time elapsed: 16.979 sec  <<< ERROR!
 java.lang.NoSuchMethodError: org.apache.http.entity.ContentType.create(Ljava/lang/String;[Lorg/apache/http/NameValuePair;)Lorg/apache/http/entity/ContentType;
 	at org.apache.http.entity.mime.MultipartEntityBuilder.buildEntity(MultipartEntityBuilder.java:209)
 	at org.apache.http.entity.mime.MultipartEntityBuilder.build(MultipartEntityBuilder.java:230)

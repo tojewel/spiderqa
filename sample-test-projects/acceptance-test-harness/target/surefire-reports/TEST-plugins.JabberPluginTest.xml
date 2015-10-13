@@ -63,23 +63,23 @@
   </properties>
   <testcase name="plugins.JabberPluginTest" classname="plugins.JabberPluginTest" time="0">
     <skipped/>
-    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@1530d0f2[
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@69aed848[
   name=publish_whole_directory
   title=<null>
   description=<null>
-  failure=ru.yandex.qatools.allure.model.Failure@7573c7b5
-  start=1443743472450
-  stop=1443743533507
+  failure=ru.yandex.qatools.allure.model.Failure@8250a9
+  start=1444528394480
+  stop=1444528414324
   status=BROKEN
   severity=<null>
   steps=[]
   attachments=[]
-  labels=[ru.yandex.qatools.allure.model.Label@73da7f08, ru.yandex.qatools.allure.model.Label@717a8a76]
+  labels=[ru.yandex.qatools.allure.model.Label@207c8a7, ru.yandex.qatools.allure.model.Label@47d6e4e6]
   parameters=<null>
 ]
 testCaseResult={
-   "start" : 1443743472450,
-   "stop" : 1443743533507,
+   "start" : 1444528394480,
+   "stop" : 1444528414324,
    "status" : "broken",
    "name" : "publish_whole_directory",
    "failure" : {
@@ -95,24 +95,26 @@ testCaseResult={
    "labels" : {
       "label" : [ {
          "name" : "host",
-         "value" : "Abduls-MBP.home"
+         "value" : "MacBook-Pro-2.home"
       }, {
          "name" : "thread",
-         "value" : "35252@Abduls-MBP.home.main(1)"
+         "value" : "3426@MacBook-Pro-2.home.main(1)"
       } ]
    }
 }
-testCase=ru.yandex.qatools.allure.model.TestCase@62de73eb[
-  _id=3d8a8c2c-fd69-4d1e-81ad-25d46ace1aac
-  executionId=7701d757-07c3-4ee5-9df4-52c16ef79685
-  result=ru.yandex.qatools.allure.model.TestCaseResult@1530d0f2
+testCase=ru.yandex.qatools.allure.model.TestCase@582518cc[
+  _id=42726bbf-2f05-481b-898f-dfbca8c5895b
+  executionId=8e6dd7ca-e27b-4013-bda8-bc2788640ddd
+  threadName=dc7331de-b740-4ba3-9907-ee3762987799
+  result=ru.yandex.qatools.allure.model.TestCaseResult@69aed848
 ]
 testCase={
-   "_id" : "3d8a8c2c-fd69-4d1e-81ad-25d46ace1aac",
-   "executionId" : "7701d757-07c3-4ee5-9df4-52c16ef79685",
+   "_id" : "42726bbf-2f05-481b-898f-dfbca8c5895b",
+   "executionId" : "8e6dd7ca-e27b-4013-bda8-bc2788640ddd",
+   "threadName" : "dc7331de-b740-4ba3-9907-ee3762987799",
    "result" : {
-      "start" : 1443743472450,
-      "stop" : 1443743533507,
+      "start" : 1444528394480,
+      "stop" : 1444528414324,
       "status" : "broken",
       "name" : "publish_whole_directory",
       "failure" : {
@@ -128,18 +130,15 @@ testCase={
       "labels" : {
          "label" : [ {
             "name" : "host",
-            "value" : "Abduls-MBP.home"
+            "value" : "MacBook-Pro-2.home"
          }, {
             "name" : "thread",
-            "value" : "35252@Abduls-MBP.home.main(1)"
+            "value" : "3426@MacBook-Pro-2.home.main(1)"
          } ]
       }
    }
 }
->>>REQUEST: /testdb/TestCase
-[WARN] [10/01/2015 19:52:13.530] [default-akka.actor.default-dispatcher-94] [ActorSystem(default)] Illegal response header: Illegal 'etag' header: Invalid input '5', expected 'W' or '"' (line 1, column 1): 560dc72dfbeaf7a200c9bf20
-^
-<<<RESPONSE (201 Created): /testdb/TestCase
+>>>REQUEST: /testaspect/TestCase/42726bbf-2f05-481b-898f-dfbca8c5895b
 ]]></system-out>
   </testcase>
 </testsuite>

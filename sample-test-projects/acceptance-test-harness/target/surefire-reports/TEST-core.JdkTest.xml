@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="core.JdkTest" time="70.19" tests="2" errors="0" skipped="1" failures="0">
+<testsuite name="core.JdkTest" time="27.263" tests="2" errors="0" skipped="1" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib"/>
@@ -63,25 +63,25 @@
   </properties>
   <testcase name="autoinstallJdk" classname="core.JdkTest" time="0">
     <skipped/>
-    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@17b64941[
-  name=tie_job_to_specifid_label
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@7679763c[
+  name=createUserPwd
   title=<null>
   description=<null>
   failure=<null>
-  start=1443742204532
-  stop=1443742277430
+  start=1444526151387
+  stop=1444526171720
   status=PASSED
   severity=<null>
   steps=[]
   attachments=[]
-  labels=[ru.yandex.qatools.allure.model.Label@53ac845a, ru.yandex.qatools.allure.model.Label@5136207f]
+  labels=[ru.yandex.qatools.allure.model.Label@14a483c4, ru.yandex.qatools.allure.model.Label@56685957]
   parameters=<null>
 ]
 testCaseResult={
-   "start" : 1443742204532,
-   "stop" : 1443742277430,
+   "start" : 1444526151387,
+   "stop" : 1444526171720,
    "status" : "passed",
-   "name" : "tie_job_to_specifid_label",
+   "name" : "createUserPwd",
    "steps" : {
       "step" : [ ]
    },
@@ -91,26 +91,28 @@ testCaseResult={
    "labels" : {
       "label" : [ {
          "name" : "host",
-         "value" : "Abduls-MBP.home"
+         "value" : "MacBook-Pro-2.home"
       }, {
          "name" : "thread",
-         "value" : "35252@Abduls-MBP.home.main(1)"
+         "value" : "3426@MacBook-Pro-2.home.main(1)"
       } ]
    }
 }
-testCase=ru.yandex.qatools.allure.model.TestCase@4ce14f05[
-  _id=63fb5047-46e8-4f8a-9589-10f6f3a423f5
-  executionId=7701d757-07c3-4ee5-9df4-52c16ef79685
-  result=ru.yandex.qatools.allure.model.TestCaseResult@17b64941
+testCase=ru.yandex.qatools.allure.model.TestCase@a4e6829[
+  _id=13efdc42-e5f6-4dc1-a350-2cb80b8b0e02
+  executionId=8e6dd7ca-e27b-4013-bda8-bc2788640ddd
+  threadName=dc7331de-b740-4ba3-9907-ee3762987799
+  result=ru.yandex.qatools.allure.model.TestCaseResult@7679763c
 ]
 testCase={
-   "_id" : "63fb5047-46e8-4f8a-9589-10f6f3a423f5",
-   "executionId" : "7701d757-07c3-4ee5-9df4-52c16ef79685",
+   "_id" : "13efdc42-e5f6-4dc1-a350-2cb80b8b0e02",
+   "executionId" : "8e6dd7ca-e27b-4013-bda8-bc2788640ddd",
+   "threadName" : "dc7331de-b740-4ba3-9907-ee3762987799",
    "result" : {
-      "start" : 1443742204532,
-      "stop" : 1443742277430,
+      "start" : 1444526151387,
+      "stop" : 1444526171720,
       "status" : "passed",
-      "name" : "tie_job_to_specifid_label",
+      "name" : "createUserPwd",
       "steps" : {
          "step" : [ ]
       },
@@ -120,62 +122,20 @@ testCase={
       "labels" : {
          "label" : [ {
             "name" : "host",
-            "value" : "Abduls-MBP.home"
+            "value" : "MacBook-Pro-2.home"
          }, {
             "name" : "thread",
-            "value" : "35252@Abduls-MBP.home.main(1)"
+            "value" : "3426@MacBook-Pro-2.home.main(1)"
          } ]
       }
    }
 }
->>>REQUEST(1): /testdb
->>>REQUEST(1): /testdb/TestCase
->>>REQUEST(1): /testdb/TestSuiteResult
->>>REQUEST(1): /testdb/Execution
->>>REQUEST: /testdb/TestCase
-[WARN] [10/01/2015 19:31:21.359] [default-akka.actor.default-dispatcher-19] [ActorSystem(default)] Illegal response header: Illegal 'etag' header: Invalid input '5', expected 'W' or '"' (line 1, column 1): 5601cffe77c82eb98f9c6f93
-^
-[WARN] [10/01/2015 19:31:21.359] [default-akka.actor.default-dispatcher-15] [ActorSystem(default)] Illegal response header: Illegal 'etag' header: Invalid input '5', expected 'W' or '"' (line 1, column 1): 5604cb5d77c805cb79ec7362
-^
-[WARN] [10/01/2015 19:31:21.359] [default-akka.actor.default-dispatcher-12] [ActorSystem(default)] Illegal response header: Illegal 'etag' header: Invalid input '5', expected 'W' or '"' (line 1, column 1): 55f23ecfd4c6a3f68296cd8c
-^
-[WARN] [10/01/2015 19:31:21.359] [default-akka.actor.default-dispatcher-14] [ActorSystem(default)] Illegal response header: Illegal 'etag' header: Invalid input '5', expected 'W' or '"' (line 1, column 1): 560cb1acfbeaf7a200c9be23
-^
-[WARN] [10/01/2015 19:31:21.368] [default-akka.actor.default-dispatcher-2] [ActorSystem(default)] Illegal response header: Illegal 'etag' header: Invalid input '5', expected 'W' or '"' (line 1, column 1): 560dc249fbeaf7a200c9be29
-^
-<<<RESPONSE(1) (409 Conflict): /testdb/Execution
-<<<RESPONSE(1) (409 Conflict): /testdb
-<<<RESPONSE (201 Created): /testdb/TestCase
-<<<RESPONSE(1) (409 Conflict): /testdb/TestSuiteResult
-<<<RESPONSE(1) (409 Conflict): /testdb/TestCase
-Connection=keep-alive
-Access-Control-Allow-Origin=*
-Connection=keep-alive
-etag=560cb1acfbeaf7a200c9be23
-Access-Control-Allow-Origin=*
-etag=5604cb5d77c805cb79ec7362
-Connection=keep-alive
-Connection=keep-alive
-Access-Control-Allow-Origin=*
-etag=55f23ecfd4c6a3f68296cd8c
-Access-Control-Allow-Origin=*
-etag=5601cffe77c82eb98f9c6f93
-Access-Control-Allow-Credentials=true
-Access-Control-Allow-Credentials=true
-Access-Control-Allow-Credentials=true
-Access-Control-Allow-Credentials=true
-Access-Control-Expose-Headers=Location, ETag, Auth-Token, Auth-Token-Valid-Until, Auth-Token-Location
-Access-Control-Expose-Headers=Location, ETag, Auth-Token, Auth-Token-Valid-Until, Auth-Token-Location
-Access-Control-Expose-Headers=Location, ETag, Auth-Token, Auth-Token-Valid-Until, Auth-Token-Location
-Date=Thu, 01 Oct 2015 23:31:21 GMT
-Date=Thu, 01 Oct 2015 23:31:21 GMT
-Access-Control-Expose-Headers=Location, ETag, Auth-Token, Auth-Token-Valid-Until, Auth-Token-Location
-Date=Thu, 01 Oct 2015 23:31:21 GMT
-Date=Thu, 01 Oct 2015 23:31:21 GMT
+>>>REQUEST: /testaspect/TestCase/13efdc42-e5f6-4dc1-a350-2cb80b8b0e02
+<<<RESPONSE (201 Created): /testaspect/TestCase/13efdc42-e5f6-4dc1-a350-2cb80b8b0e02
 running with given plugins: []
 === Starting autoinstallJdk(core.JdkTest)
 Skipping autoinstallJdk(core.JdkTest): Required property not provided: JdkTest.ORACLE_LOGIN
 ]]></system-out>
   </testcase>
-  <testcase name="usePreinstalledJdk" classname="core.JdkTest" time="70.19"/>
+  <testcase name="usePreinstalledJdk" classname="core.JdkTest" time="27.263"/>
 </testsuite>

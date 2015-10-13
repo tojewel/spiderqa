@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@TestAspect</title>
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+
+    <!-- it's important for d3.js -->
+    <meta charset="utf-8">
+
+    <!-- include bower components in proper order -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/elasticsearch/elasticsearch.angular.js"></script>
+
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+
+    <script src="bower_components/d3/d3.js"></script>
+    <script src="bower_components/nvd3/build/nv.d3.js"></script>
+    <!-- or use another assembly -->
+    <script src="bower_components/angular-nvd3/dist/angular-nvd3.js"></script>
+
+    <link rel="stylesheet" href="bower_components/nvd3/build/nv.d3.css">
+
+    <!-- MINE -->
+    <script src="app.js"></script>
+    <script src="myd3.js"></script>
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="allure.css">
+
+</head>
+<body ng-app="ExampleApp">
+<div ng-controller="ExampleController" class="container">
+    <h1>@TestAspect</h1>
+
+    <br/>
+
+    <div class="btn-group" align="right">
+        <label class="btn btn-primary" ng-model="statusModel.broken" uib-btn-checkbox>Broken</label>
+        <label class="btn btn-primary" ng-model="statusModel.passed" uib-btn-checkbox>Passed</label>
+        <label class="btn btn-primary" ng-model="statusModel.canceled" uib-btn-checkbox>Canceled</label>
+        <label class="btn btn-primary" ng-model="statusModel.pending" uib-btn-checkbox>Pending</label>
+        <label class="btn btn-primary" ng-model="statusModel.failed" uib-btn-checkbox>Failed</label>
+    </div>
+    <br/>
+    <br/>
+
+    <div class="chart">
+    </div>
+    <br/>
+
+    <div ng-if="error" class="alert alert-danger" role="alert">{{error.message}}</div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Cluster State</h3>
+        </div>
+
+        <div class="panel-body">
+            <pre>{{tc | json}}</pre>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

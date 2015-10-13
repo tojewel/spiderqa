@@ -63,23 +63,23 @@
   </properties>
   <testcase name="jira_ticket_gets_updated_with_a_build_link" classname="plugins.JiraPluginTest" time="0">
     <skipped/>
-    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@3caa4d85[
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@7a62b103[
   name=checkHardwareId
   title=<null>
   description=<null>
-  failure=ru.yandex.qatools.allure.model.Failure@356fa0d1
-  start=1443743719270
-  stop=1443743719299
+  failure=ru.yandex.qatools.allure.model.Failure@3e438513
+  start=1444528484362
+  stop=1444528484374
   status=CANCELED
   severity=<null>
   steps=[]
   attachments=[]
-  labels=[ru.yandex.qatools.allure.model.Label@51508029, ru.yandex.qatools.allure.model.Label@5f20b6fe]
+  labels=[ru.yandex.qatools.allure.model.Label@72bd5d84, ru.yandex.qatools.allure.model.Label@372535a8]
   parameters=<null>
 ]
 testCaseResult={
-   "start" : 1443743719270,
-   "stop" : 1443743719299,
+   "start" : 1444528484362,
+   "stop" : 1444528484374,
    "status" : "canceled",
    "name" : "checkHardwareId",
    "failure" : {
@@ -95,24 +95,26 @@ testCaseResult={
    "labels" : {
       "label" : [ {
          "name" : "host",
-         "value" : "Abduls-MBP.home"
+         "value" : "MacBook-Pro-2.home"
       }, {
          "name" : "thread",
-         "value" : "35252@Abduls-MBP.home.main(1)"
+         "value" : "3426@MacBook-Pro-2.home.main(1)"
       } ]
    }
 }
-testCase=ru.yandex.qatools.allure.model.TestCase@31880efa[
-  _id=4086ae8d-98c2-4477-a196-82225a54d951
-  executionId=7701d757-07c3-4ee5-9df4-52c16ef79685
-  result=ru.yandex.qatools.allure.model.TestCaseResult@3caa4d85
+testCase=ru.yandex.qatools.allure.model.TestCase@58a060e6[
+  _id=2d81ed3e-6271-42e1-81a6-323e60fbe69c
+  executionId=8e6dd7ca-e27b-4013-bda8-bc2788640ddd
+  threadName=dc7331de-b740-4ba3-9907-ee3762987799
+  result=ru.yandex.qatools.allure.model.TestCaseResult@7a62b103
 ]
 testCase={
-   "_id" : "4086ae8d-98c2-4477-a196-82225a54d951",
-   "executionId" : "7701d757-07c3-4ee5-9df4-52c16ef79685",
+   "_id" : "2d81ed3e-6271-42e1-81a6-323e60fbe69c",
+   "executionId" : "8e6dd7ca-e27b-4013-bda8-bc2788640ddd",
+   "threadName" : "dc7331de-b740-4ba3-9907-ee3762987799",
    "result" : {
-      "start" : 1443743719270,
-      "stop" : 1443743719299,
+      "start" : 1444528484362,
+      "stop" : 1444528484374,
       "status" : "canceled",
       "name" : "checkHardwareId",
       "failure" : {
@@ -128,18 +130,16 @@ testCase={
       "labels" : {
          "label" : [ {
             "name" : "host",
-            "value" : "Abduls-MBP.home"
+            "value" : "MacBook-Pro-2.home"
          }, {
             "name" : "thread",
-            "value" : "35252@Abduls-MBP.home.main(1)"
+            "value" : "3426@MacBook-Pro-2.home.main(1)"
          } ]
       }
    }
 }
->>>REQUEST: /testdb/TestCase
-[WARN] [10/01/2015 19:55:19.305] [default-akka.actor.default-dispatcher-100] [ActorSystem(default)] Illegal response header: Illegal 'etag' header: Invalid input '5', expected 'W' or '"' (line 1, column 1): 560dc7e7fbeaf7a200c9bf38
-^
-<<<RESPONSE (201 Created): /testdb/TestCase
+>>>REQUEST: /testaspect/TestCase/2d81ed3e-6271-42e1-81a6-323e60fbe69c
+<<<RESPONSE (201 Created): /testaspect/TestCase/2d81ed3e-6271-42e1-81a6-323e60fbe69c
 running with given plugins: []
 === Starting jira_ticket_gets_updated_with_a_build_link(plugins.JiraPluginTest)
 Skipping jira_ticket_gets_updated_with_a_build_link(plugins.JiraPluginTest): Docker is needed for the test
