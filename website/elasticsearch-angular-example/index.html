@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="allure.css">
 
 </head>
-<body ng-app="ExampleApp">
+<body ng-app="App">
 <div ng-controller="ExampleController" class="container">
     <h1>@TestAspect</h1>
 
@@ -43,8 +43,7 @@
     <br/>
     <br/>
 
-    <div class="chart">
-    </div>
+    <nvd3 options="options" data="bar_data" api="api"></nvd3>
     <br/>
 
     <div ng-if="error" class="alert alert-danger" role="alert">{{error.message}}</div>

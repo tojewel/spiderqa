@@ -1,10 +1,10 @@
-var ExampleApp = angular.module('ExampleApp', ['elasticsearch', 'nvd3', 'ui.bootstrap']);
+var App = angular.module('App', ['elasticsearch', 'nvd3', 'ui.bootstrap']);
 
 // Service
 //
 // esFactory() creates a configured client instance. Turn that instance
 // into a service so that it can be required by other parts of the application
-ExampleApp.service('client', function (esFactory) {
+App.service('client', function (esFactory) {
     return esFactory({
         host: 'localhost:9200',
         apiVersion: '1.2',
@@ -17,29 +17,59 @@ ExampleApp.service('client', function (esFactory) {
 // It also requires the esFactory to that it can check for a specific type of
 // error which might come back from the client
 
-function hbar(data) {
-    var sum = data
-        .map(function (num) {
-            return num.doc_count;
-        })
-        .reduce(function (a, b) {
-            return a + b;
-        });
+function d3bar($scope, data) {
+    $scope.options = {
+        chart: {
+            type: 'multiBarHorizontalChart',
+            height: 40,
+            x: function (d) {
+                return d.label;
+            },
+            y: function (d) {
+                return d.value;
+            },
+            showControls: false,
+            showValues: true,
+            transitionDuration: 1000,
+            valuePadding: 10,
 
-    d3.select(".chart")
-        .selectAll("div")
-        .data(data)
-        .enter().append("div")
-        .style("display", "inline-block")
-        .style("width", function (d) {
-            return ((d.doc_count * 100) / sum) + "%";
-        })
-        .attr("class", function (d) {
-            return d3.select(this).attr("class") + " " + 'progress-bar-' + d.key;
-        })
-        .attr("uib-tooltip", function (d) {
-            return d.doc_count + " " + d.key
-        })
+            margin: {
+                top: 0,
+                right: 0,
+                bottom: 0,
+                left: 0
+            },
+
+            stacked: true,
+            showLegend: false,
+            showXAxis: false,
+            showYAxis: false,
+        }
+    };
+
+    var colcors = {};
+    colcors["broken"] = "#f0ad4e";
+    colcors["passed"] = "#5cb85c";
+    colcors["canceled"] = "#999";
+    colcors["pending"] = "#9f94bf";
+    colcors["failed"] = "#d9534f";
+
+    while($scope.bar_data.length > 0) {
+        $scope.bar_data.pop();
+    }
+
+    for(i in data) {
+        $scope.bar_data.push({
+            "key": data[i].key,
+            "color": colcors[data[i].key],
+            "values": [
+                {
+                    "value": data[i].doc_count
+                }]
+        });
+    }
+
+    $scope.api.update();
 }
 
 function query($scope) {
@@ -82,6 +112,7 @@ function query($scope) {
         }
     }
 }
+
 function makeServerCall($scope, client, esFactory) {
     client.search({
 
@@ -94,7 +125,7 @@ function makeServerCall($scope, client, esFactory) {
             $scope.tc = resp.aggregations.status.buckets;
             $scope.error = null;
 
-            hbar($scope.tc)
+            d3bar($scope, $scope.tc)
         })
         .catch(function (err) {
             $scope.clusterState = null;
@@ -110,14 +141,16 @@ function makeServerCall($scope, client, esFactory) {
         });
 }
 
-ExampleApp.controller('ExampleController', function ($scope, client, esFactory) {
+App.controller('ExampleController', function ($scope, client, esFactory) {
     $scope.statusModel = {
         broken: true,
         passed: false,
         canceled: true,
-        pending: true,
-        failed: true
+        pending: false,
+        failed: false
     };
+
+    $scope.bar_data = [];
 
     function updateModel($scope) {
         $scope.statusResults = [];
