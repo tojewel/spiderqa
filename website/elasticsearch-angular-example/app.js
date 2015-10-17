@@ -1,4 +1,4 @@
-var App = angular.module('App', ['elasticsearch', 'nvd3', 'ui.bootstrap']);
+var App = angular.module('App', ['elasticsearch', 'nvd3', 'ui.bootstrap', 'treeGrid']);
 
 // Service
 //
@@ -21,7 +21,7 @@ function d3bar($scope, data) {
     $scope.options = {
         chart: {
             type: 'multiBarHorizontalChart',
-            height: 40,
+            height: 20,
             x: function (d) {
                 return d.label;
             },
@@ -54,11 +54,11 @@ function d3bar($scope, data) {
     colcors["pending"] = "#9f94bf";
     colcors["failed"] = "#d9534f";
 
-    while($scope.bar_data.length > 0) {
+    while ($scope.bar_data.length > 0) {
         $scope.bar_data.pop();
     }
 
-    for(i in data) {
+    for (i in data) {
         $scope.bar_data.push({
             "key": data[i].key,
             "color": colcors[data[i].key],
@@ -79,7 +79,7 @@ function query($scope) {
             {
                 "query": {
                     "match": {
-                        "result.status": {
+                        "status": {
                             "query": $scope.statusResults[i],
                             "type": "phrase"
                         }
@@ -106,7 +106,7 @@ function query($scope) {
         "aggregations": {
             "status": {
                 "terms": {
-                    "field": "result.status"
+                    "field": "status"
                 }
             }
         }
@@ -115,7 +115,6 @@ function query($scope) {
 
 function makeServerCall($scope, client, esFactory) {
     client.search({
-
         index: 'testaspect',
         type: 'TestCase',
         search_type: 'count',
@@ -166,7 +165,33 @@ App.controller('ExampleController', function ($scope, client, esFactory) {
     $scope.$watchCollection('statusModel', function () {
         updateModel($scope);
         makeServerCall($scope, client, esFactory);
+
+        $scope.tree_data[1].children.push({Name: "" + new Date()})
     });
 
     makeServerCall($scope, client, esFactory);
+
+    // TREE
+    $scope.tree_data = [
+        {
+            Name: "USA", Area: 9826675, Population: 318212000, TimeZone: "UTC -5 to -10",
+            children: [
+                {
+                    Name: "California", Area: 423970, Population: 38340000, TimeZone: "Pacific Time",
+                    children: [
+                        {Name: "San Francisco", Area: 231, Population: 837442, TimeZone: "PST"},
+                        {Name: "Los Angeles", Area: 503, Population: 3904657, TimeZone: "PST"}
+                    ]
+                },
+                {
+                    Name: "Illinois", Area: 57914, Population: 12882135, TimeZone: "Central Time Zone",
+                    children: [
+                        {Name: "Chicago", Area: 234, Population: 2695598, TimeZone: "CST"}
+                    ]
+                }
+            ]
+        },
+        {Name: "Texas", Area: 268581, Population: 26448193, TimeZone: "Mountain", children: [{Name: "Loading ..."}]}
+    ];
+
 });

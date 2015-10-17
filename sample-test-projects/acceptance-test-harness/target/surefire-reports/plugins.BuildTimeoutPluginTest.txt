@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: plugins.BuildTimeoutPluginTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 34.312 sec <<< FAILURE! - in plugins.BuildTimeoutPluginTest
-fail_build_with_absolute_time(plugins.BuildTimeoutPluginTest)  Time elapsed: 16.827 sec  <<< ERROR!
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 37.192 sec <<< FAILURE! - in plugins.BuildTimeoutPluginTest
+fail_build_with_absolute_time(plugins.BuildTimeoutPluginTest)  Time elapsed: 18.268 sec  <<< ERROR!
 java.lang.NoSuchMethodError: org.apache.http.entity.ContentType.create(Ljava/lang/String;[Lorg/apache/http/NameValuePair;)Lorg/apache/http/entity/ContentType;
 	at org.apache.http.entity.mime.MultipartEntityBuilder.buildEntity(MultipartEntityBuilder.java:209)
 	at org.apache.http.entity.mime.MultipartEntityBuilder.build(MultipartEntityBuilder.java:230)
@@ -30,7 +30,7 @@ java.lang.NoSuchMethodError: org.apache.http.entity.ContentType.create(Ljava/lan
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
 
-fail_build_if_likely_stuck(plugins.BuildTimeoutPluginTest)  Time elapsed: 17.482 sec  <<< ERROR!
+fail_build_if_likely_stuck(plugins.BuildTimeoutPluginTest)  Time elapsed: 18.9 sec  <<< ERROR!
 java.lang.NoSuchMethodError: org.apache.http.entity.ContentType.create(Ljava/lang/String;[Lorg/apache/http/NameValuePair;)Lorg/apache/http/entity/ContentType;
 	at org.apache.http.entity.mime.MultipartEntityBuilder.buildEntity(MultipartEntityBuilder.java:209)
 	at org.apache.http.entity.mime.MultipartEntityBuilder.build(MultipartEntityBuilder.java:230)

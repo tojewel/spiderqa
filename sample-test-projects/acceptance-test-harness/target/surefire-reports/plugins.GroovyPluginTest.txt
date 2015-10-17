@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: plugins.GroovyPluginTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 5, Skipped: 1, Time elapsed: 106.078 sec <<< FAILURE! - in plugins.GroovyPluginTest
-run_groovy(plugins.GroovyPluginTest)  Time elapsed: 17.366 sec  <<< ERROR!
+Tests run: 6, Failures: 0, Errors: 5, Skipped: 1, Time elapsed: 117.653 sec <<< FAILURE! - in plugins.GroovyPluginTest
+run_groovy(plugins.GroovyPluginTest)  Time elapsed: 18.918 sec  <<< ERROR!
 java.lang.NoSuchMethodError: org.apache.http.entity.ContentType.create(Ljava/lang/String;[Lorg/apache/http/NameValuePair;)Lorg/apache/http/entity/ContentType;
 	at org.apache.http.entity.mime.MultipartEntityBuilder.buildEntity(MultipartEntityBuilder.java:209)
 	at org.apache.http.entity.mime.MultipartEntityBuilder.build(MultipartEntityBuilder.java:230)
@@ -30,7 +30,7 @@ java.lang.NoSuchMethodError: org.apache.http.entity.ContentType.create(Ljava/lan
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
 
-use_custom_groovy_version(plugins.GroovyPluginTest)  Time elapsed: 17.457 sec  <<< ERROR!
+use_custom_groovy_version(plugins.GroovyPluginTest)  Time elapsed: 19.755 sec  <<< ERROR!
 java.lang.NoSuchMethodError: org.apache.http.entity.ContentType.create(Ljava/lang/String;[Lorg/apache/http/NameValuePair;)Lorg/apache/http/entity/ContentType;
 	at org.apache.http.entity.mime.MultipartEntityBuilder.buildEntity(MultipartEntityBuilder.java:209)
 	at org.apache.http.entity.mime.MultipartEntityBuilder.build(MultipartEntityBuilder.java:230)
@@ -58,7 +58,7 @@ java.lang.NoSuchMethodError: org.apache.http.entity.ContentType.create(Ljava/lan
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
 
-run_system_groovy_from_file(plugins.GroovyPluginTest)  Time elapsed: 17.171 sec  <<< ERROR!
+run_system_groovy_from_file(plugins.GroovyPluginTest)  Time elapsed: 19.995 sec  <<< ERROR!
 java.lang.NoSuchMethodError: org.apache.http.entity.ContentType.create(Ljava/lang/String;[Lorg/apache/http/NameValuePair;)Lorg/apache/http/entity/ContentType;
 	at org.apache.http.entity.mime.MultipartEntityBuilder.buildEntity(MultipartEntityBuilder.java:209)
 	at org.apache.http.entity.mime.MultipartEntityBuilder.build(MultipartEntityBuilder.java:230)
@@ -86,7 +86,7 @@ java.lang.NoSuchMethodError: org.apache.http.entity.ContentType.create(Ljava/lan
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
 
-run_system_groovy(plugins.GroovyPluginTest)  Time elapsed: 17.457 sec  <<< ERROR!
+run_system_groovy(plugins.GroovyPluginTest)  Time elapsed: 19.405 sec  <<< ERROR!
 java.lang.NoSuchMethodError: org.apache.http.entity.ContentType.create(Ljava/lang/String;[Lorg/apache/http/NameValuePair;)Lorg/apache/http/entity/ContentType;
 	at org.apache.http.entity.mime.MultipartEntityBuilder.buildEntity(MultipartEntityBuilder.java:209)
 	at org.apache.http.entity.mime.MultipartEntityBuilder.build(MultipartEntityBuilder.java:230)
@@ -114,7 +114,7 @@ java.lang.NoSuchMethodError: org.apache.http.entity.ContentType.create(Ljava/lan
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
 
-run_groovy_from_file(plugins.GroovyPluginTest)  Time elapsed: 17.969 sec  <<< ERROR!
+run_groovy_from_file(plugins.GroovyPluginTest)  Time elapsed: 19.702 sec  <<< ERROR!
 java.lang.NoSuchMethodError: org.apache.http.entity.ContentType.create(Ljava/lang/String;[Lorg/apache/http/NameValuePair;)Lorg/apache/http/entity/ContentType;
 	at org.apache.http.entity.mime.MultipartEntityBuilder.buildEntity(MultipartEntityBuilder.java:209)
 	at org.apache.http.entity.mime.MultipartEntityBuilder.build(MultipartEntityBuilder.java:230)

@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: plugins.MatrixAuthPluginTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 35.428 sec <<< FAILURE! - in plugins.MatrixAuthPluginTest
-helloWorld(plugins.MatrixAuthPluginTest)  Time elapsed: 17.468 sec  <<< ERROR!
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 38.305 sec <<< FAILURE! - in plugins.MatrixAuthPluginTest
+helloWorld(plugins.MatrixAuthPluginTest)  Time elapsed: 18.283 sec  <<< ERROR!
 java.lang.NoSuchMethodError: org.apache.http.entity.ContentType.create(Ljava/lang/String;[Lorg/apache/http/NameValuePair;)Lorg/apache/http/entity/ContentType;
 	at org.apache.http.entity.mime.MultipartEntityBuilder.buildEntity(MultipartEntityBuilder.java:209)
 	at org.apache.http.entity.mime.MultipartEntityBuilder.build(MultipartEntityBuilder.java:230)
@@ -30,7 +30,7 @@ java.lang.NoSuchMethodError: org.apache.http.entity.ContentType.create(Ljava/lan
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
 
-projectMatrixAuth(plugins.MatrixAuthPluginTest)  Time elapsed: 17.956 sec  <<< ERROR!
+projectMatrixAuth(plugins.MatrixAuthPluginTest)  Time elapsed: 20.003 sec  <<< ERROR!
 java.lang.NoSuchMethodError: org.apache.http.entity.ContentType.create(Ljava/lang/String;[Lorg/apache/http/NameValuePair;)Lorg/apache/http/entity/ContentType;
 	at org.apache.http.entity.mime.MultipartEntityBuilder.buildEntity(MultipartEntityBuilder.java:209)
 	at org.apache.http.entity.mime.MultipartEntityBuilder.build(MultipartEntityBuilder.java:230)

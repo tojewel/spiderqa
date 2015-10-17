@@ -63,23 +63,23 @@
   </properties>
   <testcase name="name_remote_repo" classname="plugins.GitPluginTest" time="0">
     <skipped/>
-    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@2fb79723[
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@6fef9fd4[
   name=gerrit_has_review_flags_checked_after_jenkins_set_them
   title=<null>
   description=<null>
-  failure=ru.yandex.qatools.allure.model.Failure@7dd28e8a
-  start=1444528252485
-  stop=1444528252485
+  failure=ru.yandex.qatools.allure.model.Failure@3cd943d9
+  start=1445038649971
+  stop=1445038649972
   status=CANCELED
   severity=<null>
   steps=[]
   attachments=[]
-  labels=[ru.yandex.qatools.allure.model.Label@1bf235a6, ru.yandex.qatools.allure.model.Label@4ab00241]
+  labels=[ru.yandex.qatools.allure.model.Label@715dcea0, ru.yandex.qatools.allure.model.Label@2e27b860]
   parameters=<null>
 ]
 testCaseResult={
-   "start" : 1444528252485,
-   "stop" : 1444528252485,
+   "start" : 1445038649971,
+   "stop" : 1445038649972,
    "status" : "canceled",
    "name" : "gerrit_has_review_flags_checked_after_jenkins_set_them",
    "failure" : {
@@ -98,75 +98,82 @@ testCaseResult={
          "value" : "MacBook-Pro-2.home"
       }, {
          "name" : "thread",
-         "value" : "3426@MacBook-Pro-2.home.main(1)"
+         "value" : "1771@MacBook-Pro-2.home.main(1)"
       } ]
    }
 }
-testCase=ru.yandex.qatools.allure.model.TestCase@59ad9abb[
-  _id=0c3a4b39-9543-4e32-8ba1-ccfeabc049f6
-  executionId=8e6dd7ca-e27b-4013-bda8-bc2788640ddd
-  threadName=dc7331de-b740-4ba3-9907-ee3762987799
-  result=ru.yandex.qatools.allure.model.TestCaseResult@2fb79723
+testCase=ru.yandex.qatools.allure.model.TestCase@3d25934f[
+  _id=2a032bdb-bc9e-4d87-ad17-280256dbc137
+  executionId=7a8626ac-7b8d-4761-8bff-776519219d78
+  threadName=thread_15005794375463
+  name=gerrit_has_review_flags_checked_after_jenkins_set_them
+  title=<null>
+  description=<null>
+  failure=ru.yandex.qatools.allure.model.Failure@3cd943d9
+  start=1445038649971
+  stop=1445038649972
+  status=CANCELED
+  severity=<null>
+  steps=[]
+  attachments=[]
+  labels=[ru.yandex.qatools.allure.model.Label@715dcea0, ru.yandex.qatools.allure.model.Label@2e27b860]
+  parameters=<null>
 ]
 testCase={
-   "_id" : "0c3a4b39-9543-4e32-8ba1-ccfeabc049f6",
-   "executionId" : "8e6dd7ca-e27b-4013-bda8-bc2788640ddd",
-   "threadName" : "dc7331de-b740-4ba3-9907-ee3762987799",
-   "result" : {
-      "start" : 1444528252485,
-      "stop" : 1444528252485,
-      "status" : "canceled",
-      "name" : "gerrit_has_review_flags_checked_after_jenkins_set_them",
-      "failure" : {
-         "message" : "AssumptionViolatedException: got: <[null]>, expected: every item is not null",
-         "stack-trace" : "org.junit.internal.AssumptionViolatedException: got: <[null]>, expected: every item is not null\n\tat org.junit.Assume.assumeThat(Assume.java:95)\n\tat org.junit.Assume.assumeNotNull(Assume.java:73)\n\tat org.jenkinsci.test.acceptance.plugins.gerrit_trigger.GerritTriggerEnv.getEnv(GerritTriggerEnv.java:81)\n\tat org.jenkinsci.test.acceptance.plugins.gerrit_trigger.GerritTriggerEnv.<init>(GerritTriggerEnv.java:44)\n\tat plugins.GerritTriggerTest.<init>(GerritTriggerTest.java:74)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:422)\n\tat org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:195)\n\tat org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:244)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:241)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n"
-      },
-      "steps" : {
-         "step" : [ ]
-      },
-      "attachments" : {
-         "attachment" : [ ]
-      },
-      "labels" : {
-         "label" : [ {
-            "name" : "host",
-            "value" : "MacBook-Pro-2.home"
-         }, {
-            "name" : "thread",
-            "value" : "3426@MacBook-Pro-2.home.main(1)"
-         } ]
-      }
+   "start" : 1445038649971,
+   "stop" : 1445038649972,
+   "status" : "canceled",
+   "_id" : "2a032bdb-bc9e-4d87-ad17-280256dbc137",
+   "executionId" : "7a8626ac-7b8d-4761-8bff-776519219d78",
+   "threadName" : "thread_15005794375463",
+   "name" : "gerrit_has_review_flags_checked_after_jenkins_set_them",
+   "failure" : {
+      "message" : "AssumptionViolatedException: got: <[null]>, expected: every item is not null",
+      "stack-trace" : "org.junit.internal.AssumptionViolatedException: got: <[null]>, expected: every item is not null\n\tat org.junit.Assume.assumeThat(Assume.java:95)\n\tat org.junit.Assume.assumeNotNull(Assume.java:73)\n\tat org.jenkinsci.test.acceptance.plugins.gerrit_trigger.GerritTriggerEnv.getEnv(GerritTriggerEnv.java:81)\n\tat org.jenkinsci.test.acceptance.plugins.gerrit_trigger.GerritTriggerEnv.<init>(GerritTriggerEnv.java:44)\n\tat plugins.GerritTriggerTest.<init>(GerritTriggerTest.java:74)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:422)\n\tat org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:195)\n\tat org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:244)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:241)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n"
+   },
+   "steps" : {
+      "step" : [ ]
+   },
+   "attachments" : {
+      "attachment" : [ ]
+   },
+   "labels" : {
+      "label" : [ {
+         "name" : "host",
+         "value" : "MacBook-Pro-2.home"
+      }, {
+         "name" : "thread",
+         "value" : "1771@MacBook-Pro-2.home.main(1)"
+      } ]
    }
 }
->>>REQUEST: /testaspect/TestCase/0c3a4b39-9543-4e32-8ba1-ccfeabc049f6
+<<<RESPONSE (201 Created): /testaspect/TestCase/15b92c13-e341-45e3-a640-6356e031cda0
+>>>REQUEST: /testaspect/TestCase/2a032bdb-bc9e-4d87-ad17-280256dbc137
+<<<RESPONSE (201 Created): /testaspect/TestCase/2a032bdb-bc9e-4d87-ad17-280256dbc137
 running with given plugins: []
 === Starting name_remote_repo(plugins.GitPluginTest)
-<<<RESPONSE (201 Created): /testaspect/TestCase/0c3a4b39-9543-4e32-8ba1-ccfeabc049f6
-<<<RESPONSE (201 Created): /testaspect/TestCase/bfe84146-5adf-419a-9c3c-483a0a3c65aa
-<<<RESPONSE (201 Created): /testaspect/TestCase/e572e346-c3aa-4a63-bf6b-342e149ca318
-<<<RESPONSE (201 Created): /testaspect/TestCase/15d5a5ce-fff2-419a-822c-b9442d1c6861
 Skipping name_remote_repo(plugins.GitPluginTest): Docker is needed for the test
 ]]></system-out>
   </testcase>
   <testcase name="checkout_branch" classname="plugins.GitPluginTest" time="0">
     <skipped/>
-    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@f8cd778[
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@37529731[
   name=name_remote_repo
   title=<null>
   description=<null>
-  failure=ru.yandex.qatools.allure.model.Failure@556917dd
-  start=1444528252488
-  stop=1444528252508
+  failure=ru.yandex.qatools.allure.model.Failure@30f5fd34
+  start=1445038649977
+  stop=1445038649995
   status=CANCELED
   severity=<null>
   steps=[]
   attachments=[]
-  labels=[ru.yandex.qatools.allure.model.Label@38a2b653, ru.yandex.qatools.allure.model.Label@7a3235c3]
+  labels=[ru.yandex.qatools.allure.model.Label@1c7ee9fc, ru.yandex.qatools.allure.model.Label@729cf963]
   parameters=<null>
 ]
 testCaseResult={
-   "start" : 1444528252488,
-   "stop" : 1444528252508,
+   "start" : 1445038649977,
+   "stop" : 1445038649995,
    "status" : "canceled",
    "name" : "name_remote_repo",
    "failure" : {
@@ -185,72 +192,81 @@ testCaseResult={
          "value" : "MacBook-Pro-2.home"
       }, {
          "name" : "thread",
-         "value" : "3426@MacBook-Pro-2.home.main(1)"
+         "value" : "1771@MacBook-Pro-2.home.main(1)"
       } ]
    }
 }
-testCase=ru.yandex.qatools.allure.model.TestCase@13ec1aea[
-  _id=a47b113f-1127-48e2-918b-e7848c90579b
-  executionId=8e6dd7ca-e27b-4013-bda8-bc2788640ddd
-  threadName=dc7331de-b740-4ba3-9907-ee3762987799
-  result=ru.yandex.qatools.allure.model.TestCaseResult@f8cd778
+testCase=ru.yandex.qatools.allure.model.TestCase@51d4031e[
+  _id=a92ab248-89dc-4257-b1e1-17ae27195b4b
+  executionId=7a8626ac-7b8d-4761-8bff-776519219d78
+  threadName=thread_15005794375463
+  name=name_remote_repo
+  title=<null>
+  description=<null>
+  failure=ru.yandex.qatools.allure.model.Failure@30f5fd34
+  start=1445038649977
+  stop=1445038649995
+  status=CANCELED
+  severity=<null>
+  steps=[]
+  attachments=[]
+  labels=[ru.yandex.qatools.allure.model.Label@1c7ee9fc, ru.yandex.qatools.allure.model.Label@729cf963]
+  parameters=<null>
 ]
 testCase={
-   "_id" : "a47b113f-1127-48e2-918b-e7848c90579b",
-   "executionId" : "8e6dd7ca-e27b-4013-bda8-bc2788640ddd",
-   "threadName" : "dc7331de-b740-4ba3-9907-ee3762987799",
-   "result" : {
-      "start" : 1444528252488,
-      "stop" : 1444528252508,
-      "status" : "canceled",
-      "name" : "name_remote_repo",
-      "failure" : {
-         "message" : "AssumptionViolatedException: Docker is needed for the test",
-         "stack-trace" : "org.junit.internal.AssumptionViolatedException: Docker is needed for the test\n\tat org.jenkinsci.test.acceptance.junit.WithDocker$RuleImpl$1.hasDocker(WithDocker.java:49)\n\tat org.jenkinsci.test.acceptance.junit.WithDocker$RuleImpl$1.evaluate(WithDocker.java:40)\n\tat org.jenkinsci.test.acceptance.junit.JenkinsAcceptanceTestRule$1.evaluate(JenkinsAcceptanceTestRule.java:55)\n\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n"
-      },
-      "steps" : {
-         "step" : [ ]
-      },
-      "attachments" : {
-         "attachment" : [ ]
-      },
-      "labels" : {
-         "label" : [ {
-            "name" : "host",
-            "value" : "MacBook-Pro-2.home"
-         }, {
-            "name" : "thread",
-            "value" : "3426@MacBook-Pro-2.home.main(1)"
-         } ]
-      }
+   "start" : 1445038649977,
+   "stop" : 1445038649995,
+   "status" : "canceled",
+   "_id" : "a92ab248-89dc-4257-b1e1-17ae27195b4b",
+   "executionId" : "7a8626ac-7b8d-4761-8bff-776519219d78",
+   "threadName" : "thread_15005794375463",
+   "name" : "name_remote_repo",
+   "failure" : {
+      "message" : "AssumptionViolatedException: Docker is needed for the test",
+      "stack-trace" : "org.junit.internal.AssumptionViolatedException: Docker is needed for the test\n\tat org.jenkinsci.test.acceptance.junit.WithDocker$RuleImpl$1.hasDocker(WithDocker.java:49)\n\tat org.jenkinsci.test.acceptance.junit.WithDocker$RuleImpl$1.evaluate(WithDocker.java:40)\n\tat org.jenkinsci.test.acceptance.junit.JenkinsAcceptanceTestRule$1.evaluate(JenkinsAcceptanceTestRule.java:55)\n\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n"
+   },
+   "steps" : {
+      "step" : [ ]
+   },
+   "attachments" : {
+      "attachment" : [ ]
+   },
+   "labels" : {
+      "label" : [ {
+         "name" : "host",
+         "value" : "MacBook-Pro-2.home"
+      }, {
+         "name" : "thread",
+         "value" : "1771@MacBook-Pro-2.home.main(1)"
+      } ]
    }
 }
->>>REQUEST: /testaspect/TestCase/a47b113f-1127-48e2-918b-e7848c90579b
+>>>REQUEST: /testaspect/TestCase/a92ab248-89dc-4257-b1e1-17ae27195b4b
+<<<RESPONSE (201 Created): /testaspect/TestCase/a92ab248-89dc-4257-b1e1-17ae27195b4b
 running with given plugins: []
 === Starting checkout_branch(plugins.GitPluginTest)
-<<<RESPONSE (201 Created): /testaspect/TestCase/a47b113f-1127-48e2-918b-e7848c90579b
 Skipping checkout_branch(plugins.GitPluginTest): Docker is needed for the test
 ]]></system-out>
   </testcase>
   <testcase name="check_revision" classname="plugins.GitPluginTest" time="0">
     <skipped/>
-    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@33cfb59e[
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@5a1da95f[
   name=checkout_branch
   title=<null>
   description=<null>
-  failure=ru.yandex.qatools.allure.model.Failure@618baac5
-  start=1444528252509
-  stop=1444528252523
+  failure=ru.yandex.qatools.allure.model.Failure@3014f311
+  start=1445038649997
+  stop=1445038650012
   status=CANCELED
   severity=<null>
   steps=[]
   attachments=[]
-  labels=[ru.yandex.qatools.allure.model.Label@7df99dad, ru.yandex.qatools.allure.model.Label@6508161b]
+  labels=[ru.yandex.qatools.allure.model.Label@59ae8d24, ru.yandex.qatools.allure.model.Label@58d6e395]
   parameters=<null>
 ]
 testCaseResult={
-   "start" : 1444528252509,
-   "stop" : 1444528252523,
+   "start" : 1445038649997,
+   "stop" : 1445038650012,
    "status" : "canceled",
    "name" : "checkout_branch",
    "failure" : {
@@ -269,72 +285,81 @@ testCaseResult={
          "value" : "MacBook-Pro-2.home"
       }, {
          "name" : "thread",
-         "value" : "3426@MacBook-Pro-2.home.main(1)"
+         "value" : "1771@MacBook-Pro-2.home.main(1)"
       } ]
    }
 }
-testCase=ru.yandex.qatools.allure.model.TestCase@2ba53c61[
-  _id=e4003641-c6aa-4e47-9ce8-3b2912bb5ee9
-  executionId=8e6dd7ca-e27b-4013-bda8-bc2788640ddd
-  threadName=dc7331de-b740-4ba3-9907-ee3762987799
-  result=ru.yandex.qatools.allure.model.TestCaseResult@33cfb59e
+testCase=ru.yandex.qatools.allure.model.TestCase@6fb6ee81[
+  _id=cea72d50-ed49-4705-8b36-483c1c6e1ee4
+  executionId=7a8626ac-7b8d-4761-8bff-776519219d78
+  threadName=thread_15005794375463
+  name=checkout_branch
+  title=<null>
+  description=<null>
+  failure=ru.yandex.qatools.allure.model.Failure@3014f311
+  start=1445038649997
+  stop=1445038650012
+  status=CANCELED
+  severity=<null>
+  steps=[]
+  attachments=[]
+  labels=[ru.yandex.qatools.allure.model.Label@59ae8d24, ru.yandex.qatools.allure.model.Label@58d6e395]
+  parameters=<null>
 ]
 testCase={
-   "_id" : "e4003641-c6aa-4e47-9ce8-3b2912bb5ee9",
-   "executionId" : "8e6dd7ca-e27b-4013-bda8-bc2788640ddd",
-   "threadName" : "dc7331de-b740-4ba3-9907-ee3762987799",
-   "result" : {
-      "start" : 1444528252509,
-      "stop" : 1444528252523,
-      "status" : "canceled",
-      "name" : "checkout_branch",
-      "failure" : {
-         "message" : "AssumptionViolatedException: Docker is needed for the test",
-         "stack-trace" : "org.junit.internal.AssumptionViolatedException: Docker is needed for the test\n\tat org.jenkinsci.test.acceptance.junit.WithDocker$RuleImpl$1.hasDocker(WithDocker.java:49)\n\tat org.jenkinsci.test.acceptance.junit.WithDocker$RuleImpl$1.evaluate(WithDocker.java:40)\n\tat org.jenkinsci.test.acceptance.junit.JenkinsAcceptanceTestRule$1.evaluate(JenkinsAcceptanceTestRule.java:55)\n\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n"
-      },
-      "steps" : {
-         "step" : [ ]
-      },
-      "attachments" : {
-         "attachment" : [ ]
-      },
-      "labels" : {
-         "label" : [ {
-            "name" : "host",
-            "value" : "MacBook-Pro-2.home"
-         }, {
-            "name" : "thread",
-            "value" : "3426@MacBook-Pro-2.home.main(1)"
-         } ]
-      }
+   "start" : 1445038649997,
+   "stop" : 1445038650012,
+   "status" : "canceled",
+   "_id" : "cea72d50-ed49-4705-8b36-483c1c6e1ee4",
+   "executionId" : "7a8626ac-7b8d-4761-8bff-776519219d78",
+   "threadName" : "thread_15005794375463",
+   "name" : "checkout_branch",
+   "failure" : {
+      "message" : "AssumptionViolatedException: Docker is needed for the test",
+      "stack-trace" : "org.junit.internal.AssumptionViolatedException: Docker is needed for the test\n\tat org.jenkinsci.test.acceptance.junit.WithDocker$RuleImpl$1.hasDocker(WithDocker.java:49)\n\tat org.jenkinsci.test.acceptance.junit.WithDocker$RuleImpl$1.evaluate(WithDocker.java:40)\n\tat org.jenkinsci.test.acceptance.junit.JenkinsAcceptanceTestRule$1.evaluate(JenkinsAcceptanceTestRule.java:55)\n\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n"
+   },
+   "steps" : {
+      "step" : [ ]
+   },
+   "attachments" : {
+      "attachment" : [ ]
+   },
+   "labels" : {
+      "label" : [ {
+         "name" : "host",
+         "value" : "MacBook-Pro-2.home"
+      }, {
+         "name" : "thread",
+         "value" : "1771@MacBook-Pro-2.home.main(1)"
+      } ]
    }
 }
->>>REQUEST: /testaspect/TestCase/e4003641-c6aa-4e47-9ce8-3b2912bb5ee9
+>>>REQUEST: /testaspect/TestCase/cea72d50-ed49-4705-8b36-483c1c6e1ee4
+<<<RESPONSE (201 Created): /testaspect/TestCase/cea72d50-ed49-4705-8b36-483c1c6e1ee4
 running with given plugins: []
-<<<RESPONSE (201 Created): /testaspect/TestCase/e4003641-c6aa-4e47-9ce8-3b2912bb5ee9
 === Starting check_revision(plugins.GitPluginTest)
 Skipping check_revision(plugins.GitPluginTest): Docker is needed for the test
 ]]></system-out>
   </testcase>
   <testcase name="checkout_to_local_dir" classname="plugins.GitPluginTest" time="0">
     <skipped/>
-    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@1848edb6[
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@f6fa3e2[
   name=check_revision
   title=<null>
   description=<null>
-  failure=ru.yandex.qatools.allure.model.Failure@6fef9fd4
-  start=1444528252525
-  stop=1444528252540
+  failure=ru.yandex.qatools.allure.model.Failure@ed57e90
+  start=1445038650013
+  stop=1445038650026
   status=CANCELED
   severity=<null>
   steps=[]
   attachments=[]
-  labels=[ru.yandex.qatools.allure.model.Label@3cd943d9, ru.yandex.qatools.allure.model.Label@715dcea0]
+  labels=[ru.yandex.qatools.allure.model.Label@64569fc3, ru.yandex.qatools.allure.model.Label@5f7a667]
   parameters=<null>
 ]
 testCaseResult={
-   "start" : 1444528252525,
-   "stop" : 1444528252540,
+   "start" : 1445038650013,
+   "stop" : 1445038650026,
    "status" : "canceled",
    "name" : "check_revision",
    "failure" : {
@@ -353,72 +378,81 @@ testCaseResult={
          "value" : "MacBook-Pro-2.home"
       }, {
          "name" : "thread",
-         "value" : "3426@MacBook-Pro-2.home.main(1)"
+         "value" : "1771@MacBook-Pro-2.home.main(1)"
       } ]
    }
 }
-testCase=ru.yandex.qatools.allure.model.TestCase@2e27b860[
-  _id=2e7dfbc6-d4fd-4849-8896-43e56eced17d
-  executionId=8e6dd7ca-e27b-4013-bda8-bc2788640ddd
-  threadName=dc7331de-b740-4ba3-9907-ee3762987799
-  result=ru.yandex.qatools.allure.model.TestCaseResult@1848edb6
+testCase=ru.yandex.qatools.allure.model.TestCase@77756588[
+  _id=98a27d6f-a626-42d3-8feb-9c10717fc96b
+  executionId=7a8626ac-7b8d-4761-8bff-776519219d78
+  threadName=thread_15005794375463
+  name=check_revision
+  title=<null>
+  description=<null>
+  failure=ru.yandex.qatools.allure.model.Failure@ed57e90
+  start=1445038650013
+  stop=1445038650026
+  status=CANCELED
+  severity=<null>
+  steps=[]
+  attachments=[]
+  labels=[ru.yandex.qatools.allure.model.Label@64569fc3, ru.yandex.qatools.allure.model.Label@5f7a667]
+  parameters=<null>
 ]
 testCase={
-   "_id" : "2e7dfbc6-d4fd-4849-8896-43e56eced17d",
-   "executionId" : "8e6dd7ca-e27b-4013-bda8-bc2788640ddd",
-   "threadName" : "dc7331de-b740-4ba3-9907-ee3762987799",
-   "result" : {
-      "start" : 1444528252525,
-      "stop" : 1444528252540,
-      "status" : "canceled",
-      "name" : "check_revision",
-      "failure" : {
-         "message" : "AssumptionViolatedException: Docker is needed for the test",
-         "stack-trace" : "org.junit.internal.AssumptionViolatedException: Docker is needed for the test\n\tat org.jenkinsci.test.acceptance.junit.WithDocker$RuleImpl$1.hasDocker(WithDocker.java:49)\n\tat org.jenkinsci.test.acceptance.junit.WithDocker$RuleImpl$1.evaluate(WithDocker.java:40)\n\tat org.jenkinsci.test.acceptance.junit.JenkinsAcceptanceTestRule$1.evaluate(JenkinsAcceptanceTestRule.java:55)\n\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n"
-      },
-      "steps" : {
-         "step" : [ ]
-      },
-      "attachments" : {
-         "attachment" : [ ]
-      },
-      "labels" : {
-         "label" : [ {
-            "name" : "host",
-            "value" : "MacBook-Pro-2.home"
-         }, {
-            "name" : "thread",
-            "value" : "3426@MacBook-Pro-2.home.main(1)"
-         } ]
-      }
+   "start" : 1445038650013,
+   "stop" : 1445038650026,
+   "status" : "canceled",
+   "_id" : "98a27d6f-a626-42d3-8feb-9c10717fc96b",
+   "executionId" : "7a8626ac-7b8d-4761-8bff-776519219d78",
+   "threadName" : "thread_15005794375463",
+   "name" : "check_revision",
+   "failure" : {
+      "message" : "AssumptionViolatedException: Docker is needed for the test",
+      "stack-trace" : "org.junit.internal.AssumptionViolatedException: Docker is needed for the test\n\tat org.jenkinsci.test.acceptance.junit.WithDocker$RuleImpl$1.hasDocker(WithDocker.java:49)\n\tat org.jenkinsci.test.acceptance.junit.WithDocker$RuleImpl$1.evaluate(WithDocker.java:40)\n\tat org.jenkinsci.test.acceptance.junit.JenkinsAcceptanceTestRule$1.evaluate(JenkinsAcceptanceTestRule.java:55)\n\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n"
+   },
+   "steps" : {
+      "step" : [ ]
+   },
+   "attachments" : {
+      "attachment" : [ ]
+   },
+   "labels" : {
+      "label" : [ {
+         "name" : "host",
+         "value" : "MacBook-Pro-2.home"
+      }, {
+         "name" : "thread",
+         "value" : "1771@MacBook-Pro-2.home.main(1)"
+      } ]
    }
 }
->>>REQUEST: /testaspect/TestCase/2e7dfbc6-d4fd-4849-8896-43e56eced17d
+>>>REQUEST: /testaspect/TestCase/98a27d6f-a626-42d3-8feb-9c10717fc96b
+<<<RESPONSE (201 Created): /testaspect/TestCase/98a27d6f-a626-42d3-8feb-9c10717fc96b
 running with given plugins: []
-<<<RESPONSE (201 Created): /testaspect/TestCase/2e7dfbc6-d4fd-4849-8896-43e56eced17d
 === Starting checkout_to_local_dir(plugins.GitPluginTest)
 Skipping checkout_to_local_dir(plugins.GitPluginTest): Docker is needed for the test
 ]]></system-out>
   </testcase>
   <testcase name="checkout_local_branch" classname="plugins.GitPluginTest" time="0">
     <skipped/>
-    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@6ef2705e[
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@65527e18[
   name=checkout_to_local_dir
   title=<null>
   description=<null>
-  failure=ru.yandex.qatools.allure.model.Failure@5d1e30af
-  start=1444528252541
-  stop=1444528252556
+  failure=ru.yandex.qatools.allure.model.Failure@415fa603
+  start=1445038650028
+  stop=1445038650040
   status=CANCELED
   severity=<null>
   steps=[]
   attachments=[]
-  labels=[ru.yandex.qatools.allure.model.Label@4eeab8d1, ru.yandex.qatools.allure.model.Label@5b2c337e]
+  labels=[ru.yandex.qatools.allure.model.Label@1cfbc20c, ru.yandex.qatools.allure.model.Label@29ddae1c]
   parameters=<null>
 ]
 testCaseResult={
-   "start" : 1444528252541,
-   "stop" : 1444528252556,
+   "start" : 1445038650028,
+   "stop" : 1445038650040,
    "status" : "canceled",
    "name" : "checkout_to_local_dir",
    "failure" : {
@@ -437,48 +471,57 @@ testCaseResult={
          "value" : "MacBook-Pro-2.home"
       }, {
          "name" : "thread",
-         "value" : "3426@MacBook-Pro-2.home.main(1)"
+         "value" : "1771@MacBook-Pro-2.home.main(1)"
       } ]
    }
 }
-testCase=ru.yandex.qatools.allure.model.TestCase@2621c8c5[
-  _id=411e904f-7e43-49fe-ad96-91adca8306d8
-  executionId=8e6dd7ca-e27b-4013-bda8-bc2788640ddd
-  threadName=dc7331de-b740-4ba3-9907-ee3762987799
-  result=ru.yandex.qatools.allure.model.TestCaseResult@6ef2705e
+testCase=ru.yandex.qatools.allure.model.TestCase@5f09b781[
+  _id=1767d69f-385d-4869-8d45-b90a5911609b
+  executionId=7a8626ac-7b8d-4761-8bff-776519219d78
+  threadName=thread_15005794375463
+  name=checkout_to_local_dir
+  title=<null>
+  description=<null>
+  failure=ru.yandex.qatools.allure.model.Failure@415fa603
+  start=1445038650028
+  stop=1445038650040
+  status=CANCELED
+  severity=<null>
+  steps=[]
+  attachments=[]
+  labels=[ru.yandex.qatools.allure.model.Label@1cfbc20c, ru.yandex.qatools.allure.model.Label@29ddae1c]
+  parameters=<null>
 ]
 testCase={
-   "_id" : "411e904f-7e43-49fe-ad96-91adca8306d8",
-   "executionId" : "8e6dd7ca-e27b-4013-bda8-bc2788640ddd",
-   "threadName" : "dc7331de-b740-4ba3-9907-ee3762987799",
-   "result" : {
-      "start" : 1444528252541,
-      "stop" : 1444528252556,
-      "status" : "canceled",
-      "name" : "checkout_to_local_dir",
-      "failure" : {
-         "message" : "AssumptionViolatedException: Docker is needed for the test",
-         "stack-trace" : "org.junit.internal.AssumptionViolatedException: Docker is needed for the test\n\tat org.jenkinsci.test.acceptance.junit.WithDocker$RuleImpl$1.hasDocker(WithDocker.java:49)\n\tat org.jenkinsci.test.acceptance.junit.WithDocker$RuleImpl$1.evaluate(WithDocker.java:40)\n\tat org.jenkinsci.test.acceptance.junit.JenkinsAcceptanceTestRule$1.evaluate(JenkinsAcceptanceTestRule.java:55)\n\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n"
-      },
-      "steps" : {
-         "step" : [ ]
-      },
-      "attachments" : {
-         "attachment" : [ ]
-      },
-      "labels" : {
-         "label" : [ {
-            "name" : "host",
-            "value" : "MacBook-Pro-2.home"
-         }, {
-            "name" : "thread",
-            "value" : "3426@MacBook-Pro-2.home.main(1)"
-         } ]
-      }
+   "start" : 1445038650028,
+   "stop" : 1445038650040,
+   "status" : "canceled",
+   "_id" : "1767d69f-385d-4869-8d45-b90a5911609b",
+   "executionId" : "7a8626ac-7b8d-4761-8bff-776519219d78",
+   "threadName" : "thread_15005794375463",
+   "name" : "checkout_to_local_dir",
+   "failure" : {
+      "message" : "AssumptionViolatedException: Docker is needed for the test",
+      "stack-trace" : "org.junit.internal.AssumptionViolatedException: Docker is needed for the test\n\tat org.jenkinsci.test.acceptance.junit.WithDocker$RuleImpl$1.hasDocker(WithDocker.java:49)\n\tat org.jenkinsci.test.acceptance.junit.WithDocker$RuleImpl$1.evaluate(WithDocker.java:40)\n\tat org.jenkinsci.test.acceptance.junit.JenkinsAcceptanceTestRule$1.evaluate(JenkinsAcceptanceTestRule.java:55)\n\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n"
+   },
+   "steps" : {
+      "step" : [ ]
+   },
+   "attachments" : {
+      "attachment" : [ ]
+   },
+   "labels" : {
+      "label" : [ {
+         "name" : "host",
+         "value" : "MacBook-Pro-2.home"
+      }, {
+         "name" : "thread",
+         "value" : "1771@MacBook-Pro-2.home.main(1)"
+      } ]
    }
 }
->>>REQUEST: /testaspect/TestCase/411e904f-7e43-49fe-ad96-91adca8306d8
-<<<RESPONSE (201 Created): /testaspect/TestCase/411e904f-7e43-49fe-ad96-91adca8306d8
+>>>REQUEST: /testaspect/TestCase/1767d69f-385d-4869-8d45-b90a5911609b
+<<<RESPONSE (201 Created): /testaspect/TestCase/1767d69f-385d-4869-8d45-b90a5911609b
 running with given plugins: []
 === Starting checkout_local_branch(plugins.GitPluginTest)
 Skipping checkout_local_branch(plugins.GitPluginTest): Docker is needed for the test
@@ -486,23 +529,23 @@ Skipping checkout_local_branch(plugins.GitPluginTest): Docker is needed for the 
   </testcase>
   <testcase name="update_submodules_recursively" classname="plugins.GitPluginTest" time="0">
     <skipped/>
-    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@6c96409f[
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@e7f090f[
   name=checkout_local_branch
   title=<null>
   description=<null>
-  failure=ru.yandex.qatools.allure.model.Failure@4bfd6a35
-  start=1444528252557
-  stop=1444528252569
+  failure=ru.yandex.qatools.allure.model.Failure@4163675f
+  start=1445038650042
+  stop=1445038650053
   status=CANCELED
   severity=<null>
   steps=[]
   attachments=[]
-  labels=[ru.yandex.qatools.allure.model.Label@6c6f1552, ru.yandex.qatools.allure.model.Label@3237dc35]
+  labels=[ru.yandex.qatools.allure.model.Label@12519a4c, ru.yandex.qatools.allure.model.Label@c101b69]
   parameters=<null>
 ]
 testCaseResult={
-   "start" : 1444528252557,
-   "stop" : 1444528252569,
+   "start" : 1445038650042,
+   "stop" : 1445038650053,
    "status" : "canceled",
    "name" : "checkout_local_branch",
    "failure" : {
@@ -521,72 +564,81 @@ testCaseResult={
          "value" : "MacBook-Pro-2.home"
       }, {
          "name" : "thread",
-         "value" : "3426@MacBook-Pro-2.home.main(1)"
+         "value" : "1771@MacBook-Pro-2.home.main(1)"
       } ]
    }
 }
-testCase=ru.yandex.qatools.allure.model.TestCase@6c7bf054[
-  _id=bb7cd07f-8bf4-4026-9745-3115915b54be
-  executionId=8e6dd7ca-e27b-4013-bda8-bc2788640ddd
-  threadName=dc7331de-b740-4ba3-9907-ee3762987799
-  result=ru.yandex.qatools.allure.model.TestCaseResult@6c96409f
+testCase=ru.yandex.qatools.allure.model.TestCase@7a514c95[
+  _id=9c5ffb04-2c66-4d65-9e53-77dc9b343633
+  executionId=7a8626ac-7b8d-4761-8bff-776519219d78
+  threadName=thread_15005794375463
+  name=checkout_local_branch
+  title=<null>
+  description=<null>
+  failure=ru.yandex.qatools.allure.model.Failure@4163675f
+  start=1445038650042
+  stop=1445038650053
+  status=CANCELED
+  severity=<null>
+  steps=[]
+  attachments=[]
+  labels=[ru.yandex.qatools.allure.model.Label@12519a4c, ru.yandex.qatools.allure.model.Label@c101b69]
+  parameters=<null>
 ]
 testCase={
-   "_id" : "bb7cd07f-8bf4-4026-9745-3115915b54be",
-   "executionId" : "8e6dd7ca-e27b-4013-bda8-bc2788640ddd",
-   "threadName" : "dc7331de-b740-4ba3-9907-ee3762987799",
-   "result" : {
-      "start" : 1444528252557,
-      "stop" : 1444528252569,
-      "status" : "canceled",
-      "name" : "checkout_local_branch",
-      "failure" : {
-         "message" : "AssumptionViolatedException: Docker is needed for the test",
-         "stack-trace" : "org.junit.internal.AssumptionViolatedException: Docker is needed for the test\n\tat org.jenkinsci.test.acceptance.junit.WithDocker$RuleImpl$1.hasDocker(WithDocker.java:49)\n\tat org.jenkinsci.test.acceptance.junit.WithDocker$RuleImpl$1.evaluate(WithDocker.java:40)\n\tat org.jenkinsci.test.acceptance.junit.JenkinsAcceptanceTestRule$1.evaluate(JenkinsAcceptanceTestRule.java:55)\n\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n"
-      },
-      "steps" : {
-         "step" : [ ]
-      },
-      "attachments" : {
-         "attachment" : [ ]
-      },
-      "labels" : {
-         "label" : [ {
-            "name" : "host",
-            "value" : "MacBook-Pro-2.home"
-         }, {
-            "name" : "thread",
-            "value" : "3426@MacBook-Pro-2.home.main(1)"
-         } ]
-      }
+   "start" : 1445038650042,
+   "stop" : 1445038650053,
+   "status" : "canceled",
+   "_id" : "9c5ffb04-2c66-4d65-9e53-77dc9b343633",
+   "executionId" : "7a8626ac-7b8d-4761-8bff-776519219d78",
+   "threadName" : "thread_15005794375463",
+   "name" : "checkout_local_branch",
+   "failure" : {
+      "message" : "AssumptionViolatedException: Docker is needed for the test",
+      "stack-trace" : "org.junit.internal.AssumptionViolatedException: Docker is needed for the test\n\tat org.jenkinsci.test.acceptance.junit.WithDocker$RuleImpl$1.hasDocker(WithDocker.java:49)\n\tat org.jenkinsci.test.acceptance.junit.WithDocker$RuleImpl$1.evaluate(WithDocker.java:40)\n\tat org.jenkinsci.test.acceptance.junit.JenkinsAcceptanceTestRule$1.evaluate(JenkinsAcceptanceTestRule.java:55)\n\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n"
+   },
+   "steps" : {
+      "step" : [ ]
+   },
+   "attachments" : {
+      "attachment" : [ ]
+   },
+   "labels" : {
+      "label" : [ {
+         "name" : "host",
+         "value" : "MacBook-Pro-2.home"
+      }, {
+         "name" : "thread",
+         "value" : "1771@MacBook-Pro-2.home.main(1)"
+      } ]
    }
 }
->>>REQUEST: /testaspect/TestCase/bb7cd07f-8bf4-4026-9745-3115915b54be
+>>>REQUEST: /testaspect/TestCase/9c5ffb04-2c66-4d65-9e53-77dc9b343633
+<<<RESPONSE (201 Created): /testaspect/TestCase/9c5ffb04-2c66-4d65-9e53-77dc9b343633
 running with given plugins: []
-<<<RESPONSE (201 Created): /testaspect/TestCase/bb7cd07f-8bf4-4026-9745-3115915b54be
 === Starting update_submodules_recursively(plugins.GitPluginTest)
 Skipping update_submodules_recursively(plugins.GitPluginTest): Docker is needed for the test
 ]]></system-out>
   </testcase>
   <testcase name="poll_for_changes" classname="plugins.GitPluginTest" time="0">
     <skipped/>
-    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@30f5fd34[
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@3e2896f0[
   name=update_submodules_recursively
   title=<null>
   description=<null>
-  failure=ru.yandex.qatools.allure.model.Failure@1c7ee9fc
-  start=1444528252570
-  stop=1444528252580
+  failure=ru.yandex.qatools.allure.model.Failure@23911047
+  start=1445038650055
+  stop=1445038650069
   status=CANCELED
   severity=<null>
   steps=[]
   attachments=[]
-  labels=[ru.yandex.qatools.allure.model.Label@729cf963, ru.yandex.qatools.allure.model.Label@51d4031e]
+  labels=[ru.yandex.qatools.allure.model.Label@29b0f2a, ru.yandex.qatools.allure.model.Label@48169f27]
   parameters=<null>
 ]
 testCaseResult={
-   "start" : 1444528252570,
-   "stop" : 1444528252580,
+   "start" : 1445038650055,
+   "stop" : 1445038650069,
    "status" : "canceled",
    "name" : "update_submodules_recursively",
    "failure" : {
@@ -605,48 +657,57 @@ testCaseResult={
          "value" : "MacBook-Pro-2.home"
       }, {
          "name" : "thread",
-         "value" : "3426@MacBook-Pro-2.home.main(1)"
+         "value" : "1771@MacBook-Pro-2.home.main(1)"
       } ]
    }
 }
-testCase=ru.yandex.qatools.allure.model.TestCase@4ed7584d[
-  _id=13352b26-4ac3-46b9-b72c-3df3e31273df
-  executionId=8e6dd7ca-e27b-4013-bda8-bc2788640ddd
-  threadName=dc7331de-b740-4ba3-9907-ee3762987799
-  result=ru.yandex.qatools.allure.model.TestCaseResult@30f5fd34
+testCase=ru.yandex.qatools.allure.model.TestCase@32f31fc3[
+  _id=e294d133-993f-4401-8293-b866fec86d46
+  executionId=7a8626ac-7b8d-4761-8bff-776519219d78
+  threadName=thread_15005794375463
+  name=update_submodules_recursively
+  title=<null>
+  description=<null>
+  failure=ru.yandex.qatools.allure.model.Failure@23911047
+  start=1445038650055
+  stop=1445038650069
+  status=CANCELED
+  severity=<null>
+  steps=[]
+  attachments=[]
+  labels=[ru.yandex.qatools.allure.model.Label@29b0f2a, ru.yandex.qatools.allure.model.Label@48169f27]
+  parameters=<null>
 ]
 testCase={
-   "_id" : "13352b26-4ac3-46b9-b72c-3df3e31273df",
-   "executionId" : "8e6dd7ca-e27b-4013-bda8-bc2788640ddd",
-   "threadName" : "dc7331de-b740-4ba3-9907-ee3762987799",
-   "result" : {
-      "start" : 1444528252570,
-      "stop" : 1444528252580,
-      "status" : "canceled",
-      "name" : "update_submodules_recursively",
-      "failure" : {
-         "message" : "AssumptionViolatedException: Docker is needed for the test",
-         "stack-trace" : "org.junit.internal.AssumptionViolatedException: Docker is needed for the test\n\tat org.jenkinsci.test.acceptance.junit.WithDocker$RuleImpl$1.hasDocker(WithDocker.java:49)\n\tat org.jenkinsci.test.acceptance.junit.WithDocker$RuleImpl$1.evaluate(WithDocker.java:40)\n\tat org.jenkinsci.test.acceptance.junit.JenkinsAcceptanceTestRule$1.evaluate(JenkinsAcceptanceTestRule.java:55)\n\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n"
-      },
-      "steps" : {
-         "step" : [ ]
-      },
-      "attachments" : {
-         "attachment" : [ ]
-      },
-      "labels" : {
-         "label" : [ {
-            "name" : "host",
-            "value" : "MacBook-Pro-2.home"
-         }, {
-            "name" : "thread",
-            "value" : "3426@MacBook-Pro-2.home.main(1)"
-         } ]
-      }
+   "start" : 1445038650055,
+   "stop" : 1445038650069,
+   "status" : "canceled",
+   "_id" : "e294d133-993f-4401-8293-b866fec86d46",
+   "executionId" : "7a8626ac-7b8d-4761-8bff-776519219d78",
+   "threadName" : "thread_15005794375463",
+   "name" : "update_submodules_recursively",
+   "failure" : {
+      "message" : "AssumptionViolatedException: Docker is needed for the test",
+      "stack-trace" : "org.junit.internal.AssumptionViolatedException: Docker is needed for the test\n\tat org.jenkinsci.test.acceptance.junit.WithDocker$RuleImpl$1.hasDocker(WithDocker.java:49)\n\tat org.jenkinsci.test.acceptance.junit.WithDocker$RuleImpl$1.evaluate(WithDocker.java:40)\n\tat org.jenkinsci.test.acceptance.junit.JenkinsAcceptanceTestRule$1.evaluate(JenkinsAcceptanceTestRule.java:55)\n\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n"
+   },
+   "steps" : {
+      "step" : [ ]
+   },
+   "attachments" : {
+      "attachment" : [ ]
+   },
+   "labels" : {
+      "label" : [ {
+         "name" : "host",
+         "value" : "MacBook-Pro-2.home"
+      }, {
+         "name" : "thread",
+         "value" : "1771@MacBook-Pro-2.home.main(1)"
+      } ]
    }
 }
->>>REQUEST: /testaspect/TestCase/13352b26-4ac3-46b9-b72c-3df3e31273df
-<<<RESPONSE (201 Created): /testaspect/TestCase/13352b26-4ac3-46b9-b72c-3df3e31273df
+>>>REQUEST: /testaspect/TestCase/e294d133-993f-4401-8293-b866fec86d46
+<<<RESPONSE (201 Created): /testaspect/TestCase/e294d133-993f-4401-8293-b866fec86d46
 running with given plugins: []
 === Starting poll_for_changes(plugins.GitPluginTest)
 Skipping poll_for_changes(plugins.GitPluginTest): Docker is needed for the test
@@ -654,23 +715,23 @@ Skipping poll_for_changes(plugins.GitPluginTest): Docker is needed for the test
   </testcase>
   <testcase name="simple_checkout" classname="plugins.GitPluginTest" time="0">
     <skipped/>
-    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@3014f311[
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@e3bde77[
   name=poll_for_changes
   title=<null>
   description=<null>
-  failure=ru.yandex.qatools.allure.model.Failure@59ae8d24
-  start=1444528252581
-  stop=1444528252595
+  failure=ru.yandex.qatools.allure.model.Failure@40c95eff
+  start=1445038650070
+  stop=1445038650086
   status=CANCELED
   severity=<null>
   steps=[]
   attachments=[]
-  labels=[ru.yandex.qatools.allure.model.Label@58d6e395, ru.yandex.qatools.allure.model.Label@6fb6ee81]
+  labels=[ru.yandex.qatools.allure.model.Label@2812d4e5, ru.yandex.qatools.allure.model.Label@b236ba]
   parameters=<null>
 ]
 testCaseResult={
-   "start" : 1444528252581,
-   "stop" : 1444528252595,
+   "start" : 1445038650070,
+   "stop" : 1445038650086,
    "status" : "canceled",
    "name" : "poll_for_changes",
    "failure" : {
@@ -689,48 +750,57 @@ testCaseResult={
          "value" : "MacBook-Pro-2.home"
       }, {
          "name" : "thread",
-         "value" : "3426@MacBook-Pro-2.home.main(1)"
+         "value" : "1771@MacBook-Pro-2.home.main(1)"
       } ]
    }
 }
-testCase=ru.yandex.qatools.allure.model.TestCase@78ad141d[
-  _id=6a63cbbd-744a-4f93-bf83-fc430a7772bf
-  executionId=8e6dd7ca-e27b-4013-bda8-bc2788640ddd
-  threadName=dc7331de-b740-4ba3-9907-ee3762987799
-  result=ru.yandex.qatools.allure.model.TestCaseResult@3014f311
+testCase=ru.yandex.qatools.allure.model.TestCase@502a98bd[
+  _id=0aca57bb-a922-4b92-83e2-957f3bbb4531
+  executionId=7a8626ac-7b8d-4761-8bff-776519219d78
+  threadName=thread_15005794375463
+  name=poll_for_changes
+  title=<null>
+  description=<null>
+  failure=ru.yandex.qatools.allure.model.Failure@40c95eff
+  start=1445038650070
+  stop=1445038650086
+  status=CANCELED
+  severity=<null>
+  steps=[]
+  attachments=[]
+  labels=[ru.yandex.qatools.allure.model.Label@2812d4e5, ru.yandex.qatools.allure.model.Label@b236ba]
+  parameters=<null>
 ]
 testCase={
-   "_id" : "6a63cbbd-744a-4f93-bf83-fc430a7772bf",
-   "executionId" : "8e6dd7ca-e27b-4013-bda8-bc2788640ddd",
-   "threadName" : "dc7331de-b740-4ba3-9907-ee3762987799",
-   "result" : {
-      "start" : 1444528252581,
-      "stop" : 1444528252595,
-      "status" : "canceled",
-      "name" : "poll_for_changes",
-      "failure" : {
-         "message" : "AssumptionViolatedException: Docker is needed for the test",
-         "stack-trace" : "org.junit.internal.AssumptionViolatedException: Docker is needed for the test\n\tat org.jenkinsci.test.acceptance.junit.WithDocker$RuleImpl$1.hasDocker(WithDocker.java:49)\n\tat org.jenkinsci.test.acceptance.junit.WithDocker$RuleImpl$1.evaluate(WithDocker.java:40)\n\tat org.jenkinsci.test.acceptance.junit.JenkinsAcceptanceTestRule$1.evaluate(JenkinsAcceptanceTestRule.java:55)\n\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n"
-      },
-      "steps" : {
-         "step" : [ ]
-      },
-      "attachments" : {
-         "attachment" : [ ]
-      },
-      "labels" : {
-         "label" : [ {
-            "name" : "host",
-            "value" : "MacBook-Pro-2.home"
-         }, {
-            "name" : "thread",
-            "value" : "3426@MacBook-Pro-2.home.main(1)"
-         } ]
-      }
+   "start" : 1445038650070,
+   "stop" : 1445038650086,
+   "status" : "canceled",
+   "_id" : "0aca57bb-a922-4b92-83e2-957f3bbb4531",
+   "executionId" : "7a8626ac-7b8d-4761-8bff-776519219d78",
+   "threadName" : "thread_15005794375463",
+   "name" : "poll_for_changes",
+   "failure" : {
+      "message" : "AssumptionViolatedException: Docker is needed for the test",
+      "stack-trace" : "org.junit.internal.AssumptionViolatedException: Docker is needed for the test\n\tat org.jenkinsci.test.acceptance.junit.WithDocker$RuleImpl$1.hasDocker(WithDocker.java:49)\n\tat org.jenkinsci.test.acceptance.junit.WithDocker$RuleImpl$1.evaluate(WithDocker.java:40)\n\tat org.jenkinsci.test.acceptance.junit.JenkinsAcceptanceTestRule$1.evaluate(JenkinsAcceptanceTestRule.java:55)\n\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n"
+   },
+   "steps" : {
+      "step" : [ ]
+   },
+   "attachments" : {
+      "attachment" : [ ]
+   },
+   "labels" : {
+      "label" : [ {
+         "name" : "host",
+         "value" : "MacBook-Pro-2.home"
+      }, {
+         "name" : "thread",
+         "value" : "1771@MacBook-Pro-2.home.main(1)"
+      } ]
    }
 }
->>>REQUEST: /testaspect/TestCase/6a63cbbd-744a-4f93-bf83-fc430a7772bf
-<<<RESPONSE (201 Created): /testaspect/TestCase/6a63cbbd-744a-4f93-bf83-fc430a7772bf
+>>>REQUEST: /testaspect/TestCase/0aca57bb-a922-4b92-83e2-957f3bbb4531
+<<<RESPONSE (201 Created): /testaspect/TestCase/0aca57bb-a922-4b92-83e2-957f3bbb4531
 running with given plugins: []
 === Starting simple_checkout(plugins.GitPluginTest)
 Skipping simple_checkout(plugins.GitPluginTest): Docker is needed for the test

@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="icon"
+          type="image/png"
+          href="@.png" />
     <title>@TestAspect</title>
+
     <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
 
     <!-- it's important for d3.js -->
@@ -15,17 +19,17 @@
 
     <script src="bower_components/d3/d3.js"></script>
     <script src="bower_components/nvd3/build/nv.d3.js"></script>
-    <!-- or use another assembly -->
     <script src="bower_components/angular-nvd3/dist/angular-nvd3.js"></script>
-
     <link rel="stylesheet" href="bower_components/nvd3/build/nv.d3.css">
+
+    <script src="bower_components/tree-grid-directive/src/tree-grid-directive.js"></script>
+    <link rel="stylesheet" href="bower_components/tree-grid-directive/src/treeGrid.css">
 
     <!-- MINE -->
     <script src="app.js"></script>
     <script src="myd3.js"></script>
     <link rel="stylesheet" href="app.css">
     <link rel="stylesheet" href="allure.css">
-
 </head>
 <body ng-app="App">
 <div ng-controller="ExampleController" class="container">
@@ -33,30 +37,22 @@
 
     <br/>
 
-    <div class="btn-group" align="right">
-        <label class="btn btn-primary" ng-model="statusModel.broken" uib-btn-checkbox>Broken</label>
-        <label class="btn btn-primary" ng-model="statusModel.passed" uib-btn-checkbox>Passed</label>
-        <label class="btn btn-primary" ng-model="statusModel.canceled" uib-btn-checkbox>Canceled</label>
-        <label class="btn btn-primary" ng-model="statusModel.pending" uib-btn-checkbox>Pending</label>
-        <label class="btn btn-primary" ng-model="statusModel.failed" uib-btn-checkbox>Failed</label>
+    <div style="width: 100%" align="right">
+        <div class="btn-group" align="right">
+            <label class="btn btn-primary" ng-model="statusModel.broken" uib-btn-checkbox>Broken</label>
+            <label class="btn btn-primary" ng-model="statusModel.passed" uib-btn-checkbox>Passed</label>
+            <label class="btn btn-primary" ng-model="statusModel.canceled" uib-btn-checkbox>Canceled</label>
+            <label class="btn btn-primary" ng-model="statusModel.pending" uib-btn-checkbox>Pending</label>
+            <label class="btn btn-primary" ng-model="statusModel.failed" uib-btn-checkbox>Failed</label>
+        </div>
     </div>
-    <br/>
-    <br/>
 
     <nvd3 options="options" data="bar_data" api="api"></nvd3>
-    <br/>
 
     <div ng-if="error" class="alert alert-danger" role="alert">{{error.message}}</div>
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            <h3 class="panel-title">Cluster State</h3>
-        </div>
 
-        <div class="panel-body">
-            <pre>{{tc | json}}</pre>
-        </div>
-    </div>
-
+    <tree-grid tree-data="tree_data"></tree-grid>
+    <!--<pre>{{tc | json}}</pre>-->
 </div>
 </body>
 </html>

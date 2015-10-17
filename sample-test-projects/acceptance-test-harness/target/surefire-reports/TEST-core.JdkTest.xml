@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="core.JdkTest" time="27.263" tests="2" errors="0" skipped="1" failures="0">
+<testsuite name="core.JdkTest" time="27.374" tests="2" errors="0" skipped="1" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib"/>
@@ -63,23 +63,23 @@
   </properties>
   <testcase name="autoinstallJdk" classname="core.JdkTest" time="0">
     <skipped/>
-    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@7679763c[
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@6efdf781[
   name=createUserPwd
   title=<null>
   description=<null>
   failure=<null>
-  start=1444526151387
-  stop=1444526171720
+  start=1445036354778
+  stop=1445036375644
   status=PASSED
   severity=<null>
   steps=[]
   attachments=[]
-  labels=[ru.yandex.qatools.allure.model.Label@14a483c4, ru.yandex.qatools.allure.model.Label@56685957]
+  labels=[ru.yandex.qatools.allure.model.Label@45ee1afb, ru.yandex.qatools.allure.model.Label@8c6680a]
   parameters=<null>
 ]
 testCaseResult={
-   "start" : 1444526151387,
-   "stop" : 1444526171720,
+   "start" : 1445036354778,
+   "stop" : 1445036375644,
    "status" : "passed",
    "name" : "createUserPwd",
    "steps" : {
@@ -94,48 +94,57 @@ testCaseResult={
          "value" : "MacBook-Pro-2.home"
       }, {
          "name" : "thread",
-         "value" : "3426@MacBook-Pro-2.home.main(1)"
+         "value" : "1771@MacBook-Pro-2.home.main(1)"
       } ]
    }
 }
-testCase=ru.yandex.qatools.allure.model.TestCase@a4e6829[
-  _id=13efdc42-e5f6-4dc1-a350-2cb80b8b0e02
-  executionId=8e6dd7ca-e27b-4013-bda8-bc2788640ddd
-  threadName=dc7331de-b740-4ba3-9907-ee3762987799
-  result=ru.yandex.qatools.allure.model.TestCaseResult@7679763c
+testCase=ru.yandex.qatools.allure.model.TestCase@2b11e137[
+  _id=0319782f-8a1d-4cec-9b25-af7bd765244c
+  executionId=7a8626ac-7b8d-4761-8bff-776519219d78
+  threadName=thread_15005794375463
+  name=createUserPwd
+  title=<null>
+  description=<null>
+  failure=<null>
+  start=1445036354778
+  stop=1445036375644
+  status=PASSED
+  severity=<null>
+  steps=[]
+  attachments=[]
+  labels=[ru.yandex.qatools.allure.model.Label@45ee1afb, ru.yandex.qatools.allure.model.Label@8c6680a]
+  parameters=<null>
 ]
 testCase={
-   "_id" : "13efdc42-e5f6-4dc1-a350-2cb80b8b0e02",
-   "executionId" : "8e6dd7ca-e27b-4013-bda8-bc2788640ddd",
-   "threadName" : "dc7331de-b740-4ba3-9907-ee3762987799",
-   "result" : {
-      "start" : 1444526151387,
-      "stop" : 1444526171720,
-      "status" : "passed",
-      "name" : "createUserPwd",
-      "steps" : {
-         "step" : [ ]
-      },
-      "attachments" : {
-         "attachment" : [ ]
-      },
-      "labels" : {
-         "label" : [ {
-            "name" : "host",
-            "value" : "MacBook-Pro-2.home"
-         }, {
-            "name" : "thread",
-            "value" : "3426@MacBook-Pro-2.home.main(1)"
-         } ]
-      }
+   "start" : 1445036354778,
+   "stop" : 1445036375644,
+   "status" : "passed",
+   "_id" : "0319782f-8a1d-4cec-9b25-af7bd765244c",
+   "executionId" : "7a8626ac-7b8d-4761-8bff-776519219d78",
+   "threadName" : "thread_15005794375463",
+   "name" : "createUserPwd",
+   "steps" : {
+      "step" : [ ]
+   },
+   "attachments" : {
+      "attachment" : [ ]
+   },
+   "labels" : {
+      "label" : [ {
+         "name" : "host",
+         "value" : "MacBook-Pro-2.home"
+      }, {
+         "name" : "thread",
+         "value" : "1771@MacBook-Pro-2.home.main(1)"
+      } ]
    }
 }
->>>REQUEST: /testaspect/TestCase/13efdc42-e5f6-4dc1-a350-2cb80b8b0e02
-<<<RESPONSE (201 Created): /testaspect/TestCase/13efdc42-e5f6-4dc1-a350-2cb80b8b0e02
+>>>REQUEST: /testaspect/TestCase/0319782f-8a1d-4cec-9b25-af7bd765244c
+<<<RESPONSE (201 Created): /testaspect/TestCase/0319782f-8a1d-4cec-9b25-af7bd765244c
 running with given plugins: []
 === Starting autoinstallJdk(core.JdkTest)
 Skipping autoinstallJdk(core.JdkTest): Required property not provided: JdkTest.ORACLE_LOGIN
 ]]></system-out>
   </testcase>
-  <testcase name="usePreinstalledJdk" classname="core.JdkTest" time="27.263"/>
+  <testcase name="usePreinstalledJdk" classname="core.JdkTest" time="27.374"/>
 </testsuite>

@@ -1,9 +1,9 @@
 -------------------------------------------------------------------------------
 Test set: core.BuildHistoryTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 180.577 sec <<< FAILURE! - in core.BuildHistoryTest
-slave_build_history(core.BuildHistoryTest)  Time elapsed: 138.688 sec  <<< ERROR!
-org.openqa.selenium.TimeoutException: Timed out after 120 seconds: Next build of restricted_maid is started
+Tests run: 3, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 301.434 sec <<< FAILURE! - in core.BuildHistoryTest
+slave_build_history(core.BuildHistoryTest)  Time elapsed: 138.544 sec  <<< ERROR!
+org.openqa.selenium.TimeoutException: Timed out after 120 seconds: Next build of dominant_investigation is started
 Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
 System info: host: 'MacBook-Pro-2.home', ip: '192.168.1.6', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.5', java.version: '1.8.0_60'
 Driver info: driver.version: unknown
@@ -15,4 +15,18 @@ Driver info: driver.version: unknown
 	at org.jenkinsci.test.acceptance.po.Build.waitUntilStarted(Build.java:66)
 	at org.jenkinsci.test.acceptance.po.Job.startBuild(Job.java:245)
 	at core.BuildHistoryTest.slave_build_history(BuildHistoryTest.java:29)
+
+global_build_history(core.BuildHistoryTest)  Time elapsed: 141.39 sec  <<< ERROR!
+org.openqa.selenium.TimeoutException: Timed out after 120 seconds: Next build of historical_notebook is started
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'MacBook-Pro-2.home', ip: '192.168.1.6', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.5', java.version: '1.8.0_60'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:260)
+	at org.jenkinsci.test.acceptance.junit.Wait.timeoutException(Wait.java:127)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at org.jenkinsci.test.acceptance.junit.Wait.until(Wait.java:72)
+	at org.jenkinsci.test.acceptance.po.Build.waitUntilStarted(Build.java:73)
+	at org.jenkinsci.test.acceptance.po.Build.waitUntilStarted(Build.java:66)
+	at org.jenkinsci.test.acceptance.po.Job.startBuild(Job.java:245)
+	at core.BuildHistoryTest.global_build_history(BuildHistoryTest.java:19)
 

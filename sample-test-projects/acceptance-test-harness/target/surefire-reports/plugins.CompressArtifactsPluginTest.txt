@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: plugins.CompressArtifactsPluginTest
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 73.244 sec <<< FAILURE! - in plugins.CompressArtifactsPluginTest
-access_uncompressed_artifact_after_plugin_was_installed(plugins.CompressArtifactsPluginTest)  Time elapsed: 19.449 sec  <<< ERROR!
+Tests run: 4, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 76.75 sec <<< FAILURE! - in plugins.CompressArtifactsPluginTest
+access_uncompressed_artifact_after_plugin_was_installed(plugins.CompressArtifactsPluginTest)  Time elapsed: 18.513 sec  <<< ERROR!
 java.lang.NoSuchMethodError: org.apache.http.entity.ContentType.create(Ljava/lang/String;[Lorg/apache/http/NameValuePair;)Lorg/apache/http/entity/ContentType;
 	at org.apache.http.entity.mime.MultipartEntityBuilder.buildEntity(MultipartEntityBuilder.java:209)
 	at org.apache.http.entity.mime.MultipartEntityBuilder.build(MultipartEntityBuilder.java:230)
@@ -31,7 +31,7 @@ java.lang.NoSuchMethodError: org.apache.http.entity.ContentType.create(Ljava/lan
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
 
-archive_compressed_artifacts(plugins.CompressArtifactsPluginTest)  Time elapsed: 17.132 sec  <<< ERROR!
+archive_compressed_artifacts(plugins.CompressArtifactsPluginTest)  Time elapsed: 20.61 sec  <<< ERROR!
 java.lang.NoSuchMethodError: org.apache.http.entity.ContentType.create(Ljava/lang/String;[Lorg/apache/http/NameValuePair;)Lorg/apache/http/entity/ContentType;
 	at org.apache.http.entity.mime.MultipartEntityBuilder.buildEntity(MultipartEntityBuilder.java:209)
 	at org.apache.http.entity.mime.MultipartEntityBuilder.build(MultipartEntityBuilder.java:230)
@@ -60,7 +60,7 @@ java.lang.NoSuchMethodError: org.apache.http.entity.ContentType.create(Ljava/lan
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
 
-archiveMavenProject(plugins.CompressArtifactsPluginTest)  Time elapsed: 19.725 sec  <<< ERROR!
+archiveMavenProject(plugins.CompressArtifactsPluginTest)  Time elapsed: 18.795 sec  <<< ERROR!
 java.lang.NoSuchMethodError: org.apache.http.entity.ContentType.create(Ljava/lang/String;[Lorg/apache/http/NameValuePair;)Lorg/apache/http/entity/ContentType;
 	at org.apache.http.entity.mime.MultipartEntityBuilder.buildEntity(MultipartEntityBuilder.java:209)
 	at org.apache.http.entity.mime.MultipartEntityBuilder.build(MultipartEntityBuilder.java:230)
@@ -89,7 +89,7 @@ java.lang.NoSuchMethodError: org.apache.http.entity.ContentType.create(Ljava/lan
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
 
-archiveLargerThan4GInTotal(plugins.CompressArtifactsPluginTest)  Time elapsed: 16.929 sec  <<< ERROR!
+archiveLargerThan4GInTotal(plugins.CompressArtifactsPluginTest)  Time elapsed: 18.783 sec  <<< ERROR!
 java.lang.NoSuchMethodError: org.apache.http.entity.ContentType.create(Ljava/lang/String;[Lorg/apache/http/NameValuePair;)Lorg/apache/http/entity/ContentType;
 	at org.apache.http.entity.mime.MultipartEntityBuilder.buildEntity(MultipartEntityBuilder.java:209)
 	at org.apache.http.entity.mime.MultipartEntityBuilder.build(MultipartEntityBuilder.java:230)

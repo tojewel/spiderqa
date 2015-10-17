@@ -57,6 +57,11 @@ public class SimpleTest {
         fail("This test should be failed");
     }
 
+    @Test
+    public void BrokenTest() {
+        throw new RuntimeException("This is broken test");
+    }
+
     @Test(dependsOnMethods = "failedTest")
     public void skippedByDependencyTest() {
     }

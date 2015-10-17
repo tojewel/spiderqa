@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: plugins.AuditTrailPluginTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 35.045 sec <<< FAILURE! - in plugins.AuditTrailPluginTest
-trail_should_be_empty_after_login(plugins.AuditTrailPluginTest)  Time elapsed: 17.62 sec  <<< ERROR!
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 37.23 sec <<< FAILURE! - in plugins.AuditTrailPluginTest
+trail_should_be_empty_after_login(plugins.AuditTrailPluginTest)  Time elapsed: 18.904 sec  <<< ERROR!
 java.lang.NoSuchMethodError: org.apache.http.entity.ContentType.create(Ljava/lang/String;[Lorg/apache/http/NameValuePair;)Lorg/apache/http/entity/ContentType;
 	at org.apache.http.entity.mime.MultipartEntityBuilder.buildEntity(MultipartEntityBuilder.java:209)
 	at org.apache.http.entity.mime.MultipartEntityBuilder.build(MultipartEntityBuilder.java:230)
@@ -30,7 +30,7 @@ java.lang.NoSuchMethodError: org.apache.http.entity.ContentType.create(Ljava/lan
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
 
-trail_should_contain_logged_events(plugins.AuditTrailPluginTest)  Time elapsed: 17.422 sec  <<< ERROR!
+trail_should_contain_logged_events(plugins.AuditTrailPluginTest)  Time elapsed: 18.294 sec  <<< ERROR!
 java.lang.NoSuchMethodError: org.apache.http.entity.ContentType.create(Ljava/lang/String;[Lorg/apache/http/NameValuePair;)Lorg/apache/http/entity/ContentType;
 	at org.apache.http.entity.mime.MultipartEntityBuilder.buildEntity(MultipartEntityBuilder.java:209)
 	at org.apache.http.entity.mime.MultipartEntityBuilder.build(MultipartEntityBuilder.java:230)

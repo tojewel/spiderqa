@@ -63,23 +63,23 @@
   </properties>
   <testcase name="jira_ticket_gets_updated_with_a_build_link" classname="plugins.JiraPluginTest" time="0">
     <skipped/>
-    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@7a62b103[
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@66ad5b33[
   name=checkHardwareId
   title=<null>
   description=<null>
-  failure=ru.yandex.qatools.allure.model.Failure@3e438513
-  start=1444528484362
-  stop=1444528484374
+  failure=ru.yandex.qatools.allure.model.Failure@2c4748af
+  start=1445038896567
+  stop=1445038896570
   status=CANCELED
   severity=<null>
   steps=[]
   attachments=[]
-  labels=[ru.yandex.qatools.allure.model.Label@72bd5d84, ru.yandex.qatools.allure.model.Label@372535a8]
+  labels=[ru.yandex.qatools.allure.model.Label@7b11030a, ru.yandex.qatools.allure.model.Label@2eab7ef5]
   parameters=<null>
 ]
 testCaseResult={
-   "start" : 1444528484362,
-   "stop" : 1444528484374,
+   "start" : 1445038896567,
+   "stop" : 1445038896570,
    "status" : "canceled",
    "name" : "checkHardwareId",
    "failure" : {
@@ -98,48 +98,57 @@ testCaseResult={
          "value" : "MacBook-Pro-2.home"
       }, {
          "name" : "thread",
-         "value" : "3426@MacBook-Pro-2.home.main(1)"
+         "value" : "1771@MacBook-Pro-2.home.main(1)"
       } ]
    }
 }
-testCase=ru.yandex.qatools.allure.model.TestCase@58a060e6[
-  _id=2d81ed3e-6271-42e1-81a6-323e60fbe69c
-  executionId=8e6dd7ca-e27b-4013-bda8-bc2788640ddd
-  threadName=dc7331de-b740-4ba3-9907-ee3762987799
-  result=ru.yandex.qatools.allure.model.TestCaseResult@7a62b103
+testCase=ru.yandex.qatools.allure.model.TestCase@22d3ccd0[
+  _id=17fd852d-586b-4080-a1a1-16af30cbf94f
+  executionId=7a8626ac-7b8d-4761-8bff-776519219d78
+  threadName=thread_15005794375463
+  name=checkHardwareId
+  title=<null>
+  description=<null>
+  failure=ru.yandex.qatools.allure.model.Failure@2c4748af
+  start=1445038896567
+  stop=1445038896570
+  status=CANCELED
+  severity=<null>
+  steps=[]
+  attachments=[]
+  labels=[ru.yandex.qatools.allure.model.Label@7b11030a, ru.yandex.qatools.allure.model.Label@2eab7ef5]
+  parameters=<null>
 ]
 testCase={
-   "_id" : "2d81ed3e-6271-42e1-81a6-323e60fbe69c",
-   "executionId" : "8e6dd7ca-e27b-4013-bda8-bc2788640ddd",
-   "threadName" : "dc7331de-b740-4ba3-9907-ee3762987799",
-   "result" : {
-      "start" : 1444528484362,
-      "stop" : 1444528484374,
-      "status" : "canceled",
-      "name" : "checkHardwareId",
-      "failure" : {
-         "message" : "AssumptionViolatedException: Required property not provided: JCloudsPluginTest.HARDWARE_ID",
-         "stack-trace" : "org.junit.internal.AssumptionViolatedException: Required property not provided: JCloudsPluginTest.HARDWARE_ID\n\tat org.jenkinsci.test.acceptance.junit.TestActivation$RuleImpl$1.check(TestActivation.java:84)\n\tat org.jenkinsci.test.acceptance.junit.TestActivation$RuleImpl$1.evaluate(TestActivation.java:70)\n\tat org.jenkinsci.test.acceptance.junit.JenkinsAcceptanceTestRule$1.evaluate(JenkinsAcceptanceTestRule.java:55)\n\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n"
-      },
-      "steps" : {
-         "step" : [ ]
-      },
-      "attachments" : {
-         "attachment" : [ ]
-      },
-      "labels" : {
-         "label" : [ {
-            "name" : "host",
-            "value" : "MacBook-Pro-2.home"
-         }, {
-            "name" : "thread",
-            "value" : "3426@MacBook-Pro-2.home.main(1)"
-         } ]
-      }
+   "start" : 1445038896567,
+   "stop" : 1445038896570,
+   "status" : "canceled",
+   "_id" : "17fd852d-586b-4080-a1a1-16af30cbf94f",
+   "executionId" : "7a8626ac-7b8d-4761-8bff-776519219d78",
+   "threadName" : "thread_15005794375463",
+   "name" : "checkHardwareId",
+   "failure" : {
+      "message" : "AssumptionViolatedException: Required property not provided: JCloudsPluginTest.HARDWARE_ID",
+      "stack-trace" : "org.junit.internal.AssumptionViolatedException: Required property not provided: JCloudsPluginTest.HARDWARE_ID\n\tat org.jenkinsci.test.acceptance.junit.TestActivation$RuleImpl$1.check(TestActivation.java:84)\n\tat org.jenkinsci.test.acceptance.junit.TestActivation$RuleImpl$1.evaluate(TestActivation.java:70)\n\tat org.jenkinsci.test.acceptance.junit.JenkinsAcceptanceTestRule$1.evaluate(JenkinsAcceptanceTestRule.java:55)\n\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n"
+   },
+   "steps" : {
+      "step" : [ ]
+   },
+   "attachments" : {
+      "attachment" : [ ]
+   },
+   "labels" : {
+      "label" : [ {
+         "name" : "host",
+         "value" : "MacBook-Pro-2.home"
+      }, {
+         "name" : "thread",
+         "value" : "1771@MacBook-Pro-2.home.main(1)"
+      } ]
    }
 }
->>>REQUEST: /testaspect/TestCase/2d81ed3e-6271-42e1-81a6-323e60fbe69c
-<<<RESPONSE (201 Created): /testaspect/TestCase/2d81ed3e-6271-42e1-81a6-323e60fbe69c
+>>>REQUEST: /testaspect/TestCase/17fd852d-586b-4080-a1a1-16af30cbf94f
+<<<RESPONSE (201 Created): /testaspect/TestCase/17fd852d-586b-4080-a1a1-16af30cbf94f
 running with given plugins: []
 === Starting jira_ticket_gets_updated_with_a_build_link(plugins.JiraPluginTest)
 Skipping jira_ticket_gets_updated_with_a_build_link(plugins.JiraPluginTest): Docker is needed for the test

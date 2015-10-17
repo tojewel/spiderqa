@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: core.UninstallPluginTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 17.799 sec <<< FAILURE! - in core.UninstallPluginTest
-gerrit_uninstall_plugin(core.UninstallPluginTest)  Time elapsed: 17.792 sec  <<< ERROR!
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 19.448 sec <<< FAILURE! - in core.UninstallPluginTest
+gerrit_uninstall_plugin(core.UninstallPluginTest)  Time elapsed: 19.421 sec  <<< ERROR!
 java.lang.NoSuchMethodError: org.apache.http.entity.ContentType.create(Ljava/lang/String;[Lorg/apache/http/NameValuePair;)Lorg/apache/http/entity/ContentType;
 	at org.apache.http.entity.mime.MultipartEntityBuilder.buildEntity(MultipartEntityBuilder.java:209)
 	at org.apache.http.entity.mime.MultipartEntityBuilder.build(MultipartEntityBuilder.java:230)

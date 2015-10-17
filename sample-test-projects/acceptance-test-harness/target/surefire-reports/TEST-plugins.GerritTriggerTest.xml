@@ -63,23 +63,23 @@
   </properties>
   <testcase name="gerrit_trigger_build_when_draft_published" classname="plugins.GerritTriggerTest" time="0">
     <skipped/>
-    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@6a308b5c[
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@747768e8[
   name=publish_multiple_servers
   title=<null>
   description=<null>
-  failure=ru.yandex.qatools.allure.model.Failure@5a0ada8a
-  start=1444528252476
-  stop=1444528252476
+  failure=ru.yandex.qatools.allure.model.Failure@685c8929
+  start=1445038649946
+  stop=1445038649946
   status=PENDING
   severity=<null>
   steps=[]
   attachments=[]
-  labels=[ru.yandex.qatools.allure.model.Label@48a3ca1d, ru.yandex.qatools.allure.model.Label@2ec23ac6]
+  labels=[ru.yandex.qatools.allure.model.Label@16689be4, ru.yandex.qatools.allure.model.Label@6c5152e4]
   parameters=<null>
 ]
 testCaseResult={
-   "start" : 1444528252476,
-   "stop" : 1444528252476,
+   "start" : 1445038649946,
+   "stop" : 1445038649946,
    "status" : "pending",
    "name" : "publish_multiple_servers",
    "failure" : {
@@ -98,70 +98,79 @@ testCaseResult={
          "value" : "MacBook-Pro-2.home"
       }, {
          "name" : "thread",
-         "value" : "3426@MacBook-Pro-2.home.main(1)"
+         "value" : "1771@MacBook-Pro-2.home.main(1)"
       } ]
    }
 }
-testCase=ru.yandex.qatools.allure.model.TestCase@40463e29[
-  _id=fa2de20b-ae42-4533-a68c-3654d986219b
-  executionId=8e6dd7ca-e27b-4013-bda8-bc2788640ddd
-  threadName=dc7331de-b740-4ba3-9907-ee3762987799
-  result=ru.yandex.qatools.allure.model.TestCaseResult@6a308b5c
+testCase=ru.yandex.qatools.allure.model.TestCase@232e47ae[
+  _id=4474e0a8-257f-4277-be0a-1652de4dd3df
+  executionId=7a8626ac-7b8d-4761-8bff-776519219d78
+  threadName=thread_15005794375463
+  name=publish_multiple_servers
+  title=<null>
+  description=<null>
+  failure=ru.yandex.qatools.allure.model.Failure@685c8929
+  start=1445038649946
+  stop=1445038649946
+  status=PENDING
+  severity=<null>
+  steps=[]
+  attachments=[]
+  labels=[ru.yandex.qatools.allure.model.Label@16689be4, ru.yandex.qatools.allure.model.Label@6c5152e4]
+  parameters=<null>
 ]
 testCase={
-   "_id" : "fa2de20b-ae42-4533-a68c-3654d986219b",
-   "executionId" : "8e6dd7ca-e27b-4013-bda8-bc2788640ddd",
-   "threadName" : "dc7331de-b740-4ba3-9907-ee3762987799",
-   "result" : {
-      "start" : 1444528252476,
-      "stop" : 1444528252476,
-      "status" : "pending",
-      "name" : "publish_multiple_servers",
-      "failure" : {
-         "message" : "Test ignored (without reason)!",
-         "stack-trace" : "There are no stack trace"
-      },
-      "steps" : {
-         "step" : [ ]
-      },
-      "attachments" : {
-         "attachment" : [ ]
-      },
-      "labels" : {
-         "label" : [ {
-            "name" : "host",
-            "value" : "MacBook-Pro-2.home"
-         }, {
-            "name" : "thread",
-            "value" : "3426@MacBook-Pro-2.home.main(1)"
-         } ]
-      }
+   "start" : 1445038649946,
+   "stop" : 1445038649946,
+   "status" : "pending",
+   "_id" : "4474e0a8-257f-4277-be0a-1652de4dd3df",
+   "executionId" : "7a8626ac-7b8d-4761-8bff-776519219d78",
+   "threadName" : "thread_15005794375463",
+   "name" : "publish_multiple_servers",
+   "failure" : {
+      "message" : "Test ignored (without reason)!",
+      "stack-trace" : "There are no stack trace"
+   },
+   "steps" : {
+      "step" : [ ]
+   },
+   "attachments" : {
+      "attachment" : [ ]
+   },
+   "labels" : {
+      "label" : [ {
+         "name" : "host",
+         "value" : "MacBook-Pro-2.home"
+      }, {
+         "name" : "thread",
+         "value" : "1771@MacBook-Pro-2.home.main(1)"
+      } ]
    }
 }
->>>REQUEST: /testaspect/TestCase/fa2de20b-ae42-4533-a68c-3654d986219b
-<<<RESPONSE (201 Created): /testaspect/TestCase/cb3ef44b-95a8-4c42-888d-5ec70c1ebeae
-<<<RESPONSE (201 Created): /testaspect/TestCase/fa2de20b-ae42-4533-a68c-3654d986219b
+<<<RESPONSE (201 Created): /testaspect/TestCase/2a0d8260-6258-4554-a7c5-6d4e7cb85472
+>>>REQUEST: /testaspect/TestCase/4474e0a8-257f-4277-be0a-1652de4dd3df
+<<<RESPONSE (201 Created): /testaspect/TestCase/4474e0a8-257f-4277-be0a-1652de4dd3df
 ]]></system-out>
   </testcase>
   <testcase name="build_is_triggered_after_ref_is_updated" classname="plugins.GerritTriggerTest" time="0">
     <skipped/>
-    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@62c413d[
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@19d2abd4[
   name=gerrit_trigger_build_when_draft_published
   title=<null>
   description=<null>
-  failure=ru.yandex.qatools.allure.model.Failure@16b8c624
-  start=1444528252479
-  stop=1444528252480
+  failure=ru.yandex.qatools.allure.model.Failure@32daf627
+  start=1445038649953
+  stop=1445038649954
   status=CANCELED
   severity=<null>
   steps=[]
   attachments=[]
-  labels=[ru.yandex.qatools.allure.model.Label@669d32af, ru.yandex.qatools.allure.model.Label@1cbe0735]
+  labels=[ru.yandex.qatools.allure.model.Label@10b0cd9f, ru.yandex.qatools.allure.model.Label@1363bd22]
   parameters=<null>
 ]
 testCaseResult={
-   "start" : 1444528252479,
-   "stop" : 1444528252480,
+   "start" : 1445038649953,
+   "stop" : 1445038649954,
    "status" : "canceled",
    "name" : "gerrit_trigger_build_when_draft_published",
    "failure" : {
@@ -180,68 +189,77 @@ testCaseResult={
          "value" : "MacBook-Pro-2.home"
       }, {
          "name" : "thread",
-         "value" : "3426@MacBook-Pro-2.home.main(1)"
+         "value" : "1771@MacBook-Pro-2.home.main(1)"
       } ]
    }
 }
-testCase=ru.yandex.qatools.allure.model.TestCase@787f8836[
-  _id=45fff60d-b84d-48aa-9a84-75471615444f
-  executionId=8e6dd7ca-e27b-4013-bda8-bc2788640ddd
-  threadName=dc7331de-b740-4ba3-9907-ee3762987799
-  result=ru.yandex.qatools.allure.model.TestCaseResult@62c413d
-]
-testCase={
-   "_id" : "45fff60d-b84d-48aa-9a84-75471615444f",
-   "executionId" : "8e6dd7ca-e27b-4013-bda8-bc2788640ddd",
-   "threadName" : "dc7331de-b740-4ba3-9907-ee3762987799",
-   "result" : {
-      "start" : 1444528252479,
-      "stop" : 1444528252480,
-      "status" : "canceled",
-      "name" : "gerrit_trigger_build_when_draft_published",
-      "failure" : {
-         "message" : "AssumptionViolatedException: got: <[null]>, expected: every item is not null",
-         "stack-trace" : "org.junit.internal.AssumptionViolatedException: got: <[null]>, expected: every item is not null\n\tat org.junit.Assume.assumeThat(Assume.java:95)\n\tat org.junit.Assume.assumeNotNull(Assume.java:73)\n\tat org.jenkinsci.test.acceptance.plugins.gerrit_trigger.GerritTriggerEnv.getEnv(GerritTriggerEnv.java:81)\n\tat org.jenkinsci.test.acceptance.plugins.gerrit_trigger.GerritTriggerEnv.<init>(GerritTriggerEnv.java:44)\n\tat plugins.GerritTriggerTest.<init>(GerritTriggerTest.java:74)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:422)\n\tat org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:195)\n\tat org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:244)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:241)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n"
-      },
-      "steps" : {
-         "step" : [ ]
-      },
-      "attachments" : {
-         "attachment" : [ ]
-      },
-      "labels" : {
-         "label" : [ {
-            "name" : "host",
-            "value" : "MacBook-Pro-2.home"
-         }, {
-            "name" : "thread",
-            "value" : "3426@MacBook-Pro-2.home.main(1)"
-         } ]
-      }
-   }
-}
->>>REQUEST: /testaspect/TestCase/45fff60d-b84d-48aa-9a84-75471615444f
-]]></system-out>
-  </testcase>
-  <testcase name="build_is_triggered_after_comment_is_added" classname="plugins.GerritTriggerTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@861d374[
-  name=build_is_triggered_after_ref_is_updated
+testCase=ru.yandex.qatools.allure.model.TestCase@1f632891[
+  _id=911d6df6-806c-4bb6-bed9-d8e59f02d159
+  executionId=7a8626ac-7b8d-4761-8bff-776519219d78
+  threadName=thread_15005794375463
+  name=gerrit_trigger_build_when_draft_published
   title=<null>
   description=<null>
-  failure=ru.yandex.qatools.allure.model.Failure@194b01c2
-  start=1444528252481
-  stop=1444528252481
+  failure=ru.yandex.qatools.allure.model.Failure@32daf627
+  start=1445038649953
+  stop=1445038649954
   status=CANCELED
   severity=<null>
   steps=[]
   attachments=[]
-  labels=[ru.yandex.qatools.allure.model.Label@64abda64, ru.yandex.qatools.allure.model.Label@e4290cf]
+  labels=[ru.yandex.qatools.allure.model.Label@10b0cd9f, ru.yandex.qatools.allure.model.Label@1363bd22]
+  parameters=<null>
+]
+testCase={
+   "start" : 1445038649953,
+   "stop" : 1445038649954,
+   "status" : "canceled",
+   "_id" : "911d6df6-806c-4bb6-bed9-d8e59f02d159",
+   "executionId" : "7a8626ac-7b8d-4761-8bff-776519219d78",
+   "threadName" : "thread_15005794375463",
+   "name" : "gerrit_trigger_build_when_draft_published",
+   "failure" : {
+      "message" : "AssumptionViolatedException: got: <[null]>, expected: every item is not null",
+      "stack-trace" : "org.junit.internal.AssumptionViolatedException: got: <[null]>, expected: every item is not null\n\tat org.junit.Assume.assumeThat(Assume.java:95)\n\tat org.junit.Assume.assumeNotNull(Assume.java:73)\n\tat org.jenkinsci.test.acceptance.plugins.gerrit_trigger.GerritTriggerEnv.getEnv(GerritTriggerEnv.java:81)\n\tat org.jenkinsci.test.acceptance.plugins.gerrit_trigger.GerritTriggerEnv.<init>(GerritTriggerEnv.java:44)\n\tat plugins.GerritTriggerTest.<init>(GerritTriggerTest.java:74)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:422)\n\tat org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:195)\n\tat org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:244)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:241)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n"
+   },
+   "steps" : {
+      "step" : [ ]
+   },
+   "attachments" : {
+      "attachment" : [ ]
+   },
+   "labels" : {
+      "label" : [ {
+         "name" : "host",
+         "value" : "MacBook-Pro-2.home"
+      }, {
+         "name" : "thread",
+         "value" : "1771@MacBook-Pro-2.home.main(1)"
+      } ]
+   }
+}
+>>>REQUEST: /testaspect/TestCase/911d6df6-806c-4bb6-bed9-d8e59f02d159
+]]></system-out>
+  </testcase>
+  <testcase name="build_is_triggered_after_comment_is_added" classname="plugins.GerritTriggerTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@364b6dbe[
+  name=build_is_triggered_after_ref_is_updated
+  title=<null>
+  description=<null>
+  failure=ru.yandex.qatools.allure.model.Failure@64e4c6d2
+  start=1445038649956
+  stop=1445038649957
+  status=CANCELED
+  severity=<null>
+  steps=[]
+  attachments=[]
+  labels=[ru.yandex.qatools.allure.model.Label@f8cd778, ru.yandex.qatools.allure.model.Label@556917dd]
   parameters=<null>
 ]
 testCaseResult={
-   "start" : 1444528252481,
-   "stop" : 1444528252481,
+   "start" : 1445038649956,
+   "stop" : 1445038649957,
    "status" : "canceled",
    "name" : "build_is_triggered_after_ref_is_updated",
    "failure" : {
@@ -260,68 +278,78 @@ testCaseResult={
          "value" : "MacBook-Pro-2.home"
       }, {
          "name" : "thread",
-         "value" : "3426@MacBook-Pro-2.home.main(1)"
+         "value" : "1771@MacBook-Pro-2.home.main(1)"
       } ]
    }
 }
-testCase=ru.yandex.qatools.allure.model.TestCase@83e0800[
-  _id=bfe84146-5adf-419a-9c3c-483a0a3c65aa
-  executionId=8e6dd7ca-e27b-4013-bda8-bc2788640ddd
-  threadName=dc7331de-b740-4ba3-9907-ee3762987799
-  result=ru.yandex.qatools.allure.model.TestCaseResult@861d374
-]
-testCase={
-   "_id" : "bfe84146-5adf-419a-9c3c-483a0a3c65aa",
-   "executionId" : "8e6dd7ca-e27b-4013-bda8-bc2788640ddd",
-   "threadName" : "dc7331de-b740-4ba3-9907-ee3762987799",
-   "result" : {
-      "start" : 1444528252481,
-      "stop" : 1444528252481,
-      "status" : "canceled",
-      "name" : "build_is_triggered_after_ref_is_updated",
-      "failure" : {
-         "message" : "AssumptionViolatedException: got: <[null]>, expected: every item is not null",
-         "stack-trace" : "org.junit.internal.AssumptionViolatedException: got: <[null]>, expected: every item is not null\n\tat org.junit.Assume.assumeThat(Assume.java:95)\n\tat org.junit.Assume.assumeNotNull(Assume.java:73)\n\tat org.jenkinsci.test.acceptance.plugins.gerrit_trigger.GerritTriggerEnv.getEnv(GerritTriggerEnv.java:81)\n\tat org.jenkinsci.test.acceptance.plugins.gerrit_trigger.GerritTriggerEnv.<init>(GerritTriggerEnv.java:44)\n\tat plugins.GerritTriggerTest.<init>(GerritTriggerTest.java:74)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:422)\n\tat org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:195)\n\tat org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:244)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:241)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n"
-      },
-      "steps" : {
-         "step" : [ ]
-      },
-      "attachments" : {
-         "attachment" : [ ]
-      },
-      "labels" : {
-         "label" : [ {
-            "name" : "host",
-            "value" : "MacBook-Pro-2.home"
-         }, {
-            "name" : "thread",
-            "value" : "3426@MacBook-Pro-2.home.main(1)"
-         } ]
-      }
-   }
-}
->>>REQUEST: /testaspect/TestCase/bfe84146-5adf-419a-9c3c-483a0a3c65aa
-]]></system-out>
-  </testcase>
-  <testcase name="gerrit_trigger_build_when_changes_merged" classname="plugins.GerritTriggerTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@33d5ae6[
-  name=build_is_triggered_after_comment_is_added
+testCase=ru.yandex.qatools.allure.model.TestCase@38a2b653[
+  _id=1fe94af8-43a7-446d-b546-17df797f4123
+  executionId=7a8626ac-7b8d-4761-8bff-776519219d78
+  threadName=thread_15005794375463
+  name=build_is_triggered_after_ref_is_updated
   title=<null>
   description=<null>
-  failure=ru.yandex.qatools.allure.model.Failure@32994f1b
-  start=1444528252482
-  stop=1444528252483
+  failure=ru.yandex.qatools.allure.model.Failure@64e4c6d2
+  start=1445038649956
+  stop=1445038649957
   status=CANCELED
   severity=<null>
   steps=[]
   attachments=[]
-  labels=[ru.yandex.qatools.allure.model.Label@1790f1dd, ru.yandex.qatools.allure.model.Label@4b3222f6]
+  labels=[ru.yandex.qatools.allure.model.Label@f8cd778, ru.yandex.qatools.allure.model.Label@556917dd]
+  parameters=<null>
+]
+testCase={
+   "start" : 1445038649956,
+   "stop" : 1445038649957,
+   "status" : "canceled",
+   "_id" : "1fe94af8-43a7-446d-b546-17df797f4123",
+   "executionId" : "7a8626ac-7b8d-4761-8bff-776519219d78",
+   "threadName" : "thread_15005794375463",
+   "name" : "build_is_triggered_after_ref_is_updated",
+   "failure" : {
+      "message" : "AssumptionViolatedException: got: <[null]>, expected: every item is not null",
+      "stack-trace" : "org.junit.internal.AssumptionViolatedException: got: <[null]>, expected: every item is not null\n\tat org.junit.Assume.assumeThat(Assume.java:95)\n\tat org.junit.Assume.assumeNotNull(Assume.java:73)\n\tat org.jenkinsci.test.acceptance.plugins.gerrit_trigger.GerritTriggerEnv.getEnv(GerritTriggerEnv.java:81)\n\tat org.jenkinsci.test.acceptance.plugins.gerrit_trigger.GerritTriggerEnv.<init>(GerritTriggerEnv.java:44)\n\tat plugins.GerritTriggerTest.<init>(GerritTriggerTest.java:74)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:422)\n\tat org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:195)\n\tat org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:244)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:241)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n"
+   },
+   "steps" : {
+      "step" : [ ]
+   },
+   "attachments" : {
+      "attachment" : [ ]
+   },
+   "labels" : {
+      "label" : [ {
+         "name" : "host",
+         "value" : "MacBook-Pro-2.home"
+      }, {
+         "name" : "thread",
+         "value" : "1771@MacBook-Pro-2.home.main(1)"
+      } ]
+   }
+}
+<<<RESPONSE (201 Created): /testaspect/TestCase/911d6df6-806c-4bb6-bed9-d8e59f02d159
+>>>REQUEST: /testaspect/TestCase/1fe94af8-43a7-446d-b546-17df797f4123
+]]></system-out>
+  </testcase>
+  <testcase name="gerrit_trigger_build_when_changes_merged" classname="plugins.GerritTriggerTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@523577d6[
+  name=build_is_triggered_after_comment_is_added
+  title=<null>
+  description=<null>
+  failure=ru.yandex.qatools.allure.model.Failure@4f1d6a8e
+  start=1445038649961
+  stop=1445038649961
+  status=CANCELED
+  severity=<null>
+  steps=[]
+  attachments=[]
+  labels=[ru.yandex.qatools.allure.model.Label@c156ece, ru.yandex.qatools.allure.model.Label@705935a7]
   parameters=<null>
 ]
 testCaseResult={
-   "start" : 1444528252482,
-   "stop" : 1444528252483,
+   "start" : 1445038649961,
+   "stop" : 1445038649961,
    "status" : "canceled",
    "name" : "build_is_triggered_after_comment_is_added",
    "failure" : {
@@ -340,69 +368,79 @@ testCaseResult={
          "value" : "MacBook-Pro-2.home"
       }, {
          "name" : "thread",
-         "value" : "3426@MacBook-Pro-2.home.main(1)"
+         "value" : "1771@MacBook-Pro-2.home.main(1)"
       } ]
    }
 }
-testCase=ru.yandex.qatools.allure.model.TestCase@2231bb1c[
-  _id=15d5a5ce-fff2-419a-822c-b9442d1c6861
-  executionId=8e6dd7ca-e27b-4013-bda8-bc2788640ddd
-  threadName=dc7331de-b740-4ba3-9907-ee3762987799
-  result=ru.yandex.qatools.allure.model.TestCaseResult@33d5ae6
-]
-testCase={
-   "_id" : "15d5a5ce-fff2-419a-822c-b9442d1c6861",
-   "executionId" : "8e6dd7ca-e27b-4013-bda8-bc2788640ddd",
-   "threadName" : "dc7331de-b740-4ba3-9907-ee3762987799",
-   "result" : {
-      "start" : 1444528252482,
-      "stop" : 1444528252483,
-      "status" : "canceled",
-      "name" : "build_is_triggered_after_comment_is_added",
-      "failure" : {
-         "message" : "AssumptionViolatedException: got: <[null]>, expected: every item is not null",
-         "stack-trace" : "org.junit.internal.AssumptionViolatedException: got: <[null]>, expected: every item is not null\n\tat org.junit.Assume.assumeThat(Assume.java:95)\n\tat org.junit.Assume.assumeNotNull(Assume.java:73)\n\tat org.jenkinsci.test.acceptance.plugins.gerrit_trigger.GerritTriggerEnv.getEnv(GerritTriggerEnv.java:81)\n\tat org.jenkinsci.test.acceptance.plugins.gerrit_trigger.GerritTriggerEnv.<init>(GerritTriggerEnv.java:44)\n\tat plugins.GerritTriggerTest.<init>(GerritTriggerTest.java:74)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:422)\n\tat org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:195)\n\tat org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:244)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:241)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n"
-      },
-      "steps" : {
-         "step" : [ ]
-      },
-      "attachments" : {
-         "attachment" : [ ]
-      },
-      "labels" : {
-         "label" : [ {
-            "name" : "host",
-            "value" : "MacBook-Pro-2.home"
-         }, {
-            "name" : "thread",
-            "value" : "3426@MacBook-Pro-2.home.main(1)"
-         } ]
-      }
-   }
-}
->>>REQUEST: /testaspect/TestCase/15d5a5ce-fff2-419a-822c-b9442d1c6861
-]]></system-out>
-  </testcase>
-  <testcase name="gerrit_has_review_flags_checked_after_jenkins_set_them" classname="plugins.GerritTriggerTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@4cbc34f3[
-  name=gerrit_trigger_build_when_changes_merged
+testCase=ru.yandex.qatools.allure.model.TestCase@92b77bd[
+  _id=735b2ff0-2ed2-44d6-a9ca-7b5ebe505c30
+  executionId=7a8626ac-7b8d-4761-8bff-776519219d78
+  threadName=thread_15005794375463
+  name=build_is_triggered_after_comment_is_added
   title=<null>
   description=<null>
-  failure=ru.yandex.qatools.allure.model.Failure@3eeeb36b
-  start=1444528252484
-  stop=1444528252484
+  failure=ru.yandex.qatools.allure.model.Failure@4f1d6a8e
+  start=1445038649961
+  stop=1445038649961
   status=CANCELED
   severity=<null>
   steps=[]
   attachments=[]
-  labels=[ru.yandex.qatools.allure.model.Label@5d22cf95, ru.yandex.qatools.allure.model.Label@41bf4c6e]
+  labels=[ru.yandex.qatools.allure.model.Label@c156ece, ru.yandex.qatools.allure.model.Label@705935a7]
   parameters=<null>
 ]
-<<<RESPONSE (201 Created): /testaspect/TestCase/45fff60d-b84d-48aa-9a84-75471615444f
+testCase={
+   "start" : 1445038649961,
+   "stop" : 1445038649961,
+   "status" : "canceled",
+   "_id" : "735b2ff0-2ed2-44d6-a9ca-7b5ebe505c30",
+   "executionId" : "7a8626ac-7b8d-4761-8bff-776519219d78",
+   "threadName" : "thread_15005794375463",
+   "name" : "build_is_triggered_after_comment_is_added",
+   "failure" : {
+      "message" : "AssumptionViolatedException: got: <[null]>, expected: every item is not null",
+      "stack-trace" : "org.junit.internal.AssumptionViolatedException: got: <[null]>, expected: every item is not null\n\tat org.junit.Assume.assumeThat(Assume.java:95)\n\tat org.junit.Assume.assumeNotNull(Assume.java:73)\n\tat org.jenkinsci.test.acceptance.plugins.gerrit_trigger.GerritTriggerEnv.getEnv(GerritTriggerEnv.java:81)\n\tat org.jenkinsci.test.acceptance.plugins.gerrit_trigger.GerritTriggerEnv.<init>(GerritTriggerEnv.java:44)\n\tat plugins.GerritTriggerTest.<init>(GerritTriggerTest.java:74)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:422)\n\tat org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:195)\n\tat org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:244)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:241)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n"
+   },
+   "steps" : {
+      "step" : [ ]
+   },
+   "attachments" : {
+      "attachment" : [ ]
+   },
+   "labels" : {
+      "label" : [ {
+         "name" : "host",
+         "value" : "MacBook-Pro-2.home"
+      }, {
+         "name" : "thread",
+         "value" : "1771@MacBook-Pro-2.home.main(1)"
+      } ]
+   }
+}
+<<<RESPONSE (201 Created): /testaspect/TestCase/1fe94af8-43a7-446d-b546-17df797f4123
+>>>REQUEST: /testaspect/TestCase/735b2ff0-2ed2-44d6-a9ca-7b5ebe505c30
+]]></system-out>
+  </testcase>
+  <testcase name="gerrit_has_review_flags_checked_after_jenkins_set_them" classname="plugins.GerritTriggerTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[<<<RESPONSE (201 Created): /testaspect/TestCase/735b2ff0-2ed2-44d6-a9ca-7b5ebe505c30
+testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@26e185e2[
+  name=gerrit_trigger_build_when_changes_merged
+  title=<null>
+  description=<null>
+  failure=ru.yandex.qatools.allure.model.Failure@37cf7eb
+  start=1445038649966
+  stop=1445038649969
+  status=CANCELED
+  severity=<null>
+  steps=[]
+  attachments=[]
+  labels=[ru.yandex.qatools.allure.model.Label@1b885d1, ru.yandex.qatools.allure.model.Label@35fa8552]
+  parameters=<null>
+]
 testCaseResult={
-   "start" : 1444528252484,
-   "stop" : 1444528252484,
+   "start" : 1445038649966,
+   "stop" : 1445038649969,
    "status" : "canceled",
    "name" : "gerrit_trigger_build_when_changes_merged",
    "failure" : {
@@ -421,47 +459,56 @@ testCaseResult={
          "value" : "MacBook-Pro-2.home"
       }, {
          "name" : "thread",
-         "value" : "3426@MacBook-Pro-2.home.main(1)"
+         "value" : "1771@MacBook-Pro-2.home.main(1)"
       } ]
    }
 }
-testCase=ru.yandex.qatools.allure.model.TestCase@6c09e306[
-  _id=e572e346-c3aa-4a63-bf6b-342e149ca318
-  executionId=8e6dd7ca-e27b-4013-bda8-bc2788640ddd
-  threadName=dc7331de-b740-4ba3-9907-ee3762987799
-  result=ru.yandex.qatools.allure.model.TestCaseResult@4cbc34f3
+testCase=ru.yandex.qatools.allure.model.TestCase@1f1ed89a[
+  _id=15b92c13-e341-45e3-a640-6356e031cda0
+  executionId=7a8626ac-7b8d-4761-8bff-776519219d78
+  threadName=thread_15005794375463
+  name=gerrit_trigger_build_when_changes_merged
+  title=<null>
+  description=<null>
+  failure=ru.yandex.qatools.allure.model.Failure@37cf7eb
+  start=1445038649966
+  stop=1445038649969
+  status=CANCELED
+  severity=<null>
+  steps=[]
+  attachments=[]
+  labels=[ru.yandex.qatools.allure.model.Label@1b885d1, ru.yandex.qatools.allure.model.Label@35fa8552]
+  parameters=<null>
 ]
 testCase={
-   "_id" : "e572e346-c3aa-4a63-bf6b-342e149ca318",
-   "executionId" : "8e6dd7ca-e27b-4013-bda8-bc2788640ddd",
-   "threadName" : "dc7331de-b740-4ba3-9907-ee3762987799",
-   "result" : {
-      "start" : 1444528252484,
-      "stop" : 1444528252484,
-      "status" : "canceled",
-      "name" : "gerrit_trigger_build_when_changes_merged",
-      "failure" : {
-         "message" : "AssumptionViolatedException: got: <[null]>, expected: every item is not null",
-         "stack-trace" : "org.junit.internal.AssumptionViolatedException: got: <[null]>, expected: every item is not null\n\tat org.junit.Assume.assumeThat(Assume.java:95)\n\tat org.junit.Assume.assumeNotNull(Assume.java:73)\n\tat org.jenkinsci.test.acceptance.plugins.gerrit_trigger.GerritTriggerEnv.getEnv(GerritTriggerEnv.java:81)\n\tat org.jenkinsci.test.acceptance.plugins.gerrit_trigger.GerritTriggerEnv.<init>(GerritTriggerEnv.java:44)\n\tat plugins.GerritTriggerTest.<init>(GerritTriggerTest.java:74)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:422)\n\tat org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:195)\n\tat org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:244)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:241)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n"
-      },
-      "steps" : {
-         "step" : [ ]
-      },
-      "attachments" : {
-         "attachment" : [ ]
-      },
-      "labels" : {
-         "label" : [ {
-            "name" : "host",
-            "value" : "MacBook-Pro-2.home"
-         }, {
-            "name" : "thread",
-            "value" : "3426@MacBook-Pro-2.home.main(1)"
-         } ]
-      }
+   "start" : 1445038649966,
+   "stop" : 1445038649969,
+   "status" : "canceled",
+   "_id" : "15b92c13-e341-45e3-a640-6356e031cda0",
+   "executionId" : "7a8626ac-7b8d-4761-8bff-776519219d78",
+   "threadName" : "thread_15005794375463",
+   "name" : "gerrit_trigger_build_when_changes_merged",
+   "failure" : {
+      "message" : "AssumptionViolatedException: got: <[null]>, expected: every item is not null",
+      "stack-trace" : "org.junit.internal.AssumptionViolatedException: got: <[null]>, expected: every item is not null\n\tat org.junit.Assume.assumeThat(Assume.java:95)\n\tat org.junit.Assume.assumeNotNull(Assume.java:73)\n\tat org.jenkinsci.test.acceptance.plugins.gerrit_trigger.GerritTriggerEnv.getEnv(GerritTriggerEnv.java:81)\n\tat org.jenkinsci.test.acceptance.plugins.gerrit_trigger.GerritTriggerEnv.<init>(GerritTriggerEnv.java:44)\n\tat plugins.GerritTriggerTest.<init>(GerritTriggerTest.java:74)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:422)\n\tat org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:195)\n\tat org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:244)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:241)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n"
+   },
+   "steps" : {
+      "step" : [ ]
+   },
+   "attachments" : {
+      "attachment" : [ ]
+   },
+   "labels" : {
+      "label" : [ {
+         "name" : "host",
+         "value" : "MacBook-Pro-2.home"
+      }, {
+         "name" : "thread",
+         "value" : "1771@MacBook-Pro-2.home.main(1)"
+      } ]
    }
 }
->>>REQUEST: /testaspect/TestCase/e572e346-c3aa-4a63-bf6b-342e149ca318
+>>>REQUEST: /testaspect/TestCase/15b92c13-e341-45e3-a640-6356e031cda0
 ]]></system-out>
   </testcase>
 </testsuite>

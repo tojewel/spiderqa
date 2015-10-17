@@ -1,6 +1,6 @@
 package ru.yandex.qatools.allure;
 
-import com.spiderqa.rest.RESTHeartClient;
+import com.spiderqa.rest.RESTClient;
 import com.spiderqa.rest.Serializer;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
@@ -10,11 +10,9 @@ import ru.yandex.qatools.allure.model.Execution;
 import ru.yandex.qatools.allure.model.TestCase;
 import ru.yandex.qatools.allure.model.TestCaseResult;
 
-import java.util.UUID;
-
 public class Spider extends Allure {
     private static Spider instance = new Spider();
-    private final String threadName = UUID.randomUUID().toString();
+    private final String threadName = "thread_" + System.nanoTime();
 
     private TestCaseResult testCaseResult;
 
@@ -34,7 +32,6 @@ public class Spider extends Allure {
     private Serializer serializer = new Serializer();
     private static Execution execution = new Execution();
 
-
     public void fire(TestCaseFinishedEvent event) {
 
         super.fire(event);
@@ -45,6 +42,6 @@ public class Spider extends Allure {
         System.out.println("testCase=" + ToStringBuilder.reflectionToString(testCase, ToStringStyle.MULTI_LINE_STYLE));
         System.out.println("testCase=" + serializer.toJson(testCase));
 
-        RESTHeartClient.get().save(testCase);
+        RESTClient.get().save(testCase);
     }
 }

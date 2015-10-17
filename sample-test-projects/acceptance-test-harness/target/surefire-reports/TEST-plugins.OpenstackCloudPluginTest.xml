@@ -63,23 +63,23 @@
   </properties>
   <testcase name="testConnection" classname="plugins.OpenstackCloudPluginTest" time="0">
     <skipped/>
-    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@76d52c82[
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@723ea39f[
   name=run_on_a_particular_offline_slave
   title=<null>
   description=<null>
-  failure=ru.yandex.qatools.allure.model.Failure@43d4c3b2
-  start=1444529788705
-  stop=1444529807101
+  failure=ru.yandex.qatools.allure.model.Failure@19ce82d4
+  start=1445040284542
+  stop=1445040303501
   status=BROKEN
   severity=<null>
   steps=[]
   attachments=[]
-  labels=[ru.yandex.qatools.allure.model.Label@1009d1c1, ru.yandex.qatools.allure.model.Label@5355fbaf]
+  labels=[ru.yandex.qatools.allure.model.Label@6ebfe11c, ru.yandex.qatools.allure.model.Label@73f02390]
   parameters=<null>
 ]
 testCaseResult={
-   "start" : 1444529788705,
-   "stop" : 1444529807101,
+   "start" : 1445040284542,
+   "stop" : 1445040303501,
    "status" : "broken",
    "name" : "run_on_a_particular_offline_slave",
    "failure" : {
@@ -98,48 +98,57 @@ testCaseResult={
          "value" : "MacBook-Pro-2.home"
       }, {
          "name" : "thread",
-         "value" : "3426@MacBook-Pro-2.home.main(1)"
+         "value" : "1771@MacBook-Pro-2.home.main(1)"
       } ]
    }
 }
-testCase=ru.yandex.qatools.allure.model.TestCase@cbb6c7b[
-  _id=c973a89b-8e95-409d-a660-8bf95fdfdb08
-  executionId=8e6dd7ca-e27b-4013-bda8-bc2788640ddd
-  threadName=dc7331de-b740-4ba3-9907-ee3762987799
-  result=ru.yandex.qatools.allure.model.TestCaseResult@76d52c82
+testCase=ru.yandex.qatools.allure.model.TestCase@7455442a[
+  _id=c0bbbd5c-ff5c-4223-a7c6-3073b2c2bcb4
+  executionId=7a8626ac-7b8d-4761-8bff-776519219d78
+  threadName=thread_15005794375463
+  name=run_on_a_particular_offline_slave
+  title=<null>
+  description=<null>
+  failure=ru.yandex.qatools.allure.model.Failure@19ce82d4
+  start=1445040284542
+  stop=1445040303501
+  status=BROKEN
+  severity=<null>
+  steps=[]
+  attachments=[]
+  labels=[ru.yandex.qatools.allure.model.Label@6ebfe11c, ru.yandex.qatools.allure.model.Label@73f02390]
+  parameters=<null>
 ]
 testCase={
-   "_id" : "c973a89b-8e95-409d-a660-8bf95fdfdb08",
-   "executionId" : "8e6dd7ca-e27b-4013-bda8-bc2788640ddd",
-   "threadName" : "dc7331de-b740-4ba3-9907-ee3762987799",
-   "result" : {
-      "start" : 1444529788705,
-      "stop" : 1444529807101,
-      "status" : "broken",
-      "name" : "run_on_a_particular_offline_slave",
-      "failure" : {
-         "message" : "NoSuchMethodError: org.apache.http.entity.ContentType.create(Ljava/lang/String;[Lorg/apache/http/NameValuePair;)Lorg/apache/http/entity/ContentType;",
-         "stack-trace" : "java.lang.NoSuchMethodError: org.apache.http.entity.ContentType.create(Ljava/lang/String;[Lorg/apache/http/NameValuePair;)Lorg/apache/http/entity/ContentType;\n\tat org.apache.http.entity.mime.MultipartEntityBuilder.buildEntity(MultipartEntityBuilder.java:209)\n\tat org.apache.http.entity.mime.MultipartEntityBuilder.build(MultipartEntityBuilder.java:230)\n\tat org.jenkinsci.test.acceptance.update_center.PluginMetadata.uploadTo(PluginMetadata.java:65)\n\tat org.jenkinsci.test.acceptance.po.PluginManager.installPlugins(PluginManager.java:173)\n\tat org.jenkinsci.test.acceptance.junit.WithPlugins$RuleImpl$1.doInstall(WithPlugins.java:139)\n\tat org.jenkinsci.test.acceptance.junit.WithPlugins$RuleImpl$1.installPlugins(WithPlugins.java:119)\n\tat org.jenkinsci.test.acceptance.junit.WithPlugins$RuleImpl$1.evaluate(WithPlugins.java:92)\n\tat org.jenkinsci.test.acceptance.junit.JenkinsAcceptanceTestRule$1$2$1.evaluate(JenkinsAcceptanceTestRule.java:129)\n\tat org.jenkinsci.test.acceptance.junit.FilterRule$1.evaluate(FilterRule.java:62)\n\tat org.jenkinsci.test.acceptance.junit.JenkinsAcceptanceTestRule$1.evaluate(JenkinsAcceptanceTestRule.java:55)\n\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n"
-      },
-      "steps" : {
-         "step" : [ ]
-      },
-      "attachments" : {
-         "attachment" : [ ]
-      },
-      "labels" : {
-         "label" : [ {
-            "name" : "host",
-            "value" : "MacBook-Pro-2.home"
-         }, {
-            "name" : "thread",
-            "value" : "3426@MacBook-Pro-2.home.main(1)"
-         } ]
-      }
+   "start" : 1445040284542,
+   "stop" : 1445040303501,
+   "status" : "broken",
+   "_id" : "c0bbbd5c-ff5c-4223-a7c6-3073b2c2bcb4",
+   "executionId" : "7a8626ac-7b8d-4761-8bff-776519219d78",
+   "threadName" : "thread_15005794375463",
+   "name" : "run_on_a_particular_offline_slave",
+   "failure" : {
+      "message" : "NoSuchMethodError: org.apache.http.entity.ContentType.create(Ljava/lang/String;[Lorg/apache/http/NameValuePair;)Lorg/apache/http/entity/ContentType;",
+      "stack-trace" : "java.lang.NoSuchMethodError: org.apache.http.entity.ContentType.create(Ljava/lang/String;[Lorg/apache/http/NameValuePair;)Lorg/apache/http/entity/ContentType;\n\tat org.apache.http.entity.mime.MultipartEntityBuilder.buildEntity(MultipartEntityBuilder.java:209)\n\tat org.apache.http.entity.mime.MultipartEntityBuilder.build(MultipartEntityBuilder.java:230)\n\tat org.jenkinsci.test.acceptance.update_center.PluginMetadata.uploadTo(PluginMetadata.java:65)\n\tat org.jenkinsci.test.acceptance.po.PluginManager.installPlugins(PluginManager.java:173)\n\tat org.jenkinsci.test.acceptance.junit.WithPlugins$RuleImpl$1.doInstall(WithPlugins.java:139)\n\tat org.jenkinsci.test.acceptance.junit.WithPlugins$RuleImpl$1.installPlugins(WithPlugins.java:119)\n\tat org.jenkinsci.test.acceptance.junit.WithPlugins$RuleImpl$1.evaluate(WithPlugins.java:92)\n\tat org.jenkinsci.test.acceptance.junit.JenkinsAcceptanceTestRule$1$2$1.evaluate(JenkinsAcceptanceTestRule.java:129)\n\tat org.jenkinsci.test.acceptance.junit.FilterRule$1.evaluate(FilterRule.java:62)\n\tat org.jenkinsci.test.acceptance.junit.JenkinsAcceptanceTestRule$1.evaluate(JenkinsAcceptanceTestRule.java:55)\n\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n"
+   },
+   "steps" : {
+      "step" : [ ]
+   },
+   "attachments" : {
+      "attachment" : [ ]
+   },
+   "labels" : {
+      "label" : [ {
+         "name" : "host",
+         "value" : "MacBook-Pro-2.home"
+      }, {
+         "name" : "thread",
+         "value" : "1771@MacBook-Pro-2.home.main(1)"
+      } ]
    }
 }
->>>REQUEST: /testaspect/TestCase/c973a89b-8e95-409d-a660-8bf95fdfdb08
-<<<RESPONSE (201 Created): /testaspect/TestCase/c973a89b-8e95-409d-a660-8bf95fdfdb08
+>>>REQUEST: /testaspect/TestCase/c0bbbd5c-ff5c-4223-a7c6-3073b2c2bcb4
+<<<RESPONSE (201 Created): /testaspect/TestCase/c0bbbd5c-ff5c-4223-a7c6-3073b2c2bcb4
 running with given plugins: []
 === Starting testConnection(plugins.OpenstackCloudPluginTest)
 Skipping testConnection(plugins.OpenstackCloudPluginTest): Required property not provided: OpenstackCloudPluginTest.ENDPOINT
@@ -147,23 +156,23 @@ Skipping testConnection(plugins.OpenstackCloudPluginTest): Required property not
   </testcase>
   <testcase name="scheduleMatrixWithoutLabel" classname="plugins.OpenstackCloudPluginTest" time="0">
     <skipped/>
-    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@1d94eb0d[
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@4e69ac95[
   name=testConnection
   title=<null>
   description=<null>
-  failure=ru.yandex.qatools.allure.model.Failure@54e37e40
-  start=1444529807104
-  stop=1444529807107
+  failure=ru.yandex.qatools.allure.model.Failure@163142bc
+  start=1445040303504
+  stop=1445040303507
   status=CANCELED
   severity=<null>
   steps=[]
   attachments=[]
-  labels=[ru.yandex.qatools.allure.model.Label@3755b5c3, ru.yandex.qatools.allure.model.Label@6826cb4d]
+  labels=[ru.yandex.qatools.allure.model.Label@6f3d7099, ru.yandex.qatools.allure.model.Label@35e3b23b]
   parameters=<null>
 ]
 testCaseResult={
-   "start" : 1444529807104,
-   "stop" : 1444529807107,
+   "start" : 1445040303504,
+   "stop" : 1445040303507,
    "status" : "canceled",
    "name" : "testConnection",
    "failure" : {
@@ -182,72 +191,81 @@ testCaseResult={
          "value" : "MacBook-Pro-2.home"
       }, {
          "name" : "thread",
-         "value" : "3426@MacBook-Pro-2.home.main(1)"
+         "value" : "1771@MacBook-Pro-2.home.main(1)"
       } ]
    }
 }
-testCase=ru.yandex.qatools.allure.model.TestCase@525089c7[
-  _id=421ac9e1-9e15-468e-8f9d-0b1e174364ce
-  executionId=8e6dd7ca-e27b-4013-bda8-bc2788640ddd
-  threadName=dc7331de-b740-4ba3-9907-ee3762987799
-  result=ru.yandex.qatools.allure.model.TestCaseResult@1d94eb0d
-]
-testCase={
-   "_id" : "421ac9e1-9e15-468e-8f9d-0b1e174364ce",
-   "executionId" : "8e6dd7ca-e27b-4013-bda8-bc2788640ddd",
-   "threadName" : "dc7331de-b740-4ba3-9907-ee3762987799",
-   "result" : {
-      "start" : 1444529807104,
-      "stop" : 1444529807107,
-      "status" : "canceled",
-      "name" : "testConnection",
-      "failure" : {
-         "message" : "AssumptionViolatedException: Required property not provided: OpenstackCloudPluginTest.ENDPOINT",
-         "stack-trace" : "org.junit.internal.AssumptionViolatedException: Required property not provided: OpenstackCloudPluginTest.ENDPOINT\n\tat org.jenkinsci.test.acceptance.junit.TestActivation$RuleImpl$1.check(TestActivation.java:84)\n\tat org.jenkinsci.test.acceptance.junit.TestActivation$RuleImpl$1.evaluate(TestActivation.java:71)\n\tat org.jenkinsci.test.acceptance.junit.JenkinsAcceptanceTestRule$1.evaluate(JenkinsAcceptanceTestRule.java:55)\n\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n"
-      },
-      "steps" : {
-         "step" : [ ]
-      },
-      "attachments" : {
-         "attachment" : [ ]
-      },
-      "labels" : {
-         "label" : [ {
-            "name" : "host",
-            "value" : "MacBook-Pro-2.home"
-         }, {
-            "name" : "thread",
-            "value" : "3426@MacBook-Pro-2.home.main(1)"
-         } ]
-      }
-   }
-}
->>>REQUEST: /testaspect/TestCase/421ac9e1-9e15-468e-8f9d-0b1e174364ce
-running with given plugins: []
-=== Starting scheduleMatrixWithoutLabel(plugins.OpenstackCloudPluginTest)
-Skipping scheduleMatrixWithoutLabel(plugins.OpenstackCloudPluginTest): Required property not provided: OpenstackCloudPluginTest.HARDWARE_ID
-<<<RESPONSE (201 Created): /testaspect/TestCase/421ac9e1-9e15-468e-8f9d-0b1e174364ce
-]]></system-out>
-  </testcase>
-  <testcase name="provisionSshSlave" classname="plugins.OpenstackCloudPluginTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@243cc85c[
-  name=scheduleMatrixWithoutLabel
+testCase=ru.yandex.qatools.allure.model.TestCase@36edad16[
+  _id=67da5635-d51b-4b23-aa24-360b0e9a103b
+  executionId=7a8626ac-7b8d-4761-8bff-776519219d78
+  threadName=thread_15005794375463
+  name=testConnection
   title=<null>
   description=<null>
-  failure=ru.yandex.qatools.allure.model.Failure@319e552c
-  start=1444529807109
-  stop=1444529807112
+  failure=ru.yandex.qatools.allure.model.Failure@163142bc
+  start=1445040303504
+  stop=1445040303507
   status=CANCELED
   severity=<null>
   steps=[]
   attachments=[]
-  labels=[ru.yandex.qatools.allure.model.Label@5ca70682, ru.yandex.qatools.allure.model.Label@eabd20b]
+  labels=[ru.yandex.qatools.allure.model.Label@6f3d7099, ru.yandex.qatools.allure.model.Label@35e3b23b]
+  parameters=<null>
+]
+testCase={
+   "start" : 1445040303504,
+   "stop" : 1445040303507,
+   "status" : "canceled",
+   "_id" : "67da5635-d51b-4b23-aa24-360b0e9a103b",
+   "executionId" : "7a8626ac-7b8d-4761-8bff-776519219d78",
+   "threadName" : "thread_15005794375463",
+   "name" : "testConnection",
+   "failure" : {
+      "message" : "AssumptionViolatedException: Required property not provided: OpenstackCloudPluginTest.ENDPOINT",
+      "stack-trace" : "org.junit.internal.AssumptionViolatedException: Required property not provided: OpenstackCloudPluginTest.ENDPOINT\n\tat org.jenkinsci.test.acceptance.junit.TestActivation$RuleImpl$1.check(TestActivation.java:84)\n\tat org.jenkinsci.test.acceptance.junit.TestActivation$RuleImpl$1.evaluate(TestActivation.java:71)\n\tat org.jenkinsci.test.acceptance.junit.JenkinsAcceptanceTestRule$1.evaluate(JenkinsAcceptanceTestRule.java:55)\n\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n"
+   },
+   "steps" : {
+      "step" : [ ]
+   },
+   "attachments" : {
+      "attachment" : [ ]
+   },
+   "labels" : {
+      "label" : [ {
+         "name" : "host",
+         "value" : "MacBook-Pro-2.home"
+      }, {
+         "name" : "thread",
+         "value" : "1771@MacBook-Pro-2.home.main(1)"
+      } ]
+   }
+}
+>>>REQUEST: /testaspect/TestCase/67da5635-d51b-4b23-aa24-360b0e9a103b
+<<<RESPONSE (201 Created): /testaspect/TestCase/67da5635-d51b-4b23-aa24-360b0e9a103b
+running with given plugins: []
+=== Starting scheduleMatrixWithoutLabel(plugins.OpenstackCloudPluginTest)
+Skipping scheduleMatrixWithoutLabel(plugins.OpenstackCloudPluginTest): Required property not provided: OpenstackCloudPluginTest.HARDWARE_ID
+]]></system-out>
+  </testcase>
+  <testcase name="provisionSshSlave" classname="plugins.OpenstackCloudPluginTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@2d254c34[
+  name=scheduleMatrixWithoutLabel
+  title=<null>
+  description=<null>
+  failure=ru.yandex.qatools.allure.model.Failure@5bd16df3
+  start=1445040303508
+  stop=1445040303511
+  status=CANCELED
+  severity=<null>
+  steps=[]
+  attachments=[]
+  labels=[ru.yandex.qatools.allure.model.Label@3feedb92, ru.yandex.qatools.allure.model.Label@56dc014f]
   parameters=<null>
 ]
 testCaseResult={
-   "start" : 1444529807109,
-   "stop" : 1444529807112,
+   "start" : 1445040303508,
+   "stop" : 1445040303511,
    "status" : "canceled",
    "name" : "scheduleMatrixWithoutLabel",
    "failure" : {
@@ -266,72 +284,81 @@ testCaseResult={
          "value" : "MacBook-Pro-2.home"
       }, {
          "name" : "thread",
-         "value" : "3426@MacBook-Pro-2.home.main(1)"
+         "value" : "1771@MacBook-Pro-2.home.main(1)"
       } ]
    }
 }
-testCase=ru.yandex.qatools.allure.model.TestCase@4c1785aa[
-  _id=0e117f77-c6c2-4cfc-a191-086838536889
-  executionId=8e6dd7ca-e27b-4013-bda8-bc2788640ddd
-  threadName=dc7331de-b740-4ba3-9907-ee3762987799
-  result=ru.yandex.qatools.allure.model.TestCaseResult@243cc85c
+testCase=ru.yandex.qatools.allure.model.TestCase@519fa34c[
+  _id=faa3171a-b796-4b71-83f0-ebb6a5cd1ac6
+  executionId=7a8626ac-7b8d-4761-8bff-776519219d78
+  threadName=thread_15005794375463
+  name=scheduleMatrixWithoutLabel
+  title=<null>
+  description=<null>
+  failure=ru.yandex.qatools.allure.model.Failure@5bd16df3
+  start=1445040303508
+  stop=1445040303511
+  status=CANCELED
+  severity=<null>
+  steps=[]
+  attachments=[]
+  labels=[ru.yandex.qatools.allure.model.Label@3feedb92, ru.yandex.qatools.allure.model.Label@56dc014f]
+  parameters=<null>
 ]
 testCase={
-   "_id" : "0e117f77-c6c2-4cfc-a191-086838536889",
-   "executionId" : "8e6dd7ca-e27b-4013-bda8-bc2788640ddd",
-   "threadName" : "dc7331de-b740-4ba3-9907-ee3762987799",
-   "result" : {
-      "start" : 1444529807109,
-      "stop" : 1444529807112,
-      "status" : "canceled",
-      "name" : "scheduleMatrixWithoutLabel",
-      "failure" : {
-         "message" : "AssumptionViolatedException: Required property not provided: OpenstackCloudPluginTest.HARDWARE_ID",
-         "stack-trace" : "org.junit.internal.AssumptionViolatedException: Required property not provided: OpenstackCloudPluginTest.HARDWARE_ID\n\tat org.jenkinsci.test.acceptance.junit.TestActivation$RuleImpl$1.check(TestActivation.java:84)\n\tat org.jenkinsci.test.acceptance.junit.TestActivation$RuleImpl$1.evaluate(TestActivation.java:70)\n\tat org.jenkinsci.test.acceptance.junit.JenkinsAcceptanceTestRule$1.evaluate(JenkinsAcceptanceTestRule.java:55)\n\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n"
-      },
-      "steps" : {
-         "step" : [ ]
-      },
-      "attachments" : {
-         "attachment" : [ ]
-      },
-      "labels" : {
-         "label" : [ {
-            "name" : "host",
-            "value" : "MacBook-Pro-2.home"
-         }, {
-            "name" : "thread",
-            "value" : "3426@MacBook-Pro-2.home.main(1)"
-         } ]
-      }
+   "start" : 1445040303508,
+   "stop" : 1445040303511,
+   "status" : "canceled",
+   "_id" : "faa3171a-b796-4b71-83f0-ebb6a5cd1ac6",
+   "executionId" : "7a8626ac-7b8d-4761-8bff-776519219d78",
+   "threadName" : "thread_15005794375463",
+   "name" : "scheduleMatrixWithoutLabel",
+   "failure" : {
+      "message" : "AssumptionViolatedException: Required property not provided: OpenstackCloudPluginTest.HARDWARE_ID",
+      "stack-trace" : "org.junit.internal.AssumptionViolatedException: Required property not provided: OpenstackCloudPluginTest.HARDWARE_ID\n\tat org.jenkinsci.test.acceptance.junit.TestActivation$RuleImpl$1.check(TestActivation.java:84)\n\tat org.jenkinsci.test.acceptance.junit.TestActivation$RuleImpl$1.evaluate(TestActivation.java:70)\n\tat org.jenkinsci.test.acceptance.junit.JenkinsAcceptanceTestRule$1.evaluate(JenkinsAcceptanceTestRule.java:55)\n\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n"
+   },
+   "steps" : {
+      "step" : [ ]
+   },
+   "attachments" : {
+      "attachment" : [ ]
+   },
+   "labels" : {
+      "label" : [ {
+         "name" : "host",
+         "value" : "MacBook-Pro-2.home"
+      }, {
+         "name" : "thread",
+         "value" : "1771@MacBook-Pro-2.home.main(1)"
+      } ]
    }
 }
->>>REQUEST: /testaspect/TestCase/0e117f77-c6c2-4cfc-a191-086838536889
+>>>REQUEST: /testaspect/TestCase/faa3171a-b796-4b71-83f0-ebb6a5cd1ac6
 running with given plugins: []
-<<<RESPONSE (201 Created): /testaspect/TestCase/0e117f77-c6c2-4cfc-a191-086838536889
+<<<RESPONSE (201 Created): /testaspect/TestCase/faa3171a-b796-4b71-83f0-ebb6a5cd1ac6
 === Starting provisionSshSlave(plugins.OpenstackCloudPluginTest)
 Skipping provisionSshSlave(plugins.OpenstackCloudPluginTest): Required property not provided: OpenstackCloudPluginTest.HARDWARE_ID
 ]]></system-out>
   </testcase>
   <testcase name="provisionJnlpSlave" classname="plugins.OpenstackCloudPluginTest" time="0">
     <skipped/>
-    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@7ed61999[
+    <system-out><![CDATA[testCaseResult=ru.yandex.qatools.allure.model.TestCaseResult@6bd277b2[
   name=provisionSshSlave
   title=<null>
   description=<null>
-  failure=ru.yandex.qatools.allure.model.Failure@6bac9a7b
-  start=1444529807113
-  stop=1444529807116
+  failure=ru.yandex.qatools.allure.model.Failure@5c6817e7
+  start=1445040303512
+  stop=1445040303514
   status=CANCELED
   severity=<null>
   steps=[]
   attachments=[]
-  labels=[ru.yandex.qatools.allure.model.Label@b5d5f4a, ru.yandex.qatools.allure.model.Label@33f15012]
+  labels=[ru.yandex.qatools.allure.model.Label@2ac12e80, ru.yandex.qatools.allure.model.Label@7d8660cb]
   parameters=<null>
 ]
 testCaseResult={
-   "start" : 1444529807113,
-   "stop" : 1444529807116,
+   "start" : 1445040303512,
+   "stop" : 1445040303514,
    "status" : "canceled",
    "name" : "provisionSshSlave",
    "failure" : {
@@ -350,49 +377,58 @@ testCaseResult={
          "value" : "MacBook-Pro-2.home"
       }, {
          "name" : "thread",
-         "value" : "3426@MacBook-Pro-2.home.main(1)"
+         "value" : "1771@MacBook-Pro-2.home.main(1)"
       } ]
    }
 }
-testCase=ru.yandex.qatools.allure.model.TestCase@7d259d24[
-  _id=ab089de3-04a4-4adb-80df-50df0646a267
-  executionId=8e6dd7ca-e27b-4013-bda8-bc2788640ddd
-  threadName=dc7331de-b740-4ba3-9907-ee3762987799
-  result=ru.yandex.qatools.allure.model.TestCaseResult@7ed61999
+testCase=ru.yandex.qatools.allure.model.TestCase@591f72e[
+  _id=7c170ae0-96d0-4958-a60b-e931cab91534
+  executionId=7a8626ac-7b8d-4761-8bff-776519219d78
+  threadName=thread_15005794375463
+  name=provisionSshSlave
+  title=<null>
+  description=<null>
+  failure=ru.yandex.qatools.allure.model.Failure@5c6817e7
+  start=1445040303512
+  stop=1445040303514
+  status=CANCELED
+  severity=<null>
+  steps=[]
+  attachments=[]
+  labels=[ru.yandex.qatools.allure.model.Label@2ac12e80, ru.yandex.qatools.allure.model.Label@7d8660cb]
+  parameters=<null>
 ]
 testCase={
-   "_id" : "ab089de3-04a4-4adb-80df-50df0646a267",
-   "executionId" : "8e6dd7ca-e27b-4013-bda8-bc2788640ddd",
-   "threadName" : "dc7331de-b740-4ba3-9907-ee3762987799",
-   "result" : {
-      "start" : 1444529807113,
-      "stop" : 1444529807116,
-      "status" : "canceled",
-      "name" : "provisionSshSlave",
-      "failure" : {
-         "message" : "AssumptionViolatedException: Required property not provided: OpenstackCloudPluginTest.HARDWARE_ID",
-         "stack-trace" : "org.junit.internal.AssumptionViolatedException: Required property not provided: OpenstackCloudPluginTest.HARDWARE_ID\n\tat org.jenkinsci.test.acceptance.junit.TestActivation$RuleImpl$1.check(TestActivation.java:84)\n\tat org.jenkinsci.test.acceptance.junit.TestActivation$RuleImpl$1.evaluate(TestActivation.java:70)\n\tat org.jenkinsci.test.acceptance.junit.JenkinsAcceptanceTestRule$1.evaluate(JenkinsAcceptanceTestRule.java:55)\n\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n"
-      },
-      "steps" : {
-         "step" : [ ]
-      },
-      "attachments" : {
-         "attachment" : [ ]
-      },
-      "labels" : {
-         "label" : [ {
-            "name" : "host",
-            "value" : "MacBook-Pro-2.home"
-         }, {
-            "name" : "thread",
-            "value" : "3426@MacBook-Pro-2.home.main(1)"
-         } ]
-      }
+   "start" : 1445040303512,
+   "stop" : 1445040303514,
+   "status" : "canceled",
+   "_id" : "7c170ae0-96d0-4958-a60b-e931cab91534",
+   "executionId" : "7a8626ac-7b8d-4761-8bff-776519219d78",
+   "threadName" : "thread_15005794375463",
+   "name" : "provisionSshSlave",
+   "failure" : {
+      "message" : "AssumptionViolatedException: Required property not provided: OpenstackCloudPluginTest.HARDWARE_ID",
+      "stack-trace" : "org.junit.internal.AssumptionViolatedException: Required property not provided: OpenstackCloudPluginTest.HARDWARE_ID\n\tat org.jenkinsci.test.acceptance.junit.TestActivation$RuleImpl$1.check(TestActivation.java:84)\n\tat org.jenkinsci.test.acceptance.junit.TestActivation$RuleImpl$1.evaluate(TestActivation.java:70)\n\tat org.jenkinsci.test.acceptance.junit.JenkinsAcceptanceTestRule$1.evaluate(JenkinsAcceptanceTestRule.java:55)\n\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n"
+   },
+   "steps" : {
+      "step" : [ ]
+   },
+   "attachments" : {
+      "attachment" : [ ]
+   },
+   "labels" : {
+      "label" : [ {
+         "name" : "host",
+         "value" : "MacBook-Pro-2.home"
+      }, {
+         "name" : "thread",
+         "value" : "1771@MacBook-Pro-2.home.main(1)"
+      } ]
    }
 }
->>>REQUEST: /testaspect/TestCase/ab089de3-04a4-4adb-80df-50df0646a267
+>>>REQUEST: /testaspect/TestCase/7c170ae0-96d0-4958-a60b-e931cab91534
+<<<RESPONSE (201 Created): /testaspect/TestCase/7c170ae0-96d0-4958-a60b-e931cab91534
 running with given plugins: []
-<<<RESPONSE (201 Created): /testaspect/TestCase/ab089de3-04a4-4adb-80df-50df0646a267
 === Starting provisionJnlpSlave(plugins.OpenstackCloudPluginTest)
 Skipping provisionJnlpSlave(plugins.OpenstackCloudPluginTest): Required property not provided: OpenstackCloudPluginTest.HARDWARE_ID
 ]]></system-out>

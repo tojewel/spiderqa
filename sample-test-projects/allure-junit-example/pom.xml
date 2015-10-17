@@ -9,7 +9,7 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <allure.version>1.4.18-SNAPSHOT</allure.version>
+        <allure.version>1.4.19</allure.version>
         <aspectj.version>1.8.5</aspectj.version>
     </properties>
 
@@ -24,17 +24,15 @@
             <version>${allure.version}</version>
         </dependency>
  -->
+        <!--<dependency>-->
+            <!--<groupId>com.spiderqa.agent</groupId>-->
+            <!--<artifactId>test-event-producer</artifactId>-->
+            <!--<version>1.0-SNAPSHOT</version>-->
+        <!--</dependency>-->
 
         <dependency>
-            <groupId>com.spiderqa.agent</groupId>
-            <artifactId>test-event-producer</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-
-
-        <dependency>
-            <groupId>com.spiderqa.agent</groupId>
-            <artifactId>test-event-producer</artifactId>
+            <groupId>com.testaspect</groupId>
+            <artifactId>junit</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
 
@@ -60,7 +58,7 @@
                     <properties>
                         <property>
                             <name>listener</name>
-                            <value>com.spiderqa.agent.junit.SpiderQaJUnitListener</value>
+                            <value>com.testaspect.JUnitListener</value>
                         </property>
                     </properties>
 
