@@ -1,4 +1,8 @@
-var App = angular.module('App', ['elasticsearch', 'nvd3', 'ui.bootstrap', 'treeGrid']);
+var App = angular.module('App', ['elasticsearch', 'nvd3', 'ui.bootstrap', 'treeGrid', 'restangular']);
+
+App.config(function (RestangularProvider) {
+    RestangularProvider.setBaseUrl('http://localhost:8047');
+});
 
 // Service
 //
@@ -140,7 +144,81 @@ function makeServerCall($scope, client, esFactory) {
         });
 }
 
-App.controller('ExampleController', function ($scope, client, esFactory) {
+function drill(Restangular, $scope) {
+    $scope.col_defs = [
+        {field: "Packaze"},
+        {field: "Passed"},
+        {field: "Failed"},
+        {field: "Broken"},
+        {field: "Cancelled"},
+        {field: "Pending"},
+    ];
+
+    $scope.tree_data = [];
+
+    Restangular.all('query.json').post({
+        query: "" +
+        "SELECT " +
+        " packaze AS Packaze, " +
+        " SUM(CASE WHEN status = 'passed' THEN 1 ELSE 0 END) as Passed, " +
+        " SUM(CASE WHEN status = 'failed' THEN 1 ELSE 0 END) as Failed, " +
+        " SUM(CASE WHEN status = 'broken' THEN 1 ELSE 0 END) as Broken, " +
+        " SUM(CASE WHEN status = 'canceled' THEN 1 ELSE 0 END) as Canceled, " +
+        " SUM(CASE WHEN status = 'pending' THEN 1 ELSE 0 END) as Pending " +
+        "FROM mongo.testaspect.`TestCase` " +
+        "GROUP BY packaze",
+        queryType: "SQL"
+    }).then(function (res) {
+        $scope.rae = res;
+        $scope.tree_data = res.rows;
+    }, function (response) {
+        $scope.rae = response;
+    });
+
+    //$scope.tree_data = [
+    //    {
+    //        "Passed": "16",
+    //        "Failed": "2",
+    //        "Canceled": "2",
+    //        "Packaze": null,
+    //        "Pending": "2",
+    //        "Broken": "10"
+    //    },
+    //    {
+    //        "Passed": "6",
+    //        "Failed": "0",
+    //        "Canceled": "0",
+    //        "Packaze": "my.company.tests",
+    //        "Pending": "0",
+    //        "Broken": "0"
+    //    }
+    //];
+
+    //// TREE
+    //$scope.tree_data = [
+    //    {
+    //        Name: "USA", Area: 9826675, Population: 318212000, TimeZone: "UTC -5 to -10",
+    //        children: [
+    //            {
+    //                Name: "California", Area: 423970, Population: 38340000, TimeZone: "Pacific Time",
+    //                children: [
+    //                    {Name: "San Francisco", Area: 231, Population: 837442, TimeZone: "PST"},
+    //                    {Name: "Los Angeles", Area: 503, Population: 3904657, TimeZone: "PST"}
+    //                ]
+    //            },
+    //            {
+    //                Name: "Illinois", Area: 57914, Population: 12882135, TimeZone: "Central Time Zone",
+    //                children: [
+    //                    {Name: "Chicago", Area: 234, Population: 2695598, TimeZone: "CST"}
+    //                ]
+    //            }
+    //        ]
+    //    },
+    //    {Name: "Texas", Area: 268581, Population: 26448193, TimeZone: "Mountain", children: [{Name: "Loading ..."}]}
+    //];
+}
+
+App.controller('ExampleController', function ($scope, client, esFactory, Restangular) {
     $scope.statusModel = {
         broken: true,
         passed: false,
@@ -165,33 +243,8 @@ App.controller('ExampleController', function ($scope, client, esFactory) {
     $scope.$watchCollection('statusModel', function () {
         updateModel($scope);
         makeServerCall($scope, client, esFactory);
-
-        $scope.tree_data[1].children.push({Name: "" + new Date()})
     });
 
     makeServerCall($scope, client, esFactory);
-
-    // TREE
-    $scope.tree_data = [
-        {
-            Name: "USA", Area: 9826675, Population: 318212000, TimeZone: "UTC -5 to -10",
-            children: [
-                {
-                    Name: "California", Area: 423970, Population: 38340000, TimeZone: "Pacific Time",
-                    children: [
-                        {Name: "San Francisco", Area: 231, Population: 837442, TimeZone: "PST"},
-                        {Name: "Los Angeles", Area: 503, Population: 3904657, TimeZone: "PST"}
-                    ]
-                },
-                {
-                    Name: "Illinois", Area: 57914, Population: 12882135, TimeZone: "Central Time Zone",
-                    children: [
-                        {Name: "Chicago", Area: 234, Population: 2695598, TimeZone: "CST"}
-                    ]
-                }
-            ]
-        },
-        {Name: "Texas", Area: 268581, Population: 26448193, TimeZone: "Mountain", children: [{Name: "Loading ..."}]}
-    ];
-
+    drill(Restangular, $scope);
 });

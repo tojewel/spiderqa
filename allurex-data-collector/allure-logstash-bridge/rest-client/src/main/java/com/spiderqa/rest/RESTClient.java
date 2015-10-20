@@ -39,7 +39,9 @@ public class RESTClient {
     private RESTClient() {
         system = ActorSystem.create();
         materializer = ActorMaterializer.create(system);
-        server = new ElasticServer();
+
+//        server = new ElasticServer();
+        server = new MongoServer();
 
         connectionFlow = Http.get(system).outgoingConnection("localhost", server.getPort());
     }
@@ -115,7 +117,7 @@ public class RESTClient {
                     .onSuccess(new OnSuccess<HttpResponse>() {
                         @Override
                         public void onSuccess(HttpResponse result) throws Throwable {
-//                            System.out.println("<<<RESPONSE (" + result.status() + "): " + httpRequest2.getUri());
+                            System.out.println("<<<RESPONSE (" + result.status() + "): " + httpRequest2.getUri());
                             synchronized (entity) {
                                 ObjectStatus objectStatus = status.get(entity.hashCode());
                                 objectStatus.setSavingInProgress(false);
@@ -131,7 +133,7 @@ public class RESTClient {
                         }
                     }, materializer.executionContext());
 
-//            System.out.println(">>>REQUEST: " + httpRequest.getUri());
+            System.out.println(">>>REQUEST: " + httpRequest.getUri());
         }
     }
 }

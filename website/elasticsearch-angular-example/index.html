@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="icon"
-          type="image/png"
-          href="@.png" />
-    <title>@TestAspect</title>
+    <link rel="icon" type="image/png" href="@.png" />
+    <title>@TestTrend</title>
 
     <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
 
@@ -25,15 +23,18 @@
     <script src="bower_components/tree-grid-directive/src/tree-grid-directive.js"></script>
     <link rel="stylesheet" href="bower_components/tree-grid-directive/src/treeGrid.css">
 
+    <script src="bower_components/underscore/underscore-min.js"></script>
+    <script src="bower_components/restangular/dist/restangular.js"></script>
+
     <!-- MINE -->
     <script src="app.js"></script>
     <script src="myd3.js"></script>
     <link rel="stylesheet" href="app.css">
     <link rel="stylesheet" href="allure.css">
 </head>
-<body ng-app="App">
-<div ng-controller="ExampleController" class="container">
-    <h1>@TestAspect</h1>
+<body ng-app="App" style="overflow: auto">
+<div ng-controller="ExampleController" class="container" >
+    <h1>@TestTrend</h1>
 
     <br/>
 
@@ -51,8 +52,10 @@
 
     <div ng-if="error" class="alert alert-danger" role="alert">{{error.message}}</div>
 
-    <tree-grid tree-data="tree_data"></tree-grid>
-    <!--<pre>{{tc | json}}</pre>-->
+    <pre>{{rae | json}}</pre>
+    <pre>{{ac | json}}</pre>
+    <tree-grid tree-data="tree_data"  col-defs="col_defs"></tree-grid>
+    <pre>{{tc | json}}</pre>
 </div>
 </body>
 </html>

@@ -25,6 +25,7 @@ public class TestCase implements Entity {
 
     private String packaze;
     private String clazz;
+    private String full_name;
 
     /**
      * Inherited from TestCaseResult
@@ -32,25 +33,27 @@ public class TestCase implements Entity {
     @XmlElement(required = true)
     protected String name;
     protected String title;
+
     protected Description description;
     protected Failure failure;
-    @XmlAttribute(name = "start", required = true)
-    protected long start;
-    @XmlAttribute(name = "stop", required = true)
-    protected long stop;
-    @XmlAttribute(name = "status", required = true)
+
+    protected long started;
+    protected long ended;
     protected Status status;
-    @XmlAttribute(name = "severity")
     protected SeverityLevel severity;
+
     @XmlElementWrapper(name = "steps")
     @XmlElement(name = "step")
     protected List<Step> steps;
+
     @XmlElementWrapper(name = "attachments")
     @XmlElement(name = "attachment")
     protected List<Attachment> attachments;
+
     @XmlElementWrapper(name = "labels")
     @XmlElement(name = "label")
     protected List<Label> labels;
+
     @XmlElementWrapper(name = "parameters")
     @XmlElement(name = "parameter")
     protected List<Parameter> parameters;
@@ -62,8 +65,8 @@ public class TestCase implements Entity {
         this.title = r.title;
         this.description = r.description;
         this.failure = r.failure;
-        this.start = r.start;
-        this.stop = r.stop;
+        this.started = r.start;
+        this.ended = r.stop;
         this.status = r.status;
         this.severity = r.severity;
         this.steps = r.steps;
@@ -81,8 +84,12 @@ public class TestCase implements Entity {
 
         String name = currentTestSuite.getName();
         int i = name.lastIndexOf('.');
-        this.packaze = name.substring(0, i);
-        this.clazz = name.substring(i + 1);
+
+        if(i > -1) {
+            this.packaze = name.substring(0, i);
+            this.clazz = name.substring(i + 1);
+        }
+        this.full_name = name + "." + r.name;
     }
 
     public TestCase() {
