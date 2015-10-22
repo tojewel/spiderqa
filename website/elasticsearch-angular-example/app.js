@@ -20,7 +20,7 @@ App.service('client', function (esFactory) {
 //
 // It also requires the esFactory to that it can check for a specific type of
 // error which might come back from the client
-
+var first = false;
 function d3bar($scope, data) {
     $scope.options = {
         chart: {
@@ -73,7 +73,10 @@ function d3bar($scope, data) {
         });
     }
 
-    $scope.api.update();
+    if (!first) {
+        $scope.api.update();
+    }
+    first = false;
 }
 
 function query($scope) {
@@ -146,76 +149,58 @@ function makeServerCall($scope, client, esFactory) {
 
 function drill(Restangular, $scope) {
     $scope.col_defs = [
-        {field: "Packaze"},
         {field: "Passed"},
         {field: "Failed"},
         {field: "Broken"},
-        {field: "Cancelled"},
+        {field: "Canceled"},
         {field: "Pending"},
     ];
 
     $scope.tree_data = [];
 
+    function render(parent, data) {
+        function f(d) {
+            return d == '0'? "": d;
+        }
+
+        for (i in data) {
+            parent.push({
+                "Test": data[i].Test + " (" + data[i].Total + ")",
+                "Passed": f(data[i].Passed),
+                "Failed": f(data[i].Failed),
+                "Broken": f(data[i].Broken),
+                "Canceled": f(data[i].Canceled),
+                "Pending": f(data[i].Pending),
+                "children": [{Test: "Loading...", Passeds: "class"}]
+            })
+        }
+    }
+
+    function sql(group_by) {
+        sql = "SELECT " +
+            " (CASE WHEN " + group_by + " IS NULL THEN 'No Package' ELSE " + group_by + " END) AS Test, " +
+            " SUM(CASE WHEN status = 'passed' THEN 1 ELSE 0 END) as Passed, " +
+            " SUM(CASE WHEN status = 'failed' THEN 1 ELSE 0 END) as Failed, " +
+            " SUM(CASE WHEN status = 'broken' THEN 1 ELSE 0 END) as Broken, " +
+            " SUM(CASE WHEN status = 'canceled' THEN 1 ELSE 0 END) as Canceled, " +
+            " SUM(CASE WHEN status = 'pending' THEN 1 ELSE 0 END) as Pending, " +
+            " COUNT(*) as Total " +
+            "FROM mongo.testaspect.`TestCase` " +
+            "GROUP BY " + group_by;
+
+        return sql;
+    }
+
     Restangular.all('query.json').post({
-        query: "" +
-        "SELECT " +
-        " packaze AS Packaze, " +
-        " SUM(CASE WHEN status = 'passed' THEN 1 ELSE 0 END) as Passed, " +
-        " SUM(CASE WHEN status = 'failed' THEN 1 ELSE 0 END) as Failed, " +
-        " SUM(CASE WHEN status = 'broken' THEN 1 ELSE 0 END) as Broken, " +
-        " SUM(CASE WHEN status = 'canceled' THEN 1 ELSE 0 END) as Canceled, " +
-        " SUM(CASE WHEN status = 'pending' THEN 1 ELSE 0 END) as Pending " +
-        "FROM mongo.testaspect.`TestCase` " +
-        "GROUP BY packaze",
+        query: sql("packaze"),
         queryType: "SQL"
     }).then(function (res) {
         $scope.rae = res;
-        $scope.tree_data = res.rows;
+        render($scope.tree_data, res.rows);
     }, function (response) {
         $scope.rae = response;
     });
 
-    //$scope.tree_data = [
-    //    {
-    //        "Passed": "16",
-    //        "Failed": "2",
-    //        "Canceled": "2",
-    //        "Packaze": null,
-    //        "Pending": "2",
-    //        "Broken": "10"
-    //    },
-    //    {
-    //        "Passed": "6",
-    //        "Failed": "0",
-    //        "Canceled": "0",
-    //        "Packaze": "my.company.tests",
-    //        "Pending": "0",
-    //        "Broken": "0"
-    //    }
-    //];
-
-    //// TREE
-    //$scope.tree_data = [
-    //    {
-    //        Name: "USA", Area: 9826675, Population: 318212000, TimeZone: "UTC -5 to -10",
-    //        children: [
-    //            {
-    //                Name: "California", Area: 423970, Population: 38340000, TimeZone: "Pacific Time",
-    //                children: [
-    //                    {Name: "San Francisco", Area: 231, Population: 837442, TimeZone: "PST"},
-    //                    {Name: "Los Angeles", Area: 503, Population: 3904657, TimeZone: "PST"}
-    //                ]
-    //            },
-    //            {
-    //                Name: "Illinois", Area: 57914, Population: 12882135, TimeZone: "Central Time Zone",
-    //                children: [
-    //                    {Name: "Chicago", Area: 234, Population: 2695598, TimeZone: "CST"}
-    //                ]
-    //            }
-    //        ]
-    //    },
-    //    {Name: "Texas", Area: 268581, Population: 26448193, TimeZone: "Mountain", children: [{Name: "Loading ..."}]}
-    //];
 }
 
 App.controller('ExampleController', function ($scope, client, esFactory, Restangular) {

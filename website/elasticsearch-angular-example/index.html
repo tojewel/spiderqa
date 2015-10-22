@@ -51,10 +51,10 @@
     <nvd3 options="options" data="bar_data" api="api"></nvd3>
 
     <div ng-if="error" class="alert alert-danger" role="alert">{{error.message}}</div>
+    <tree-grid tree-data="tree_data"  col-defs="col_defs"></tree-grid>
 
     <pre>{{rae | json}}</pre>
     <pre>{{ac | json}}</pre>
-    <tree-grid tree-data="tree_data"  col-defs="col_defs"></tree-grid>
     <pre>{{tc | json}}</pre>
 </div>
 </body>
