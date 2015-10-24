@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="App" >
 <head>
     <link rel="icon" type="image/png" href="@.png" />
     <title>@TestTrend</title>
@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="app.css">
     <link rel="stylesheet" href="allure.css">
 </head>
-<body ng-app="App" style="overflow: auto">
+<body style="overflow: auto">
 <div ng-controller="ExampleController" class="container" >
     <h1>@TestTrend</h1>
 
@@ -51,11 +51,12 @@
     <nvd3 options="options" data="bar_data" api="api"></nvd3>
 
     <div ng-if="error" class="alert alert-danger" role="alert">{{error.message}}</div>
-    <tree-grid tree-data="tree_data"  col-defs="col_defs"></tree-grid>
+    <tree-grid tree-data="tree_data" col-defs="col_defs" on-select="my_select(branch)"  on-click="my_click(branch)" ></tree-grid>
+    <div ng-if="log" class="alert alert-danger" role="alert">{{log}}</div>
 
+    <pre>{{tc | json}}</pre>
     <pre>{{rae | json}}</pre>
     <pre>{{ac | json}}</pre>
-    <pre>{{tc | json}}</pre>
 </div>
 </body>
 </html>
