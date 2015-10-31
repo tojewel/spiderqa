@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html ng-app="App" >
+<html ng-app="App" xmlns="http://www.w3.org/1999/html">
 <head>
-    <link rel="icon" type="image/png" href="@.png" />
+    <link rel="stylesheet" type="text/css" href="my.css"/>
+    <link rel="icon" type="image/png" href="@.png"/>
     <title>@TestTrend</title>
 
     <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
@@ -26,37 +27,97 @@
     <script src="bower_components/underscore/underscore-min.js"></script>
     <script src="bower_components/restangular/dist/restangular.js"></script>
 
+    <link rel="stylesheet" href="bower_components/angular-advanced-searchbox/dist/angular-advanced-searchbox.min.css">
+    <script src="bower_components/angular-advanced-searchbox/dist/angular-advanced-searchbox-tpls.js"></script>
+
     <!-- MINE -->
     <script src="app.js"></script>
     <script src="myd3.js"></script>
+
+    <!-- module -->
+    <script src="testcase/testcase.js"></script>
+    <script src="testcases/testcases.js"></script>
+    <script src="master_detail/panes.js"></script>
+
     <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="my.css">
+    <link rel="stylesheet" href="search.css">
     <link rel="stylesheet" href="allure.css">
 </head>
 <body style="overflow: auto">
-<div ng-controller="ExampleController" class="container" >
+<div ng-controller="ExampleController" class="container">
     <h1>@TestTrend</h1>
 
-    <br/>
+    <div class="a-project">
+        <div class="gape"></div>
+        <div class="gape"></div>
 
-    <div style="width: 100%" align="right">
-        <div class="btn-group" align="right">
-            <label class="btn btn-primary" ng-model="statusModel.broken" uib-btn-checkbox>Broken</label>
-            <label class="btn btn-primary" ng-model="statusModel.passed" uib-btn-checkbox>Passed</label>
-            <label class="btn btn-primary" ng-model="statusModel.canceled" uib-btn-checkbox>Canceled</label>
-            <label class="btn btn-primary" ng-model="statusModel.pending" uib-btn-checkbox>Pending</label>
-            <label class="btn btn-primary" ng-model="statusModel.failed" uib-btn-checkbox>Failed</label>
+        <div class="row">
+            <div class="col-sm-12" align="right">
+                <div class="btn-group">
+                    <label class="btn btn-default btn-status-passed btn-sm" ng-model="statusModel.passed" uib-btn-checkbox>
+                        <span class='label label-status-passed'>22</span> Passed
+                    </label>
+                    <label class="btn btn-default btn-status-broken btn-sm" ng-model="statusModel.broken" uib-btn-checkbox>
+                        <span class='label label-status-broken'>22</span> Broken
+                    </label>
+                    <label class="btn btn-default btn-status-canceled btn-sm" ng-model="statusModel.canceled"
+                           uib-btn-checkbox>
+                        <span class='label label-status-canceled'>22</span> Canceled
+                    </label>
+                    <label class="btn btn-default btn-status-pending btn-sm" ng-model="statusModel.pending"
+                           uib-btn-checkbox>
+                        <span class='label label-status-pending'>22</span> Pending
+                    </label>
+                    <label class="btn btn-default btn-status-failed btn-sm" ng-model="statusModel.failed" uib-btn-checkbox>
+                        <span class='label label-status-failed'>22</span> Failed
+                    </label>
+                </div>
+                <!-- /input-group -->
+            </div>
+            <!-- /.col-lg-6 -->
         </div>
+        <!-- /.row -->
+
+        <div class="gape"></div>
+
+        <nvd3 options="options" data="bar_data" api="api"></nvd3>
+
+        <div class="gape"></div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <nit-advanced-searchbox
+                        ng-model="searchParams"
+                        parameters="availableSearchParams"
+                        placeholder="Search...">
+                </nit-advanced-searchbox>
+            </div>
+            <!-- /.col-lg-6 -->
+        </div>
+        <!-- /.row -->
+
+        <div class="gape"></div>
+
+        <panes>
+            <pane title="Tests">
+                <testcases testcase="testcase"></testcases>
+            </pane>
+            <pane title="TestCase">
+                <testcase testcase="testcase"></testcase>
+            </pane>
+        </panes>
+
     </div>
 
-    <nvd3 options="options" data="bar_data" api="api"></nvd3>
+    </br>
 
-    <div ng-if="error" class="alert alert-danger" role="alert">{{error.message}}</div>
-    <tree-grid tree-data="tree_data" col-defs="col_defs" on-select="my_select(branch)"  on-click="my_click(branch)" ></tree-grid>
     <div ng-if="log" class="alert alert-danger" role="alert">{{log}}</div>
-
+    <pre>{{drill | json}}</pre>
     <pre>{{tc | json}}</pre>
     <pre>{{rae | json}}</pre>
     <pre>{{ac | json}}</pre>
+    <div ng-if="error" class="alert alert-danger" role="alert">{{error.message}}</div>
 </div>
 </body>
 </html>

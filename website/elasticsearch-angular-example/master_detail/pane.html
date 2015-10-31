@@ -1,0 +1,14 @@
+<div class="pane_col" ng-show="show">
+    <div class="pane_overlay clickable"></div>
+    <div class="pane_content">
+        <h3 class="pane__header">
+            <div class="pane__header_controls pull-right">
+                <span class="fa fa-expand clickable" tooltip="EXPAND" ng-click="expand()" ng-show="!expanded"></span>
+                <span class="fa fa-compress clickable" tooltip="COLLAPSE"  ng-click="collapse()" ng-show="expanded"></span>
+                <span class="fa fa-close clickable" tooltip="CLOSE" ng-click="close()"></span>
+            </div>
+            {{title}}
+        </h3>
+        <div ng-transclude></div>
+    </div>
+</div>
