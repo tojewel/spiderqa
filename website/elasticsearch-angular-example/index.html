@@ -37,6 +37,7 @@
     <script src="testcase/testcase.js"></script>
     <script src="testcases/testcases.js"></script>
     <script src="master_detail/panes.js"></script>
+    <script src="dashboard/dashboard.js"></script>
     <script src="server/rest.js"></script>
 
     <link rel="stylesheet" href="app.css">
@@ -44,79 +45,18 @@
     <link rel="stylesheet" href="allure.css">
 </head>
 <body style="overflow: auto">
-<!--class="container"-->
 
-<div ng-controller="ExampleController">
-    <h1>@TestTrend</h1>
+<panes ng-init="selected = { testcase: null, show_testcases: true }">
+    <pane title="Dashboard">
+        <dashboard></dashboard>
+    </pane>
+    <pane title="Tests"  ng-if="selected.show_testcases" onclose="selected.show_testcases = null">
+        <testcases testcase="selected.testcase"></testcases>
+    </pane>
+    <pane title="TestCase" ng-if="selected.testcase" onclose="selected.testcase = null">
+        <testcase testcase="selected.testcase"></testcase>
+    </pane>
+</panes>
 
-    <div class="a-project">
-
-        <!--<div class="row">-->
-            <!--<div class="col-sm-12" align="right">-->
-                <!--<div class="btn-group">-->
-                    <!--<label class="btn btn-default btn-status-passed btn-sm" ng-model="statusModel.passed" uib-btn-checkbox>-->
-                        <!--<span class='label label-status-passed'>22</span> Passed-->
-                    <!--</label>-->
-                    <!--<label class="btn btn-default btn-status-broken btn-sm" ng-model="statusModel.broken" uib-btn-checkbox>-->
-                        <!--<span class='label label-status-broken'>22</span> Broken-->
-                    <!--</label>-->
-                    <!--<label class="btn btn-default btn-status-canceled btn-sm" ng-model="statusModel.canceled"-->
-                           <!--uib-btn-checkbox>-->
-                        <!--<span class='label label-status-canceled'>22</span> Canceled-->
-                    <!--</label>-->
-                    <!--<label class="btn btn-default btn-status-pending btn-sm" ng-model="statusModel.pending"-->
-                           <!--uib-btn-checkbox>-->
-                        <!--<span class='label label-status-pending'>22</span> Pending-->
-                    <!--</label>-->
-                    <!--<label class="btn btn-default btn-status-failed btn-sm" ng-model="statusModel.failed" uib-btn-checkbox>-->
-                        <!--<span class='label label-status-failed'>22</span> Failed-->
-                    <!--</label>-->
-                <!--</div>-->
-                <!--&lt;!&ndash; /input-group &ndash;&gt;-->
-            <!--</div>-->
-            <!--&lt;!&ndash; /.col-lg-6 &ndash;&gt;-->
-        <!--</div>-->
-        <!--&lt;!&ndash; /.row &ndash;&gt;-->
-
-        <!--<div class="gape"></div>-->
-
-        <!--<nvd3 options="options" data="bar_data" api="api"></nvd3>-->
-
-        <!--<div class="gape"></div>-->
-
-        <!--<div class="row">-->
-            <!--<div class="col-sm-12">-->
-                <!--<nit-advanced-searchbox-->
-                        <!--ng-model="searchParams"-->
-                        <!--parameters="availableSearchParams"-->
-                        <!--placeholder="Search...">-->
-                <!--</nit-advanced-searchbox>-->
-            <!--</div>-->
-            <!--&lt;!&ndash; /.col-lg-6 &ndash;&gt;-->
-        <!--</div>-->
-        <!--&lt;!&ndash; /.row &ndash;&gt;-->
-
-        <div class="gape"></div>
-
-        <panes>
-            <pane title="Tests" pane-expanded="true">
-                <testcases testcase="selected.testcase"></testcases>
-            </pane>
-            <pane title="TestCase" ng-if="selected.testcase" onclose="selected.testcase = null">
-                <testcase testcase="selected.testcase"></testcase>
-            </pane>
-        </panes>
-
-    </div>
-
-    </br>
-
-    <div ng-if="log" class="alert alert-danger" role="alert">{{log}}</div>
-    <pre>{{drill | json}}</pre>
-    <pre>{{tc | json}}</pre>
-    <pre>{{rae | json}}</pre>
-    <pre>{{ac | json}}</pre>
-    <div ng-if="error" class="alert alert-danger" role="alert">{{error.message}}</div>
-</div>
 </body>
 </html>

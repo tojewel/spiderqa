@@ -1,0 +1,59 @@
+<!--class="container"-->
+
+<div>
+    <h1>@TestTrend</h1>
+
+    <div class="row">
+        <div class="col-sm-12" align="right">
+            <div class="btn-group">
+                <label class="btn btn-default btn-status-passed btn-sm" ng-model="statusModel.passed" uib-btn-checkbox>
+                    <span class='label label-status-passed'>22</span> Passed
+                </label>
+                <label class="btn btn-default btn-status-broken btn-sm" ng-model="statusModel.broken" uib-btn-checkbox>
+                    <span class='label label-status-broken'>22</span> Broken
+                </label>
+                <label class="btn btn-default btn-status-canceled btn-sm" ng-model="statusModel.canceled"
+                       uib-btn-checkbox>
+                    <span class='label label-status-canceled'>22</span> Canceled
+                </label>
+                <label class="btn btn-default btn-status-pending btn-sm" ng-model="statusModel.pending"
+                       uib-btn-checkbox>
+                    <span class='label label-status-pending'>22</span> Pending
+                </label>
+                <label class="btn btn-default btn-status-failed btn-sm" ng-model="statusModel.failed" uib-btn-checkbox>
+                    <span class='label label-status-failed'>22</span> Failed
+                </label>
+            </div>
+            <!-- /input-group -->
+        </div>
+        <!-- /.col-lg-6 -->
+    </div>
+    <!-- /.row -->
+
+    <div class="gape"></div>
+
+    <nvd3 options="options" data="bar_data" api="api"></nvd3>
+
+    <div class="gape"></div>
+
+    <div class="row">
+        <div class="col-sm-12">
+            <nit-advanced-searchbox
+                    ng-model="searchParams"
+                    parameters="availableSearchParams"
+                    placeholder="Search...">
+            </nit-advanced-searchbox>
+        </div>
+        <!-- /.col-lg-6 -->
+    </div>
+    <!-- /.row -->
+
+    </br>
+
+    <div ng-if="log" class="alert alert-danger" role="alert">{{log}}</div>
+    <pre>{{drill | json}}</pre>
+    <pre>{{tc | json}}</pre>
+    <pre>{{rae | json}}</pre>
+    <pre>{{ac | json}}</pre>
+    <div ng-if="error" class="alert alert-danger" role="alert">{{error.message}}</div>
+</div>
