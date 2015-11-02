@@ -1,8 +1,4 @@
-angular.module('testcases', ['treeGrid', 'restangular'])
-
-    .config(function (RestangularProvider) {
-        RestangularProvider.setBaseUrl('http://localhost:8047');
-    })
+angular.module('testcases', ['treeGrid', 'rest'])
 
     .directive('testcases', function () {
         return {
@@ -17,7 +13,7 @@ angular.module('testcases', ['treeGrid', 'restangular'])
         };
     })
 
-    .controller('TestcasesController', function ($scope, Restangular) {
+    .controller('TestcasesController', function ($scope, Drill, Restheart) {
         var GROUP_BYS = ["packaze", "clazz", "name"];
 
         $scope.expanding_property = {
@@ -105,7 +101,7 @@ angular.module('testcases', ['treeGrid', 'restangular'])
         }
 
         function load(level, where, to_array) {
-            Restangular.all('query.json').post({
+            Drill.all('query.json').post({
                 query: sql(GROUP_BYS[level], where),
                 queryType: "SQL"
             }).then(function (res) {
@@ -134,23 +130,19 @@ angular.module('testcases', ['treeGrid', 'restangular'])
             }
         }
 
-        $scope.my_click = function (branch) {
-            $scope.log = 'you clicked on ' + JSON.stringify(branch)
-
-            if (branch.full_name) {
-                Restangular.all('query.json').post({
-                    query: "SELECT * FROM mongo.testaspect.`TestCase` WHERE full_name = '" + branch.full_name + "'",
-                    queryType: "SQL"
-                }).then(function (response) {
-                    $scope.drill = response;
-
-                    $scope.testcase = response.rows[0];
-                }, function (response) {
-                    $scope.drill = response;
-                });
-            }
+        function load_testcase(full_name) {
+            Restheart.all('TestCase').customGET('', {filter: {full_name: full_name}})
+                .then(function (result) {
+                    $scope.testcase = result._embedded['rh:doc'][0];
+                })
         }
 
+        $scope.my_click = function (branch) {
+            $scope.log = 'you clicked on ' + JSON.stringify(branch)
+            branch.full_name && load_testcase(branch.full_name)
+        }
+
+        //load_testcase('Surefire suite : Surefire test.failedTest');
     })
 
 

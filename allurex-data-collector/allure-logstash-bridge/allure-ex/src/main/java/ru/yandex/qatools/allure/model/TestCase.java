@@ -35,7 +35,9 @@ public class TestCase implements Entity {
     protected String title;
 
     protected Description description;
-    protected Failure failure;
+
+    @XmlElement(name = "failure")
+    protected MyFailure failure;
 
     protected long started;
     protected long ended;
@@ -64,7 +66,11 @@ public class TestCase implements Entity {
         this.name = r.name;
         this.title = r.title;
         this.description = r.description;
-        this.failure = r.failure;
+
+        if (r.failure != null) {
+            this.failure = new MyFailure(r.failure);
+        }
+
         this.started = r.start;
         this.ended = r.stop;
         this.status = r.status;
@@ -74,18 +80,20 @@ public class TestCase implements Entity {
         this.labels = r.labels;
         this.parameters = r.parameters;
 
-        for (Label l : r.labels) {
-            if ("host".equals(l.getName())) {
-                host = ("" + l.getValue()).replace('-', '_');
-            } else if ("thread".equals(l.getName())) {
-                thread = ("" + l.getValue()).replace('-', '_');
+        if (r.labels != null) {
+            for (Label l : r.labels) {
+                if ("host".equals(l.getName())) {
+                    host = ("" + l.getValue()).replace('-', '_');
+                } else if ("thread".equals(l.getName())) {
+                    thread = ("" + l.getValue()).replace('-', '_');
+                }
             }
         }
 
         String name = currentTestSuite.getName();
         int i = name.lastIndexOf('.');
 
-        if(i > -1) {
+        if (i > -1) {
             this.packaze = name.substring(0, i);
             this.clazz = name.substring(i + 1);
         }

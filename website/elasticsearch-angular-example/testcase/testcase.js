@@ -12,3 +12,5 @@ angular.module('testcase', [])
             templateUrl: 'testcase/testcase.html'
         };
     })
+
+    .controller('StepCtrl', function($scope) {})

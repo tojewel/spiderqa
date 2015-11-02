@@ -74,7 +74,7 @@ function d3bar($scope, data) {
         });
     }
 
-    $scope.api.update();
+    // $scope.api.update();
 }
 
 function query($scope) {
@@ -146,6 +146,10 @@ function makeServerCall($scope, client, esFactory) {
 }
 
 App.controller('ExampleController', function ($scope, $rootScope, client, esFactory, Restangular) {
+    $scope.selected = {
+        testcase: null
+    }
+
     $scope.statusModel = {
         broken: true,
         passed: false,

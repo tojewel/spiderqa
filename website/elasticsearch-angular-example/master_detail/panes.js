@@ -2,6 +2,7 @@
 angular.module('master_detail', [])
 
     .directive('panes', function () {
+        "use strict";
         return {
             restrict: 'E',
             transclude: true,
@@ -10,6 +11,59 @@ angular.module('master_detail', [])
             controller: 'PanesController',
             templateUrl: 'master_detail/panes.html'
         };
+    })
+
+    .controller('PanesController', function ($scope, screenTest) {
+        "use strict";
+        var panes = [];
+        this.addPane = function (pane) {
+            panes.push(pane);
+            this.updatePositions();
+        };
+        this.removePane = function (pane) {
+            panes.splice(panes.indexOf(pane), 1);
+            this.updatePositions();
+        };
+        this.updatePositions = function () {
+            console.log("updating possition..." + panes)
+            panes.forEach(setPanePosition);
+        };
+
+        function paneNeedOverlay(index) {
+            return index < panes.length - 2 || (index < panes.length - 1 && panes[panes.length - 1].isExpanded());
+        }
+
+        function paneShouldBeAtRight(index, expanded) {
+            return index !== 0 && index === panes.length - 1 && !expanded;
+        }
+
+        function setPanePosition(pane) {
+            var index = panes.indexOf(pane);
+            var expanded = pane.isExpanded();
+            var offset = 5 * index;
+            var width = (expanded ? 100 : 50) - offset;
+
+            console.log("setting possition..." + index)
+
+            pane.elem[index === panes.length - 1 ? 'addClass' : 'removeClass']('pane_col_last');
+            pane.elem[index === 0 ? 'addClass' : 'removeClass']('pane_col_first');
+            pane.elem[paneNeedOverlay(index) ? 'addClass' : 'removeClass']('pane_col-overlay');
+
+            if (paneShouldBeAtRight(index, expanded)) {
+                if (screenTest.isNarrow()) {
+                    offset += 25;
+                    width = 100 - offset;
+                    pane.setPosition(offset, width);
+                } else {
+                    pane.setPosition(50, 50);
+                }
+
+            } else {
+                pane.setPosition(offset, width);
+            }
+        }
+
+        $scope.$on('screenTestChange', this.updatePositions);
     })
 
     .directive('pane', function () {
@@ -34,7 +88,7 @@ angular.module('master_detail', [])
             transclude: true,
             scope: {
                 title: '@',
-                onclose: '@'
+                onclose: '&'
             },
             replace: true,
             templateUrl: 'master_detail/pane.html',
@@ -52,13 +106,7 @@ angular.module('master_detail', [])
 
                 PanesCtrl.addPane(pane);
 
-                scope.destroy = function () {
-                    scope.show = true;
-                    PanesCtrl.removePane(pane);
-                }
-
                 scope.$on('$destroy', function () {
-                    console.log("destroying... ")
                     PanesCtrl.removePane(pane);
                 });
             },
@@ -75,61 +123,10 @@ angular.module('master_detail', [])
                 }
 
                 $scope.close = function () {
-                    $scope.destroy();
+                    $scope.onclose && $scope.onclose();
                 }
             }
         };
-    })
-
-    .controller('PanesController', function ($scope, screenTest) {
-        "use strict";
-        var panes = [];
-        this.addPane = function (pane) {
-            panes.push(pane);
-            this.updatePositions();
-        };
-        this.removePane = function (pane) {
-            panes.splice(panes.indexOf(pane), 1);
-            this.updatePositions();
-        };
-        this.updatePositions = function () {
-            console.log("updating possition...")
-            panes.forEach(setPanePosition);
-        };
-
-        function paneNeedOverlay(index) {
-            return index < panes.length - 2 || (index < panes.length - 1 && panes[panes.length - 1].isExpanded());
-        }
-
-        function paneShouldBeAtRight(index, expanded) {
-            return index !== 0 && index === panes.length - 1 && !expanded;
-        }
-
-        function setPanePosition(pane) {
-            var index = panes.indexOf(pane);
-            var expanded = pane.isExpanded();
-            var offset = 5 * index;
-            var width = (expanded ? 100 : 50) - offset;
-
-            pane.elem[index === panes.length - 1 ? 'addClass' : 'removeClass']('pane_col_last');
-            pane.elem[index === 0 ? 'addClass' : 'removeClass']('pane_col_first');
-            pane.elem[paneNeedOverlay(index) ? 'addClass' : 'removeClass']('pane_col-overlay');
-
-            if (paneShouldBeAtRight(index, expanded)) {
-                if (screenTest.isNarrow()) {
-                    offset += 25;
-                    width = 100 - offset;
-                    pane.setPosition(offset, width);
-                } else {
-                    pane.setPosition(50, 50);
-                }
-
-            } else {
-                pane.setPosition(offset, width);
-            }
-        }
-
-        $scope.$on('screenTestChange', this.updatePositions);
     })
 
     .factory('screenTest', function ($rootScope, $window) {
@@ -157,11 +154,12 @@ angular.module('master_detail', [])
         }
 
         function testVisibility(cls) {
-            //var el = angular.element('<div />').addClass(cls).appendTo('body'),
-            //    visible = el.css('display') !== 'none';
-            //el.remove();
+            //var el = angular.element('<div />').addClass(cls).appendTo('body');
+            //console.log('el=' + el )
+            //var visible = el.css('display') !== 'none';
+            // el.remove();
             //return visible;
 
-            return false;
+            return true;
         }
     });
