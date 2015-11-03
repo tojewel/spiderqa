@@ -16,16 +16,36 @@ angular.module('master_detail', [])
     .controller('PanesController', function ($scope, screenTest) {
         "use strict";
         var panes = [];
+
+        this.show = function (pane) {
+            var remove = [];
+            for (var i = panes.indexOf(pane) + 2; i < panes.length; i++) {
+                remove.push(panes[i]);
+            }
+
+            for (var i = 0; i < remove.length; i++) {
+                remove[i].close();
+            }
+        }
+
         this.addPane = function (pane) {
             panes.push(pane);
             this.updatePositions();
         };
+
         this.removePane = function (pane) {
             panes.splice(panes.indexOf(pane), 1);
             this.updatePositions();
         };
+
         this.updatePositions = function () {
-            console.log("updating possition..." + panes)
+            var text = "updating possition...";
+
+            for (var i = 0; i < panes.length; i++) {
+                text += panes[i].title() + "." + panes[i].isExpanded() + ", "
+            }
+
+            console.log(text)
             panes.forEach(setPanePosition);
         };
 
@@ -39,11 +59,9 @@ angular.module('master_detail', [])
 
         function setPanePosition(pane) {
             var index = panes.indexOf(pane);
-            var expanded = pane.isExpanded();
+            var expanded = panes.length == 1 ? true : (index < panes.length - 2 ? true : pane.isExpanded());
             var offset = 5 * index;
             var width = (expanded ? 100 : 50) - offset;
-
-            console.log("setting possition..." + index)
 
             pane.elem[index === panes.length - 1 ? 'addClass' : 'removeClass']('pane_col_last');
             pane.elem[index === 0 ? 'addClass' : 'removeClass']('pane_col_first');
@@ -53,13 +71,13 @@ angular.module('master_detail', [])
                 if (screenTest.isNarrow()) {
                     offset += 25;
                     width = 100 - offset;
-                    pane.setPosition(offset, width);
+                    pane.setPosition(index, offset, width);
                 } else {
-                    pane.setPosition(50, 50);
+                    pane.setPosition(index, 50, 50);
                 }
 
             } else {
-                pane.setPosition(offset, width);
+                pane.setPosition(index, offset, width);
             }
         }
 
@@ -74,8 +92,8 @@ angular.module('master_detail', [])
             this.elem = elem;
         }
 
-        Pane.prototype.setPosition = function (left, width) {
-            this.elem.css({left: left + '%', width: width + '%'});
+        Pane.prototype.setPosition = function (i, left, width) {
+            this.elem.css({zIndex: i + 1, left: left + '%', width: width + '%'});
         };
         Pane.prototype.isExpanded = function () {
             return false;
@@ -96,15 +114,26 @@ angular.module('master_detail', [])
             link: function (scope, elem, attrs, PanesCtrl) {
                 var pane = new Pane(elem);
 
-                scope.show = true;
                 scope.panesClr = PanesCtrl;
+
+                pane.title = function () {
+                    return scope.title;
+                };
 
                 scope.expanded = false;
                 pane.isExpanded = function () {
                     return scope.expanded;
                 };
 
+                pane.close = function () {
+                    scope.close();
+                }
+
                 PanesCtrl.addPane(pane);
+
+                scope.show = function () {
+                    PanesCtrl.show(pane);
+                }
 
                 scope.$on('$destroy', function () {
                     PanesCtrl.removePane(pane);
@@ -160,6 +189,6 @@ angular.module('master_detail', [])
             // el.remove();
             //return visible;
 
-            return true;
+            return false;
         }
     });

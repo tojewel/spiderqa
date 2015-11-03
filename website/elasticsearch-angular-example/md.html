@@ -1,0 +1,36 @@
+<!doctype html>
+<html ng-app="app">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-animate.min.js"></script>
+    <script src="master_detail/panes.js"></script>
+    <script src="master_detail/app.js"></script>
+    <link rel="stylesheet" href="master_detail/app.css">
+
+    <link rel="stylesheet" href="my.css">
+
+</head>
+<body ng-init="s = {p1: true, p2: true, p3: true, p4: true, }">
+
+<button type="button" ng-click="s.p1 = !s.p1" style="color: {{s.p1? 'green': 'red' }};">p1 {{s.p1}}</button>
+<button type="button" ng-click="s.p2 = !s.p2" style="color: {{s.p2? 'green': 'red' }};">p2 {{s.p2}}</button>
+<button type="button" ng-click="s.p3 = !s.p3" style="color: {{s.p3? 'green': 'red' }};">p3 {{s.p3}}</button>
+<button type="button" ng-click="s.p4 = !s.p4" style="color: {{s.p4? 'green': 'red' }};">p4 {{s.p4}}</button>
+
+<panes>
+    <pane title="p1" ng-if="s.p1" onclose="s.p1 = false">
+        1st pane
+    </pane>
+    <pane title="p2" ng-if="s.p2" onclose="s.p2 = false">
+        2st pane
+    </pane>
+    <pane title="p3" ng-if="s.p3" onclose="s.p3 = false">
+        3st pane
+    </pane>
+    <pane title="p4" ng-if="s.p4" onclose="s.p4 = false">
+        4st pane
+    </pane>
+</panes>
+
+</body>
+</html>

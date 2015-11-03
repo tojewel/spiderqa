@@ -39,18 +39,20 @@
     <script src="master_detail/panes.js"></script>
     <script src="dashboard/dashboard.js"></script>
     <script src="server/rest.js"></script>
+    <script src="nav/nav.js"></script>
+    <script src="defects/defects.js"></script>
 
-    <link rel="stylesheet" href="app.css">
-    <link rel="stylesheet" href="my.css">
     <link rel="stylesheet" href="allure.css">
+    <link rel="stylesheet" href="my.css">
 </head>
 <body style="overflow: auto">
+<nav></nav>
 
 <panes ng-init="selected = { testcase: null, show_testcases: true }">
-    <pane title="Dashboard">
+    <pane title="Blackbird">
         <dashboard></dashboard>
     </pane>
-    <pane title="Tests"  ng-if="selected.show_testcases" onclose="selected.show_testcases = null">
+    <pane title="Tests" ng-if="selected.show_testcases" onclose="selected.show_testcases = false">
         <testcases testcase="selected.testcase"></testcases>
     </pane>
     <pane title="TestCase" ng-if="selected.testcase" onclose="selected.testcase = null">

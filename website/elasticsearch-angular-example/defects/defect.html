@@ -1,0 +1,6 @@
+<div>
+    <div class="testcase__status alert-status-{{defect.type|lowercase}}">
+        {{defect.failure.message}}
+    </div>
+    <div testcases-list="defect.testCases" statuses="showStatuses" selected-uid="testcase.uid"></div>
+</div>

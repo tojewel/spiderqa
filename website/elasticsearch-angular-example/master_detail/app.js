@@ -1,3 +1,3 @@
 /*global angular */
 
-angular.module('app', ['allure.pane'])
+angular.module('app', ['master_detail'])
