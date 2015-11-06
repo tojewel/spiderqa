@@ -52,7 +52,7 @@
 
 <nav></nav>
 
-<panes ng-init="selected = { full_name: null, show_testcases: false, show_defects: false }">
+<panes ng-init="selected = { full_name: null, show_testcases: false, show_defects: false, full_name_log: null }">
     <pane title="Blackbird">
         <dashboard></dashboard>
     </pane>
@@ -67,6 +67,9 @@
     </pane>
     <pane title="TestCase" ng-if="selected.full_name" onclose="selected.full_name = null">
         <Testcase></Testcase>
+    </pane>
+    <pane title="Log" ng-if="selected.full_name_log" onclose="selected.full_name_log = null">
+        {{selected.full_name_log}}
     </pane>
 </panes>
 

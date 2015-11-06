@@ -1,7 +1,7 @@
 <div>
     <div>
         <div class="b-island__title">
-            Test Cases<span ng-show="testcase.name" class="text-muted">: {{testcase.full_name}}
+            {{testcase.name}}<span ng-show="testcase.name" class="text-muted">: {{testcase.full_name}}
             <copy-button text="testcase.name"></copy-button></span>
         </div>
         <div class="pane__header title-status-{{testcase.status}}">
@@ -65,6 +65,11 @@
 
             <div class="testcase__status alert-status-passed" ng-show="testcase.status.toUpperCase() == 'PASSED'">
                 {{'testcase.TEST_PASSED'}}
+                <div class="btn-group pull-right ">
+                <span class="btn btn-default btn-sm btn-status-{{testcase.status|lowercase}}"
+                      ng-click="selected.full_name_log = testcase.full_name"
+                      ng-class="{'active': stacktraceExpanded}">Show logs ...</span>
+                </div>
             </div>
 
             <div class="list-item clickable" ng-repeat="attachment in testcase.attachments"
@@ -76,14 +81,19 @@
     </div>
 
     <script type="text/ng-template" id="testcaseFailure.tpl">
-        <div class="testcase__status alert-status-{{testcase.status}}" ng-show="testcase.status.toUpperCase() !== 'PASSED'">
+        <div class="testcase__status alert-status-{{testcase.status}}"
+             ng-show="testcase.status.toUpperCase() !== 'PASSED'">
             <div class="btn-group pull-right ">
-            <span class="btn btn-default btn-sm btn-status-{{testcase.status|lowercase}}"
-                  ng-click="stacktraceRaw = !stacktraceRaw"
-                  ng-class="{'active': stacktraceRaw}">{{'testcase.RAW'}}</span>
-            <span class="btn btn-default btn-sm btn-status-{{testcase.status|lowercase}}"
-                  ng-click="stacktraceExpanded = !stacktraceExpanded"
-                  ng-class="{'active': stacktraceExpanded}">{{'testcase.STACKTRACE'}}</span>
+                    <span class="btn btn-default btn-sm btn-status-{{testcase.status|lowercase}}"
+                          ng-click="stacktraceRaw = !stacktraceRaw"
+                          ng-class="{'active': stacktraceRaw}">{{'testcase.RAW'}}</span>
+                    <span class="btn btn-default btn-sm btn-status-{{testcase.status|lowercase}}"
+                          ng-click="stacktraceExpanded = !stacktraceExpanded"
+                          ng-class="{'active': stacktraceExpanded}">{{'testcase.STACKTRACE'}}</span>
+                <span class="btn btn-default btn-sm btn-status-{{testcase.status|lowercase}}"
+                      ng-click="selected.full_name_log = (testcase.full_name)"
+                      ng-class="{'active': selected.full_name_log !== null}"
+                        >Show logs ...</span>
             </div>
 
             <span class="preformated-text"
