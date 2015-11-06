@@ -4,9 +4,6 @@ angular.module('testcases', ['treeGrid', 'rest'])
         return {
             restrict: 'E',
             transclude: true,
-            scope: {
-                testcase: '='
-            },
             replace: true,
             controller: 'TestcasesController',
             templateUrl: 'testcases/testcases.html'
@@ -130,19 +127,22 @@ angular.module('testcases', ['treeGrid', 'rest'])
             }
         }
 
-        function load_testcase(full_name) {
-            Restheart.all('TestCase').customGET('', {filter: {full_name: full_name}})
-                .then(function (result) {
-                    $scope.testcase = result._embedded['rh:doc'][0];
-                })
-        }
+        //function load_testcase(full_name) {
+        //    Restheart.all('TestCase').customGET('', {filter: {full_name: full_name}})
+        //        .then(function (result) {
+        //            $scope.testcase = result._embedded['rh:doc'][0];
+        //        })
+        //}
 
         $scope.my_click = function (branch) {
             $scope.log = 'you clicked on ' + JSON.stringify(branch)
-            branch.full_name && load_testcase(branch.full_name)
+            //branch.full_name && load_testcase(branch.full_name);
+
+            if (branch.full_name) {
+                console.log($scope.selected)
+                $scope.selected.full_name = branch.full_name
+            }
         }
 
         //load_testcase('Surefire suite : Surefire test.failedTest');
     })
-
-

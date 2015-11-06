@@ -118,7 +118,7 @@ function d3bar($scope, data) {
         });
     }
 
-    $scope.api.update();
+    // $scope.api.update();
 }
 
 function query($scope) {

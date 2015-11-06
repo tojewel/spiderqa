@@ -26,6 +26,9 @@ angular.module('master_detail', [])
             for (var i = 0; i < remove.length; i++) {
                 remove[i].close();
             }
+
+            panes[panes.length - 1].expanded(false);
+            this.updatePositions();
         }
 
         this.addPane = function (pane) {
@@ -39,13 +42,13 @@ angular.module('master_detail', [])
         };
 
         this.updatePositions = function () {
-            var text = "updating possition...";
-
-            for (var i = 0; i < panes.length; i++) {
-                text += panes[i].title() + "." + panes[i].isExpanded() + ", "
-            }
-
-            console.log(text)
+            //var text = "updating possition...";
+            //
+            //for (var i = 0; i < panes.length; i++) {
+            //    text += panes[i].title() + "." + panes[i].isExpanded() + ", "
+            //}
+            //
+            //console.log(text)
             panes.forEach(setPanePosition);
         };
 
@@ -123,6 +126,10 @@ angular.module('master_detail', [])
                 scope.expanded = false;
                 pane.isExpanded = function () {
                     return scope.expanded;
+                };
+
+                pane.expanded = function (expanded) {
+                    return scope.expanded = expanded;
                 };
 
                 pane.close = function () {

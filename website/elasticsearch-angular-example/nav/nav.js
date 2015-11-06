@@ -1,6 +1,6 @@
-angular.module('nav', [])
+angular.module('navi', [])
 
-    .directive('nav', function () {
+    .directive('navi', function () {
         return {
             restrict: 'E',
             replace: true,

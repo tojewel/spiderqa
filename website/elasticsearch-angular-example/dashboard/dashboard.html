@@ -45,8 +45,13 @@
     <!-- /.row -->
 
     <label class="btn btn-default btn-status-passed btn-sm"
-           ng-click="selected.show_testcases = !selected.show_testcases">
+           ng-click="selected.show_testcases = !selected.show_testcases; selected.show_defects = false">
         {{selected.show_testcases? 'Hide': 'Show'}} tests...
+    </label>
+
+    <label class="btn btn-default btn-status-failed btn-sm"
+           ng-click="selected.show_defects = !selected.show_defects; selected.show_testcases = false">
+        {{selected.show_testcases? 'Hide': 'Show'}} Defects...
     </label>
 
     <div class="gape"></div>

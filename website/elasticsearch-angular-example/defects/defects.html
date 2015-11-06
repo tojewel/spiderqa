@@ -1,18 +1,7 @@
-<div class="pane_content" ui-scrollfix-target>
-    <div ng-repeat="type in defects">
-        <h3 class="pane__header defect_title defect_type_{{type.status|lowercase}}" ui-scrollfix inherit-width>
-            {{type.title | translate}}
-            <small>{{'defects.STATISTIC' | translate:'{amount: type.defects.length}':'messageformat'}}</small>
-        </h3>
-        <table allure-table class="test-list table table-hover table-condensed" sorting="sorting">
-            <tr class="clickable" ng-repeat="defect in type.defects | orderBy:sorting.predicate:sorting.reverse"
-                ng-click="setDefect(defect)" ng-class="{active:defect == $parent.defect}">
-                <td allure-table-col="{heading:'Count', predicate: 'testCases.length', flex: 1, class:'text-center'}"
-                    class="text-center"><span
-                        class="label label-status-{{type.status|lowercase}}">{{defect.testCases.length}}</span></td>
-                <td allure-table-col="{heading:'Defect', predicate: 'failure.message', flex: 20}"
-                    class="text-status-{{type.status|lowercase}}">{{defect.failure.message}}</td>
-            </tr>
-        </table>
-    </div>
+<div>
+    <tree-grid tree-data="tree_data" col-defs="col_defs" on-select="my_select(branch)"
+               icon-leaf="glyphicon glyphicon-option-vertical"
+               icon-expand="glyphicon glyphicon-plus-sign"
+               icon-collapse="glyphicon glyphicon-minus-sign"
+               on-click="my_click(branch)"></tree-grid>
 </div>

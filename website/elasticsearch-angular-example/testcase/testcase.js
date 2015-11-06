@@ -4,13 +4,23 @@ angular.module('testcase', [])
         return {
             restrict: 'E',
             transclude: true,
-            scope: {
-                testcase: '='
-            },
             replace: true,
-            //      controller: 'PanesController',
+            controller: 'TestcaseController',
             templateUrl: 'testcase/testcase.html'
         };
     })
 
-    .controller('StepCtrl', function($scope) {})
+    .controller('TestcaseController', function($scope, Restheart) {
+        function load_testcase() {
+            Restheart.all('TestCase').customGET('', {filter: {full_name: $scope.selected.full_name}})
+                .then(function (result) {
+                    $scope.testcase = result._embedded['rh:doc'][0];
+                })
+        }
+
+        load_testcase();
+
+        $scope.$watch('selected.full_name', function() {
+            load_testcase();
+        });
+    })

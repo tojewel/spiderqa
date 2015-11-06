@@ -1,1 +1,1 @@
-angular.module('App', ['nav', 'dashboard', 'testcase', 'testcases', 'master_detail']);
+angular.module('App', ['navi', 'dashboard', 'testcase', 'testcases', 'master_detail', 'defects', 'defect']);

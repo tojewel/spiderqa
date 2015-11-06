@@ -30,6 +30,8 @@
     <link rel="stylesheet" href="bower_components/angular-advanced-searchbox/dist/angular-advanced-searchbox.min.css">
     <script src="bower_components/angular-advanced-searchbox/dist/angular-advanced-searchbox-tpls.js"></script>
 
+    <script src="bower_components/angular-smart-table/dist/smart-table.js"></script>
+
     <!-- MINE -->
     <script src="app.js"></script>
 
@@ -41,22 +43,30 @@
     <script src="server/rest.js"></script>
     <script src="nav/nav.js"></script>
     <script src="defects/defects.js"></script>
+    <script src="defects/defect.js"></script>
 
     <link rel="stylesheet" href="allure.css">
     <link rel="stylesheet" href="my.css">
 </head>
 <body style="overflow: auto">
+
 <nav></nav>
 
-<panes ng-init="selected = { testcase: null, show_testcases: true }">
+<panes ng-init="selected = { full_name: null, show_testcases: false, show_defects: false }">
     <pane title="Blackbird">
         <dashboard></dashboard>
     </pane>
     <pane title="Tests" ng-if="selected.show_testcases" onclose="selected.show_testcases = false">
-        <testcases testcase="selected.testcase"></testcases>
+        <Testcases></Testcases>
     </pane>
-    <pane title="TestCase" ng-if="selected.testcase" onclose="selected.testcase = null">
-        <testcase testcase="selected.testcase"></testcase>
+    <pane title="Product Defects" ng-if="selected.show_defects" onclose="selected.show_defects = false">
+        <Defects></Defects>
+    </pane>
+    <pane title="Defect" ng-if="selected.defect" onclose="selected.defect = null">
+        <Defect></Defect>
+    </pane>
+    <pane title="TestCase" ng-if="selected.full_name" onclose="selected.full_name = null">
+        <Testcase></Testcase>
     </pane>
 </panes>
 
