@@ -1,0 +1,2139 @@
+{
+  "time" : {
+    "start" : 1446409102144,
+    "stop" : 1446952246192,
+    "duration" : 543144048
+  },
+  "testSuites" : [ {
+    "uid" : "9546f2b748768ec7",
+    "name" : "Surefire suite : Surefire test",
+    "title" : "Surefire suite : Surefire test",
+    "time" : {
+      "start" : 1446409102144,
+      "stop" : 1446952246192,
+      "duration" : 543144048
+    },
+    "statistic" : {
+      "total" : 192,
+      "passed" : 90,
+      "pending" : 14,
+      "canceled" : 12,
+      "failed" : 12,
+      "broken" : 64
+    },
+    "description" : null,
+    "testCases" : [ {
+      "uid" : "2f0546f62bfa6c5d",
+      "name" : "skippedTest",
+      "title" : "Skipped test",
+      "time" : {
+        "start" : 1446952242686,
+        "stop" : 1446952242686,
+        "duration" : 0
+      },
+      "severity" : "NORMAL",
+      "status" : "PENDING"
+    }, {
+      "uid" : "d817528dc093e40b",
+      "name" : "searchTest",
+      "title" : "Search test",
+      "time" : {
+        "start" : 1446952243642,
+        "stop" : 1446952246002,
+        "duration" : 2360
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "5a641d5276899eac",
+      "name" : "failedTest",
+      "title" : "Failed test",
+      "time" : {
+        "start" : 1446952246006,
+        "stop" : 1446952246029,
+        "duration" : 23
+      },
+      "severity" : "NORMAL",
+      "status" : "FAILED"
+    }, {
+      "uid" : "74403d90b479f725",
+      "name" : "simpleTest",
+      "title" : "Simple test",
+      "time" : {
+        "start" : 1446952246029,
+        "stop" : 1446952246041,
+        "duration" : 12
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "e0eaad13a31afbdb",
+      "name" : "svgAttachmentTest",
+      "title" : "Svg attachment test",
+      "time" : {
+        "start" : 1446952246042,
+        "stop" : 1446952246063,
+        "duration" : 21
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "878de81a68afd077",
+      "name" : "parametrizedTest[Long-long parameter value,1,2]",
+      "title" : "Parametrized test [Long-long parameter value,1,2]",
+      "time" : {
+        "start" : 1446952246071,
+        "stop" : 1446952246092,
+        "duration" : 21
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "e0a7c80d2acdb136",
+      "name" : "parametrizedTest[Even longer parameter value than long-long parameter value,2,3]",
+      "title" : "Parametrized test [Even longer parameter value than long-long parameter value,2,3]",
+      "time" : {
+        "start" : 1446952246093,
+        "stop" : 1446952246101,
+        "duration" : 8
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "2e219c57cf0f650",
+      "name" : "parametrizedTest[,3,4]",
+      "title" : "Parametrized test [,3,4]",
+      "time" : {
+        "start" : 1446952246103,
+        "stop" : 1446952246113,
+        "duration" : 10
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "6e80577ed69ec428",
+      "name" : "parametrizedTest[1]",
+      "title" : "Parametrized test [1]",
+      "time" : {
+        "start" : 1446952246114,
+        "stop" : 1446952246126,
+        "duration" : 12
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "cfee35a61ae3753a",
+      "name" : "parametrizedTest[2]",
+      "title" : "Parametrized test [2]",
+      "time" : {
+        "start" : 1446952246127,
+        "stop" : 1446952246134,
+        "duration" : 7
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "9025a8a11f68a8b1",
+      "name" : "parametrizedTest[3]",
+      "title" : "Parametrized test [3]",
+      "time" : {
+        "start" : 1446952246135,
+        "stop" : 1446952246146,
+        "duration" : 11
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "d9b2dbff1e849b7d",
+      "name" : "simpleTestWithAttachments",
+      "title" : "Simple test with attachments",
+      "time" : {
+        "start" : 1446952246147,
+        "stop" : 1446952246156,
+        "duration" : 9
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "d32efb896a94d031",
+      "name" : "simpleTestWithSteps",
+      "title" : "Simple test with steps",
+      "time" : {
+        "start" : 1446952246157,
+        "stop" : 1446952246165,
+        "duration" : 8
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "6118ea31679db33",
+      "name" : "BrokenTest",
+      "title" : "Broken test",
+      "time" : {
+        "start" : 1446952246166,
+        "stop" : 1446952246176,
+        "duration" : 10
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "41fd1a89bcee191b",
+      "name" : "csvAttachmentTest",
+      "title" : "Csv attachment test",
+      "time" : {
+        "start" : 1446952246176,
+        "stop" : 1446952246184,
+        "duration" : 8
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "c360a429d23a130f",
+      "name" : "skippedByDependencyTest",
+      "title" : "Skipped by dependency test",
+      "time" : {
+        "start" : 1446952246192,
+        "stop" : 1446952246192,
+        "duration" : 0
+      },
+      "severity" : "NORMAL",
+      "status" : "CANCELED"
+    }, {
+      "uid" : "fb10f3c0977ea34b",
+      "name" : "skippedTest",
+      "title" : "Skipped test",
+      "time" : {
+        "start" : 1446409169906,
+        "stop" : 1446409169911,
+        "duration" : 5
+      },
+      "severity" : "NORMAL",
+      "status" : "PENDING"
+    }, {
+      "uid" : "348046561be97d9d",
+      "name" : "searchTest",
+      "title" : "Search test",
+      "time" : {
+        "start" : 1446409174591,
+        "stop" : 1446409176943,
+        "duration" : 2352
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "f2a3e72eb18e123f",
+      "name" : "failedTest",
+      "title" : "Failed test",
+      "time" : {
+        "start" : 1446409176978,
+        "stop" : 1446409176985,
+        "duration" : 7
+      },
+      "severity" : "NORMAL",
+      "status" : "FAILED"
+    }, {
+      "uid" : "7ef0be79b84ce664",
+      "name" : "simpleTest",
+      "title" : "Simple test",
+      "time" : {
+        "start" : 1446409176993,
+        "stop" : 1446409176999,
+        "duration" : 6
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "c20dcc935b50ce86",
+      "name" : "svgAttachmentTest",
+      "title" : "Svg attachment test",
+      "time" : {
+        "start" : 1446409177011,
+        "stop" : 1446409177027,
+        "duration" : 16
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "2245898f38df3a4f",
+      "name" : "parametrizedTest[Long-long parameter value,1,2]",
+      "title" : "Parametrized test [Long-long parameter value,1,2]",
+      "time" : {
+        "start" : 1446409177042,
+        "stop" : 1446409177050,
+        "duration" : 8
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "4ef8f373288bb67b",
+      "name" : "parametrizedTest[Even longer parameter value than long-long parameter value,2,3]",
+      "title" : "Parametrized test [Even longer parameter value than long-long parameter value,2,3]",
+      "time" : {
+        "start" : 1446409177056,
+        "stop" : 1446409177057,
+        "duration" : 1
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "d7ac12d5ed18480a",
+      "name" : "parametrizedTest[1]",
+      "title" : "Parametrized test [1]",
+      "time" : {
+        "start" : 1446409177069,
+        "stop" : 1446409177074,
+        "duration" : 5
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "ec4ba85c2563be0b",
+      "name" : "parametrizedTest[2]",
+      "title" : "Parametrized test [2]",
+      "time" : {
+        "start" : 1446409177080,
+        "stop" : 1446409177081,
+        "duration" : 1
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "e0839444caa34e54",
+      "name" : "simpleTestWithAttachments",
+      "title" : "Simple test with attachments",
+      "time" : {
+        "start" : 1446409177092,
+        "stop" : 1446409177095,
+        "duration" : 3
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "62d0b5db7e0b346b",
+      "name" : "simpleTestWithSteps",
+      "title" : "Simple test with steps",
+      "time" : {
+        "start" : 1446409177106,
+        "stop" : 1446409177107,
+        "duration" : 1
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "4a4038ff5e92f9d8",
+      "name" : "BrokenTest",
+      "title" : "Broken test",
+      "time" : {
+        "start" : 1446409177119,
+        "stop" : 1446409177126,
+        "duration" : 7
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "913918a99f76c16a",
+      "name" : "csvAttachmentTest",
+      "title" : "Csv attachment test",
+      "time" : {
+        "start" : 1446409177133,
+        "stop" : 1446409177136,
+        "duration" : 3
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "ab542e633df9ab4e",
+      "name" : "skippedByDependencyTest",
+      "title" : "Skipped by dependency test",
+      "time" : {
+        "start" : 1446409177151,
+        "stop" : 1446409177153,
+        "duration" : 2
+      },
+      "severity" : "NORMAL",
+      "status" : "CANCELED"
+    }, {
+      "uid" : "9c0654e412999b6",
+      "name" : "skippedTest",
+      "title" : "Skipped test",
+      "time" : {
+        "start" : 1446856882712,
+        "stop" : 1446856882716,
+        "duration" : 4
+      },
+      "severity" : "NORMAL",
+      "status" : "PENDING"
+    }, {
+      "uid" : "3b9a0cc13f8861ab",
+      "name" : "searchTest",
+      "title" : "Search test",
+      "time" : {
+        "start" : 1446856887512,
+        "stop" : 1446856889960,
+        "duration" : 2448
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "5e161c7f40fa8775",
+      "name" : "failedTest",
+      "title" : "Failed test",
+      "time" : {
+        "start" : 1446856889975,
+        "stop" : 1446856889990,
+        "duration" : 15
+      },
+      "severity" : "NORMAL",
+      "status" : "FAILED"
+    }, {
+      "uid" : "3dfb313a9ce39929",
+      "name" : "simpleTest",
+      "title" : "Simple test",
+      "time" : {
+        "start" : 1446856889997,
+        "stop" : 1446856890005,
+        "duration" : 8
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "37a970d1cd238af0",
+      "name" : "svgAttachmentTest",
+      "title" : "Svg attachment test",
+      "time" : {
+        "start" : 1446856890013,
+        "stop" : 1446856890025,
+        "duration" : 12
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "9f6307378d63aa61",
+      "name" : "parametrizedTest[Long-long parameter value,1,2]",
+      "title" : "Parametrized test [Long-long parameter value,1,2]",
+      "time" : {
+        "start" : 1446856890038,
+        "stop" : 1446856890054,
+        "duration" : 16
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "a6e550b33f5f7ffb",
+      "name" : "parametrizedTest[Even longer parameter value than long-long parameter value,2,3]",
+      "title" : "Parametrized test [Even longer parameter value than long-long parameter value,2,3]",
+      "time" : {
+        "start" : 1446856890061,
+        "stop" : 1446856890062,
+        "duration" : 1
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "ff2611534a09c375",
+      "name" : "parametrizedTest[,3,4]",
+      "title" : "Parametrized test [,3,4]",
+      "time" : {
+        "start" : 1446856890070,
+        "stop" : 1446856890075,
+        "duration" : 5
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "6c3063beb817dc91",
+      "name" : "parametrizedTest[1]",
+      "title" : "Parametrized test [1]",
+      "time" : {
+        "start" : 1446856890082,
+        "stop" : 1446856890086,
+        "duration" : 4
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "b54e3f01a68b6ff2",
+      "name" : "parametrizedTest[2]",
+      "title" : "Parametrized test [2]",
+      "time" : {
+        "start" : 1446856890092,
+        "stop" : 1446856890093,
+        "duration" : 1
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "798d5db0f3d5a5fe",
+      "name" : "parametrizedTest[3]",
+      "title" : "Parametrized test [3]",
+      "time" : {
+        "start" : 1446856890100,
+        "stop" : 1446856890104,
+        "duration" : 4
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "fe610db995856243",
+      "name" : "simpleTestWithAttachments",
+      "title" : "Simple test with attachments",
+      "time" : {
+        "start" : 1446856890110,
+        "stop" : 1446856890113,
+        "duration" : 3
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "fdbdae5d7139f00a",
+      "name" : "simpleTestWithSteps",
+      "title" : "Simple test with steps",
+      "time" : {
+        "start" : 1446856890120,
+        "stop" : 1446856890122,
+        "duration" : 2
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "f428080d17902a09",
+      "name" : "BrokenTest",
+      "title" : "Broken test",
+      "time" : {
+        "start" : 1446856890130,
+        "stop" : 1446856890133,
+        "duration" : 3
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "803cb6ba7623e70f",
+      "name" : "csvAttachmentTest",
+      "title" : "Csv attachment test",
+      "time" : {
+        "start" : 1446856890139,
+        "stop" : 1446856890141,
+        "duration" : 2
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "bc9cd2970d776412",
+      "name" : "skippedByDependencyTest",
+      "title" : "Skipped by dependency test",
+      "time" : {
+        "start" : 1446856890149,
+        "stop" : 1446856890150,
+        "duration" : 1
+      },
+      "severity" : "NORMAL",
+      "status" : "CANCELED"
+    }, {
+      "uid" : "4eb08bbcce2108d3",
+      "name" : "skippedTest",
+      "title" : "Skipped test",
+      "time" : {
+        "start" : 1446952116091,
+        "stop" : 1446952116091,
+        "duration" : 0
+      },
+      "severity" : "NORMAL",
+      "status" : "PENDING"
+    }, {
+      "uid" : "b2a841713b34ecde",
+      "name" : "searchTest",
+      "title" : "Search test",
+      "time" : {
+        "start" : 1446952117132,
+        "stop" : 1446952119730,
+        "duration" : 2598
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "38bc015c785f7f78",
+      "name" : "failedTest",
+      "title" : "Failed test",
+      "time" : {
+        "start" : 1446952119735,
+        "stop" : 1446952119759,
+        "duration" : 24
+      },
+      "severity" : "NORMAL",
+      "status" : "FAILED"
+    }, {
+      "uid" : "cb0a92a034926001",
+      "name" : "simpleTest",
+      "title" : "Simple test",
+      "time" : {
+        "start" : 1446952119760,
+        "stop" : 1446952119773,
+        "duration" : 13
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "bd78e711a3b83640",
+      "name" : "svgAttachmentTest",
+      "title" : "Svg attachment test",
+      "time" : {
+        "start" : 1446952119775,
+        "stop" : 1446952119795,
+        "duration" : 20
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "f4ce797adbf19b83",
+      "name" : "parametrizedTest[Long-long parameter value,1,2]",
+      "title" : "Parametrized test [Long-long parameter value,1,2]",
+      "time" : {
+        "start" : 1446952119803,
+        "stop" : 1446952119822,
+        "duration" : 19
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "2f28f1700b7fb8a9",
+      "name" : "parametrizedTest[Even longer parameter value than long-long parameter value,2,3]",
+      "title" : "Parametrized test [Even longer parameter value than long-long parameter value,2,3]",
+      "time" : {
+        "start" : 1446952119823,
+        "stop" : 1446952119831,
+        "duration" : 8
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "fa8fda4208df429a",
+      "name" : "parametrizedTest[,3,4]",
+      "title" : "Parametrized test [,3,4]",
+      "time" : {
+        "start" : 1446952119833,
+        "stop" : 1446952119844,
+        "duration" : 11
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "91cc2315610b01de",
+      "name" : "parametrizedTest[1]",
+      "title" : "Parametrized test [1]",
+      "time" : {
+        "start" : 1446952119845,
+        "stop" : 1446952119855,
+        "duration" : 10
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "227f2a4ee84697a0",
+      "name" : "parametrizedTest[2]",
+      "title" : "Parametrized test [2]",
+      "time" : {
+        "start" : 1446952119855,
+        "stop" : 1446952119862,
+        "duration" : 7
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "370b017bc6140c01",
+      "name" : "parametrizedTest[3]",
+      "title" : "Parametrized test [3]",
+      "time" : {
+        "start" : 1446952119864,
+        "stop" : 1446952119875,
+        "duration" : 11
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "99d895b685d952c7",
+      "name" : "simpleTestWithAttachments",
+      "title" : "Simple test with attachments",
+      "time" : {
+        "start" : 1446952119875,
+        "stop" : 1446952119885,
+        "duration" : 10
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "b6012df5bb196639",
+      "name" : "simpleTestWithSteps",
+      "title" : "Simple test with steps",
+      "time" : {
+        "start" : 1446952119887,
+        "stop" : 1446952119896,
+        "duration" : 9
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "1d18752aefa8ffd",
+      "name" : "BrokenTest",
+      "title" : "Broken test",
+      "time" : {
+        "start" : 1446952119897,
+        "stop" : 1446952119906,
+        "duration" : 9
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "c0da6a55609adee3",
+      "name" : "csvAttachmentTest",
+      "title" : "Csv attachment test",
+      "time" : {
+        "start" : 1446952119907,
+        "stop" : 1446952119915,
+        "duration" : 8
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "39507750c671a140",
+      "name" : "skippedByDependencyTest",
+      "title" : "Skipped by dependency test",
+      "time" : {
+        "start" : 1446952119923,
+        "stop" : 1446952119924,
+        "duration" : 1
+      },
+      "severity" : "NORMAL",
+      "status" : "CANCELED"
+    }, {
+      "uid" : "517978ccdf012b38",
+      "name" : "skippedTest",
+      "title" : "Skipped test",
+      "time" : {
+        "start" : 1446409105847,
+        "stop" : 1446409105847,
+        "duration" : 0
+      },
+      "severity" : "NORMAL",
+      "status" : "PENDING"
+    }, {
+      "uid" : "168a7fd7cd472e59",
+      "name" : "searchTest",
+      "title" : "Search test",
+      "time" : {
+        "start" : 1446409106890,
+        "stop" : 0,
+        "duration" : -1446409106890
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "8bff7a53adeb094a",
+      "name" : "skippedTest",
+      "title" : "Skipped test",
+      "time" : {
+        "start" : 1446409173615,
+        "stop" : 1446409173615,
+        "duration" : 0
+      },
+      "severity" : "NORMAL",
+      "status" : "PENDING"
+    }, {
+      "uid" : "298f38790d87b046",
+      "name" : "searchTest",
+      "title" : "Search test",
+      "time" : {
+        "start" : 1446409174592,
+        "stop" : 1446409176975,
+        "duration" : 2383
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "cbebafd545df7ee1",
+      "name" : "failedTest",
+      "title" : "Failed test",
+      "time" : {
+        "start" : 1446409176978,
+        "stop" : 1446409176993,
+        "duration" : 15
+      },
+      "severity" : "NORMAL",
+      "status" : "FAILED"
+    }, {
+      "uid" : "569fce8343796ac0",
+      "name" : "simpleTest",
+      "title" : "Simple test",
+      "time" : {
+        "start" : 1446409176994,
+        "stop" : 1446409177011,
+        "duration" : 17
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "2e38204288bd75b",
+      "name" : "svgAttachmentTest",
+      "title" : "Svg attachment test",
+      "time" : {
+        "start" : 1446409177012,
+        "stop" : 1446409177037,
+        "duration" : 25
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "25118e76ae23a7",
+      "name" : "parametrizedTest[Long-long parameter value,1,2]",
+      "title" : "Parametrized test [Long-long parameter value,1,2]",
+      "time" : {
+        "start" : 1446409177044,
+        "stop" : 1446409177055,
+        "duration" : 11
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "91ba6fe07391f9ee",
+      "name" : "parametrizedTest[Even longer parameter value than long-long parameter value,2,3]",
+      "title" : "Parametrized test [Even longer parameter value than long-long parameter value,2,3]",
+      "time" : {
+        "start" : 1446409177057,
+        "stop" : 1446409177068,
+        "duration" : 11
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "cfd5085922c2ba28",
+      "name" : "parametrizedTest[1]",
+      "title" : "Parametrized test [1]",
+      "time" : {
+        "start" : 1446409177069,
+        "stop" : 1446409177080,
+        "duration" : 11
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "5893e603cf92a8f0",
+      "name" : "parametrizedTest[2]",
+      "title" : "Parametrized test [2]",
+      "time" : {
+        "start" : 1446409177080,
+        "stop" : 1446409177092,
+        "duration" : 12
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "f32ce7a3de716cd",
+      "name" : "simpleTestWithAttachments",
+      "title" : "Simple test with attachments",
+      "time" : {
+        "start" : 1446409177092,
+        "stop" : 1446409177105,
+        "duration" : 13
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "4274d4780c0782b0",
+      "name" : "simpleTestWithSteps",
+      "title" : "Simple test with steps",
+      "time" : {
+        "start" : 1446409177106,
+        "stop" : 1446409177118,
+        "duration" : 12
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "3f9a79b630591e19",
+      "name" : "BrokenTest",
+      "title" : "Broken test",
+      "time" : {
+        "start" : 1446409177120,
+        "stop" : 1446409177133,
+        "duration" : 13
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "146bcc91e3c7306b",
+      "name" : "csvAttachmentTest",
+      "title" : "Csv attachment test",
+      "time" : {
+        "start" : 1446409177134,
+        "stop" : 1446409177150,
+        "duration" : 16
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "81e6fdef5c37c521",
+      "name" : "skippedByDependencyTest",
+      "title" : "Skipped by dependency test",
+      "time" : {
+        "start" : 1446409177160,
+        "stop" : 1446409177161,
+        "duration" : 1
+      },
+      "severity" : "NORMAL",
+      "status" : "CANCELED"
+    }, {
+      "uid" : "f8c72d11ebe650d9",
+      "name" : "skippedTest",
+      "title" : "Skipped test",
+      "time" : {
+        "start" : 1446409263441,
+        "stop" : 1446409263445,
+        "duration" : 4
+      },
+      "severity" : "NORMAL",
+      "status" : "PENDING"
+    }, {
+      "uid" : "dc9aa4d19690c8fe",
+      "name" : "searchTest",
+      "title" : "Search test",
+      "time" : {
+        "start" : 1446409267939,
+        "stop" : 1446409270402,
+        "duration" : 2463
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "c1d026f067aa5376",
+      "name" : "failedTest",
+      "title" : "Failed test",
+      "time" : {
+        "start" : 1446409270417,
+        "stop" : 1446409270432,
+        "duration" : 15
+      },
+      "severity" : "NORMAL",
+      "status" : "FAILED"
+    }, {
+      "uid" : "746e6facf497451b",
+      "name" : "simpleTest",
+      "title" : "Simple test",
+      "time" : {
+        "start" : 1446409270439,
+        "stop" : 1446409270445,
+        "duration" : 6
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "355c9b1f3a36648a",
+      "name" : "svgAttachmentTest",
+      "title" : "Svg attachment test",
+      "time" : {
+        "start" : 1446409270452,
+        "stop" : 1446409270469,
+        "duration" : 17
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "e4eca3ceeb16950e",
+      "name" : "parametrizedTest[Long-long parameter value,1,2]",
+      "title" : "Parametrized test [Long-long parameter value,1,2]",
+      "time" : {
+        "start" : 1446409270481,
+        "stop" : 1446409270500,
+        "duration" : 19
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "82f486da302d5813",
+      "name" : "parametrizedTest[Even longer parameter value than long-long parameter value,2,3]",
+      "title" : "Parametrized test [Even longer parameter value than long-long parameter value,2,3]",
+      "time" : {
+        "start" : 1446409270506,
+        "stop" : 1446409270506,
+        "duration" : 0
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "7afb5f4a5738f2d",
+      "name" : "parametrizedTest[,3,4]",
+      "title" : "Parametrized test [,3,4]",
+      "time" : {
+        "start" : 1446409270516,
+        "stop" : 1446409270522,
+        "duration" : 6
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "2e0af2fa7ec7e744",
+      "name" : "parametrizedTest[1]",
+      "title" : "Parametrized test [1]",
+      "time" : {
+        "start" : 1446409270529,
+        "stop" : 1446409270534,
+        "duration" : 5
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "3063f8d612995f1d",
+      "name" : "parametrizedTest[2]",
+      "title" : "Parametrized test [2]",
+      "time" : {
+        "start" : 1446409270541,
+        "stop" : 1446409270542,
+        "duration" : 1
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "50ba8888008f28f7",
+      "name" : "parametrizedTest[3]",
+      "title" : "Parametrized test [3]",
+      "time" : {
+        "start" : 1446409270551,
+        "stop" : 1446409270556,
+        "duration" : 5
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "a12021eaaa4587e",
+      "name" : "simpleTestWithAttachments",
+      "title" : "Simple test with attachments",
+      "time" : {
+        "start" : 1446409270563,
+        "stop" : 1446409270565,
+        "duration" : 2
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "9da653cbeff1c3fa",
+      "name" : "simpleTestWithSteps",
+      "title" : "Simple test with steps",
+      "time" : {
+        "start" : 1446409270574,
+        "stop" : 1446409270575,
+        "duration" : 1
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "60fcf5da41dda31d",
+      "name" : "BrokenTest",
+      "title" : "Broken test",
+      "time" : {
+        "start" : 1446409270583,
+        "stop" : 1446409270588,
+        "duration" : 5
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "2d57eb6788ebbcb7",
+      "name" : "csvAttachmentTest",
+      "title" : "Csv attachment test",
+      "time" : {
+        "start" : 1446409270595,
+        "stop" : 1446409270597,
+        "duration" : 2
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "3b8895a103a05335",
+      "name" : "skippedByDependencyTest",
+      "title" : "Skipped by dependency test",
+      "time" : {
+        "start" : 1446409270606,
+        "stop" : 1446409270608,
+        "duration" : 2
+      },
+      "severity" : "NORMAL",
+      "status" : "CANCELED"
+    }, {
+      "uid" : "f1b449801f289582",
+      "name" : "skippedTest",
+      "title" : "Skipped test",
+      "time" : {
+        "start" : 1446856886457,
+        "stop" : 1446856886457,
+        "duration" : 0
+      },
+      "severity" : "NORMAL",
+      "status" : "PENDING"
+    }, {
+      "uid" : "54bc2376d6d1d5e7",
+      "name" : "searchTest",
+      "title" : "Search test",
+      "time" : {
+        "start" : 1446856887513,
+        "stop" : 1446856889972,
+        "duration" : 2459
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "7524d078282e6dbb",
+      "name" : "failedTest",
+      "title" : "Failed test",
+      "time" : {
+        "start" : 1446856889975,
+        "stop" : 1446856889997,
+        "duration" : 22
+      },
+      "severity" : "NORMAL",
+      "status" : "FAILED"
+    }, {
+      "uid" : "ee8250b8020fd8c1",
+      "name" : "simpleTest",
+      "title" : "Simple test",
+      "time" : {
+        "start" : 1446856889997,
+        "stop" : 1446856890011,
+        "duration" : 14
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "2fbe6c56c32c5475",
+      "name" : "svgAttachmentTest",
+      "title" : "Svg attachment test",
+      "time" : {
+        "start" : 1446856890013,
+        "stop" : 1446856890032,
+        "duration" : 19
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "58381e4476a49f19",
+      "name" : "parametrizedTest[Long-long parameter value,1,2]",
+      "title" : "Parametrized test [Long-long parameter value,1,2]",
+      "time" : {
+        "start" : 1446856890040,
+        "stop" : 1446856890060,
+        "duration" : 20
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "7a4e494f63bd3fa9",
+      "name" : "parametrizedTest[Even longer parameter value than long-long parameter value,2,3]",
+      "title" : "Parametrized test [Even longer parameter value than long-long parameter value,2,3]",
+      "time" : {
+        "start" : 1446856890061,
+        "stop" : 1446856890069,
+        "duration" : 8
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "2376e7a0057e7419",
+      "name" : "parametrizedTest[,3,4]",
+      "title" : "Parametrized test [,3,4]",
+      "time" : {
+        "start" : 1446856890071,
+        "stop" : 1446856890081,
+        "duration" : 10
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "3fdae0baf32fabf5",
+      "name" : "parametrizedTest[1]",
+      "title" : "Parametrized test [1]",
+      "time" : {
+        "start" : 1446856890082,
+        "stop" : 1446856890092,
+        "duration" : 10
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "1e787679ba9cc62c",
+      "name" : "parametrizedTest[2]",
+      "title" : "Parametrized test [2]",
+      "time" : {
+        "start" : 1446856890093,
+        "stop" : 1446856890099,
+        "duration" : 6
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "338026352e9215d",
+      "name" : "parametrizedTest[3]",
+      "title" : "Parametrized test [3]",
+      "time" : {
+        "start" : 1446856890100,
+        "stop" : 1446856890109,
+        "duration" : 9
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "b9355aff960b5e90",
+      "name" : "simpleTestWithAttachments",
+      "title" : "Simple test with attachments",
+      "time" : {
+        "start" : 1446856890110,
+        "stop" : 1446856890119,
+        "duration" : 9
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "66ea6616e90598e8",
+      "name" : "simpleTestWithSteps",
+      "title" : "Simple test with steps",
+      "time" : {
+        "start" : 1446856890120,
+        "stop" : 1446856890128,
+        "duration" : 8
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "91384e8902f25406",
+      "name" : "BrokenTest",
+      "title" : "Broken test",
+      "time" : {
+        "start" : 1446856890130,
+        "stop" : 1446856890138,
+        "duration" : 8
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "72ee974a8f826ea5",
+      "name" : "csvAttachmentTest",
+      "title" : "Csv attachment test",
+      "time" : {
+        "start" : 1446856890139,
+        "stop" : 1446856890147,
+        "duration" : 8
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "ed895479cd1294e1",
+      "name" : "skippedByDependencyTest",
+      "title" : "Skipped by dependency test",
+      "time" : {
+        "start" : 1446856890155,
+        "stop" : 1446856890156,
+        "duration" : 1
+      },
+      "severity" : "NORMAL",
+      "status" : "CANCELED"
+    }, {
+      "uid" : "2d1f5cea94b93e73",
+      "name" : "skippedTest",
+      "title" : "Skipped test",
+      "time" : {
+        "start" : 1446952112748,
+        "stop" : 1446952112752,
+        "duration" : 4
+      },
+      "severity" : "NORMAL",
+      "status" : "PENDING"
+    }, {
+      "uid" : "8fea0bac51d3efb4",
+      "name" : "searchTest",
+      "title" : "Search test",
+      "time" : {
+        "start" : 1446952117131,
+        "stop" : 1446952119717,
+        "duration" : 2586
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "e18ceb894701432d",
+      "name" : "failedTest",
+      "title" : "Failed test",
+      "time" : {
+        "start" : 1446952119735,
+        "stop" : 1446952119753,
+        "duration" : 18
+      },
+      "severity" : "NORMAL",
+      "status" : "FAILED"
+    }, {
+      "uid" : "fb98329987c945a2",
+      "name" : "simpleTest",
+      "title" : "Simple test",
+      "time" : {
+        "start" : 1446952119759,
+        "stop" : 1446952119767,
+        "duration" : 8
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "d336fe5fb4957a30",
+      "name" : "svgAttachmentTest",
+      "title" : "Svg attachment test",
+      "time" : {
+        "start" : 1446952119774,
+        "stop" : 1446952119788,
+        "duration" : 14
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "6bc363e5ea499c02",
+      "name" : "parametrizedTest[Long-long parameter value,1,2]",
+      "title" : "Parametrized test [Long-long parameter value,1,2]",
+      "time" : {
+        "start" : 1446952119800,
+        "stop" : 1446952119816,
+        "duration" : 16
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "9dd4de76108f5c17",
+      "name" : "parametrizedTest[Even longer parameter value than long-long parameter value,2,3]",
+      "title" : "Parametrized test [Even longer parameter value than long-long parameter value,2,3]",
+      "time" : {
+        "start" : 1446952119823,
+        "stop" : 1446952119823,
+        "duration" : 0
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "cd38cd24d380481e",
+      "name" : "parametrizedTest[,3,4]",
+      "title" : "Parametrized test [,3,4]",
+      "time" : {
+        "start" : 1446952119833,
+        "stop" : 1446952119837,
+        "duration" : 4
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "be2d990077291ab5",
+      "name" : "parametrizedTest[1]",
+      "title" : "Parametrized test [1]",
+      "time" : {
+        "start" : 1446952119844,
+        "stop" : 1446952119848,
+        "duration" : 4
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "5433e2fe952c3762",
+      "name" : "parametrizedTest[2]",
+      "title" : "Parametrized test [2]",
+      "time" : {
+        "start" : 1446952119855,
+        "stop" : 1446952119855,
+        "duration" : 0
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "b2e793838c058be2",
+      "name" : "parametrizedTest[3]",
+      "title" : "Parametrized test [3]",
+      "time" : {
+        "start" : 1446952119863,
+        "stop" : 1446952119867,
+        "duration" : 4
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "68ecd43b91fe7211",
+      "name" : "simpleTestWithAttachments",
+      "title" : "Simple test with attachments",
+      "time" : {
+        "start" : 1446952119875,
+        "stop" : 1446952119878,
+        "duration" : 3
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "ef683485c5347fbf",
+      "name" : "simpleTestWithSteps",
+      "title" : "Simple test with steps",
+      "time" : {
+        "start" : 1446952119886,
+        "stop" : 1446952119888,
+        "duration" : 2
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "7410e14fc43779a4",
+      "name" : "BrokenTest",
+      "title" : "Broken test",
+      "time" : {
+        "start" : 1446952119897,
+        "stop" : 1446952119901,
+        "duration" : 4
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "e56d608e9ac45c19",
+      "name" : "csvAttachmentTest",
+      "title" : "Csv attachment test",
+      "time" : {
+        "start" : 1446952119906,
+        "stop" : 1446952119908,
+        "duration" : 2
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "8eb19a29bf9c9e73",
+      "name" : "skippedByDependencyTest",
+      "title" : "Skipped by dependency test",
+      "time" : {
+        "start" : 1446952119916,
+        "stop" : 1446952119918,
+        "duration" : 2
+      },
+      "severity" : "NORMAL",
+      "status" : "CANCELED"
+    }, {
+      "uid" : "b819ca2b77f5df01",
+      "name" : "skippedTest",
+      "title" : "Skipped test",
+      "time" : {
+        "start" : 1446410465471,
+        "stop" : 1446410465475,
+        "duration" : 4
+      },
+      "severity" : "NORMAL",
+      "status" : "PENDING"
+    }, {
+      "uid" : "5f3a76f28be855b7",
+      "name" : "searchTest",
+      "title" : "Search test",
+      "time" : {
+        "start" : 1446410469785,
+        "stop" : 1446410472591,
+        "duration" : 2806
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "5076e2d72bf98d43",
+      "name" : "failedTest",
+      "title" : "Failed test",
+      "time" : {
+        "start" : 1446410472605,
+        "stop" : 1446410472624,
+        "duration" : 19
+      },
+      "severity" : "NORMAL",
+      "status" : "FAILED"
+    }, {
+      "uid" : "e93582f31a3ce75c",
+      "name" : "simpleTest",
+      "title" : "Simple test",
+      "time" : {
+        "start" : 1446410472632,
+        "stop" : 1446410472642,
+        "duration" : 10
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "47d78a8eeb42e57e",
+      "name" : "svgAttachmentTest",
+      "title" : "Svg attachment test",
+      "time" : {
+        "start" : 1446410472651,
+        "stop" : 1446410472663,
+        "duration" : 12
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "1227256dd2324790",
+      "name" : "parametrizedTest[Long-long parameter value,1,2]",
+      "title" : "Parametrized test [Long-long parameter value,1,2]",
+      "time" : {
+        "start" : 1446410472678,
+        "stop" : 1446410472694,
+        "duration" : 16
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "cb6f2678053d86a0",
+      "name" : "parametrizedTest[Even longer parameter value than long-long parameter value,2,3]",
+      "title" : "Parametrized test [Even longer parameter value than long-long parameter value,2,3]",
+      "time" : {
+        "start" : 1446410472701,
+        "stop" : 1446410472702,
+        "duration" : 1
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "3ea6fbdca15eef9e",
+      "name" : "parametrizedTest[,3,4]",
+      "title" : "Parametrized test [,3,4]",
+      "time" : {
+        "start" : 1446410472714,
+        "stop" : 1446410472721,
+        "duration" : 7
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "a05b333c0e772dbf",
+      "name" : "parametrizedTest[1]",
+      "title" : "Parametrized test [1]",
+      "time" : {
+        "start" : 1446410472730,
+        "stop" : 1446410472737,
+        "duration" : 7
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "7c2fe66166ad7fcc",
+      "name" : "parametrizedTest[2]",
+      "title" : "Parametrized test [2]",
+      "time" : {
+        "start" : 1446410472745,
+        "stop" : 1446410472746,
+        "duration" : 1
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "3b07e469bcd4fad8",
+      "name" : "parametrizedTest[3]",
+      "title" : "Parametrized test [3]",
+      "time" : {
+        "start" : 1446410472759,
+        "stop" : 1446410472767,
+        "duration" : 8
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "4de4d8bbe3003471",
+      "name" : "simpleTestWithAttachments",
+      "title" : "Simple test with attachments",
+      "time" : {
+        "start" : 1446410472775,
+        "stop" : 1446410472780,
+        "duration" : 5
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "a7211e8543e7574a",
+      "name" : "simpleTestWithSteps",
+      "title" : "Simple test with steps",
+      "time" : {
+        "start" : 1446410472789,
+        "stop" : 1446410472791,
+        "duration" : 2
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "6a941d47296e9bfa",
+      "name" : "BrokenTest",
+      "title" : "Broken test",
+      "time" : {
+        "start" : 1446410472799,
+        "stop" : 1446410472803,
+        "duration" : 4
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "845b75428d969666",
+      "name" : "csvAttachmentTest",
+      "title" : "Csv attachment test",
+      "time" : {
+        "start" : 1446410472809,
+        "stop" : 1446410472811,
+        "duration" : 2
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "56e98fb81fa26e45",
+      "name" : "skippedByDependencyTest",
+      "title" : "Skipped by dependency test",
+      "time" : {
+        "start" : 1446410472819,
+        "stop" : 1446410472820,
+        "duration" : 1
+      },
+      "severity" : "NORMAL",
+      "status" : "CANCELED"
+    }, {
+      "uid" : "42529d6febd3c0f5",
+      "name" : "skippedTest",
+      "title" : "Skipped test",
+      "time" : {
+        "start" : 1446410468777,
+        "stop" : 1446410468777,
+        "duration" : 0
+      },
+      "severity" : "NORMAL",
+      "status" : "PENDING"
+    }, {
+      "uid" : "6980ca5b7933ef3e",
+      "name" : "searchTest",
+      "title" : "Search test",
+      "time" : {
+        "start" : 1446410469785,
+        "stop" : 1446410472601,
+        "duration" : 2816
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "506faf1daa27105e",
+      "name" : "failedTest",
+      "title" : "Failed test",
+      "time" : {
+        "start" : 1446410472605,
+        "stop" : 1446410472631,
+        "duration" : 26
+      },
+      "severity" : "NORMAL",
+      "status" : "FAILED"
+    }, {
+      "uid" : "faceb34757e97958",
+      "name" : "simpleTest",
+      "title" : "Simple test",
+      "time" : {
+        "start" : 1446410472632,
+        "stop" : 1446410472649,
+        "duration" : 17
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "d03c301b5c99aba3",
+      "name" : "svgAttachmentTest",
+      "title" : "Svg attachment test",
+      "time" : {
+        "start" : 1446410472651,
+        "stop" : 1446410472671,
+        "duration" : 20
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "387f1799e4052e2f",
+      "name" : "parametrizedTest[Long-long parameter value,1,2]",
+      "title" : "Parametrized test [Long-long parameter value,1,2]",
+      "time" : {
+        "start" : 1446410472681,
+        "stop" : 1446410472700,
+        "duration" : 19
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "5b0cad7179423d24",
+      "name" : "parametrizedTest[Even longer parameter value than long-long parameter value,2,3]",
+      "title" : "Parametrized test [Even longer parameter value than long-long parameter value,2,3]",
+      "time" : {
+        "start" : 1446410472701,
+        "stop" : 1446410472712,
+        "duration" : 11
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "d8f42107820b929a",
+      "name" : "parametrizedTest[,3,4]",
+      "title" : "Parametrized test [,3,4]",
+      "time" : {
+        "start" : 1446410472714,
+        "stop" : 1446410472729,
+        "duration" : 15
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "4a953801b003ce25",
+      "name" : "parametrizedTest[1]",
+      "title" : "Parametrized test [1]",
+      "time" : {
+        "start" : 1446410472730,
+        "stop" : 1446410472745,
+        "duration" : 15
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "485a2b75def3945d",
+      "name" : "parametrizedTest[2]",
+      "title" : "Parametrized test [2]",
+      "time" : {
+        "start" : 1446410472746,
+        "stop" : 1446410472757,
+        "duration" : 11
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "884444de1b6d7149",
+      "name" : "parametrizedTest[3]",
+      "title" : "Parametrized test [3]",
+      "time" : {
+        "start" : 1446410472759,
+        "stop" : 1446410472774,
+        "duration" : 15
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "b33a0f6834f49a4f",
+      "name" : "simpleTestWithAttachments",
+      "title" : "Simple test with attachments",
+      "time" : {
+        "start" : 1446410472776,
+        "stop" : 1446410472787,
+        "duration" : 11
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "79cccf8c54222de6",
+      "name" : "simpleTestWithSteps",
+      "title" : "Simple test with steps",
+      "time" : {
+        "start" : 1446410472789,
+        "stop" : 1446410472798,
+        "duration" : 9
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "70a242dfae047375",
+      "name" : "BrokenTest",
+      "title" : "Broken test",
+      "time" : {
+        "start" : 1446410472799,
+        "stop" : 1446410472809,
+        "duration" : 10
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "5996f275e299e93c",
+      "name" : "csvAttachmentTest",
+      "title" : "Csv attachment test",
+      "time" : {
+        "start" : 1446410472809,
+        "stop" : 1446410472817,
+        "duration" : 8
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "a1230efeadecca6a",
+      "name" : "skippedByDependencyTest",
+      "title" : "Skipped by dependency test",
+      "time" : {
+        "start" : 1446410472826,
+        "stop" : 1446410472826,
+        "duration" : 0
+      },
+      "severity" : "NORMAL",
+      "status" : "CANCELED"
+    }, {
+      "uid" : "4be8f251816d9a2f",
+      "name" : "skippedTest",
+      "title" : "Skipped test",
+      "time" : {
+        "start" : 1446409266966,
+        "stop" : 1446409266966,
+        "duration" : 0
+      },
+      "severity" : "NORMAL",
+      "status" : "PENDING"
+    }, {
+      "uid" : "32ad3f01fb9658bc",
+      "name" : "searchTest",
+      "title" : "Search test",
+      "time" : {
+        "start" : 1446409267939,
+        "stop" : 1446409270413,
+        "duration" : 2474
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "a6296f0d86adb479",
+      "name" : "failedTest",
+      "title" : "Failed test",
+      "time" : {
+        "start" : 1446409270417,
+        "stop" : 1446409270439,
+        "duration" : 22
+      },
+      "severity" : "NORMAL",
+      "status" : "FAILED"
+    }, {
+      "uid" : "2d0a866ba2ca6cc4",
+      "name" : "simpleTest",
+      "title" : "Simple test",
+      "time" : {
+        "start" : 1446409270439,
+        "stop" : 1446409270451,
+        "duration" : 12
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "1504641583d654b9",
+      "name" : "svgAttachmentTest",
+      "title" : "Svg attachment test",
+      "time" : {
+        "start" : 1446409270453,
+        "stop" : 1446409270476,
+        "duration" : 23
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "507eb0e3ed7e2761",
+      "name" : "parametrizedTest[Long-long parameter value,1,2]",
+      "title" : "Parametrized test [Long-long parameter value,1,2]",
+      "time" : {
+        "start" : 1446409270486,
+        "stop" : 1446409270505,
+        "duration" : 19
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "73def0c844b232a1",
+      "name" : "parametrizedTest[Even longer parameter value than long-long parameter value,2,3]",
+      "title" : "Parametrized test [Even longer parameter value than long-long parameter value,2,3]",
+      "time" : {
+        "start" : 1446409270506,
+        "stop" : 1446409270515,
+        "duration" : 9
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "791cfeaf524ccd38",
+      "name" : "parametrizedTest[,3,4]",
+      "title" : "Parametrized test [,3,4]",
+      "time" : {
+        "start" : 1446409270516,
+        "stop" : 1446409270528,
+        "duration" : 12
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "9d817fcb5152f8ed",
+      "name" : "parametrizedTest[1]",
+      "title" : "Parametrized test [1]",
+      "time" : {
+        "start" : 1446409270529,
+        "stop" : 1446409270541,
+        "duration" : 12
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "98452eb7f45f80d7",
+      "name" : "parametrizedTest[2]",
+      "title" : "Parametrized test [2]",
+      "time" : {
+        "start" : 1446409270541,
+        "stop" : 1446409270549,
+        "duration" : 8
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "e764f38d0d0dbd41",
+      "name" : "parametrizedTest[3]",
+      "title" : "Parametrized test [3]",
+      "time" : {
+        "start" : 1446409270551,
+        "stop" : 1446409270563,
+        "duration" : 12
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "c1187384e0dbc961",
+      "name" : "simpleTestWithAttachments",
+      "title" : "Simple test with attachments",
+      "time" : {
+        "start" : 1446409270563,
+        "stop" : 1446409270573,
+        "duration" : 10
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "4ad6b7b32adaf7e2",
+      "name" : "simpleTestWithSteps",
+      "title" : "Simple test with steps",
+      "time" : {
+        "start" : 1446409270574,
+        "stop" : 1446409270582,
+        "duration" : 8
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "97fad54e83bfb669",
+      "name" : "BrokenTest",
+      "title" : "Broken test",
+      "time" : {
+        "start" : 1446409270583,
+        "stop" : 1446409270594,
+        "duration" : 11
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "7aee777f1a923078",
+      "name" : "csvAttachmentTest",
+      "title" : "Csv attachment test",
+      "time" : {
+        "start" : 1446409270595,
+        "stop" : 1446409270604,
+        "duration" : 9
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "12bd8441a2d90cc4",
+      "name" : "skippedByDependencyTest",
+      "title" : "Skipped by dependency test",
+      "time" : {
+        "start" : 1446409270615,
+        "stop" : 1446409270615,
+        "duration" : 0
+      },
+      "severity" : "NORMAL",
+      "status" : "CANCELED"
+    }, {
+      "uid" : "eee7728a15a9ac62",
+      "name" : "skippedTest",
+      "title" : "Skipped test",
+      "time" : {
+        "start" : 1446409102144,
+        "stop" : 1446409102149,
+        "duration" : 5
+      },
+      "severity" : "NORMAL",
+      "status" : "PENDING"
+    }, {
+      "uid" : "c31a886282b5f944",
+      "name" : "searchTest",
+      "title" : "Search test",
+      "time" : {
+        "start" : 1446409106890,
+        "stop" : 1446409109286,
+        "duration" : 2396
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "a4f5eb4451e3ddde",
+      "name" : "skippedTest",
+      "title" : "Skipped test",
+      "time" : {
+        "start" : 1446952239136,
+        "stop" : 1446952239139,
+        "duration" : 3
+      },
+      "severity" : "NORMAL",
+      "status" : "PENDING"
+    }, {
+      "uid" : "a9c18753f4044444",
+      "name" : "searchTest",
+      "title" : "Search test",
+      "time" : {
+        "start" : 1446952243642,
+        "stop" : 1446952245990,
+        "duration" : 2348
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "7f2393573847915c",
+      "name" : "failedTest",
+      "title" : "Failed test",
+      "time" : {
+        "start" : 1446952246006,
+        "stop" : 1446952246022,
+        "duration" : 16
+      },
+      "severity" : "NORMAL",
+      "status" : "FAILED"
+    }, {
+      "uid" : "dc38a53d62884070",
+      "name" : "simpleTest",
+      "title" : "Simple test",
+      "time" : {
+        "start" : 1446952246029,
+        "stop" : 1446952246034,
+        "duration" : 5
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "f628a2aaed3cf8b7",
+      "name" : "svgAttachmentTest",
+      "title" : "Svg attachment test",
+      "time" : {
+        "start" : 1446952246042,
+        "stop" : 1446952246056,
+        "duration" : 14
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "82d6cd493d7cb21",
+      "name" : "parametrizedTest[Long-long parameter value,1,2]",
+      "title" : "Parametrized test [Long-long parameter value,1,2]",
+      "time" : {
+        "start" : 1446952246069,
+        "stop" : 1446952246085,
+        "duration" : 16
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "5b607816bd194373",
+      "name" : "parametrizedTest[Even longer parameter value than long-long parameter value,2,3]",
+      "title" : "Parametrized test [Even longer parameter value than long-long parameter value,2,3]",
+      "time" : {
+        "start" : 1446952246093,
+        "stop" : 1446952246093,
+        "duration" : 0
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "fe836c299c2a1ff3",
+      "name" : "parametrizedTest[,3,4]",
+      "title" : "Parametrized test [,3,4]",
+      "time" : {
+        "start" : 1446952246102,
+        "stop" : 1446952246107,
+        "duration" : 5
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "7a7cad0f4f22510d",
+      "name" : "parametrizedTest[1]",
+      "title" : "Parametrized test [1]",
+      "time" : {
+        "start" : 1446952246114,
+        "stop" : 1446952246119,
+        "duration" : 5
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "ae6138bfdb486f81",
+      "name" : "parametrizedTest[2]",
+      "title" : "Parametrized test [2]",
+      "time" : {
+        "start" : 1446952246126,
+        "stop" : 1446952246127,
+        "duration" : 1
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "64b3afae6bc29d70",
+      "name" : "parametrizedTest[3]",
+      "title" : "Parametrized test [3]",
+      "time" : {
+        "start" : 1446952246135,
+        "stop" : 1446952246140,
+        "duration" : 5
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "8387accd6d76aab5",
+      "name" : "simpleTestWithAttachments",
+      "title" : "Simple test with attachments",
+      "time" : {
+        "start" : 1446952246147,
+        "stop" : 1446952246151,
+        "duration" : 4
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "b28f5b7723a3f4b0",
+      "name" : "simpleTestWithSteps",
+      "title" : "Simple test with steps",
+      "time" : {
+        "start" : 1446952246157,
+        "stop" : 1446952246159,
+        "duration" : 2
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "f6e24de17de7a24b",
+      "name" : "BrokenTest",
+      "title" : "Broken test",
+      "time" : {
+        "start" : 1446952246166,
+        "stop" : 1446952246170,
+        "duration" : 4
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "7637d75cd0a10771",
+      "name" : "csvAttachmentTest",
+      "title" : "Csv attachment test",
+      "time" : {
+        "start" : 1446952246176,
+        "stop" : 1446952246178,
+        "duration" : 2
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "395a966e1d1396ae",
+      "name" : "skippedByDependencyTest",
+      "title" : "Skipped by dependency test",
+      "time" : {
+        "start" : 1446952246186,
+        "stop" : 1446952246187,
+        "duration" : 1
+      },
+      "severity" : "NORMAL",
+      "status" : "CANCELED"
+    } ]
+  } ]
+}

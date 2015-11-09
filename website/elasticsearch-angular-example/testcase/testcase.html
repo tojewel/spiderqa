@@ -1,7 +1,7 @@
 <div>
     <div>
         <div class="b-island__title">
-            {{testcase.name}}<span ng-show="testcase.name" class="text-muted">: {{testcase.full_name}}
+            {{testcase.name}}<span ng-show="testcase.name" class="text-muted">: {{testcase.full_name}}  <copy-button text="testcase.name"></copy-button>
             <copy-button text="testcase.name"></copy-button></span>
         </div>
         <div class="pane__header title-status-{{testcase.status}}">
@@ -53,7 +53,7 @@
             <div ng-include="'testcaseFailure.tpl'"></div>
             <div class="environments">
                 <div class="environment"
-                     ng-repeat="property in testcase.parameters | filter:{'kind':'ENVIRONMENT_VARIABLE'}">
+                     ng-repeat="property in testcase.parameters.parameter | filter:{'kind':'ENVIRONMENT_VARIABLE'}">
                     <div class="pull-left environment_name text-muted">{{property.name}}:</div>
                     <div class="pull-left" ng-bind-html="property.value"></div>
                 </div>

@@ -40,7 +40,7 @@ public class RESTClient {
         system = ActorSystem.create();
         materializer = ActorMaterializer.create(system);
 
-//        server = new ElasticServer();
+        //server = new ElasticServer();
         server = new MongoServer();
 
         connectionFlow = Http.get(system).outgoingConnection("localhost", server.getPort());

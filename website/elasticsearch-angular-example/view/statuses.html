@@ -1,0 +1,10 @@
+<div class="row">
+    <div class="col-sm-12" align="right">
+        <div class="btn-group">
+            <label ng-repeat="status in all_status_model"
+                   class="btn btn-default btn-status-{{status.name}} btn-sm" ng-model="status.value" uib-btn-checkbox>
+                <span class='label label-status-{{status.name}}'>{{$index}}</span> {{status.name}}
+            </label>
+        </div>
+    </div>
+</div>

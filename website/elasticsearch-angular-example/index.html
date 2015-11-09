@@ -3,7 +3,7 @@
 <head>
     <link rel="stylesheet" type="text/css" href="my.css"/>
     <link rel="icon" type="image/png" href="@.png"/>
-    <title>@TestTrend</title>
+    <title>TestTrend</title>
 
     <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
 
@@ -44,6 +44,8 @@
     <script src="nav/nav.js"></script>
     <script src="defects/defects.js"></script>
     <script src="defects/defect.js"></script>
+    <script src="logs/logs.js"></script>
+    <script src="view/statuses.js"></script>
 
     <link rel="stylesheet" href="allure.css">
     <link rel="stylesheet" href="my.css">
@@ -52,7 +54,14 @@
 
 <nav></nav>
 
-<panes ng-init="selected = { full_name: null, show_testcases: false, show_defects: false, full_name_log: null }">
+<!--'Surefire suite : Surefire test.svgAttachmentTest',-->
+
+<panes ng-init="selected = {
+            full_name: 'Surefire suite : Surefire test.svgAttachmentTest',
+            show_testcases: true,
+            show_defects: false,
+            full_name_log: null
+            }">
     <pane title="Blackbird">
         <dashboard></dashboard>
     </pane>
@@ -69,7 +78,7 @@
         <Testcase></Testcase>
     </pane>
     <pane title="Log" ng-if="selected.full_name_log" onclose="selected.full_name_log = null">
-        {{selected.full_name_log}}
+        <Logs></Logs>
     </pane>
 </panes>
 

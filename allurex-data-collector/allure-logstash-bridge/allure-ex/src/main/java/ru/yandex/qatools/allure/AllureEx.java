@@ -47,7 +47,15 @@ public class AllureEx extends Allure {
 
         super.fire(event);
 
-        RESTClient.get().save(new TestCase(execution, currentTestSuite, testCaseResult));
+        TestCase testCase = new TestCase(execution, currentTestSuite, testCaseResult);
+
+        System.out.print(
+                ToStringBuilder.reflectionToString(testCase, ToStringStyle.MULTI_LINE_STYLE));
+
+        System.out.print( "\n\n"+
+                ToStringBuilder.reflectionToString(testCaseResult, ToStringStyle.MULTI_LINE_STYLE));
+
+        RESTClient.get().save(testCase);
 //        System.out.println("TestCaseFinishedEvent=" + testCaseResult.getName());
     }
 }

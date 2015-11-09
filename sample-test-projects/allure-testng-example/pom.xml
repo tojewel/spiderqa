@@ -63,6 +63,19 @@
                     <argLine>
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                     </argLine>
+                    <!--<includes>-->
+                        <!--<include>-->
+                            <!--SearchTest.java-->
+                        <!--</include>-->
+                    <!--</includes>-->
+
+                    <properties>
+                        <property>
+                            <name>listener</name>
+                            <value>ru.yandex.qatools.allure.testng.TestNGListener</value>
+                        </property>
+                    </properties>
+
                 </configuration>
                 <dependencies>
                     <dependency>
@@ -71,6 +84,7 @@
                         <version>${aspectj.version}</version>
                     </dependency>
                 </dependencies>
+
             </plugin>
 
             <!--Needed only to show reports locally. Run jetty:run and

@@ -1,0 +1,56 @@
+{
+  "hash" : "f0f9583e3b2974a632a09536fa6cd0de93829600",
+  "data" : [ {
+    "name" : "defects",
+    "type" : "DEFECTS",
+    "data" : [ {
+      "count" : 12,
+      "message" : "AssertionError: This test should be failed",
+      "status" : "FAILED"
+    }, {
+      "count" : 44,
+      "message" : "NoSuchMethodError: org.hamcrest.Matcher.describeMismatch(Ljava/lang/Object;Lorg/hamcrest/Description;)V",
+      "status" : "BROKEN"
+    }, {
+      "count" : 12,
+      "message" : "RuntimeException: This is broken test",
+      "status" : "BROKEN"
+    }, {
+      "count" : 8,
+      "message" : "NullPointerException: null",
+      "status" : "BROKEN"
+    } ]
+  }, {
+    "name" : "xunit",
+    "type" : "TITLE_STATISTICS",
+    "data" : [ {
+      "title" : "Surefire suite : Surefire test",
+      "statistic" : {
+        "total" : 192,
+        "passed" : 90,
+        "pending" : 14,
+        "canceled" : 12,
+        "failed" : 12,
+        "broken" : 64
+      }
+    } ]
+  }, {
+    "name" : "behaviors",
+    "type" : "TITLE_STATISTICS",
+    "data" : [ {
+      "title" : "Without feature",
+      "statistic" : {
+        "total" : 192,
+        "passed" : 90,
+        "pending" : 14,
+        "canceled" : 12,
+        "failed" : 12,
+        "broken" : 64
+      }
+    } ]
+  }, {
+    "name" : "environment",
+    "type" : "KEY_VALUE",
+    "data" : [ ]
+  } ]
+}

@@ -156,6 +156,13 @@
         <processorPath useClasspath="true" />
         <module name="testng" />
       </profile>
+      <profile default="false" name="Annotation profile for restheart" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="restheart" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="allure-bundle" target="1.7" />
@@ -178,6 +185,7 @@
       <module name="allure-testng-example" target="1.7" />
       <module name="junit" target="1.7" />
       <module name="rest-client" target="1.7" />
+      <module name="restheart" target="1.8" />
       <module name="test-event-producer" target="1.7" />
       <module name="testng" target="1.7" />
     </bytecodeTargetLevel>

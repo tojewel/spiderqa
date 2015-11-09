@@ -24,3 +24,7 @@ angular.module('testcase', [])
             load_testcase();
         });
     })
+
+    .controller('StepCtrl', function($scope, Restheart) {
+
+    })

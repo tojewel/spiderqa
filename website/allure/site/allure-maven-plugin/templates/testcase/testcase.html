@@ -51,6 +51,7 @@
             <div class="pull-left" ng-bind-html="property.value | linky"></div>
         </div>
     </div>
+    <pre>{{testcase | json}}</pre>
     <div class="step" ng-repeat="step in testcase.steps" ng-controller="StepCtrl">
         <ng-include src="'testcaseStep.tpl'"></ng-include>
     </div>
@@ -61,6 +62,8 @@
         <ng-include src="'testcaseAttachment.tpl'"></ng-include>
     </div>
 </div>
+
+
 <br/>
 <script type="text/ng-template" id="testcaseFailure.tpl">
     <div class="testcase__status alert-status-{{testcase.status | lowercase}}" ng-show="testcase.status !== 'PASSED'" ng-controller="angular.noop">

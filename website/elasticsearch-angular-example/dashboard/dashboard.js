@@ -17,10 +17,7 @@ angular.module('dashboard', ['elasticsearch', 'nvd3', 'ui.bootstrap',
         });
     })
 
-    .controller('DashboardController', function ($scope, esFactory, client) {
-        //$scope.selected = {
-        //    testcase: null
-        //}
+    .controller('DashboardController', function ($scope, esFactory, client, $rootScope, $templateCache) {
 
         $scope.statusModel = {
             broken: true,
