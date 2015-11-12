@@ -4,6 +4,8 @@ import com.spiderqa.rest.RESTClient;
 import com.spiderqa.rest.Serializer;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
+import ru.yandex.qatools.allure.aspects.AllureStepsAspects;
+import ru.yandex.qatools.allure.aspects.AspectAllureOverrider;
 import ru.yandex.qatools.allure.events.TestCaseFinishedEvent;
 import ru.yandex.qatools.allure.events.TestCaseStartedEvent;
 import ru.yandex.qatools.allure.events.TestSuiteEvent;
@@ -15,6 +17,10 @@ public class AllureEx extends Allure {
 
     private static Execution execution = new Execution();
     private TestSuiteResult currentTestSuite;
+
+    AllureEx() {
+        AspectAllureOverrider.override(this);
+    }
 
     // FIXME Watch out for multi-threaded test
     public static AllureEx get() {

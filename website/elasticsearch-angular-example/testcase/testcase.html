@@ -1,7 +1,8 @@
 <div>
     <div>
         <div class="b-island__title">
-            {{testcase.name}}<span ng-show="testcase.name" class="text-muted">: {{testcase.full_name}}  <copy-button text="testcase.name"></copy-button>
+            {{testcase.name}}<span ng-show="testcase.name" class="text-muted">: {{testcase.full_name}}
+            <copy-button text="testcase.name"></copy-button>
             <copy-button text="testcase.name"></copy-button></span>
         </div>
         <div class="pane__header title-status-{{testcase.status}}">
@@ -32,7 +33,7 @@
             <span class="fa fa-bug"/>
             {{'testcase.ISSUES'}}
             <span class="issue" ng-repeat="issue in testcase.issues">
-                <a ng-href="{{issue.url}}" target="_blank">{{issue.name}}</a><span ng-show="!$last">,</span>
+                <a ng-href="{{issue}}" target="_blank">{{issue}}</a><span ng-show="!$last">,</span>
             </span>
         </span>
 
@@ -52,8 +53,7 @@
 
             <div ng-include="'testcaseFailure.tpl'"></div>
             <div class="environments">
-                <div class="environment"
-                     ng-repeat="property in testcase.parameters.parameter | filter:{'kind':'ENVIRONMENT_VARIABLE'}">
+                <div class="environment" ng-repeat="property in testcase.parameters">
                     <div class="pull-left environment_name text-muted">{{property.name}}:</div>
                     <div class="pull-left" ng-bind-html="property.value"></div>
                 </div>
@@ -104,14 +104,17 @@
         </div>
     </script>
 
+    <!--ng-href="{{'data/'+attachment.source}}"-->
+
     <script type="text/ng-template" id="testcaseAttachment.tpl">
-        <span ng-class="getIconClass(attachment.type)" tooltip="{{attachment.type}}"></span>
-        <span>{{attachment.title}}</span>
-        <a target="_blank" ng-click="$event.stopPropagation()" ng-href="{{'data/'+attachment.source}}"
-           class="pull-right attachment_size">
-            <i class="fa fa-floppy-o"></i>
-            <i>{{attachment.size}}</i>
-        </a>
+        <div ng-click="selected.attachment = attachment">
+            <span ng-class="getIconClass(attachment.type)" tooltip="{{attachment.type}}"></span>
+            <span>{{attachment.title}}</span>
+            <a class="pull-right attachment_size">
+                <i class="fa fa-floppy-o"></i>
+                <i>12 B{{attachment.size}}</i>
+            </a>
+        </div>
     </script>
 
     <script type="text/ng-template" id="testcaseStep.tpl">
@@ -121,8 +124,7 @@
             <span class="step__time text-muted">[{{step.time.start | date:'HH:mm:ss.sss'}}]</span>
             <span class="step__title" ng-class="getStepClass(step)">{{step.title}}</span>
             <span class="step__time text-muted">({{step.time.duration}})</span>
-        <span class="text-muted"
-              ng-hide="step.summary.steps==0">{{'testcase.SUBSTEPS'}}</span>
+            <span class="text-muted" ng-hide="step.summary.steps==0">{{'testcase.SUBSTEPS'}}</span>
             <span class="text-muted" ng-hide="step.summary.steps==0 || step.summary.attachments==0">, </span>
         <span class="text-muted"
               ng-hide="step.summary.attachments==0">{{'testcase.ATTACHMENTS'}}</span>

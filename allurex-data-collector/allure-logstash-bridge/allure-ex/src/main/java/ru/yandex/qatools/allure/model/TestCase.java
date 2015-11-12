@@ -3,6 +3,7 @@ package ru.yandex.qatools.allure.model;
 import lombok.Getter;
 
 import javax.xml.bind.annotation.*;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
@@ -44,21 +45,23 @@ public class TestCase implements Entity {
     protected Status status;
     protected SeverityLevel severity;
 
-    @XmlElementWrapper(name = "steps")
-    @XmlElement(name = "step")
+    //    @XmlElementWrapper(name = "steps")
+//    @XmlElement(name = "step")
     protected List<Step> steps;
 
-    @XmlElementWrapper(name = "attachments")
-    @XmlElement(name = "attachment")
+    //    @XmlElementWrapper(name = "attachments")
+//    @XmlElement(name = "attachment")
     protected List<Attachment> attachments;
 
-    @XmlElementWrapper(name = "labels")
-    @XmlElement(name = "label")
+    //    @XmlElementWrapper(name = "labels")
+//    @XmlElement(name = "label")
     protected List<Label> labels;
 
-    @XmlElementWrapper(name = "parameters")
-    @XmlElement(name = "parameter")
+    //    @XmlElementWrapper(name = "parameters")
+//    @XmlElement(name = "parameter")
     protected List<Parameter> parameters;
+
+    protected List<String> issues = new ArrayList<>();
 
     public TestCase(Execution execution, TestSuiteResult currentTestSuite, TestCaseResult r) {
         this.execution_id = execution.get_id();
@@ -86,6 +89,8 @@ public class TestCase implements Entity {
                     host = ("" + l.getValue()).replace('-', '_');
                 } else if ("thread".equals(l.getName())) {
                     thread = ("" + l.getValue()).replace('-', '_');
+                } else if ("issue".equals(l.getName())) {
+                    issues.add(l.getValue());
                 }
             }
         }

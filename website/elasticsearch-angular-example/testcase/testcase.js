@@ -10,7 +10,8 @@ angular.module('testcase', [])
         };
     })
 
-    .controller('TestcaseController', function($scope, Restheart) {
+
+    .controller('TestcaseController', function ($scope, Restheart, attachmentType) {
         function load_testcase() {
             Restheart.all('TestCase').customGET('', {filter: {full_name: $scope.selected.full_name}})
                 .then(function (result) {
@@ -20,11 +21,66 @@ angular.module('testcase', [])
 
         load_testcase();
 
-        $scope.$watch('selected.full_name', function() {
+        $scope.$watch('selected.full_name', function () {
             load_testcase();
         });
+
+        // AttachmentCtrl
+
+        $scope.getIconClass = function (type) { //NOSONAR
+            switch (attachmentType(type)) {
+                case 'text':
+                    return 'fa fa-file-text-o';
+                case 'image':
+                case 'svg':
+                    return 'fa fa-file-image-o';
+                case 'code':
+                    return 'fa fa-file-code-o';
+                case 'csv':
+                    return 'fa fa-table';
+                default:
+                    return 'fa fa-file-o';
+            }
+        };
+
     })
 
-    .controller('StepCtrl', function($scope, Restheart) {
+    .controller('StepCtrl', function ($scope, Restheart) {
 
+    })
+
+
+    .factory('attachmentType', function () {
+        "use strict";
+        return function (type) { //NOSONAR
+            switch (type) {
+                case 'image/bmp':
+                case 'image/gif':
+                case 'image/tiff':
+                case 'image/jpeg':
+                case 'image/jpg':
+                case 'image/png':
+                case 'image/*':
+                    return "image";
+                case 'text/xml':
+                case 'application/xml':
+                case 'application/json':
+                case 'text/json':
+                case 'text/yaml':
+                case 'application/yaml':
+                case 'application/x-yaml':
+                case 'text/x-yaml':
+                    return "code";
+                case 'text/plain':
+                case 'text/*':
+                    return "text";
+                case 'text/html':
+                    return "html";
+                case 'text/csv':
+                    return "csv";
+                case 'image/svg+xml':
+                    return "svg";
+                default:
+            }
+        };
     })

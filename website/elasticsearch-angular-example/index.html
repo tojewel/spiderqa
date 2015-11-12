@@ -57,11 +57,13 @@
 <!--'Surefire suite : Surefire test.svgAttachmentTest',-->
 
 <panes ng-init="selected = {
-            full_name: 'Surefire suite : Surefire test.svgAttachmentTest',
+            full_name: 'Surefire suite : Surefire test.parametrizedTest[Long-long parameter value,1,2]',
             show_testcases: true,
             show_defects: false,
-            full_name_log: null
+            full_name_log: null,
+            attachment: null,
             }">
+
     <pane title="Blackbird">
         <dashboard></dashboard>
     </pane>
@@ -80,6 +82,10 @@
     <pane title="Log" ng-if="selected.full_name_log" onclose="selected.full_name_log = null">
         <Logs></Logs>
     </pane>
+    <pane title="Attachment" ng-if="selected.attachment" onclose="selected.attachment = null">
+        <pre>{{selected.attachment | json}}</pre>
+    </pane>
+
 </panes>
 
 </body>
