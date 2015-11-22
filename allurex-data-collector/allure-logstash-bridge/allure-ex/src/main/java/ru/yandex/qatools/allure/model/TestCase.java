@@ -12,11 +12,11 @@ import java.util.UUID;
 @Getter
 public class TestCase implements Entity {
 
-    private String _id = UUID.randomUUID().toString().replace('-', '_');
+    private String id = UUID.randomUUID().toString().replace('-', '_');
 
     @Override
     public String get_id() {
-        return _id;
+        return id;
     }
 
     private String execution_id;
@@ -45,20 +45,12 @@ public class TestCase implements Entity {
     protected Status status;
     protected SeverityLevel severity;
 
-    //    @XmlElementWrapper(name = "steps")
-//    @XmlElement(name = "step")
     protected List<Step> steps;
 
-    //    @XmlElementWrapper(name = "attachments")
-//    @XmlElement(name = "attachment")
     protected List<Attachment> attachments;
 
-    //    @XmlElementWrapper(name = "labels")
-//    @XmlElement(name = "label")
     protected List<Label> labels;
 
-    //    @XmlElementWrapper(name = "parameters")
-//    @XmlElement(name = "parameter")
     protected List<Parameter> parameters;
 
     protected List<String> issues = new ArrayList<>();

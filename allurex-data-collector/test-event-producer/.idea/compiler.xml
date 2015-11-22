@@ -163,6 +163,13 @@
         <processorPath useClasspath="true" />
         <module name="restheart" />
       </profile>
+      <profile default="false" name="Annotation profile for gelf-client" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="gelf-client" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="allure-bundle" target="1.7" />
@@ -183,6 +190,7 @@
       <module name="allure-report-preview" target="1.7" />
       <module name="allure-testng-adaptor" target="1.7" />
       <module name="allure-testng-example" target="1.7" />
+      <module name="gelf-client" target="1.7" />
       <module name="junit" target="1.7" />
       <module name="rest-client" target="1.7" />
       <module name="restheart" target="1.8" />

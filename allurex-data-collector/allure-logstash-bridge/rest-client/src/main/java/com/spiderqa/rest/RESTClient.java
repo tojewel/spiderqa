@@ -30,18 +30,22 @@ public class RESTClient {
 
     private Serializer serializer = new Serializer();
 
-    private static RESTClient instance = new RESTClient();
+    private static RESTClient mongo = new RESTClient(new MongoServer());
+    private static RESTClient elastic = new RESTClient(new ElasticServer());
 
-    public static RESTClient get() {
-        return instance;
+    public static RESTClient getMongo() {
+        return mongo;
     }
 
-    private RESTClient() {
+    public static RESTClient getElastic() {
+        return elastic;
+    }
+
+    private RESTClient(Server server) {
         system = ActorSystem.create();
         materializer = ActorMaterializer.create(system);
 
-        //server = new ElasticServer();
-        server = new MongoServer();
+        this.server = server;
 
         connectionFlow = Http.get(system).outgoingConnection("localhost", server.getPort());
     }

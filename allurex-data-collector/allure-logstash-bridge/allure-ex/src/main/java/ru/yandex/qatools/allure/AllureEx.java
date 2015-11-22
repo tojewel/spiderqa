@@ -30,7 +30,6 @@ public class AllureEx extends Allure {
     public void fire(TestSuiteEvent event) {
         super.fire(event);
         this.currentTestSuite = getTestSuiteStorage().get(event.getUid());
-//        System.out.println("TestSuiteEvent=" + currentTestSuite.getName());
     }
 
     public void fire(TestSuiteFinishedEvent event) {
@@ -40,13 +39,8 @@ public class AllureEx extends Allure {
         }
 
         super.fire(event);
-        RESTClient.get().save(new TestSuite(execution, testSuite));
-//        System.out.println("TestSuiteFinishedEvent=" + testSuite.getName());
+        save(new TestSuite(execution, testSuite));
     }
-
-//    public void fire(TestCaseStartedEvent event) {
-//        super.fire(event);
-//    }
 
     public void fire(TestCaseFinishedEvent event) {
         TestCaseResult testCaseResult = getTestCaseStorage().get();
@@ -55,13 +49,11 @@ public class AllureEx extends Allure {
 
         TestCase testCase = new TestCase(execution, currentTestSuite, testCaseResult);
 
-        System.out.print(
-                ToStringBuilder.reflectionToString(testCase, ToStringStyle.MULTI_LINE_STYLE));
+        save(testCase);
+    }
 
-        System.out.print( "\n\n"+
-                ToStringBuilder.reflectionToString(testCaseResult, ToStringStyle.MULTI_LINE_STYLE));
-
-        RESTClient.get().save(testCase);
-//        System.out.println("TestCaseFinishedEvent=" + testCaseResult.getName());
+    private void save(Entity testCase) {
+        RESTClient.getMongo().save(testCase);
+        RESTClient.getElastic().save(testCase);
     }
 }
